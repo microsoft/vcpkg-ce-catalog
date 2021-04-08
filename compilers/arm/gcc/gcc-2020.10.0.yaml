@@ -1,0 +1,69 @@
+# ARM GCC Toolsuite
+# install with `cella add arm/gcc`
+
+info:
+  id: compilers/arm/gcc
+  version: 2020.10.0
+  description: >-
+    The GNU Arm Embedded Toolchain is a ready-to-use, open-source suite of tools for C, C++ and assembly programming. 
+    The GNU Arm Embedded Toolchain targets the 32-bit Arm Cortex-A, Arm Cortex-M, and Arm Cortex-R processor families. 
+    The GNU Arm Embedded Toolchain includes the GNU Compiler (GCC) and is available free of charge directly from Arm 
+    for embedded software development on Windows, Linux, and Mac OS X operating systems.
+    
+  summary: GCC compiler for ARM CPUs.
+
+contacts:
+  Garrett Serack: 
+    email: garretts@microsoft.com
+    role: publisher
+
+windows:
+  install:
+    unzip: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-win32.zip
+    md5: 5ee6542a2af847934177bc8fa1294c0d
+    strip: 1 # 
+
+  settings:
+    tools:
+      # tools exposed by name
+      # todo: add more tools to expose by name
+      CC: bin/arm-none-eabi-gcc.exe
+      CXX: bin/arm-none-eabi-g++.exe
+      AR: arm-none-eabi/ar.exe
+      AS: arm-none-eabi/as.exe
+
+    paths:
+      # we'd prepend these paths to the PATH environment variable. 
+      - bin
+
+linux and arm64: 
+  install: 
+    untar: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-aarch64-linux.tar.bz2
+    md5: 1c3b8944c026d50362eef1f01f329a8e
+    strip: 1
+
+linux and x64: 
+  install: 
+    untar: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2
+    md5: 1c3b8944c026d50362eef1f01f329a8e
+    strip: 1
+
+osx and x64: 
+  install: 
+    untar: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-mac.tar.bz2
+    md5: e588d21be5a0cc9caa60938d2422b058
+    strip: 1
+
+not windows:
+  settings:
+    tools:
+      # tools exposed by name
+      # todo: add more tools to expose by name
+      CC: bin/arm-none-eabi-gcc
+      CXX: bin/arm-none-eabi-g++
+      AR: arm-none-eabi/ar
+      AS: arm-none-eabi/as
+
+    paths:
+      # we'd prepend these paths to the PATH environment variable. 
+      - bin
