@@ -2,7 +2,7 @@
 # install with `cella add openocd`
 
 info:
-  id: tools/openocd/openocd
+  id: tools/microsoft/openocd
   version: 0.11.0
   description: >-
     OpenOCD provides on-chip programming and debugging support with a
@@ -25,7 +25,7 @@ contacts:
     email: bemcmorr@microsoft.com
     role: publisher
 
-  OpenOCD:
+  OpenOCD (upstream):
     email: openocd-user@lists.sourceforge.net
     role: originator
 
@@ -35,7 +35,6 @@ windows and x64:
     sha256: 213e0139ed2a95de5a44ade226c4ed4d7ed3ef4782328aa14b048161ff42aaf6
     strip: 1
 
-windows:
   settings:
     tools:
       openocd: bin/openocd.exe
@@ -49,7 +48,6 @@ linux and x64:
     sha256: 7751375455913d5ba2b62757dcbec225e3f9dcef48b76079d49dafd01698a761
     strip: 1
 
-not windows:
   settings:
     tools:
       openocd: bin/openocd
