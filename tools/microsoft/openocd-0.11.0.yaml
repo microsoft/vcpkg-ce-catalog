@@ -23,11 +23,11 @@ info:
 contacts:
   Ben McMorran: 
     email: bemcmorr@microsoft.com
-    role: publisher
+    role: [ publisher, originator ]
 
   OpenOCD (upstream):
     email: openocd-user@lists.sourceforge.net
-    role: originator
+    role: other
 
 windows and x64:
   install:
