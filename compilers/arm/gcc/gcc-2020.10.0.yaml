@@ -45,7 +45,7 @@ linux and arm64:
 linux and x64: 
   install: 
     untar: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2
-    md5: 1c3b8944c026d50362eef1f01f329a8e
+    md5: 8312c4c91799885f222f663fc81f9a31
     strip: 1
 
 osx and x64: 
