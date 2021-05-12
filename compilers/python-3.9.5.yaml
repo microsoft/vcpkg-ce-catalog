@@ -15,32 +15,30 @@ contacts:
     email: mgoodner@microsoft.com
     role: publisher
 
+  Python Software Foundation:
+    email: psf@python.org
+    role: originator
+
 windows and x64:
   install:
     unzip: https://www.python.org/ftp/python/3.9.5/python-3.9.5-embed-amd64.zip
     md5: 0b3a4a9ae9d319885eade3ac5aca7d17
-    strip: 1 # 
 
   settings:
     tools:
-      # tools exposed by name
-      # todo: add more tools to expose by name
       python: python.exe
 
     paths:
-      # we'd prepend these paths to the PATH environment variable. 
+      - . 
 
 windows and x86:
   install:
     unzip: https://www.python.org/ftp/python/3.9.5/python-3.9.5-embed-win32.zip
     md5: cacf28418ae39704743fa790d404e6bb
-    strip: 1 # 
 
   settings:
     tools:
-      # tools exposed by name
-      # todo: add more tools to expose by name
       python: python.exe
 
     paths:
-      # we'd prepend these paths to the PATH environment variable. 
+      - .
