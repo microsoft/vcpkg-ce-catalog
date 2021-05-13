@@ -18,6 +18,8 @@ info:
     "remote target" for source-level debugging of embedded systems using
     the GNU GDB program (and the others who talk GDB protocol, e.g. IDA
     Pro).
+    This build of OpenOCD includes additional vendor extensions from Azure
+    Sphere, Raspberry Pi, and STMicroelectronics.
   summary: Free and open on-chip debugging
 
 contacts:
@@ -32,7 +34,7 @@ contacts:
 windows and x64:
   install:
     untar: https://github.com/microsoft/openocd/releases/download/ms-v0.11.0/openocd-ms-v0.11.0-i686-w64-mingw32.tar.gz
-    sha256: 213e0139ed2a95de5a44ade226c4ed4d7ed3ef4782328aa14b048161ff42aaf6
+    sha256: f15c1b604f5f138a2731511143dcbbd565fa4dfed8f392abc599acea65177523
     strip: 1
 
   settings:
@@ -45,7 +47,7 @@ windows and x64:
 linux and x64:
   install:
     untar: https://github.com/microsoft/openocd/releases/download/ms-v0.11.0/openocd-ms-v0.11.0-linux.tar.gz
-    sha256: 7751375455913d5ba2b62757dcbec225e3f9dcef48b76079d49dafd01698a761
+    sha256: bfa359756d0cad2d3a2fa72a8416d369960732dd25f262397b66048db7a9c570
     strip: 1
 
   settings:
