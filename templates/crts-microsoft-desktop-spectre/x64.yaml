@@ -1,0 +1,23 @@
+# install with `cella add crts/microsoft/desktop-spectre`
+
+info:
+  id: crts/microsoft/desktop-spectre/x64
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.Desktop.spectre
+  summary: MSVC standard library libraries (desktop / kernel32, + spectre)
+  dependencyOnly: true
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath:
+    .
+
+vsixVersionRequire:
+  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+
+install:
+- vsix: Microsoft.VisualCpp.CRT.x64.Desktop.spectre
+  strip: 7

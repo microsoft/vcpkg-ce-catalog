@@ -1,0 +1,27 @@
+# install with `cella add sdks/microsoft/atl`
+
+info:
+  id: sdks/microsoft/atl-spectre
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.X86.Spectre
+  summary: Active Template Library w/ Spectre mitigations
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  vsixVersionRequire:
+    sdks/microsoft/atl-spectre/x86: Microsoft.VisualCpp.ATL.X86.Spectre
+
+target:x64:
+  vsixVersionRequire:
+    sdks/microsoft/atl-spectre/x64: Microsoft.VisualCpp.ATL.X86.Spectre
+
+target:arm:
+  vsixVersionRequire:
+    sdks/microsoft/atl-spectre/arm: Microsoft.VisualCpp.ATL.X86.Spectre
+
+target:arm64:
+  vsixVersionRequire:
+    sdks/microsoft/atl-spectre/arm64: Microsoft.VisualCpp.ATL.X86.Spectre

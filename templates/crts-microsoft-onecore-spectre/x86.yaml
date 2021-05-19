@@ -1,0 +1,23 @@
+# install with `cella add crts/microsoft/onecore-spectre`
+
+info:
+  id: crts/microsoft/onecore-spectre/x86
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
+  summary: MSVC standard library libraries (onecore / apisets, + spectre)
+  dependencyOnly: true
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath:
+    .
+
+vsixVersionRequire:
+  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+
+install:
+- vsix: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
+  strip: 8

@@ -1,0 +1,23 @@
+# install with `cella add sdks/microsoft/atl`
+
+info:
+  id: sdks/microsoft/atl/x64
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.X86
+  summary: Active Template Library
+  dependencyOnly: true
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath:
+    .
+
+vsixVersionRequire:
+  sdks/microsoft/atl-headers: Microsoft.VisualCpp.ATL.Headers
+
+install:
+- vsix: Microsoft.VisualCpp.ATL.X64
+  strip: 8

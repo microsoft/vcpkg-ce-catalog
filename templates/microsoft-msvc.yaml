@@ -1,0 +1,47 @@
+# install with `cella add microsoft/msvc`
+
+info:
+  id: microsoft/msvc
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+  description: >-
+    The Microsoft Visual C++ Compiler "MSVC," linker, and other associated build tools. Combine
+     with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.
+
+  summary: The Microsoft Visual C++ Compiler "MSVC"
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+x86 and target:x86:
+  vsixVersionRequire:
+    microsoft/msvc/x86_x86: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+
+x86 and target:x64:
+  vsixVersionRequire:
+    microsoft/msvc/x86_x64: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+
+x86 and target:arm:
+  vsixVersionRequire:
+    microsoft/msvc/x86_arm: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+
+x86 and target:arm64:
+  vsixVersionRequire:
+    microsoft/msvc/x86_arm64: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+
+x64 and target:x86:
+  vsixVersionRequire:
+    microsoft/msvc/x64_x86: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+
+x64 and target:x64:
+  vsixVersionRequire:
+    microsoft/msvc/x64_x64: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+
+x64 and target:arm:
+  vsixVersionRequire:
+    microsoft/msvc/x64_arm: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+
+x64 and target:arm64:
+  vsixVersionRequire:
+    microsoft/msvc/x64_arm64: Microsoft.VisualCpp.Tools.HostX86.TargetX86

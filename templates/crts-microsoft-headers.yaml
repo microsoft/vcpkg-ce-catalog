@@ -1,0 +1,21 @@
+# install with `cella add crts/microsoft/headers`
+
+info:
+  id: crts/microsoft/headers
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.Headers
+  summary: C runtime headers.
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  includes:
+    .
+
+install:
+- vsix: Microsoft.VisualCpp.CRT.Headers
+  strip: 6
+- vsix: Microsoft.VisualCpp.ASAN.Headers
+  strip: 8
