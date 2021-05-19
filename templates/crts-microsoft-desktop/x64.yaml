@@ -1,0 +1,24 @@
+# install with `cella add crts/microsoft/desktop`
+
+info:
+  id: crts/microsoft/desktop/x64
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.Desktop
+  summary: MSVC standard library libraries (desktop / kernel32)
+  dependencyOnly: true
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath:
+    .
+
+vsixVersionRequire:
+  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+
+target:x64:
+  install:
+  - vsix: Microsoft.VisualCpp.CRT.x64.Desktop
+    strip: 7

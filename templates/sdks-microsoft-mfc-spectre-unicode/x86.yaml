@@ -1,0 +1,25 @@
+# install with `cella add sdks/microsoft/mfc-spectre/unicode`
+
+info:
+  id: sdks/microsoft/mfc-spectre/unicode/x86
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.X86.Spectre
+  summary: Microsoft Foundation Classes, Unicode w/ Spectre mitigations
+  dependencyOnly: true
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath:
+    .
+
+vsixVersionRequire:
+  crts/microsoft/headers: Microsoft.VisualCpp.MFC.Headers
+
+install:
+- vsix: Microsoft.VisualCpp.MFC.X86.Spectre
+  strip: 9
+- vsix: Microsoft.VisualCpp.MFC.X86.Debug.Spectre
+  strip: 9

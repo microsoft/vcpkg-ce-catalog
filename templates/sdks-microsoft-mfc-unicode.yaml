@@ -1,0 +1,27 @@
+# install with `cella add sdks/microsoft/mfc/unicode`
+
+info:
+  id: sdks/microsoft/mfc/unicode
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.X86
+  summary: Microsoft Foundation Classes, Unicode
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  vsixVersionRequire:
+    sdks/microsoft/mfc/unicode/x86: Microsoft.VisualCpp.MFC.X86
+
+target:x64:
+  vsixVersionRequire:
+    sdks/microsoft/mfc/unicode/x64: Microsoft.VisualCpp.MFC.X86
+
+target:arm:
+  vsixVersionRequire:
+    sdks/microsoft/mfc/unicode/arm: Microsoft.VisualCpp.MFC.X86
+
+target:arm64:
+  vsixVersionRequire:
+    sdks/microsoft/mfc/unicode/arm64: Microsoft.VisualCpp.MFC.X86

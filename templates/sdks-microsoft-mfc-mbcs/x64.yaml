@@ -1,0 +1,25 @@
+# install with `cella add sdks/microsoft/mfc/mbcs`
+
+info:
+  id: sdks/microsoft/mfc/mbcs/x64
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.MBCS
+  summary: Microsoft Foundation Classes, legacy MBCS libraries
+  dependencyOnly: true
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath:
+    .
+
+vsixVersionRequire:
+  crts/microsoft/headers: Microsoft.VisualCpp.MFC.Headers
+
+install:
+- vsix: Microsoft.VisualCpp.MFC.MBCS.X64
+  strip: 8
+- vsix: Microsoft.VisualCpp.MFC.MBCS.X64.Debug
+  strip: 8

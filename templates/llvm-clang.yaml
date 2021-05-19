@@ -1,0 +1,48 @@
+# install with `cella add llvm/clang`
+
+info:
+  id: llvm/clang
+  adopt-vsix-version-from-id: Microsoft.VisualStudio.VC.Llvm.Clang
+  description: >-
+    The LLVM C++ Compiler "Clang," linker "LLD", and other associated build tools. Combine
+     with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.
+
+  summary: The LLVM C++ Compiler "Clang"
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  tools:
+    CC: clang.exe
+    CXX: clang++.exe
+    AR: llvm-ar.exe
+    LINK: lld.exe
+
+install:
+- vsix: Microsoft.VisualStudio.VC.Llvm.Base
+  strip: 4
+- vsix: Microsoft.VisualStudio.VC.Llvm.Clang
+  strip: 4
+
+target:x86:
+  settings:
+    paths:
+      .
+    libpath:
+      lib
+      lib\clang\11.0.0\lib\windows
+    include:
+      lib\clang\11.0.0\include
+
+target:x64:
+  settings:
+    paths:
+      x64
+    libpath:
+      x64\lib
+      x64\lib\clang\11.0.0\lib\windows
+    include:
+      x64\lib\clang\11.0.0\include

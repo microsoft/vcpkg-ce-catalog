@@ -1,0 +1,23 @@
+# install with `cella add sdks/microsoft/mfc-headers`
+
+info:
+  id: sdks/microsoft/mfc-headers
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.Headers
+  summary: Microsoft Foundation Classes Headers
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  include:
+    .
+
+vsixVersionRequire:
+  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+  sdks/microsoft/atl-headers: Microsoft.VisualCpp.ATL.Headers
+
+install:
+  vsix: Microsoft.VisualCpp.MFC.Headers
+  strip: 7

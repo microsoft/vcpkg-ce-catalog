@@ -1,0 +1,27 @@
+# install with `cella add sdks/microsoft/mfc/mbcs`
+
+info:
+  id: sdks/microsoft/mfc-spectre/mbcs
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.MBCS.Spectre
+  summary: Microsoft Foundation Classes, legacy MBCS libraries w/ Spectre mitigations
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  vsixVersionRequire:
+    sdks/microsoft/mfc-spectre/mbcs/x86: Microsoft.VisualCpp.MFC.MBCS.Spectre
+
+target:x64:
+  vsixVersionRequire:
+    sdks/microsoft/mfc-spectre/mbcs/x64: Microsoft.VisualCpp.MFC.MBCS.Spectre
+
+target:arm:
+  vsixVersionRequire:
+    sdks/microsoft/mfc-spectre/mbcs/arm: Microsoft.VisualCpp.MFC.MBCS.Spectre
+
+target:arm64:
+  vsixVersionRequire:
+    sdks/microsoft/mfc-spectre/mbcs/arm64: Microsoft.VisualCpp.MFC.MBCS.Spectre

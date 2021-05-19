@@ -1,0 +1,22 @@
+# install with `cella add sdks/microsoft/atl-headers`
+
+info:
+  id: sdks/microsoft/atl-headers
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.Headers
+  summary: Active Template Library Headers
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  include:
+    .
+
+vsixVersionRequire:
+  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+
+install:
+  vsix: Microsoft.VisualCpp.ATL.Headers
+  strip: 7

@@ -1,0 +1,23 @@
+# install with `cella add crts/microsoft/onecore`
+
+info:
+  id: crts/microsoft/onecore/x64
+  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop
+  summary: MSVC standard library libraries (OneCore / apisets)
+  dependencyOnly: true
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath:
+    .
+
+vsixVersionRequire:
+  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+
+install:
+- vsix: Microsoft.VisualCpp.CRT.x64.OneCore.Desktop
+  strip: 8
