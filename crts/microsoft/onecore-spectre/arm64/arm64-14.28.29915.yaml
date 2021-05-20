@@ -1,0 +1,27 @@
+# install with `cella add crts/microsoft/onecore-spectre`
+
+info:
+  id: crts/microsoft/onecore-spectre/arm64
+  version: 14.28.29915
+  summary: MSVC standard library libraries (onecore / apisets, + spectre)
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+require:
+  crts/microsoft/headers: 14.28.29912
+
+install:
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/a8cba27db5ca6056702167f84f9f96c849a11823c1870a2684ca73e23f2d0eab/Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.spectre.vsix
+    sha256: a8cba27db5ca6056702167f84f9f96c849a11823c1870a2684ca73e23f2d0eab
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.spectre,version=14.28.29915/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/9c8ef64135d9818a6107cb471052c7ee9de7d3fe559715b793ca192d74ea5b0f/Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.spectre.debug.vsix
+    sha256: 9c8ef64135d9818a6107cb471052c7ee9de7d3fe559715b793ca192d74ea5b0f
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.spectre.debug,version=14.28.29915/payload.vsix
+    strip: 8

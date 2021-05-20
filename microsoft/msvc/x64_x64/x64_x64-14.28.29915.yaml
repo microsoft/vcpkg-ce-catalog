@@ -1,0 +1,104 @@
+# install with `cella add microsoft/msvc`
+
+info:
+  id: microsoft/msvc/x64_x64
+  version: 14.28.29915
+  description: >-
+    The Microsoft Visual C++ Compiler "MSVC," linker, and other
+    associated build tools. Combine
+     with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.
+
+  summary: The Microsoft Visual C++ Compiler "MSVC"
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  tools:
+    CC: cl.exe
+    CXX: cl.exe
+    AR: lib.exe
+    AS: mt.exe
+    LINK: link.exe
+
+  paths:
+    - .
+
+install:
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/6d44c5915e1691650ffd4193cbc984fcf667993548e9af561f49d61e72cf1a09/Microsoft.VisualCpp.Tools.HostX64.TargetX64.vsix
+    sha256: 6d44c5915e1691650ffd4193cbc984fcf667993548e9af561f49d61e72cf1a09
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64,version=14.28.29915,chip=x64/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/1dd4a932460c320987ef8e5b14b9efba462d1ecde2760cb445902e013e5ea4dc/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.csy.vsix
+    sha256: 1dd4a932460c320987ef8e5b14b9efba462d1ecde2760cb445902e013e5ea4dc
+    lang: cs-CZ
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=cs-CZ/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/b42170f70177fba8d008b363d8857a21ee6b620d1eec1ca9a6553324b1cfd886/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.deu.vsix
+    sha256: b42170f70177fba8d008b363d8857a21ee6b620d1eec1ca9a6553324b1cfd886
+    lang: de-DE
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=de-DE/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/c4ee94a143f8cbb52e664a9c8c0c0f765e970da5a0c50fa6e0aa94b7a36a2e2b/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.enu.vsix
+    sha256: c4ee94a143f8cbb52e664a9c8c0c0f765e970da5a0c50fa6e0aa94b7a36a2e2b
+    lang: en-US
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=en-US/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/3b3ece286eb854d6893d16722620f3452d61bf58a2a9fa6fed13bbe3ad6edf11/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.esn.vsix
+    sha256: 3b3ece286eb854d6893d16722620f3452d61bf58a2a9fa6fed13bbe3ad6edf11
+    lang: es-ES
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=es-ES/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/a700699cec2fdc7fe4896a0beaff8ecec16fcdf1ac32a2b740e0a44c495f221b/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.fra.vsix
+    sha256: a700699cec2fdc7fe4896a0beaff8ecec16fcdf1ac32a2b740e0a44c495f221b
+    lang: fr-FR
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=fr-FR/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/64a6e062edfa1e51bc21d8168066e4cb407478113ea09313c50e65bc06476875/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.ita.vsix
+    sha256: 64a6e062edfa1e51bc21d8168066e4cb407478113ea09313c50e65bc06476875
+    lang: it-IT
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=it-IT/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/aee431ef6d752260a32ae90de9b80468fd22d467041598d58472a021b478ae33/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.jpn.vsix
+    sha256: aee431ef6d752260a32ae90de9b80468fd22d467041598d58472a021b478ae33
+    lang: ja-JP
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=ja-JP/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/772287f91b7f60c78ee68dbf50a0768763df51d4bd25648ec075a076de677709/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.kor.vsix
+    sha256: 772287f91b7f60c78ee68dbf50a0768763df51d4bd25648ec075a076de677709
+    lang: ko-KR
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=ko-KR/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/0b39bb024c6c3a040ea2c775402a6c5ff608cc8b6b6dfc6a730979b69e362e3f/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.plk.vsix
+    sha256: 0b39bb024c6c3a040ea2c775402a6c5ff608cc8b6b6dfc6a730979b69e362e3f
+    lang: pl-PL
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=pl-PL/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/3ed9129ec9d29bf28e6e9f77c067122387ed15ad35d7139ac28546edebe6698e/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.ptb.vsix
+    sha256: 3ed9129ec9d29bf28e6e9f77c067122387ed15ad35d7139ac28546edebe6698e
+    lang: pt-BR
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=pt-BR/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/044e803c481963f332f4a21e9686f4a44300dc6e638ced1c8df60dab262cc9dc/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.rus.vsix
+    sha256: 044e803c481963f332f4a21e9686f4a44300dc6e638ced1c8df60dab262cc9dc
+    lang: ru-RU
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=ru-RU/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/450ca78723e0ea329a3a452e3f161f9201578e49e34c48b93d8969a22995b3aa/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.trk.vsix
+    sha256: 450ca78723e0ea329a3a452e3f161f9201578e49e34c48b93d8969a22995b3aa
+    lang: tr-TR
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=tr-TR/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/db27325bbc66654c470659ac23348555cdf388c020f4eaf2a21abed89056f50b/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.chs.vsix
+    sha256: db27325bbc66654c470659ac23348555cdf388c020f4eaf2a21abed89056f50b
+    lang: zh-CN
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=zh-CN/payload.vsix
+    strip: 8
+  - unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/10a350235300bdb24fa384d1d0ea19e1c07425103a3e3933a0aeae89be297ccc/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources.cht.vsix
+    sha256: 10a350235300bdb24fa384d1d0ea19e1c07425103a3e3933a0aeae89be297ccc
+    lang: zh-TW
+    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.Tools.HostX64.TargetX64.Resources,version=14.28.29915,chip=x64,language=zh-TW/payload.vsix
+    strip: 8

@@ -18,7 +18,6 @@ settings:
 vsixVersionRequire:
   crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
 
-target:x64:
-  install:
-  - vsix: Microsoft.VisualCpp.CRT.x64.Desktop
-    strip: 7
+install:
+- vsix: Microsoft.VisualCpp.CRT.x64.Desktop
+  strip: 7
