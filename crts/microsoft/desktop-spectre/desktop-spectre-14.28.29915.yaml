@@ -1,0 +1,27 @@
+# install with `cella add crts/microsoft/desktop-spectre`
+
+info:
+  id: crts/microsoft/desktop-spectre
+  version: 14.28.29915
+  summary: MSVC standard library libraries (desktop / kernel32, + spectre)
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  require:
+    crts/microsoft/desktop-spectre/x86: 14.28.29915
+
+target:x64:
+  require:
+    crts/microsoft/desktop-spectre/x64: 14.28.29915
+
+target:arm:
+  require:
+    crts/microsoft/desktop-spectre/arm: 14.28.29915
+
+target:arm64:
+  require:
+    crts/microsoft/desktop-spectre/arm64: 14.28.29915

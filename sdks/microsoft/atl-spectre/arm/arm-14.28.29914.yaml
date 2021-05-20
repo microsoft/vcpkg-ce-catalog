@@ -1,0 +1,23 @@
+# install with `cella add sdks/microsoft/atl`
+
+info:
+  id: sdks/microsoft/atl-spectre/arm
+  version: 14.28.29914
+  summary: Active Template Library w/ Spectre mitigations
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+require:
+  sdks/microsoft/atl-headers: 14.28.29914
+
+install:
+  unzip: https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/0a3a78ca9b23b700e3c015077cfe26c50fd20388c27cbf19f9e21cd5881fe2d6/Microsoft.VisualCpp.ATL.ARM.Spectre.vsix
+  sha256: 0a3a78ca9b23b700e3c015077cfe26c50fd20388c27cbf19f9e21cd5881fe2d6
+  local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.ATL.ARM.Spectre,version=14.28.29914/payload.vsix
+  strip: 9

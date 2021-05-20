@@ -1,0 +1,27 @@
+# install with `cella add crts/microsoft/onecore`
+
+info:
+  id: crts/microsoft/onecore
+  version: 14.28.29915
+  summary: MSVC standard library libraries (OneCore / apisets)
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  require:
+    crts/microsoft/onecore/x86: 14.28.29915
+
+target:x64:
+  require:
+    crts/microsoft/onecore/x64: 14.28.29915
+
+target:arm:
+  require:
+    crts/microsoft/onecore/arm: 14.28.29915
+
+target:arm64:
+  require:
+    crts/microsoft/onecore/arm64: 14.28.29915

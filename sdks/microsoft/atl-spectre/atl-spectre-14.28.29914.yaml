@@ -1,0 +1,27 @@
+# install with `cella add sdks/microsoft/atl`
+
+info:
+  id: sdks/microsoft/atl-spectre
+  version: 14.28.29914
+  summary: Active Template Library w/ Spectre mitigations
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  require:
+    sdks/microsoft/atl-spectre/x86: 14.28.29914
+
+target:x64:
+  require:
+    sdks/microsoft/atl-spectre/x64: 14.28.29914
+
+target:arm:
+  require:
+    sdks/microsoft/atl-spectre/arm: 14.28.29914
+
+target:arm64:
+  require:
+    sdks/microsoft/atl-spectre/arm64: 14.28.29914
