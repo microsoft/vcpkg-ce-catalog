@@ -4,7 +4,7 @@ info:
   id: crts/microsoft/asan/x64
   adopt-vsix-version-from-id: Microsoft.VisualCpp.ASAN.X86
   summary: Libraries supporting address sanitizer.
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:

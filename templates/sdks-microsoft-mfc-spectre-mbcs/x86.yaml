@@ -4,7 +4,7 @@ info:
   id: sdks/microsoft/mfc-spectre/mbcs/x86
   adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.MBCS.Spectre
   summary: Microsoft Foundation Classes, legacy MBCS libraries w/ Spectre mitigations
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:

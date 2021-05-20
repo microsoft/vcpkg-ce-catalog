@@ -4,7 +4,7 @@ info:
   id: sdks/microsoft/atl-spectre/arm64
   adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.X86.Spectre
   summary: Active Template Library w/ Spectre mitigations
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:

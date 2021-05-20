@@ -8,7 +8,7 @@ info:
      with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.
 
   summary: The Microsoft Visual C++ Compiler "MSVC"
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:

@@ -4,7 +4,7 @@ info:
   id: sdks/microsoft/mfc-spectre/unicode/x64
   adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.X86.Spectre
   summary: Microsoft Foundation Classes, Unicode w/ Spectre mitigations
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:
