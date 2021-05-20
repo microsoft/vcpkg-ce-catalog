@@ -4,7 +4,7 @@ info:
   id: crts/microsoft/onecore/x86
   adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop
   summary: MSVC standard library libraries (OneCore / apisets)
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:

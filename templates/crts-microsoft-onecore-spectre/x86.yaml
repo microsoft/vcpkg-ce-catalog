@@ -4,7 +4,7 @@ info:
   id: crts/microsoft/onecore-spectre/x86
   adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
   summary: MSVC standard library libraries (onecore / apisets, + spectre)
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:

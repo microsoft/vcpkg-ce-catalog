@@ -4,7 +4,7 @@ info:
   id: crts/microsoft/desktop/arm
   adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.Desktop
   summary: MSVC standard library libraries (desktop / kernel32)
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:

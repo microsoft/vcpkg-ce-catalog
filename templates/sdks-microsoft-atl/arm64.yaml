@@ -4,7 +4,7 @@ info:
   id: sdks/microsoft/atl/arm64
   adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.X86
   summary: Active Template Library
-  dependencyOnly: true
+  options: ['dependencyOnly']
 
 contacts:
   Billy O'Neal III:
