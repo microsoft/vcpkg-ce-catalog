@@ -29,12 +29,12 @@ windows:
       # todo: add more tools to expose by name
       CC: bin/arm-none-eabi-gcc.exe
       CXX: bin/arm-none-eabi-g++.exe
-      AR: arm-none-eabi/ar.exe
-      AS: arm-none-eabi/as.exe
+      AR: arm-none-eabi/bin/ar.exe
+      AS: arm-none-eabi/bin/as.exe
 
     paths:
       # we'd prepend these paths to the PATH environment variable. 
-      - bin
+      path: bin
 
 linux and arm64: 
   install: 
@@ -65,5 +65,6 @@ not windows:
       AS: arm-none-eabi/as
 
     paths:
+      path: bin
       # we'd prepend these paths to the PATH environment variable. 
-      - bin
+      

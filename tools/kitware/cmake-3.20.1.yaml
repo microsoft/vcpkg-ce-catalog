@@ -36,7 +36,7 @@ windows:
       ctest: bin/ctest.exe
 
     paths:
-      - bin
+      path: bin
 
 osx: 
   install: 
@@ -64,4 +64,4 @@ not windows:
       ctest: bin/ctest
     
     paths:
-      - bin
+      path: bin

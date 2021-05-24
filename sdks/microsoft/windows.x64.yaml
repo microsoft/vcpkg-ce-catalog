@@ -18,9 +18,9 @@ install:
 x64: 
   settings:
     paths: 
-      - ./**/bin/x64
+      bin: ./**/bin/x64
 
 not x64: 
   settings:
     paths: 
-      - ./**/bin/x64
+      bin: ./**/bin/x64
