@@ -32,7 +32,7 @@ windows:
   settings: 
     tools:
       cmake: bin/cmake.exe
-      cmake-gui: bin/cmake-gui.exe
+      cmake_gui: bin/cmake-gui.exe
       ctest: bin/ctest.exe
 
     paths:
@@ -60,7 +60,7 @@ not windows:
   settings:
     tools:
       cmake: bin/cmake
-      cmake-gui: bin/cmake-gui
+      cmake_gui: bin/cmake-gui
       ctest: bin/ctest
     
     paths:

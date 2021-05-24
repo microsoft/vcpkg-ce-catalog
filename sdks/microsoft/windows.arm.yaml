@@ -6,6 +6,7 @@ info:
   version: 10.0.19041
   description: The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications (targeting arm)
   summary: Microsoft Windows SDK. (targeting arm)
+  options: [ dependencyOnly ]
 
 contacts:
   Garrett Serack: 
