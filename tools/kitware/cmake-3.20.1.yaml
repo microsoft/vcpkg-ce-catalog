@@ -47,7 +47,7 @@ osx:
 linux and x64: 
   install:
     untar: https://github.com/Kitware/CMake/releases/download/v3.20.1/cmake-3.20.1-linux-x86_64.tar.gz
-    sha256: d25a8e8b76c137ffd55fa28b7a803309a2c6992e30fa0f1cb2172d5b970106e2  
+    sha256: B8C141BD7A6D335600AB0A8A35E75AF79F95B837F736456B5532F4D717F20A09  
     strip: 1
 
 linux and arm64:
