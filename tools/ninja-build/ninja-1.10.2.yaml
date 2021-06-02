@@ -26,7 +26,7 @@ windows:
       ninja: ninja.exe
 
     paths:
-      - .
+      path: .
 
 osx: 
   install: 
@@ -44,4 +44,4 @@ not windows:
       ninja: ninja
     
     paths:
-      - .
+      path: .
