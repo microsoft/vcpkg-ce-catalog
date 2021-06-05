@@ -17,11 +17,13 @@ require:
   crts/microsoft/headers: 14.28.29914
 
 install:
-  - unzip: https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/339173e7e4d3c6927d65e2ae19ddbf15f9ebcd7026ece8ffcf06228abf1b9ff1/Microsoft.VisualCpp.MFC.ARM64.vsix
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.ARM64,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/339173e7e4d3c6927d65e2ae19ddbf15f9ebcd7026ece8ffcf06228abf1b9ff1/Microsoft.VisualCpp.MFC.ARM64.vsix
     sha256: 339173e7e4d3c6927d65e2ae19ddbf15f9ebcd7026ece8ffcf06228abf1b9ff1
-    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.MFC.ARM64,version=14.28.29914/payload.vsix
     strip: 8
-  - unzip: https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/bde260ced7228f39a1566516c32edaedf1e8ac162505f5421cbb619affd6ffdb/Microsoft.VisualCpp.MFC.ARM64.Debug.vsix
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.ARM64.Debug,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/bde260ced7228f39a1566516c32edaedf1e8ac162505f5421cbb619affd6ffdb/Microsoft.VisualCpp.MFC.ARM64.Debug.vsix
     sha256: bde260ced7228f39a1566516c32edaedf1e8ac162505f5421cbb619affd6ffdb
-    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.MFC.ARM64.Debug,version=14.28.29914/payload.vsix
     strip: 8
