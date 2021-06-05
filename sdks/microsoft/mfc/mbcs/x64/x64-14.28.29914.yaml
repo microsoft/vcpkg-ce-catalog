@@ -17,11 +17,13 @@ require:
   crts/microsoft/headers: 14.28.29914
 
 install:
-  - unzip: https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/2da16534a62edb6e443a329823fa471c6ada1442b6850fb2f950a94b3dda68f5/Microsoft.VisualCpp.MFC.MBCS.X64.vsix
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.MBCS.X64,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/2da16534a62edb6e443a329823fa471c6ada1442b6850fb2f950a94b3dda68f5/Microsoft.VisualCpp.MFC.MBCS.X64.vsix
     sha256: 2da16534a62edb6e443a329823fa471c6ada1442b6850fb2f950a94b3dda68f5
-    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.MFC.MBCS.X64,version=14.28.29914/payload.vsix
     strip: 8
-  - unzip: https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/cb9cd6a004f50c7bc7326f26888c8673800d3bdbbdce930284137a5222daca78/Microsoft.VisualCpp.MFC.MBCS.X64.Debug.vsix
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.MBCS.X64.Debug,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/cb9cd6a004f50c7bc7326f26888c8673800d3bdbbdce930284137a5222daca78/Microsoft.VisualCpp.MFC.MBCS.X64.Debug.vsix
     sha256: cb9cd6a004f50c7bc7326f26888c8673800d3bdbbdce930284137a5222daca78
-    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.MFC.MBCS.X64.Debug,version=14.28.29914/payload.vsix
     strip: 8

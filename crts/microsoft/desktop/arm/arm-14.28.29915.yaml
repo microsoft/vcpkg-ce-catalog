@@ -17,7 +17,8 @@ require:
   crts/microsoft/headers: 14.28.29912
 
 install:
-  unzip: https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/6e893932951d3a970fc8c9ab25cbd6ad5a30018e841951966ed7fd1f0cc5f04e/Microsoft.VisualCpp.CRT.arm.Desktop.vsix
+  unzip:
+  - vsix:///Microsoft.VisualCpp.CRT.arm.Desktop,version=14.28.29915/payload.vsix
+  - https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/6e893932951d3a970fc8c9ab25cbd6ad5a30018e841951966ed7fd1f0cc5f04e/Microsoft.VisualCpp.CRT.arm.Desktop.vsix
   sha256: 6e893932951d3a970fc8c9ab25cbd6ad5a30018e841951966ed7fd1f0cc5f04e
-  local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.CRT.arm.Desktop,version=14.28.29915/payload.vsix
   strip: 7

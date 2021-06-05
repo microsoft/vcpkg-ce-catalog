@@ -17,7 +17,8 @@ require:
   sdks/microsoft/atl-headers: 14.28.29914
 
 install:
-  unzip: https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/912578adb03dd684b66a7ecea470eb5c13bafe5ae4709b764ca42669ec48cd83/Microsoft.VisualCpp.MFC.Headers.vsix
+  unzip:
+  - vsix:///Microsoft.VisualCpp.MFC.Headers,version=14.28.29914/payload.vsix
+  - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/912578adb03dd684b66a7ecea470eb5c13bafe5ae4709b764ca42669ec48cd83/Microsoft.VisualCpp.MFC.Headers.vsix
   sha256: 912578adb03dd684b66a7ecea470eb5c13bafe5ae4709b764ca42669ec48cd83
-  local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.MFC.Headers,version=14.28.29914/payload.vsix
   strip: 7

@@ -17,11 +17,13 @@ require:
   crts/microsoft/headers: 14.28.29914
 
 install:
-  - unzip: https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/d668b58eab706e340d09885cfbc73c03173cc8c79fc391254403df53d6b56809/Microsoft.VisualCpp.MFC.MBCS.X64.Spectre.vsix
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.MBCS.X64.Spectre,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/d668b58eab706e340d09885cfbc73c03173cc8c79fc391254403df53d6b56809/Microsoft.VisualCpp.MFC.MBCS.X64.Spectre.vsix
     sha256: d668b58eab706e340d09885cfbc73c03173cc8c79fc391254403df53d6b56809
-    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.MFC.MBCS.X64.Spectre,version=14.28.29914/payload.vsix
     strip: 9
-  - unzip: https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/1cb8b6c03d7115b6c701954eebf1a6de9698f6439fa140c2970d704754f42b28/Microsoft.VisualCpp.MFC.MBCS.X64.Debug.Spectre.vsix
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.MBCS.X64.Debug.Spectre,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/1cb8b6c03d7115b6c701954eebf1a6de9698f6439fa140c2970d704754f42b28/Microsoft.VisualCpp.MFC.MBCS.X64.Debug.Spectre.vsix
     sha256: 1cb8b6c03d7115b6c701954eebf1a6de9698f6439fa140c2970d704754f42b28
-    local-alternate: $ENV{PROGRAMDATA}/Microsoft/VisualStudio/Packages/Microsoft.VisualCpp.MFC.MBCS.X64.Debug.Spectre,version=14.28.29914/payload.vsix
     strip: 9
