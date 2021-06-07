@@ -61,8 +61,8 @@ not windows:
       # todo: add more tools to expose by name
       CC: bin/arm-none-eabi-gcc
       CXX: bin/arm-none-eabi-g++
-      AR: arm-none-eabi/ar
-      AS: arm-none-eabi/as
+      AR: arm-none-eabi/bin/ar
+      AS: arm-none-eabi/bin/as
 
     paths:
       path: bin
