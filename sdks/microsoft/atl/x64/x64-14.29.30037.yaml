@@ -1,0 +1,24 @@
+# install with `cella add sdks/microsoft/atl`
+
+info:
+  id: sdks/microsoft/atl/x64
+  version: 14.29.30037
+  summary: Active Template Library
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+require:
+  sdks/microsoft/atl-headers: 14.29.30037
+
+install:
+  unzip:
+    - vsix:///Microsoft.VC.14.29.16.10.ATL.X64.base,version=14.29.30037/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/f57542e1607811bb39e639343155044fbde5ae19999fb4c6ed602d51642dc7e4/Microsoft.VC.14.29.16.10.ATL.X64.base.vsix
+  sha256: f57542e1607811bb39e639343155044fbde5ae19999fb4c6ed602d51642dc7e4
+  strip: 8

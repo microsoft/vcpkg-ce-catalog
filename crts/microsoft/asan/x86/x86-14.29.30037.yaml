@@ -1,0 +1,25 @@
+# install with `cella add crts/microsoft/asan`
+
+info:
+  id: crts/microsoft/asan/x86
+  version: 14.29.30037
+  summary: Libraries supporting address sanitizer.
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+require:
+  crts/microsoft/headers: 14.29.30037
+  crts/microsoft/desktop: 14.29.30037
+
+install:
+  unzip:
+    - vsix:///Microsoft.VC.14.29.16.10.ASAN.X86.base,version=14.29.30037/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/4a39aa98ee4540b8cd9a55ad6f1717602ee45ffd2db3a70894b9a3b41dfdac1c/Microsoft.VC.14.29.16.10.ASAN.X86.base.vsix
+  sha256: 4a39aa98ee4540b8cd9a55ad6f1717602ee45ffd2db3a70894b9a3b41dfdac1c
+  strip: 7

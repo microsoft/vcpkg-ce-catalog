@@ -1,0 +1,23 @@
+# install with `cella add sdks/microsoft/atl-headers`
+
+info:
+  id: sdks/microsoft/atl-headers
+  version: 14.29.30037
+  summary: Active Template Library Headers
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  include: .
+require:
+  crts/microsoft/headers: 14.29.30037
+
+install:
+  unzip:
+    - vsix:///Microsoft.VC.14.29.16.10.ATL.Headers.base,version=14.29.30037/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/129438a063da8e6fe2120ae3e6f441844e73495b7de9eccc36ced0dab0129887/Microsoft.VC.14.29.16.10.ATL.Headers.base.vsix
+  sha256: 129438a063da8e6fe2120ae3e6f441844e73495b7de9eccc36ced0dab0129887
+  strip: 7
