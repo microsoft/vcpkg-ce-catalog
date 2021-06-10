@@ -67,4 +67,6 @@ not windows:
     paths:
       path: bin
       # we'd prepend these paths to the PATH environment variable. 
-      
+
+linux:
+  warning: Ensure libncurses5 is installed with your system package manager before running arm-none-eabi-gdb.
