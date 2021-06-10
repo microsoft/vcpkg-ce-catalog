@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/asan/x86
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.ASAN.X86
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).ASAN.X86.base
   summary: Libraries supporting address sanitizer.
   options: ['dependencyOnly']
 
@@ -16,9 +16,9 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
-  crts/microsoft/desktop: Microsoft.VisualCpp.CRT.x86.Desktop
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).CRT.Headers.base
+  crts/microsoft/desktop: Microsoft.VC.$(SxSVersion).CRT.x86.Desktop.base
 
 install:
-- vsix: Microsoft.VisualCpp.ASAN.X86
+- vsix: Microsoft.VC.$(SxSVersion).ASAN.X86.base
   strip: 7

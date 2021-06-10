@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/onecore/arm
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.base
   summary: MSVC standard library libraries (OneCore / apisets)
   options: ['dependencyOnly']
 
@@ -16,8 +16,8 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).CRT.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.CRT.arm.OneCore.Desktop
+- vsix: Microsoft.VC.$(SxSVersion).CRT.arm.OneCore.Desktop.base
   strip: 8

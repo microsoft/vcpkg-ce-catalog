@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/atl-headers
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.Headers
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).ATL.Headers.base
   summary: Active Template Library Headers
 
 contacts:
@@ -15,8 +15,8 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).CRT.Headers.base
 
 install:
-  vsix: Microsoft.VisualCpp.ATL.Headers
+  vsix: Microsoft.VC.$(SxSVersion).ATL.Headers.base
   strip: 7

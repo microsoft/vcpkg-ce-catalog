@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/atl/x86
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.X86
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).ATL.X86.base
   summary: Active Template Library
   options: ['dependencyOnly']
 
@@ -16,8 +16,8 @@ settings:
     .
 
 vsixVersionRequire:
-  sdks/microsoft/atl-headers: Microsoft.VisualCpp.ATL.Headers
+  sdks/microsoft/atl-headers: Microsoft.VC.$(SxSVersion).ATL.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.ATL.X86
+- vsix: Microsoft.VC.$(SxSVersion).ATL.X86.base
   strip: 8

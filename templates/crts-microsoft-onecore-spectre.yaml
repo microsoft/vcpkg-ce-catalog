@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/onecore-spectre
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.spectre.base
   summary: MSVC standard library libraries (onecore / apisets, + spectre)
 
 contacts:
@@ -12,16 +12,16 @@ contacts:
 
 target:x86:
   vsixVersionRequire:
-    crts/microsoft/onecore-spectre/x86: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
+    crts/microsoft/onecore-spectre/x86: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.spectre.base
 
 target:x64:
   vsixVersionRequire:
-    crts/microsoft/onecore-spectre/x64: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
+    crts/microsoft/onecore-spectre/x64: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.spectre.base
 
 target:arm:
   vsixVersionRequire:
-    crts/microsoft/onecore-spectre/arm: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
+    crts/microsoft/onecore-spectre/arm: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.spectre.base
 
 target:arm64:
   vsixVersionRequire:
-    crts/microsoft/onecore-spectre/arm64: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
+    crts/microsoft/onecore-spectre/arm64: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.spectre.base

@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/headers
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.Headers
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).CRT.Headers.base
   summary: C runtime headers.
 
 contacts:
@@ -15,7 +15,7 @@ settings:
     .
 
 install:
-- vsix: Microsoft.VisualCpp.CRT.Headers
+- vsix: Microsoft.VC.$(SxSVersion).CRT.Headers.base
   strip: 6
-- vsix: Microsoft.VisualCpp.ASAN.Headers
+- vsix: Microsoft.VC.$(SxSVersion).ASAN.Headers.base
   strip: 8

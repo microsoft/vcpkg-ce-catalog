@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/mfc/mbcs
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.MBCS
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).MFC.MBCS.base
   summary: Microsoft Foundation Classes, legacy MBCS libraries
 
 contacts:
@@ -12,16 +12,16 @@ contacts:
 
 target:x86:
   vsixVersionRequire:
-    sdks/microsoft/mfc/mbcs/x86: Microsoft.VisualCpp.MFC.MBCS
+    sdks/microsoft/mfc/mbcs/x86: Microsoft.VC.$(SxSVersion).MFC.MBCS.base
 
 target:x64:
   vsixVersionRequire:
-    sdks/microsoft/mfc/mbcs/x64: Microsoft.VisualCpp.MFC.MBCS
+    sdks/microsoft/mfc/mbcs/x64: Microsoft.VC.$(SxSVersion).MFC.MBCS.base
 
 target:arm:
   vsixVersionRequire:
-    sdks/microsoft/mfc/mbcs/arm: Microsoft.VisualCpp.MFC.MBCS
+    sdks/microsoft/mfc/mbcs/arm: Microsoft.VC.$(SxSVersion).MFC.MBCS.base
 
 target:arm64:
   vsixVersionRequire:
-    sdks/microsoft/mfc/mbcs/arm64: Microsoft.VisualCpp.MFC.MBCS
+    sdks/microsoft/mfc/mbcs/arm64: Microsoft.VC.$(SxSVersion).MFC.MBCS.base

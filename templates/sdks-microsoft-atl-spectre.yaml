@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/atl-spectre
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.X86.Spectre
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).ATL.X86.Spectre.base
   summary: Active Template Library w/ Spectre mitigations
 
 contacts:
@@ -12,16 +12,16 @@ contacts:
 
 target:x86:
   vsixVersionRequire:
-    sdks/microsoft/atl-spectre/x86: Microsoft.VisualCpp.ATL.X86.Spectre
+    sdks/microsoft/atl-spectre/x86: Microsoft.VC.$(SxSVersion).ATL.X86.Spectre.base
 
 target:x64:
   vsixVersionRequire:
-    sdks/microsoft/atl-spectre/x64: Microsoft.VisualCpp.ATL.X86.Spectre
+    sdks/microsoft/atl-spectre/x64: Microsoft.VC.$(SxSVersion).ATL.X86.Spectre.base
 
 target:arm:
   vsixVersionRequire:
-    sdks/microsoft/atl-spectre/arm: Microsoft.VisualCpp.ATL.X86.Spectre
+    sdks/microsoft/atl-spectre/arm: Microsoft.VC.$(SxSVersion).ATL.X86.Spectre.base
 
 target:arm64:
   vsixVersionRequire:
-    sdks/microsoft/atl-spectre/arm64: Microsoft.VisualCpp.ATL.X86.Spectre
+    sdks/microsoft/atl-spectre/arm64: Microsoft.VC.$(SxSVersion).ATL.X86.Spectre.base

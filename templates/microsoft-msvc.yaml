@@ -2,7 +2,7 @@
 
 info:
   id: microsoft/msvc
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
   description: >-
     The Microsoft Visual C++ Compiler "MSVC," linker, and other associated build tools. Combine
      with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.
@@ -16,32 +16,32 @@ contacts:
 
 x86 and target:x86:
   vsixVersionRequire:
-    microsoft/msvc/x86_x86: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+    microsoft/msvc/x86_x86: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
 
 x86 and target:x64:
   vsixVersionRequire:
-    microsoft/msvc/x86_x64: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+    microsoft/msvc/x86_x64: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
 
 x86 and target:arm:
   vsixVersionRequire:
-    microsoft/msvc/x86_arm: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+    microsoft/msvc/x86_arm: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
 
 x86 and target:arm64:
   vsixVersionRequire:
-    microsoft/msvc/x86_arm64: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+    microsoft/msvc/x86_arm64: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
 
 x64 and target:x86:
   vsixVersionRequire:
-    microsoft/msvc/x64_x86: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+    microsoft/msvc/x64_x86: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
 
 x64 and target:x64:
   vsixVersionRequire:
-    microsoft/msvc/x64_x64: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+    microsoft/msvc/x64_x64: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
 
 x64 and target:arm:
   vsixVersionRequire:
-    microsoft/msvc/x64_arm: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+    microsoft/msvc/x64_arm: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
 
 x64 and target:arm64:
   vsixVersionRequire:
-    microsoft/msvc/x64_arm64: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+    microsoft/msvc/x64_arm64: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base

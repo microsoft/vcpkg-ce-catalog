@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/mfc/mbcs/arm64
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.MBCS
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).MFC.MBCS.base
   summary: Microsoft Foundation Classes, legacy MBCS libraries
   options: ['dependencyOnly']
 
@@ -16,10 +16,10 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.MFC.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).MFC.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.MFC.MBCS.arm64
+- vsix: Microsoft.VC.$(SxSVersion).MFC.MBCS.arm64.base
   strip: 8
-- vsix: Microsoft.VisualCpp.MFC.MBCS.arm64.Debug
+- vsix: Microsoft.VC.$(SxSVersion).MFC.MBCS.arm64.Debug.base
   strip: 8

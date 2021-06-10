@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/asan
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.ASAN.X86
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).ASAN.X86.base
   summary: Libraries supporting address sanitizer.
 
 contacts:
@@ -12,8 +12,8 @@ contacts:
 
 target:x86:
   vsixVersionRequire:
-    crts/microsoft/asan/x86 : Microsoft.VisualCpp.ASAN.X86
+    crts/microsoft/asan/x86 : Microsoft.VC.$(SxSVersion).ASAN.X86.base
 
 target:x64:
   vsixVersionRequire:
-    crts/microsoft/asan/x64 : Microsoft.VisualCpp.ASAN.X86
+    crts/microsoft/asan/x64 : Microsoft.VC.$(SxSVersion).ASAN.X86.base

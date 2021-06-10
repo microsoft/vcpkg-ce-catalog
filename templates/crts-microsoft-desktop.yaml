@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/desktop
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.Desktop
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).CRT.x86.Desktop.base
   summary: MSVC standard library libraries (desktop / kernel32)
 
 contacts:
@@ -12,16 +12,16 @@ contacts:
 
 target:x86:
   vsixVersionRequire:
-    crts/microsoft/desktop/x86: Microsoft.VisualCpp.CRT.x86.Desktop
+    crts/microsoft/desktop/x86: Microsoft.VC.$(SxSVersion).CRT.x86.Desktop.base
 
 target:x64:
   vsixVersionRequire:
-    crts/microsoft/desktop/x64: Microsoft.VisualCpp.CRT.x86.Desktop
+    crts/microsoft/desktop/x64: Microsoft.VC.$(SxSVersion).CRT.x86.Desktop.base
 
 target:arm:
   vsixVersionRequire:
-      crts/microsoft/desktop/arm: Microsoft.VisualCpp.CRT.x86.Desktop
+      crts/microsoft/desktop/arm: Microsoft.VC.$(SxSVersion).CRT.x86.Desktop.base
 
 target:arm64:
   vsixVersionRequire:
-      crts/microsoft/desktop/arm64: Microsoft.VisualCpp.CRT.x86.Desktop
+      crts/microsoft/desktop/arm64: Microsoft.VC.$(SxSVersion).CRT.x86.Desktop.base
