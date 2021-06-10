@@ -1,0 +1,29 @@
+# install with `cella add sdks/microsoft/mfc-spectre/unicode`
+
+info:
+  id: sdks/microsoft/mfc-spectre/unicode/x86
+  version: 14.29.30037
+  summary: Microsoft Foundation Classes, Unicode w/ Spectre mitigations
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+require:
+  crts/microsoft/headers: 14.29.30037
+
+install:
+  - unzip:
+      - vsix:///Microsoft.VC.14.29.16.10.MFC.X86.Spectre.base,version=14.29.30037/payload.vsix
+      - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/b7543adb60b8b9af7ccaccc0cfa6dfdb39dc769ad9309946b0f04d3f58a2dda6/Microsoft.VC.14.29.16.10.MFC.X86.Spectre.base.vsix
+    sha256: b7543adb60b8b9af7ccaccc0cfa6dfdb39dc769ad9309946b0f04d3f58a2dda6
+    strip: 9
+  - unzip:
+      - vsix:///Microsoft.VC.14.29.16.10.MFC.X86.Debug.Spectre.base,version=14.29.30037/payload.vsix
+      - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/9db45c40199e995b5137d82222bf432df9d6cc15c42076f8492980ac816a7e8f/Microsoft.VC.14.29.16.10.MFC.X86.Debug.Spectre.base.vsix
+    sha256: 9db45c40199e995b5137d82222bf432df9d6cc15c42076f8492980ac816a7e8f
+    strip: 9

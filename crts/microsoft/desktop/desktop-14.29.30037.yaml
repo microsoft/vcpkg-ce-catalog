@@ -1,0 +1,27 @@
+# install with `cella add crts/microsoft/desktop`
+
+info:
+  id: crts/microsoft/desktop
+  version: 14.29.30037
+  summary: MSVC standard library libraries (desktop / kernel32)
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  require:
+    crts/microsoft/desktop/x86: 14.29.30037
+
+target:x64:
+  require:
+    crts/microsoft/desktop/x64: 14.29.30037
+
+target:arm:
+  require:
+    crts/microsoft/desktop/arm: 14.29.30037
+
+target:arm64:
+  require:
+    crts/microsoft/desktop/arm64: 14.29.30037
