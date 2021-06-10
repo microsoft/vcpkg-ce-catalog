@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/mfc-spectre/mbcs/x86
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.MBCS.Spectre
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).MFC.MBCS.Spectre.base
   summary: Microsoft Foundation Classes, legacy MBCS libraries w/ Spectre mitigations
   options: ['dependencyOnly']
 
@@ -16,10 +16,10 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.MFC.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).MFC.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.MFC.MBCS.Spectre
+- vsix: Microsoft.VC.$(SxSVersion).MFC.MBCS.Spectre.base
   strip: 9
-- vsix: Microsoft.VisualCpp.MFC.MBCS.Debug.Spectre
+- vsix: Microsoft.VC.$(SxSVersion).MFC.MBCS.Debug.Spectre.base
   strip: 9

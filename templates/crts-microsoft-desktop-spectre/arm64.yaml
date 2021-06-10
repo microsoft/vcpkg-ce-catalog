@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/desktop-spectre/arm64
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.Desktop.spectre
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).CRT.x86.Desktop.spectre.base
   summary: MSVC standard library libraries (desktop / kernel32, + spectre)
   options: ['dependencyOnly']
 
@@ -16,10 +16,10 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).CRT.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.CRT.ARM64.Desktop.spectre
+- vsix: Microsoft.VC.$(SxSVersion).CRT.ARM64.Desktop.spectre.base
   strip: 7
-- vsix: Microsoft.VisualCpp.CRT.ARM64.Desktop.spectre.debug
+- vsix: Microsoft.VC.$(SxSVersion).CRT.ARM64.Desktop.spectre.debug.base
   strip: 7

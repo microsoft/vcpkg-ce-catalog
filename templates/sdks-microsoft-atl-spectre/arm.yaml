@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/atl-spectre/arm
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.X86.Spectre
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).ATL.X86.Spectre.base
   summary: Active Template Library w/ Spectre mitigations
   options: ['dependencyOnly']
 
@@ -16,8 +16,8 @@ settings:
     .
 
 vsixVersionRequire:
-  sdks/microsoft/atl-headers: Microsoft.VisualCpp.ATL.Headers
+  sdks/microsoft/atl-headers: Microsoft.VC.$(SxSVersion).ATL.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.ATL.ARM.Spectre
+- vsix: Microsoft.VC.$(SxSVersion).ATL.ARM.Spectre.base
   strip: 9

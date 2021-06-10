@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/atl
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.ATL.X86
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).ATL.X86.base
   summary: Active Template Library
 
 contacts:
@@ -12,16 +12,16 @@ contacts:
 
 target:x86:
   vsixVersionRequire:
-    sdks/microsoft/atl/x86: Microsoft.VisualCpp.ATL.X86
+    sdks/microsoft/atl/x86: Microsoft.VC.$(SxSVersion).ATL.X86.base
 
 target:x64:
   vsixVersionRequire:
-    sdks/microsoft/atl/x64: Microsoft.VisualCpp.ATL.X86
+    sdks/microsoft/atl/x64: Microsoft.VC.$(SxSVersion).ATL.X86.base
 
 target:arm:
   vsixVersionRequire:
-    sdks/microsoft/atl/arm: Microsoft.VisualCpp.ATL.X86
+    sdks/microsoft/atl/arm: Microsoft.VC.$(SxSVersion).ATL.X86.base
 
 target:arm64:
   vsixVersionRequire:
-    sdks/microsoft/atl/arm64: Microsoft.VisualCpp.ATL.X86
+    sdks/microsoft/atl/arm64: Microsoft.VC.$(SxSVersion).ATL.X86.base

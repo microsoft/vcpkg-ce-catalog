@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/mfc-spectre/unicode/arm
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.X86.Spectre
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).MFC.X86.Spectre.base
   summary: Microsoft Foundation Classes, Unicode w/ Spectre mitigations
   options: ['dependencyOnly']
 
@@ -16,10 +16,10 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.MFC.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).MFC.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.MFC.ARM.Spectre
+- vsix: Microsoft.VC.$(SxSVersion).MFC.ARM.Spectre.base
   strip: 9
-- vsix: Microsoft.VisualCpp.MFC.ARM.Debug.Spectre
+- vsix: Microsoft.VC.$(SxSVersion).MFC.ARM64.Debug.base
   strip: 9

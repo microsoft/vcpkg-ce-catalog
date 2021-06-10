@@ -2,7 +2,7 @@
 
 info:
   id: microsoft/msvc/x86_x64
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.Tools.HostX86.TargetX86
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX86.base
   description: >-
     The Microsoft Visual C++ Compiler "MSVC," linker, and other associated build tools. Combine
      with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.
@@ -27,7 +27,7 @@ settings:
     - .
 
 install:
-- vsix: Microsoft.VisualCpp.Tools.HostX86.TargetX64
+- vsix: Microsoft.VC.$(SxSVersion).Tools.HostX86.TargetX64.base
   strip: 8
-- vsix: Microsoft.VisualCpp.Tools.Hostx86.Targetx64.Resources
+- vsix: Microsoft.VC.$(SxSVersion).Tools.Hostx86.Targetx64.Resources.base
   strip: 8

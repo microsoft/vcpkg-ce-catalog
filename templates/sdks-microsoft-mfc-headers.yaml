@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/mfc-headers
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.Headers
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).MFC.Headers.base
   summary: Microsoft Foundation Classes Headers
 
 contacts:
@@ -15,9 +15,9 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
-  sdks/microsoft/atl-headers: Microsoft.VisualCpp.ATL.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).CRT.Headers.base
+  sdks/microsoft/atl-headers: Microsoft.VC.$(SxSVersion).ATL.Headers.base
 
 install:
-  vsix: Microsoft.VisualCpp.MFC.Headers
+  vsix: Microsoft.VC.$(SxSVersion).MFC.Headers.base
   strip: 7

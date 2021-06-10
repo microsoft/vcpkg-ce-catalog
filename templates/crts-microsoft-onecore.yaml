@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/onecore
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.base
   summary: MSVC standard library libraries (OneCore / apisets)
 
 contacts:
@@ -12,16 +12,16 @@ contacts:
 
 target:x86:
   vsixVersionRequire:
-    crts/microsoft/onecore/x86: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop
+    crts/microsoft/onecore/x86: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.base
 
 target:x64:
   vsixVersionRequire:
-    crts/microsoft/onecore/x64: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop
+    crts/microsoft/onecore/x64: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.base
 
 target:arm:
   vsixVersionRequire:
-    crts/microsoft/onecore/arm: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop
+    crts/microsoft/onecore/arm: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.base
 
 target:arm64:
   vsixVersionRequire:
-    crts/microsoft/onecore/arm64: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop
+    crts/microsoft/onecore/arm64: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.base

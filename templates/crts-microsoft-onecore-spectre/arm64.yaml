@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/onecore-spectre/arm64
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).CRT.x86.OneCore.Desktop.spectre.base
   summary: MSVC standard library libraries (onecore / apisets, + spectre)
   options: ['dependencyOnly']
 
@@ -16,10 +16,10 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).CRT.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.spectre
+- vsix: Microsoft.VC.$(SxSVersion).CRT.ARM64.OneCore.Desktop.spectre.base
   strip: 8
-- vsix: Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.spectre.debug
+- vsix: Microsoft.VC.$(SxSVersion).CRT.ARM64.OneCore.Desktop.spectre.debug.base
   strip: 8

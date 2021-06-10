@@ -2,7 +2,7 @@
 
 info:
   id: crts/microsoft/desktop/arm64
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.CRT.x86.Desktop
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).CRT.x86.Desktop.base
   summary: MSVC standard library libraries (desktop / kernel32)
   options: ['dependencyOnly']
 
@@ -16,10 +16,10 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.CRT.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).CRT.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.CRT.ARM64.Desktop
+- vsix: Microsoft.VC.$(SxSVersion).CRT.ARM64.Desktop.base
   strip: 7
-- vsix: Microsoft.VisualCpp.CRT.ARM64.Desktop.debug
+- vsix: Microsoft.VC.$(SxSVersion).CRT.ARM64.Desktop.debug.base
   strip: 7

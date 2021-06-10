@@ -2,7 +2,7 @@
 
 info:
   id: sdks/microsoft/mfc/unicode/x86
-  adopt-vsix-version-from-id: Microsoft.VisualCpp.MFC.X86
+  adopt-vsix-version-from-id: Microsoft.VC.$(SxSVersion).MFC.X86.base
   summary: Microsoft Foundation Classes, Unicode
   options: ['dependencyOnly']
 
@@ -16,10 +16,10 @@ settings:
     .
 
 vsixVersionRequire:
-  crts/microsoft/headers: Microsoft.VisualCpp.MFC.Headers
+  crts/microsoft/headers: Microsoft.VC.$(SxSVersion).MFC.Headers.base
 
 install:
-- vsix: Microsoft.VisualCpp.MFC.X86
+- vsix: Microsoft.VC.$(SxSVersion).MFC.X86.base
   strip: 8
-- vsix: Microsoft.VisualCpp.MFC.X86.Debug
+- vsix: Microsoft.VC.$(SxSVersion).MFC.X86.Debug.base
   strip: 8
