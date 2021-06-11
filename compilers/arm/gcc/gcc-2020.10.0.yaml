@@ -20,7 +20,7 @@ contacts:
 windows:
   install:
     unzip: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-win32.zip
-    md5: 5ee6542a2af847934177bc8fa1294c0d
+    sha256: 90057B8737B888C53CA5AEE332F1F73C401D6D3873124D2C2906DF4347EBEF9E
     strip: 1 # 
 
   settings:
@@ -39,19 +39,19 @@ windows:
 linux and arm64: 
   install: 
     untar: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-aarch64-linux.tar.bz2
-    md5: 1c3b8944c026d50362eef1f01f329a8e
+    sha256: 343D8C812934FE5A904C73583A91EDD812B1AC20636EB52DE04135BB0F5CF36A
     strip: 1
 
 linux and x64: 
   install: 
     untar: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2
-    md5: 8312c4c91799885f222f663fc81f9a31
+    sha256: 21134CAA478BBF5352E239FBC6E2DA3038F8D2207E089EFC96C3B55F1EDCD618
     strip: 1
 
 osx and x64: 
   install: 
     untar: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-mac.tar.bz2
-    md5: e588d21be5a0cc9caa60938d2422b058
+    sha256: BED12DE3565D4EB02E7B58BE945376EACA79A8AE3EBB785EC7344E7E2DB0BDC0
     strip: 1
 
 not windows:
