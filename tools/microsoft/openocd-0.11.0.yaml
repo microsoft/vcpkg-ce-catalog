@@ -47,6 +47,7 @@ linux and x64:
   install:
     untar: https://github.com/microsoft/openocd/releases/download/ms-v0.11.0/openocd-ms-v0.11.0-linux.tar.gz
     sha256: bfa359756d0cad2d3a2fa72a8416d369960732dd25f262397b66048db7a9c570
+    strip: 1
 
   settings:
     tools:
