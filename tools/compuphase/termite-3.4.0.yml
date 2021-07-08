@@ -1,5 +1,5 @@
 # CompuPhase Termite RS232 Terminal
-# install with `cella add termite`
+# install with `ce add termite`
 
 info:
   id: tools/compuphase/termite

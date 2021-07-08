@@ -1,5 +1,5 @@
 # Kitware CMake Toolsuite
-# install with `cella add cmake`
+# install with `ce add cmake`
 
 info:
   id: tools/kitware/cmake

@@ -1,5 +1,5 @@
 # OpenOCD
-# install with `cella add openocd`
+# install with `ce add openocd`
 
 info:
   id: tools/microsoft/openocd
