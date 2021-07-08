@@ -1,5 +1,5 @@
 # Ninja build tools
-# install with `cella add ninja`
+# install with `ce add ninja`
 
 info:
   id: tools/ninja-build/ninja

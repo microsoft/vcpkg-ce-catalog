@@ -1,3 +1,3 @@
 # Support
 
-See the https://github.com/microsoft/cella repository.
+See the https://github.com/microsoft/vcpkg-ce repository.

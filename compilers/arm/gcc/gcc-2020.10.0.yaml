@@ -1,5 +1,5 @@
 # ARM GCC Toolsuite
-# install with `cella add arm/gcc`
+# install with `ce add arm/gcc`
 
 info:
   id: compilers/arm/gcc

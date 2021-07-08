@@ -1,5 +1,5 @@
 # Windows SDK
-# install with `cella add sdks/microsoft/windows`
+# install with `ce add sdks/microsoft/windows`
 
 info:
   id: sdks/microsoft/windows/x64
