@@ -1,6 +1,6 @@
 # Project
 
-This repository contains the metadata files for the cella utility.
+This repository contains the artifact metadata files for the vcpkg-ce utility.
 
 
 <hr>
