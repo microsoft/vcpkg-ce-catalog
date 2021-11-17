@@ -16,32 +16,33 @@ contacts:
     email: ninja-build@googlegroups.com
     role: originator
 
-windows:
-  install:
-    unzip: https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-win.zip
-    sha256: bbde850d247d2737c5764c927d1071cbb1f1957dcabda4a130fa8547c12c695f
+demands:
+  windows:
+    install:
+      unzip: https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-win.zip
+      sha256: bbde850d247d2737c5764c927d1071cbb1f1957dcabda4a130fa8547c12c695f
 
-  settings: 
-    tools:
-      ninja: ninja.exe
+    settings: 
+      tools:
+        ninja: ninja.exe
 
-    paths:
-      path: .
+      paths:
+        path: .
 
-osx: 
-  install: 
-    unzip: https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-mac.zip
-    sha256: 6fa359f491fac7e5185273c6421a000eea6a2f0febf0ac03ac900bd4d80ed2a5
+  osx: 
+    install: 
+      unzip: https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-mac.zip
+      sha256: 6fa359f491fac7e5185273c6421a000eea6a2f0febf0ac03ac900bd4d80ed2a5
 
-linux: 
-  install:
-    unzip: https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-linux.zip
-    sha256: 763464859c7ef2ea3a0a10f4df40d2025d3bb9438fcb1228404640410c0ec22d
+  linux: 
+    install:
+      unzip: https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-linux.zip
+      sha256: 763464859c7ef2ea3a0a10f4df40d2025d3bb9438fcb1228404640410c0ec22d
 
-not windows:
-  settings:
-    tools:
-      ninja: ninja
-    
-    paths:
-      path: .
+  not windows:
+    settings:
+      tools:
+        ninja: ninja
+      
+      paths:
+        path: .
