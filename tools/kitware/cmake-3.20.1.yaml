@@ -41,7 +41,7 @@ demands:
   osx: 
     install: 
       untar: https://github.com/Kitware/CMake/releases/download/v3.20.1/cmake-3.20.1-macos-universal.tar.gz
-      sha256: 89afcb79f58bb1f0bb840047c146c3fac8051829b6025c3dbe9b75799b27deb4
+      sha256: 44143d47fdcc7fc3042576c6a8b661e3b65a18143666f74d6e8d93ca3ab5cd95
       strip: 3
 
   linux and x64: 
