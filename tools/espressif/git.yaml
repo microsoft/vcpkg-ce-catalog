@@ -1,0 +1,32 @@
+info:
+  id: tools/languages/git
+  version: 3.10.1
+
+demands: 
+  windows and x64: 
+    unless:
+      - binary: [ git.exe ]
+        cmdline: --version
+        pattern: /git version 2.32.0.windows.1
+    
+    error: |
+      This requires git to be installed at the system level.
+
+  linux: 
+    unless:
+      - binary: [ git ]
+        cmdline: --version
+        pattern: /git version 2.32.0.windows.1
+
+    error: |
+       This requires git to be installed at the system level.
+
+  osx:
+    unless:
+      - binary: [ git ]
+        cmdline: --version
+        pattern: /git version 2.32.0.windows.1
+
+    error: |
+       This requires git to be installed at the system level.
+    
