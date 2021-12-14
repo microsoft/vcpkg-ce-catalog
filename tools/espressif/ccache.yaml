@@ -1,0 +1,24 @@
+info:
+  id: tools/espressif/ccache
+  version: 0.11.0
+  description: >-
+    This provides a list of all the tools that are required and/or provided by the espressif tool.json.
+
+contacts:
+  Garrett Campbell:
+    email: gcampbell@microsoft.com
+    role: [publisher, originator]
+
+  Garrett Serack:
+    email: garretts@microsoft.com
+    role: [publisher, originator]
+
+demands:
+  windows and x64:
+    install:
+      unzip: https://dl.espressif.com/dl/ccache-3.7-w64.zip
+      sha256: 37e833f3f354f1145503533e776c1bd44ec2e77ff8a2476a1d2039b0b10c78d6\
+
+  settings:
+    variables:
+      IDF_CCACHE_ENABLE: 1
