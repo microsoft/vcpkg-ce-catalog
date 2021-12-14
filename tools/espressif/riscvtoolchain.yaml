@@ -44,6 +44,6 @@ demands:
       unzip: https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/riscv32-esp-elf-gcc8_4_0-esp-2021r1-win64.zip
       sha256: be3c9ec364bd8e92924f922a4aec73136824f16e912e6a0b5cf5b30512f0ab96
 
-  settings:
-    paths:
-      path: [riscv32-esp-elf, bin]
+settings:
+  paths:
+    path: [riscv32-esp-elf, bin]

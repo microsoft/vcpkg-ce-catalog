@@ -44,6 +44,6 @@ demands:
       unzip: https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/xtensa-esp32s3-elf-gcc8_4_0-esp-2021r1-win64.zip
       sha256: 652305fc18ad653a32b00ac2de4af26c27a6c94ed39deaf09df21975a5957694
 
-  settings:
-    paths:
-      path: [extensa-esp32-elf, bin]
+settings:
+  paths:
+    path: [extensa-esp32-elf, bin]

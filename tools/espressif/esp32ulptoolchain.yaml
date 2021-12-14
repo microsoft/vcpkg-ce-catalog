@@ -43,6 +43,6 @@ demands:
       unzip: https://github.com/espressif/binutils-esp32ulp/releases/download/v2.28.51-esp-20191205/binutils-esp32ulp-win32-2.28.51-esp-20191205.zip
       sha256: bade309353a9f0a4e5cc03bfe84845e33205f05502c4b199195e871ded271ab5
 
-  settings:
-    paths:
-      path: [esp32ulp-elf-binutils, bin]
+settings:
+  paths:
+    path: [esp32ulp-elf-binutils, bin]

@@ -43,9 +43,9 @@ demands:
       unzip: https://github.com/espressif/openocd-esp32/releases/download/v0.10.0-esp32-20210401/openocd-esp32-win32-0.10.0-esp32-20210401.zip
       sha256: 931bc4c4587e0713d4fc4fbc81b9a79c8228268e61fcd14b2bdcb2f8bd519ef9
 
-  settings:
-    paths:
-      path: [openocd-esp32, bin]
+settings:
+  paths:
+    path: [openocd-esp32, bin]
 
-    variables:
-      OPENOCD_SCRIPTS: ${TOOL_PATH}/openocd-esp32/share/openocd/scripts
+  variables:
+    OPENOCD_SCRIPTS: ${TOOL_PATH}/openocd-esp32/share/openocd/scripts

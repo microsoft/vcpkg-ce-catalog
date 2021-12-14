@@ -44,6 +44,6 @@ demands:
       sha256: 587de59fbb469a39f96168ae3eaa9f06b2601e6e0543c87eaf1bd97f23e5c4ca
 
 
-  settings:
-    paths:
-      path: [esp32s2ulp-elf-binutils, bin]
+settings:
+  paths:
+    path: [esp32s2ulp-elf-binutils, bin]
