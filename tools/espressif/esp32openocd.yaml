@@ -53,4 +53,4 @@ settings:
     path: bin
 
   variables:
-    OPENOCD_SCRIPTS: ${TOOL_PATH}/openocd-esp32/share/openocd/scripts
+    OPENOCD_SCRIPTS: ${TOOL_PATH}/openocd-esp32/share/openocd/scripts # investigate
