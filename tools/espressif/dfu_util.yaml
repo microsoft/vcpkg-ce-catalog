@@ -1,5 +1,5 @@
 info:
-  id: tools/espressif/ccache
+  id: tools/espressif/dfu_util
   version: 0.11.0
   description: >-
     This provides a list of all the tools that are required and/or provided by the espressif tool.json.

@@ -9,17 +9,17 @@ registries:
     location: https://github.com/microsoft/vcpkg-ce-catalog/archive/refs/heads/dev/gcampbell/Espressif.zip
     kind: artifact
 
-requires:
-  - msft:languages/python: *
+# requires:
+  # - msft:languages/python: *
   # - msft:tools/cmake: * 
   # - msft:tools/ninja: *
   # - msft:tools/git: * 
 
-demands:
-  install:
-    git: https://github.com/espressif/esp-idf
-    commit: d24095e3b5ec44ebecfc31b8aeb8c23a9497e9fe
-    options: [ recurse, espidf, full ]
+
+install:
+  git: https://github.com/espressif/esp-idf
+  commit: d24095e3b5ec44ebecfc31b8aeb8c23a9497e9fe
+  options: [ recurse, espidf, full ]
 
 settings: 
   paths:

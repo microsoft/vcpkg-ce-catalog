@@ -18,32 +18,38 @@ demands:
     install: 
       untar: https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/riscv32-esp-elf-gcc8_4_0-esp-2021r1-linux-amd64.tar.gz
       sha256: 3459618f33bbd5f54d7d7783e807cb6eef6472a220f2f1eb3faced735b9d13bb
+      strip: 1
   
   linux and arm:
     install:
       untar: https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/riscv32-esp-elf-gcc8_4_0-esp-2021r1-linux-armel.tar.gz
       sha256: 24b9e54b348bbd5fb816fc4c52abb47337c702beecdbba840750b7cfb9d38069
+      strip: 1
   
   linux and x86:
     install:
       untar: https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/riscv32-esp-elf-gcc8_4_0-esp-2021r1-linux-i686.tar.gz
       sha256: 954d340ebffef12a2ce9be1ea004e6f45a8863f1e6f41f46fd3f04f58499627c
+      strip: 1
 
   osx: 
     install:
       untar: https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/riscv32-esp-elf-gcc8_4_0-esp-2021r1-macos.tar.gz
       sha256: 612fb3a3f84f703222327bd16581df8f80fda8cdf137637fe5d611587d1b664e
+      strip: 1
 
   windows and x86: 
     install:
       unzip: https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/riscv32-esp-elf-gcc8_4_0-esp-2021r1-win32.zip
       sha256: 5711eb407ffe44adddbd1281b6b575a5645e7193ca78faefa27dc5bc5b662bec
+      strip: 1
 
   windows and x64:
     install:
       unzip: https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/riscv32-esp-elf-gcc8_4_0-esp-2021r1-win64.zip
       sha256: be3c9ec364bd8e92924f922a4aec73136824f16e912e6a0b5cf5b30512f0ab96
+      strip: 1
 
 settings:
   paths:
-    path: [riscv32-esp-elf, bin]
+    path: bin
