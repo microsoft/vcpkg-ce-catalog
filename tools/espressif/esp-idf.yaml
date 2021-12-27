@@ -18,9 +18,13 @@ registries:
 
 install:
   git: https://github.com/espressif/esp-idf
-  commit: d24095e3b5ec44ebecfc31b8aeb8c23a9497e9fe
+  commit: 878c6437438b33c0a2a0e9374d8bff16de4d7808
   options: [ recurse, espidf, full ]
 
 settings: 
   paths:
-    path: esp-idf/tools
+    path: [ esp-idf/tools, esp-idf/components/esptool_py/esptool, esp-idf/components/app_update, esp-idf/components/espcoredump, esp-idf/components/partition_table ]
+
+  tools:
+    IDF_PATH: esp-idf
+    IDF_TOOLS_PATH: .espressif
