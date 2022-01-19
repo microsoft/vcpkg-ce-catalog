@@ -9,22 +9,11 @@ registries:
     location: https://github.com/microsoft/vcpkg-ce-catalog/archive/refs/heads/dev/gcampbell/Espressif.zip
     kind: artifact
 
-# requires:
-  # - msft:languages/python: *
-  # - msft:tools/cmake: * 
-  # - msft:tools/ninja: *
-  # - msft:tools/git: * 
-
+requires:
+  - msft:tools/languages/python: 3.10.1
+  - msft:tools/git: *
 
 install:
   git: https://github.com/espressif/esp-idf
-  commit: 878c6437438b33c0a2a0e9374d8bff16de4d7808
+  commit: ebf7e811b12e3c1e347340e5b9ec014e9c6319ba
   options: [ recurse, espidf, full ]
-
-settings: 
-  paths:
-    path: [ esp-idf/tools, esp-idf/components/esptool_py/esptool, esp-idf/components/app_update, esp-idf/components/espcoredump, esp-idf/components/partition_table ]
-
-  tools:
-    IDF_PATH: esp-idf
-    IDF_TOOLS_PATH: .espressif
