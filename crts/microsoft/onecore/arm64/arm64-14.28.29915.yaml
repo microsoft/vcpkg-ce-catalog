@@ -1,0 +1,29 @@
+# install with `cella add crts/microsoft/onecore`
+
+info:
+  id: crts/microsoft/onecore/arm64
+  version: 14.28.29915
+  summary: MSVC standard library libraries (OneCore / apisets)
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+requires:
+  crts/microsoft/headers: 14.28.29912
+
+install:
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop,version=14.28.29915/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/e923c77e5d6048daf44b4ab92de3059b04976e13208d3d501ad264a28065fd82/Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.vsix
+    sha256: e923c77e5d6048daf44b4ab92de3059b04976e13208d3d501ad264a28065fd82
+    strip: 8
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.debug,version=14.28.29915/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/0eecf728066b84eedeb0e1ecb01d74e22e6d6b9648b0989d70a65187b30ac13d/Microsoft.VisualCpp.CRT.ARM64.OneCore.Desktop.debug.vsix
+    sha256: 0eecf728066b84eedeb0e1ecb01d74e22e6d6b9648b0989d70a65187b30ac13d
+    strip: 8

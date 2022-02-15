@@ -1,0 +1,29 @@
+# install with `cella add crts/microsoft/desktop-spectre`
+
+info:
+  id: crts/microsoft/desktop-spectre/arm64
+  version: 14.29.30037
+  summary: MSVC standard library libraries (desktop / kernel32, + spectre)
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+requires:
+  crts/microsoft/headers: 14.29.30037
+
+install:
+  - unzip:
+      - vsix:///Microsoft.VC.14.29.16.10.CRT.ARM64.Desktop.spectre.base,version=14.29.30037/payload.vsix
+      - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/3616b079ff70cc28c38e06d59c9c7b806f53236de6f4abcac32cb974b335adb6/Microsoft.VC.14.29.16.10.CRT.ARM64.Desktop.spectre.base.vsix
+    sha256: 3616b079ff70cc28c38e06d59c9c7b806f53236de6f4abcac32cb974b335adb6
+    strip: 7
+  - unzip:
+      - vsix:///Microsoft.VC.14.29.16.10.CRT.ARM64.Desktop.spectre.debug.base,version=14.29.30037/payload.vsix
+      - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/33cf1f9f7a49f29b34cfb21a6fad9e25337e6625e5f506b590c3dbaee69c6e52/Microsoft.VC.14.29.16.10.CRT.ARM64.Desktop.spectre.debug.base.vsix
+    sha256: 33cf1f9f7a49f29b34cfb21a6fad9e25337e6625e5f506b590c3dbaee69c6e52
+    strip: 7

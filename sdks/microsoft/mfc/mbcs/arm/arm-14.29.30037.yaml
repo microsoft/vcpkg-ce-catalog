@@ -1,0 +1,29 @@
+# install with `cella add sdks/microsoft/mfc/mbcs`
+
+info:
+  id: sdks/microsoft/mfc/mbcs/arm
+  version: 14.29.30037
+  summary: Microsoft Foundation Classes, legacy MBCS libraries
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+requires:
+  crts/microsoft/headers: 14.29.30037
+
+install:
+  - unzip:
+      - vsix:///Microsoft.VC.14.29.16.10.MFC.MBCS.arm.base,version=14.29.30037/payload.vsix
+      - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/7945f21e6283868581d896a65bf7a0a5af8a3f170460bcc53cc0a89508a0d519/Microsoft.VC.14.29.16.10.MFC.MBCS.arm.base.vsix
+    sha256: 7945f21e6283868581d896a65bf7a0a5af8a3f170460bcc53cc0a89508a0d519
+    strip: 8
+  - unzip:
+      - vsix:///Microsoft.VC.14.29.16.10.MFC.MBCS.arm.Debug.base,version=14.29.30037/payload.vsix
+      - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/276e830cb623e017ff749ac5a59fdb0b3ed34945da03ad1b9e5540f8599188cd/Microsoft.VC.14.29.16.10.MFC.MBCS.arm.Debug.base.vsix
+    sha256: 276e830cb623e017ff749ac5a59fdb0b3ed34945da03ad1b9e5540f8599188cd
+    strip: 8

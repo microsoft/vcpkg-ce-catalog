@@ -1,0 +1,27 @@
+# install with `cella add sdks/microsoft/mfc/mbcs`
+
+info:
+  id: sdks/microsoft/mfc-spectre/mbcs
+  version: 14.29.30037
+  summary: Microsoft Foundation Classes, legacy MBCS libraries w/ Spectre mitigations
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  requires:
+    sdks/microsoft/mfc-spectre/mbcs/x86: 14.29.30037
+
+target:x64:
+  requires:
+    sdks/microsoft/mfc-spectre/mbcs/x64: 14.29.30037
+
+target:arm:
+  requires:
+    sdks/microsoft/mfc-spectre/mbcs/arm: 14.29.30037
+
+target:arm64:
+  requires:
+    sdks/microsoft/mfc-spectre/mbcs/arm64: 14.29.30037

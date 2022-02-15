@@ -1,0 +1,24 @@
+# install with `cella add crts/microsoft/onecore-spectre`
+
+info:
+  id: crts/microsoft/onecore-spectre/x86
+  version: 14.28.29915
+  summary: MSVC standard library libraries (onecore / apisets, + spectre)
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+requires:
+  crts/microsoft/headers: 14.28.29912
+
+install:
+  unzip:
+  - vsix:///Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre,version=14.28.29915/payload.vsix
+  - https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/ca7877dc8326a1e6faa21e0649e70f1c15dbb5d25a78d60a547f1f2172d8f2d4/Microsoft.VisualCpp.CRT.x86.OneCore.Desktop.spectre.vsix
+  sha256: ca7877dc8326a1e6faa21e0649e70f1c15dbb5d25a78d60a547f1f2172d8f2d4
+  strip: 8

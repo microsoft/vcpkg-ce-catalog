@@ -1,0 +1,24 @@
+# install with `cella add crts/microsoft/desktop`
+
+info:
+  id: crts/microsoft/desktop/arm
+  version: 14.28.29915
+  summary: MSVC standard library libraries (desktop / kernel32)
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+requires:
+  crts/microsoft/headers: 14.28.29912
+
+install:
+  unzip:
+  - vsix:///Microsoft.VisualCpp.CRT.arm.Desktop,version=14.28.29915/payload.vsix
+  - https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/6e893932951d3a970fc8c9ab25cbd6ad5a30018e841951966ed7fd1f0cc5f04e/Microsoft.VisualCpp.CRT.arm.Desktop.vsix
+  sha256: 6e893932951d3a970fc8c9ab25cbd6ad5a30018e841951966ed7fd1f0cc5f04e
+  strip: 7

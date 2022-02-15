@@ -1,0 +1,29 @@
+# install with `cella add sdks/microsoft/mfc/mbcs`
+
+info:
+  id: sdks/microsoft/mfc/mbcs/x86
+  version: 14.28.29914
+  summary: Microsoft Foundation Classes, legacy MBCS libraries
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+requires:
+  crts/microsoft/headers: 14.28.29914
+
+install:
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.MBCS,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/2c29bc4ce1a46852794ca49ada8c3bf8dd8f72a800a904a2ef19a8dec6956003/Microsoft.VisualCpp.MFC.MBCS.vsix
+    sha256: 2c29bc4ce1a46852794ca49ada8c3bf8dd8f72a800a904a2ef19a8dec6956003
+    strip: 8
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.MBCS.Debug,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/2c8dc31ab1cf463fbe17d3edb94adc35f1d9867b79d17129a2ab2e8ef1e11b57/Microsoft.VisualCpp.MFC.MBCS.Debug.vsix
+    sha256: 2c8dc31ab1cf463fbe17d3edb94adc35f1d9867b79d17129a2ab2e8ef1e11b57
+    strip: 8

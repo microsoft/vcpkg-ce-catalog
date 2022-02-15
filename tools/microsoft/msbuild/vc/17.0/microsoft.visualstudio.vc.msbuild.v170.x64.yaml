@@ -1,0 +1,25 @@
+info:
+  id: microsoft/visualstudio/vc/msbuild/v170/x64
+  version: 17.0.0
+  description: MSBuild support for vc projects (generated from VS install)
+  summary: MSBuild support for vc projects(generated from VS install)
+
+contacts:
+  Olga Arkhipova: 
+    email: olgaark@microsoft.com
+    role: publisher
+
+install:
+  - unzip:
+      - vsix:///microsoft.visualstudio.vc.msbuild.v170.x64,version=17.0.0,productArch=neutral/payload.vsix
+      - https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/ec7b9b1d2fd1586490fa4cf3baf77c753eb7e3356c930ff2521388e4ac5542aa/payload.vsix
+    sha256: ec7b9b1d2fd1586490fa4cf3baf77c753eb7e3356c930ff2521388e4ac5542aa
+    strip: 7
+
+requires:
+   microsoft/visualstudio/vc/msbuild/v170/base: "17.0.0"
+
+
+settings:
+  variables:
+       PlatformLocation: .

@@ -1,0 +1,46 @@
+# install with `cella add microsoft/diasdk`
+
+info:
+  id: microsoft/diasdk
+  version: 14.29.30037
+  description: >-
+    The Debug Interface Access SDK allows reading debugging information
+    out of PDBs.
+
+  summary: Debug Interface Access SDK
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  includes: include
+
+install:
+  unzip:
+    - vsix:///Microsoft.VisualCpp.DIA.SDK,version=14.29.30037/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/62e5f83777064de34a4fec6c87f8483261f55fd0c84acbccccdc9b8e6ee12073/Microsoft.VisualCpp.DIA.SDK.vsix
+  sha256: 62e5f83777064de34a4fec6c87f8483261f55fd0c84acbccccdc9b8e6ee12073
+  strip: 2
+
+demands:
+  target:x86:
+    settings:
+      path: bin
+      libpath: lib
+
+  target:x64:
+    settings:
+      path: bin/amd64
+      libpath: lib/amd64
+
+  target:arm:
+    settings:
+      path: bin/arm
+      libpath: lib/arm
+
+  target:arm64:
+    settings:
+      path: bin/arm64
+      libpath: lib/arm64

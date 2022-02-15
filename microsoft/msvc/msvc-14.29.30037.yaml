@@ -1,0 +1,52 @@
+# install with `cella add microsoft/msvc`
+
+info:
+  id: microsoft/msvc
+  version: 14.29.30037
+  description: >-
+    The Microsoft Visual C++ Compiler "MSVC," linker, and other
+    associated build tools. Combine
+    with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.
+
+  summary: The Microsoft Visual C++ Compiler "MSVC"
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+demands:
+  not target:
+    error: In order to use the MSVC compiler, the --target:<> must be set.
+
+  x86 and target:x86:
+    requires:
+      microsoft/msvc/x86_x86: 14.29.30037
+
+  x86 and target:x64:
+    requires:
+      microsoft/msvc/x86_x64: 14.29.30037
+
+  x86 and target:arm:
+    requires:
+      microsoft/msvc/x86_arm: 14.29.30037
+
+  x86 and target:arm64:
+    requires:
+      microsoft/msvc/x86_arm64: 14.29.30037
+
+  x64 and target:x86:
+    requires:
+      microsoft/msvc/x64_x86: 14.29.30037
+
+  x64 and target:x64:
+    requires:
+      microsoft/msvc/x64_x64: 14.29.30037
+
+  x64 and target:arm:
+    requires:
+      microsoft/msvc/x64_arm: 14.29.30037
+
+  x64 and target:arm64:
+    requires:
+      microsoft/msvc/x64_arm64: 14.29.30037
