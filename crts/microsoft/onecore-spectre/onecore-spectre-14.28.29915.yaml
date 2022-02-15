@@ -1,0 +1,27 @@
+# install with `cella add crts/microsoft/onecore-spectre`
+
+info:
+  id: crts/microsoft/onecore-spectre
+  version: 14.28.29915
+  summary: MSVC standard library libraries (onecore / apisets, + spectre)
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+target:x86:
+  requires:
+    crts/microsoft/onecore-spectre/x86: 14.28.29915
+
+target:x64:
+  requires:
+    crts/microsoft/onecore-spectre/x64: 14.28.29915
+
+target:arm:
+  requires:
+    crts/microsoft/onecore-spectre/arm: 14.28.29915
+
+target:arm64:
+  requires:
+    crts/microsoft/onecore-spectre/arm64: 14.28.29915

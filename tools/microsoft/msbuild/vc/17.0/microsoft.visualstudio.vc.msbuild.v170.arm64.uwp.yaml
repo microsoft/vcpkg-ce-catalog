@@ -1,0 +1,17 @@
+info:
+  id: microsoft/visualstudio/vc/msbuild/v170/arm64/uwp
+  version: 17.0.0
+  description: MSBuild support for vc projects (generated from VS install)
+  summary: MSBuild support for vc projects(generated from VS install)
+
+contacts:
+  Olga Arkhipova: 
+    email: olgaark@microsoft.com
+    role: publisher
+
+install:
+  - unzip:
+      - vsix:///microsoft.visualstudio.vc.msbuild.v170.arm64.uwp,version=17.0.0,productArch=neutral/payload.vsix
+      - https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/ce12ebfe0fe57058e6d31964571cab83619c52b05943ba5c4933b4823ade6744/payload.vsix
+    sha256: ce12ebfe0fe57058e6d31964571cab83619c52b05943ba5c4933b4823ade6744
+    strip: 5

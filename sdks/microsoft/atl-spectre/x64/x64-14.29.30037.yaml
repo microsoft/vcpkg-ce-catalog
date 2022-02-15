@@ -1,0 +1,24 @@
+# install with `cella add sdks/microsoft/atl`
+
+info:
+  id: sdks/microsoft/atl-spectre/x64
+  version: 14.29.30037
+  summary: Active Template Library w/ Spectre mitigations
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+requires:
+  sdks/microsoft/atl-headers: 14.29.30037
+
+install:
+  unzip:
+    - vsix:///Microsoft.VC.14.29.16.10.ATL.X64.Spectre.base,version=14.29.30037/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/0384320df0f7a072382612b5a863c3389cff9cdff6a196d4c9407d9ee08f20a0/Microsoft.VC.14.29.16.10.ATL.X64.Spectre.base.vsix
+  sha256: 0384320df0f7a072382612b5a863c3389cff9cdff6a196d4c9407d9ee08f20a0
+  strip: 9

@@ -1,0 +1,29 @@
+# install with `cella add sdks/microsoft/mfc/mbcs`
+
+info:
+  id: sdks/microsoft/mfc-spectre/mbcs/x86
+  version: 14.28.29914
+  summary: Microsoft Foundation Classes, legacy MBCS libraries w/ Spectre mitigations
+  options: [ 'dependencyOnly' ]
+
+contacts:
+  Billy O'Neal III:
+    email: bion@microsoft.com
+    role: publisher
+
+settings:
+  libpath: .
+requires:
+  crts/microsoft/headers: 14.28.29914
+
+install:
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.MBCS.Spectre,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/97df143cecd49c0ba0bacd2323be627f6b45b68ddeb8e610be7be73d267287fe/Microsoft.VisualCpp.MFC.MBCS.Spectre.vsix
+    sha256: 97df143cecd49c0ba0bacd2323be627f6b45b68ddeb8e610be7be73d267287fe
+    strip: 9
+  - unzip:
+    - vsix:///Microsoft.VisualCpp.MFC.MBCS.Debug.Spectre,version=14.28.29914/payload.vsix
+    - https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/49325cd138f249b83da6fb6d011d7dfb30500bd8f73dad84216c906f2f744193/Microsoft.VisualCpp.MFC.MBCS.Debug.Spectre.vsix
+    sha256: 49325cd138f249b83da6fb6d011d7dfb30500bd8f73dad84216c906f2f744193
+    strip: 9
