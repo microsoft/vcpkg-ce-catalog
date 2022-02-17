@@ -1,0 +1,37 @@
+{
+    "info": {
+        "id": "tools/microsoft/msbuild/vc/uwp",
+        "version": "17.0.0",
+        "description": "Msbuild support for MSVC v143 toolset for UWP",
+        "summary": "Msbuild support for MSVC v143 toolset for UWP"
+    },
+    "contacts": {
+        "Olga Arkhipova": {
+            "email": "olgaark@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "demands": {
+        "Platform:Win32": {
+            "requires": {
+                "microsoft.visualstudio.vc.msbuild.v170.x86.uwo": "17.0.0"
+            }
+        },
+        "Platform:x64": {
+            "requires": {
+                "microsoft.visualstudio.vc.msbuild.v170.x64.uwo": "17.0.0"
+            }
+        },
+        "Platform:ARM": {
+            "requires": {
+                "microsoft.visualstudio.vc.msbuild.v170.ARM.uwo": "17.0.0"
+            }
+        },
+        "Platform:ARM64": {
+            "requires": {
+                "microsoft.visualstudio.vc.msbuild.v170.ARM64.uwo": "17.0.0",
+                "microsoft.visualstudio.vc.msbuild.v170.ARM64CE.uwo": "17.0.0"
+            }
+        }
+    }
+}
