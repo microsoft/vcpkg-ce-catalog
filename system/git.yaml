@@ -35,15 +35,14 @@ demands:
       from: $host.PATH
       where: git
       run: $0 --version 
-      matches: /git version (\d+)/ig
+      select: /git version (\d+)/ig
       is: "'2' === $1"
 
       settings:
         paths:
           path: $0/.. 
         tools:
-          python: $
-          venv: -m venv
+          git: $0
 
     error: |
       This requires git 2 or higher installed.
