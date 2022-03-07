@@ -10,7 +10,7 @@ demands:
       from: [$host.PATH, $host.ProgramFiles/*python* ,c:/python]                      # paths to search
       where: [ python.exe,py3.exe, python3.exe,  py.exe  ]        # one of these choices
       run: $0 --version                                              # run the choice with this cmdline
-      select: /Python (\d+).**/g                        # parse the output with this regex
+      select: /Python (\d+).*/g                        # parse the output with this regex
       is: "$1 == '3'"                                                # this expression must be true.
 
       # if all this succeeds, then the rest of this node will be used as the artifact

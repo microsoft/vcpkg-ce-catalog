@@ -57,7 +57,7 @@ demands:
           venv: -m venv
 
     error: |
-      This requires python installed at the system level. Sucks to be you.
+      This requires python installed at the system level. 
       You should download a copy of python and install it and ensure it is in
       the path. 
 
