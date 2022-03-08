@@ -21,16 +21,15 @@ settings:
     CC: cl.exe
     CXX: cl.exe
     AR: lib.exe
-    LINK: link.exe
 
   paths:
     PATH: .
 demands:
-  not windows and not x64: 
+  not windows and not x64:
     error: "This variant if for a windows x64 host"
-    
-  windows and x64: 
-      
+
+  windows and x64:
+
     install:
       - unzip:
         - vsix:///Microsoft.VisualCpp.Tools.HostX64.TargetARM64,version=14.28.29915,chip=x64/payload.vsix

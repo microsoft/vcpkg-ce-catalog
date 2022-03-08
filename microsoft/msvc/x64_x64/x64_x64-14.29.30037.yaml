@@ -21,7 +21,6 @@ settings:
     CC: cl.exe
     CXX: cl.exe
     AR: lib.exe
-    LINK: link.exe
 
   paths:
     PATH: .
@@ -30,11 +29,11 @@ settings:
     VC_ExecutablePath_x64_x64: .
 
 demands:
-  not windows and not x64: 
+  not windows and not x64:
     error: "This variant if for a windows x64 host"
-    
-  windows and x64: 
-      
+
+  windows and x64:
+
     install:
       - unzip:
           - vsix:///Microsoft.VC.14.29.16.10.Tools.HostX86.TargetX64.base,version=14.29.30037/payload.vsix

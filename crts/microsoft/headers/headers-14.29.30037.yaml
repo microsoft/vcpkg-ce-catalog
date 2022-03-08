@@ -11,7 +11,8 @@ contacts:
     role: publisher
 
 settings:
-  includes: .
+  paths:
+    include: .
 
 install:
   - unzip:

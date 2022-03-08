@@ -15,7 +15,8 @@ contacts:
     role: publisher
 
 settings:
-  includes: include
+  paths:
+    include: include
 
 install:
   unzip:
@@ -28,19 +29,19 @@ demands:
   target:x86:
     settings:
       path: bin
-      libpath: lib
+      lib: lib
 
   target:x64:
     settings:
       path: bin/amd64
-      libpath: lib/amd64
+      lib: lib/amd64
 
   target:arm:
     settings:
       path: bin/arm
-      libpath: lib/arm
+      lib: lib/arm
 
   target:arm64:
     settings:
       path: bin/arm64
-      libpath: lib/arm64
+      lib: lib/arm64
