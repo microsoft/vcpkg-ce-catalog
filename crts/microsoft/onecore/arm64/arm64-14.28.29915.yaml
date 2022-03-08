@@ -12,7 +12,9 @@ contacts:
     role: publisher
 
 settings:
-  libpath: .
+  paths:
+    lib: .
+
 requires:
   crts/microsoft/headers: 14.28.29912
 

@@ -10,18 +10,19 @@ contacts:
     email: bion@microsoft.com
     role: publisher
 
-target:x86:
-  requires:
-    crts/microsoft/desktop-spectre/x86: 14.28.29915
+demands:
+  target:x86:
+    requires:
+      crts/microsoft/desktop-spectre/x86: 14.28.29915
 
-target:x64:
-  requires:
-    crts/microsoft/desktop-spectre/x64: 14.28.29915
+  target:x64:
+    requires:
+      crts/microsoft/desktop-spectre/x64: 14.28.29915
 
-target:arm:
-  requires:
-    crts/microsoft/desktop-spectre/arm: 14.28.29915
+  target:arm:
+    requires:
+      crts/microsoft/desktop-spectre/arm: 14.28.29915
 
-target:arm64:
-  requires:
-    crts/microsoft/desktop-spectre/arm64: 14.28.29915
+  target:arm64:
+    requires:
+      crts/microsoft/desktop-spectre/arm64: 14.28.29915

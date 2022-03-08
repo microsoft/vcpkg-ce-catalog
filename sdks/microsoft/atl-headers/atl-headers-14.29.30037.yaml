@@ -11,7 +11,8 @@ contacts:
     role: publisher
 
 settings:
-  include: .
+  paths:
+    include: .
 requires:
   crts/microsoft/headers: 14.29.30037
 

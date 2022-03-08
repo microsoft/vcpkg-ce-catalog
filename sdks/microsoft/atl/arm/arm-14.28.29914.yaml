@@ -12,7 +12,8 @@ contacts:
     role: publisher
 
 settings:
-  libpath: .
+  paths:
+    lib: .
 
 requires:
   sdks/microsoft/atl-headers: 14.28.29914

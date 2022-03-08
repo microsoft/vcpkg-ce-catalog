@@ -10,18 +10,19 @@ contacts:
     email: bion@microsoft.com
     role: publisher
 
-target:x86:
-  requires:
-    crts/microsoft/onecore-spectre/x86: 14.29.30037
+demands:
+  target:x86:
+    requires:
+      crts/microsoft/onecore-spectre/x86: 14.29.30037
 
-target:x64:
-  requires:
-    crts/microsoft/onecore-spectre/x64: 14.29.30037
+  target:x64:
+    requires:
+      crts/microsoft/onecore-spectre/x64: 14.29.30037
 
-target:arm:
-  requires:
-    crts/microsoft/onecore-spectre/arm: 14.29.30037
+  target:arm:
+    requires:
+      crts/microsoft/onecore-spectre/arm: 14.29.30037
 
-target:arm64:
-  requires:
-    crts/microsoft/onecore-spectre/arm64: 14.29.30037
+  target:arm64:
+    requires:
+      crts/microsoft/onecore-spectre/arm64: 14.29.30037

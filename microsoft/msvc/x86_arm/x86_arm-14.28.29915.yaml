@@ -21,17 +21,16 @@ settings:
     CC: cl.exe
     CXX: cl.exe
     AR: lib.exe
-    LINK: link.exe
 
   paths:
     PATH: .
 
 demands:
-  not windows and not x86: 
+  not windows and not x86:
     error: "This variant if for a windows x86 host"
-    
-  windows and x86: 
-      
+
+  windows and x86:
+
     install:
       - unzip:
         - vsix:///Microsoft.VisualCpp.Tools.Hostx86.Targetarm,version=14.28.29915/payload.vsix

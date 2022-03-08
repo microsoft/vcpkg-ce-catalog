@@ -10,10 +10,11 @@ contacts:
     email: bion@microsoft.com
     role: publisher
 
-target:x86:
-  requires:
-    crts/microsoft/asan/x86: 14.28.29915
+demands:
+  target:x86:
+    requires:
+      crts/microsoft/asan/x86: 14.28.29915
 
-target:x64:
-  requires:
-    crts/microsoft/asan/x64: 14.28.29915
+  target:x64:
+    requires:
+      crts/microsoft/asan/x64: 14.28.29915
