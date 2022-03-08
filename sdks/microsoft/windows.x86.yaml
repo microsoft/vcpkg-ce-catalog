@@ -9,10 +9,14 @@ info:
   options: [ dependencyOnly ]
 
 contacts:
-  Garrett Serack: 
+  Garrett Serack:
     email: garretts@microsoft.com
     role: publisher
 
-install: 
-  nupkg: Microsoft.Windows.SDK.cpp.x86/10.0.19041.5
-  
+install:
+  unzip: https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.x86/10.0.19041.5
+  sha256: 0
+
+settings:
+  paths:
+    lib: ['./c/ucrt/x86', './c/um/x86']
