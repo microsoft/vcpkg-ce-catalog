@@ -14,14 +14,19 @@
 	"requires": {
 		"microsoft.visualstudio.vc.msbuild.v170.x64": "17.0.0"
 	},
+	"settings": {
+		"locations": {
+			"ToolsetDirectory" : ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\Platforms\\x64\\PlatformToolsets\\v143"
+		}
+	},
 	"install": [
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.x64.v143,version=17.0.31805.293,productArch=neutral/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.x64.v143,version=17.0.0,productArch=neutral/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/15e66f896b691ac3d936fa8a4c335e0ae814a89fa78742cb2caddc02789f8df4/payload.vsix"
 			],
 			"sha256": "15e66f896b691ac3d936fa8a4c335e0ae814a89fa78742cb2caddc02789f8df4",
-			"strip": "5"
+			"strip": "1"
 		}
 	]
 }

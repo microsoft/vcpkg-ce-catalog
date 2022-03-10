@@ -11,140 +11,149 @@
 			"role": "publisher"
 		}
 	},
+	"settings": {
+		"locations": {
+			"VCTargetsPath17" : ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\"
+		},
+		"properties": {
+			"VcpkgInstalledVCTargets" : "true",
+			"DisableInstalledVCTargetsUse" : "true"
+		}
+	},
 	"install": [
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/6d5f5c0638b80748cbd5b87a21852dcbde9e18418ec53e5d53c2fbd28d0e6b03/payload.vsix"
 			],
 			"sha256": "6d5f5c0638b80748cbd5b87a21852dcbde9e18418ec53e5d53c2fbd28d0e6b03",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=cs-CZ/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=cs-CZ/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/3f5b60913c2734488ac7865190e00a0d1a039e5e607d98cb91ccbe8dd73ba664/payload.vsix"
 			],
 			"sha256": "3f5b60913c2734488ac7865190e00a0d1a039e5e607d98cb91ccbe8dd73ba664",
 			"lang": "cs-CZ",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=de-DE/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=de-DE/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/f28dd4303c725d643b67a7281f4896d282588b0a02ad0478f7c66fc94b2c2a60/payload.vsix"
 			],
 			"sha256": "f28dd4303c725d643b67a7281f4896d282588b0a02ad0478f7c66fc94b2c2a60",
 			"lang": "de-DE",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=en-US/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=en-US/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/dd04c0ac51bbe186b0c3089a895277ac6e583d35947153f119992b276044110e/payload.vsix"
 			],
 			"sha256": "dd04c0ac51bbe186b0c3089a895277ac6e583d35947153f119992b276044110e",
 			"lang": "en-US",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=es-ES/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=es-ES/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/5f76200bee344972a90474fc9c546ba837e46ba0b3fe84577005acc0431849ad/payload.vsix"
 			],
 			"sha256": "5f76200bee344972a90474fc9c546ba837e46ba0b3fe84577005acc0431849ad",
 			"lang": "es-ES",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=fr-FR/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=fr-FR/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/69810b21b9016f5455034255b70342a301b143819574754fe1a7cb69df99c1fd/payload.vsix"
 			],
 			"sha256": "69810b21b9016f5455034255b70342a301b143819574754fe1a7cb69df99c1fd",
 			"lang": "fr-FR",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=it-IT/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=it-IT/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/7ec697c9b838c3083a4c07e66d72dafaad10f9e14ed4d32a8e65fcdef1868c78/payload.vsix"
 			],
 			"sha256": "7ec697c9b838c3083a4c07e66d72dafaad10f9e14ed4d32a8e65fcdef1868c78",
 			"lang": "it-IT",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=ja-JP/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=ja-JP/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/4df89bec0c2003a66bafd695ae338fc53424ff0ceb9ec948cd161a3111d61aa4/payload.vsix"
 			],
 			"sha256": "4df89bec0c2003a66bafd695ae338fc53424ff0ceb9ec948cd161a3111d61aa4",
 			"lang": "ja-JP",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=ko-KR/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=ko-KR/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/f41018ce193605929fc1a90af6e464ec6dcae2128fb3a5cd928d4ec305f6b516/payload.vsix"
 			],
 			"sha256": "f41018ce193605929fc1a90af6e464ec6dcae2128fb3a5cd928d4ec305f6b516",
 			"lang": "ko-KR",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=pl-PL/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=pl-PL/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/bd6343fe2e38434d8a1f3d75f712a0ad0966e7331c04f3d84e61799e6f7e121a/payload.vsix"
 			],
 			"sha256": "bd6343fe2e38434d8a1f3d75f712a0ad0966e7331c04f3d84e61799e6f7e121a",
 			"lang": "pl-PL",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=pt-BR/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=pt-BR/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/15b9da8cf7a2e01ed3ce70118182f53728d6d44f660202a85ffafc1b0ccbf1d6/payload.vsix"
 			],
 			"sha256": "15b9da8cf7a2e01ed3ce70118182f53728d6d44f660202a85ffafc1b0ccbf1d6",
 			"lang": "pt-BR",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=ru-RU/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=ru-RU/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/4202d7bb7a6c26594e271fea0a720e1efcfea1cfb7868384d04dce4205309a13/payload.vsix"
 			],
 			"sha256": "4202d7bb7a6c26594e271fea0a720e1efcfea1cfb7868384d04dce4205309a13",
 			"lang": "ru-RU",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=tr-TR/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=tr-TR/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/f2f13c0497f89d1a7f6f91e4412805a1a63bb9d1ef23af6c3b17fec54368a730/payload.vsix"
 			],
 			"sha256": "f2f13c0497f89d1a7f6f91e4412805a1a63bb9d1ef23af6c3b17fec54368a730",
 			"lang": "tr-TR",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=zh-CN/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=zh-CN/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/2b5bede7848422caec5787b4eccf9e5b382b5d7aa55ce24f22c73295cd942497/payload.vsix"
 			],
 			"sha256": "2b5bede7848422caec5787b4eccf9e5b382b5d7aa55ce24f22c73295cd942497",
 			"lang": "zh-CN",
-			"strip": "5"
+			"strip": "1"
 		},
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.31902.203,productArch=neutral,language=zh-TW/payload.vsix",
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base,version=17.0.0,productArch=neutral,language=zh-TW/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/15c92343-c6fc-4a1e-8f6e-c01d5eafdc04/32f042164bc0f1a6546e1194a731b4dcf83152bbf5bb18a1565e5c9b02393714/payload.vsix"
 			],
 			"sha256": "32f042164bc0f1a6546e1194a731b4dcf83152bbf5bb18a1565e5c9b02393714",
 			"lang": "zh-TW",
-			"strip": "5"
+			"strip": "1"
 		}
 	]
 }
