@@ -32,6 +32,11 @@
         "microsoft.visualstudio.vc.msbuild.v170.ARM64.v143": "17.0.0",
         "microsoft.visualstudio.vc.msbuild.v170.ARM64CE.v143": "17.0.0"
       }
+    },
+    "not msbuild_only": {
+      "requires": {
+         "microsoft/msvc": "14.29.30037"
+      }
     }
   }
 }
