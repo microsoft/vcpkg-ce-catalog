@@ -23,7 +23,7 @@ demands:
       sha256: 90057B8737B888C53CA5AEE332F1F73C401D6D3873124D2C2906DF4347EBEF9E
       strip: 1 # 
 
-    settings:
+    exports:
       tools:
         # tools exposed by name
         # todo: add more tools to expose by name
@@ -55,7 +55,7 @@ demands:
       strip: 1
 
   not windows:
-    settings:
+    exports:
       tools:
         # tools exposed by name
         # todo: add more tools to expose by name

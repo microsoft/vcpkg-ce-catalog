@@ -22,7 +22,7 @@ demands:
       unzip: https://github.com/ninja-build/ninja/releases/download/v1.10.2/ninja-win.zip
       sha256: bbde850d247d2737c5764c927d1071cbb1f1957dcabda4a130fa8547c12c695f
 
-    settings: 
+    exports: 
       tools:
         ninja: ninja.exe
 
@@ -40,7 +40,7 @@ demands:
       sha256: 763464859c7ef2ea3a0a10f4df40d2025d3bb9438fcb1228404640410c0ec22d
 
   not windows:
-    settings:
+    exports:
       tools:
         ninja: ninja
       

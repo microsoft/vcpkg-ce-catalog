@@ -27,7 +27,7 @@ demands:
       sha256: b8fa3f2c614557decf6ebe6688bc635b9260a220305be139d2368c437d4c3cfa  
 
   windows:
-    settings: 
+    exports: 
       tools:
         arduino-cli: arduino-cli.exe
       paths:
@@ -52,7 +52,7 @@ demands:
       strip: 1
 
   not windows:
-    settings:
+    exports:
       tools:
         arduino-cli: arduino-cli
       

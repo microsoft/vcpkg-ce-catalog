@@ -29,7 +29,7 @@ demands:
       strip: 1 # 
 
   windows:
-    settings: 
+    exports: 
       tools:
         cmake: bin/cmake.exe
         cmake_gui: bin/cmake-gui.exe
@@ -57,7 +57,7 @@ demands:
       strip: 1
 
   not windows:
-    settings:
+    exports:
       tools:
         cmake: bin/cmake
         cmake_gui: bin/cmake-gui

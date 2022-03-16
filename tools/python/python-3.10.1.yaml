@@ -17,13 +17,14 @@ demands:
       # substituting in $0 for the full path of the item that matches.
       message: using discovered python $0
       
-      settings: # if this is successful, these are the settings.
+      exports: # if this is successful, these are the settings.
         paths:
-          path: $0/.. # adds the found folder to the path
+          path: 
+            - "{$0/..}" # adds the found folder to the path
         
-        tools:
-          python: $0
-          venv: $0 -m venv 
+        aliases:
+          python: "{$0/../python.exe}"
+          venv: "{$0} -m venv "
 
     # if we don't get a match, then we process the artifact as normal
     # 
@@ -48,10 +49,10 @@ demands:
       from: $host.PATH
       where: python, py, python3, py3 
       run: $0 --version 
-      select: /Python 3\.(8|9|1\d+)\.\d+/g
+      matches: /Python 3\.(8|9|1\d+)\.\d+/g
       is: "$1 < '3.8'"
 
-      settings:
+      exports:
         paths:
           path: $0/.. 
         tools:

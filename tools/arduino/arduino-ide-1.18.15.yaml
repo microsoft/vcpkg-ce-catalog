@@ -22,7 +22,7 @@ demands:
       sha256: C53E7D291EDEBCDB58FFA34AEB53C5B777D814CEA8030297F06116ED0598D139
       strip: 1 
 
-    settings: 
+    exports: 
       tools:
         arduino: arduino.exe
       paths:
@@ -47,7 +47,7 @@ demands:
       strip: 2
 
   not windows:
-    settings:
+    exports:
       tools:
         arduino: arduino
       

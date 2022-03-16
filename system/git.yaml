@@ -17,7 +17,7 @@ demands:
       # substituting in $0 for the full path of the item that matches.
       message: using discovered git $0
       
-      settings: # if this is successful, these are the settings.
+      exports: # if this is successful, these are the settings.
         paths:
           path: $0/.. # adds the found folder to the path
         
@@ -35,14 +35,15 @@ demands:
       from: $host.PATH
       where: git
       run: $0 --version 
-      select: /git version (\d+)/ig
+      matches: /git version (\d+)/ig
       is: "'2' === $1"
 
-      settings:
+      exports:
         paths:
           path: $0/.. 
         tools:
-          git: $0
+          python: $
+          venv: -m venv
 
     error: |
       This requires git 2 or higher installed.

@@ -22,7 +22,7 @@ demands:
       unzip: https://www.compuphase.com/software/termite-3.4.zip
       sha256: e72eddaabe1375dc9422d20b359206d242bf0745f47f60ce37d21e9dd905ba51
 
-    settings:
+    exports:
       tools:
         termite: bin/Termite.exe
 

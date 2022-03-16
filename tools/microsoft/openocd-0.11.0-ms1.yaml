@@ -37,7 +37,7 @@ demands:
       untar: https://github.com/microsoft/openocd/releases/download/ms-v0.11.0-ms1/openocd-ms-v0.11.0-ms1-i686-w64-mingw32.tar.gz
       sha256: dabe82ecc1aa1b1aa6d28216ee74d5702b9147fc74796990e14a7fa5644744a1
 
-    settings:
+    exports:
       tools:
         openocd: bin/openocd.exe
 
@@ -50,7 +50,7 @@ demands:
       sha256: e70a1405f5ffeb87d9487b49fe40171fe896fbd7d01a51b12cffdfb6d2b0501b
       strip: 1
 
-    settings:
+    exports:
       tools:
         openocd: bin/openocd
 
