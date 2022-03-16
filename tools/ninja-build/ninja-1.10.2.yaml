@@ -1,5 +1,5 @@
 # Ninja build tools
-# install with `ce add ninja`
+# install with `vcpkg add artifact add ninja`
 
 info:
   id: tools/ninja-build/ninja

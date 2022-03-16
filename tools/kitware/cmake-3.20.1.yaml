@@ -1,5 +1,5 @@
 # Kitware CMake Toolsuite
-# install with `ce add cmake`
+# install with `vcpkg add artifact add cmake`
 
 info:
   id: tools/kitware/cmake

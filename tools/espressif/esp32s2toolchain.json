@@ -1,0 +1,72 @@
+{
+  "info": {
+    "id": "tools/espressif/xtensa-esp32s2-elf",
+    "version": "0.11.0",
+    "description": "This provides a list of all the tools that are required and/or provided by the espressif tool.json."
+  },
+  "contacts": {
+    "Garrett Campbell": {
+      "email": "gcampbell@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    },
+    "Garrett Serack": {
+      "email": "garretts@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    }
+  },
+  "demands": {
+    "linux and x64": {
+      "install": {
+        "untar": "https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/xtensa-esp32s2-elf-gcc8_4_0-esp-2021r1-linux-amd64.tar.gz",
+        "sha256": "b127baccfe6949ee7eaf3d0782ea772750a9b8e2732b16ce6bcc9dcd91f7209a",
+        "strip": 1
+      }
+    },
+    "linux and arm": {
+      "install": {
+        "untar": "https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/xtensa-esp32s2-elf-gcc8_4_0-esp-2021r1-linux-armel.tar.gz",
+        "sha256": "7ca0d240f11e1c53c01a56257b0c968f876ab405142d1068d8c9b456d939554c",
+        "strip": 1
+      }
+    },
+    "linux and x86": {
+      "install": {
+        "untar": "https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/xtensa-esp32s2-elf-gcc8_4_0-esp-2021r1-linux-i686.tar.gz",
+        "sha256": "9941f993ff84d1c606b45ffbeeb7bcdc5a72cf24e787bb9230390510fe3511c6",
+        "strip": 1
+      }
+    },
+    "osx": {
+      "install": {
+        "untar": "https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/xtensa-esp32s2-elf-gcc8_4_0-esp-2021r1-macos.tar.gz",
+        "sha256": "4b55b1a9ca7fc945be6fc3513802b6cece9264bee4cbca76013569cec2695973",
+        "strip": 1
+      }
+    },
+    "windows and x86": {
+      "install": {
+        "unzip": "https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/xtensa-esp32s2-elf-gcc8_4_0-esp-2021r1-win32.zip",
+        "sha256": "c94ec1e45c81b7e4944d216bab4aa41d46849768d7761fd691661dab1a3df828",
+        "strip": 1
+      }
+    },
+    "windows and x64": {
+      "install": {
+        "unzip": "https://github.com/espressif/crosstool-NG/releases/download/esp-2021r1/xtensa-esp32s2-elf-gcc8_4_0-esp-2021r1-win64.zip",
+        "sha256": "2a2a04e45a7dfe93356a2329162f7d013f06e3125fd7fc08a50e3bd5f4110300",
+        "strip": 1
+      }
+    }
+  },
+  "exports": {
+    "paths": {
+      "path": "bin"
+    }
+  }
+}

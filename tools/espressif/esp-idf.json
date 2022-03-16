@@ -1,0 +1,21 @@
+{
+  "info": {
+    "id": "tools/espressif/idf",
+    "version": "1.10.2",
+    "description": "Espressif IDF",
+    "summary": "Espressif IDF"
+  },
+  "requires": {
+    "tools/languages/python": "3.10.1",
+    "system/git": "3.0.0"
+  },
+  "install": {
+    "git": "https://github.com/espressif/esp-idf",
+    "commit": "ebf7e811b12e3c1e347340e5b9ec014e9c6319ba",
+    "options": [
+      "recurse",
+      "espidf",
+      "full"
+    ]
+  }
+}

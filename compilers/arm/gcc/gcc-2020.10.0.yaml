@@ -1,5 +1,5 @@
 # ARM GCC Toolsuite
-# install with `ce add arm/gcc`
+# install with `vcpkg add artifact add arm/gcc`
 
 info:
   id: compilers/arm/gcc

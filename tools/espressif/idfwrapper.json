@@ -1,0 +1,42 @@
+{
+  "info": {
+    "id": "tools/espressif/idfwrapper",
+    "version": "0.11.0",
+    "description": "This provides a list of all the tools that are required and/or provided by the espressif tool.json."
+  },
+  "contacts": {
+    "Garrett Campbell": {
+      "email": "gcampbell@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    },
+    "Garrett Serack": {
+      "email": "garretts@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    }
+  },
+  "demands": {
+    "windows and x86": {
+      "install": {
+        "unzip": "https://dl.espressif.com/dl/idf-exe-v1.0.1.zip",
+        "sha256": "53eb6aaaf034cc7ed1a97d5c577afa0f99815b7793905e9408e74012d357d04a"
+      }
+    },
+    "windows and x64": {
+      "install": {
+        "unzip": "https://dl.espressif.com/dl/idf-exe-v1.0.1.zip",
+        "sha256": "53eb6aaaf034cc7ed1a97d5c577afa0f99815b7793905e9408e74012d357d04a"
+      }
+    }
+  },
+  "exports": {
+    "paths": {
+      "path": "."
+    }
+  }
+}

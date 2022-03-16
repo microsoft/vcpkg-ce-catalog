@@ -1,5 +1,5 @@
 # CompuPhase Termite RS232 Terminal
-# install with `ce add termite`
+# install with `vcpkg add artifact add termite`
 
 info:
   id: tools/compuphase/termite

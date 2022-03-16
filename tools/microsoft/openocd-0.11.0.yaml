@@ -1,5 +1,5 @@
 # OpenOCD
-# install with `ce add openocd`
+# install with `vcpkg add artifact add openocd`
 
 info:
   id: tools/microsoft/openocd

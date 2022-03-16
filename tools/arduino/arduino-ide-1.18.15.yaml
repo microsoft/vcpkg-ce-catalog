@@ -1,5 +1,5 @@
 # Arduino IDE
-# install with `ce add arduino-ide`
+# install with `vcpkg add artifact add arduino-ide`
 
 info:
   id: tools/arduino/arduino-ide

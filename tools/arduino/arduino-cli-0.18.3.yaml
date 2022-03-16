@@ -1,5 +1,5 @@
 # Arduino cli
-# install with `ce add arduino-cli`
+# install with `vcpkg add artifact add arduino-cli`
 
 info:
   id: tools/arduino/arduino-cli
