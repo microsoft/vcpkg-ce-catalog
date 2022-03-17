@@ -26,7 +26,7 @@
           "paths": {
             "path": "$0/.."
           },
-          "alias": {
+          "aliases": {
             "python": "{$0}",
             "venv": "{$0} -m venv"
           }

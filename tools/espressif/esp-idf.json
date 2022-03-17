@@ -6,8 +6,8 @@
     "summary": "Espressif IDF"
   },
   "requires": {
-    "tools/languages/python": "3.10.1",
-    "system/git": "3.0.0"
+    "system/python": "3.0.0",
+    "system/git": "2.0.0"
   },
   "install": {
     "git": "https://github.com/espressif/esp-idf",
