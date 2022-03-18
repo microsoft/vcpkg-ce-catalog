@@ -15,6 +15,9 @@ settings:
   paths:
     lib: .
 
+  locations:
+    VC_LibraryPath_VC_x86_Desktop: .
+
 requires:
   crts/microsoft/headers: 14.28.29912
 

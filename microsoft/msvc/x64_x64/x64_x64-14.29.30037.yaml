@@ -25,7 +25,7 @@ settings:
   paths:
     PATH: .
 
-  variables:
+  locations:
     VC_ExecutablePath_x64_x64: .
 
 demands:

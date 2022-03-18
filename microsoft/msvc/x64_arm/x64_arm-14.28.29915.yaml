@@ -25,6 +25,10 @@ settings:
   paths:
     PATH: .
 
+  locations:
+    VC_ExecutablePath_x64_arm: .
+
+
 demands:
   not windows and not x64:
     error: "This variant if for a windows x64 host"

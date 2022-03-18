@@ -20,3 +20,6 @@ install:
 settings:
   paths:
     lib: ['./c/ucrt/x64', './c/um/x64']
+
+    locations:
+      WindowsSDK_LibraryPath_x64 : ['./c/ucrt/x64', './c/um/x64']
