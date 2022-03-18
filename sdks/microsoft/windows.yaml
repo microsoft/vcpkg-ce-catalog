@@ -41,6 +41,12 @@ demands:
           - ./c/bin/10.0.19041.0/x64
           - ./c/bin/10.0.19041.0/x64/ucrt
 
+      locations:
+        UniversalCRT_LibraryPath_x64:
+          - ./c/bin/10.0.19041.0/x64
+          - ./c/bin/10.0.19041.0/x64/ucrt
+
+
   # when host is x86
   x86:
     settings:
@@ -48,6 +54,12 @@ demands:
         path:
           - ./c/bin/10.0.19041.0/x86
           - ./c/bin/10.0.19041.0/x86/ucrt
+
+      locations:
+        UniversalCRT_LibraryPath_x64:
+          - ./c/bin/10.0.19041.0/x86
+          - ./c/bin/10.0.19041.0/x86/ucrt
+
 
 settings:
   paths:
@@ -57,3 +69,13 @@ settings:
       - ./c/Include/10.0.19041.0/ucrt
       - ./c/Include/10.0.19041.0/um
       - ./c/Include/10.0.19041.0/winrt
+
+    locations:
+      CppWinRT_IncludePath: ./c/Include/10.0.19041.0/cppwinrt
+      KIT_SHARED_IncludePath: ./c/Include/10.0.19041.0/shared
+      UniversalCRT_IncludePath: ./c/Include/10.0.19041.0/ucrt
+      UM_IncludePath: ./c/Include/10.0.19041.0/um
+      WinRT_IncludePath: ./c/Include/10.0.19041.0/winrt
+
+    properties:
+      WindowsSDK_IncludePath : $(UM_IncludePath);$(KIT_SHARED_IncludePath);$(WinRT_IncludePath);$(CppWinRT_IncludePath)

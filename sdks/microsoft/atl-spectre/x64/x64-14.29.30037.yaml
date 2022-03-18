@@ -14,6 +14,10 @@ contacts:
 settings:
   paths:
     lib: .
+
+  locations:
+    VC_LibraryPath_ATL_x64_spectre: .
+
 requires:
   sdks/microsoft/atl-headers: 14.29.30037
 

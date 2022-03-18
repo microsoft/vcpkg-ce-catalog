@@ -13,6 +13,10 @@ contacts:
 settings:
   paths:
     include: .
+
+  locations:
+    VC_ATLMFC_IncludePath: .
+
 requires:
   crts/microsoft/headers: 14.28.29912
 

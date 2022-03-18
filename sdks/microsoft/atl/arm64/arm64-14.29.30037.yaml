@@ -15,6 +15,9 @@ settings:
   paths:
     lib: .
 
+  locations:
+    VC_LibraryPath_ATL_ARM64: .
+
 requires:
   sdks/microsoft/atl-headers: 14.29.30037
 
