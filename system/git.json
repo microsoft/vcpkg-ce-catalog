@@ -39,8 +39,7 @@
             "path": "$0/.."
           },
           "aliases": {
-            "python": "$0",
-            "venv": "$0 -m venv"
+            "git": "{$0}"
           }
         }
       },
