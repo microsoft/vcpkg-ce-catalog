@@ -45,7 +45,7 @@
         ],
         "run": "$0 --version",
         "matches": "/Python (\\d+)*/g",
-        "is": "$1 === '3'",
+        "is": "$1 == 3",
         "exports": {
           "paths": {
             "path": "$0/.."

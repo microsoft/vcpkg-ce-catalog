@@ -38,7 +38,7 @@
           "paths": {
             "path": "$0/.."
           },
-          "tools": {
+          "aliases": {
             "python": "$0",
             "venv": "$0 -m venv"
           }
