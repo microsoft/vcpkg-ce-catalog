@@ -14,7 +14,7 @@
         "where": "git.exe",
         "run": "\"$0\" --version",
         "select": "/git version (\\d+)/ig",
-        "is": "2 === $1",
+        "is": "2 == $1",
         "message": "using discovered git $0",
         "exports": {
           "paths": {
@@ -32,8 +32,8 @@
         "from": "$environment.PATH",
         "where": "git",
         "run": "$0 --version",
-        "matches": "/git version (\\d+)/ig",
-        "is": "2 === $1",
+        "select": "/git version (\\d+)/ig",
+        "is": "2 == $1",
         "exports": {
           "paths": {
             "path": "$0/.."

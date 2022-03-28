@@ -44,7 +44,7 @@
           "py3"
         ],
         "run": "$0 --version",
-        "matches": "/Python (\\d+)*/g",
+        "select": "/Python (\\d+)*/g",
         "is": "$1 == 3",
         "exports": {
           "paths": {

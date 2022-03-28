@@ -32,7 +32,7 @@
         "from": "$environment.PATH",
         "where": "git",
         "run": "$0 --version",
-        "matches": "/git version (\\d+\\.\\d+)\\.\\d*/ig",
+        "select": "/git version (\\d+\\.\\d+)\\.\\d*/ig",
         "is": "'2.31' === $1",
         "exports": {
           "paths": {
