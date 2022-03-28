@@ -8,8 +8,8 @@
     "windows and x64": {
       "unless": {
         "from": [
-          "$Path",
-          "$ProgramFiles/*python*",
+          "$environment.Path",
+          "$environment.ProgramFiles/*python*",
           "c:/python"
         ],
         "where": [
@@ -36,9 +36,9 @@
     },
     "linux": {
       "unless": {
-        "from": "$PATH",
+        "from": "$environment.PATH",
         "where": "python, py, python3, py3",
-        "run": "$ --version",
+        "run": "$0 --version",
         "matches": "/Python 3\\.(8|9|1\\d+)\\.\\d+/g",
         "is": "$1 < '3.8'",
         "exports": {
@@ -46,7 +46,7 @@
             "path": "$0/.."
           },
           "tools": {
-            "python": "$",
+            "python": "$0",
             "venv": "-m venv"
           }
         }

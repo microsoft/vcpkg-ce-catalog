@@ -8,8 +8,8 @@
     "windows and x64": {
       "unless": {
         "from": [
-          "$host.PATH",
-          "$host.ProgramFiles/*python*",
+          "$environment.Path",
+          "$environment.ProgramFiles/*python*",
           "c:/python"
         ],
         "where": [
@@ -18,17 +18,17 @@
           "python3.exe",
           "py.exe"
         ],
-        "run": "{$0} --version",
+        "run": "$0 --version",
         "select": "/Python (\\d+).*/g",
         "is": "$1 == '3'",
         "message": "using system python $0",
         "exports": {
           "paths": {
-            "path": "$0/.."
+            "path": "{$0/..}"
           },
           "aliases": {
             "python": "{$0}",
-            "venv": "{$0} -m venv"
+            "venv": "{$aliases.python} -m venv"
           }
         }
       },
@@ -36,8 +36,13 @@
     },
     "linux": {
       "unless": {
-        "from": "$host.PATH",
-        "where": "python, py, python3, py3",
+        "from": "$environment.PATH",
+        "where": [
+          "python",
+          "py",
+          "python3",
+          "py3"
+        ],
         "run": "$0 --version",
         "matches": "/Python (\\d+)*/g",
         "is": "$1 === '3'",

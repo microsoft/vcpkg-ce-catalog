@@ -8,8 +8,8 @@
     "windows and x64": {
       "unless": {
         "from": [
-          "$Path",
-          "$ProgramFiles/*python*",
+          "$environment.Path",
+          "$environment.ProgramFiles/*python*",
           "c:/python"
         ],
         "where": [
@@ -46,7 +46,7 @@
             "path": "$0/.."
           },
           "tools": {
-            "python": "$",
+            "python": "$0",
             "venv": "-m venv"
           }
         }

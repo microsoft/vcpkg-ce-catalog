@@ -8,8 +8,8 @@
     "windows and x64": {
       "unless": {
         "from": [
-          "$host.Path",
-          "$host.ProgramFiles/git/**"
+          "$environment.Path",
+          "$environment.ProgramFiles/git/**"
         ],
         "where": "git.exe",
         "run": "\"$0\" --version",
@@ -20,7 +20,7 @@
           "paths": {
             "path": "$0/.."
           },
-          "tools": {
+          "aliases": {
             "git": "$0"
           }
         }
@@ -29,7 +29,7 @@
     },
     "linux": {
       "unless": {
-        "from": "$host.PATH",
+        "from": "$environment.PATH",
         "where": "git",
         "run": "$0 --version",
         "matches": "/git version (\\d+\\.\\d+)\\.\\d*/ig",
@@ -38,9 +38,8 @@
           "paths": {
             "path": "$0/.."
           },
-          "tools": {
-            "python": "$",
-            "venv": "-m venv"
+          "aliases": {
+            "git": "$0"
           }
         }
       },

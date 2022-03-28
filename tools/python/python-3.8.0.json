@@ -7,8 +7,8 @@
     "windows and x64": {
       "unless": {
         "from": [
-          "$host.PATH",
-          "$host.ProgramFiles/*python*",
+          "$environment.PATH",
+          "$environment.ProgramFiles/*python*",
           "c:/python"
         ],
         "where": [
@@ -34,7 +34,7 @@
     },
     "linux": {
       "unless": {
-        "from": "$host.PATH",
+        "from": "$environment.PATH",
         "where": "python, py, python3, py3",
         "run": "$0 --version",
         "matches": "/Python 3\\.(8|9|1\\d+)\\.\\d+/g",
@@ -44,7 +44,7 @@
             "path": "$0/.."
           },
           "tools": {
-            "python": "$",
+            "python": "$0",
             "venv": "-m venv"
           }
         }
