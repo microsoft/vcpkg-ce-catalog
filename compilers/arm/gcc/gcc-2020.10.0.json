@@ -19,12 +19,6 @@
         "strip": 1
       },
       "exports": {
-        "tools": {
-          "CC": "bin/arm-none-eabi-gcc.exe",
-          "CXX": "bin/arm-none-eabi-g++.exe",
-          "AR": "arm-none-eabi/bin/ar.exe",
-          "AS": "arm-none-eabi/bin/as.exe"
-        },
         "paths": {
           "path": "bin"
         }
@@ -53,12 +47,6 @@
     },
     "not windows": {
       "exports": {
-        "tools": {
-          "CC": "bin/arm-none-eabi-gcc",
-          "CXX": "bin/arm-none-eabi-g++",
-          "AR": "arm-none-eabi/bin/ar",
-          "AS": "arm-none-eabi/bin/as"
-        },
         "paths": {
           "path": "bin"
         }
