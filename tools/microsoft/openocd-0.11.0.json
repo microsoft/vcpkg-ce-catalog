@@ -29,7 +29,7 @@
           "openocd": "bin/openocd.exe"
         },
         "paths": {
-          "path": "bin"
+          "PATH": "./bin"
         }
       }
     },
@@ -41,10 +41,10 @@
       },
       "exports": {
         "tools": {
-          "openocd": "bin/openocd"
+          "openocd": "./bin/openocd"
         },
         "paths": {
-          "path": "bin"
+          "PATH": "bin"
         }
       }
     }

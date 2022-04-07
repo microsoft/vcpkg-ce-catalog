@@ -30,7 +30,7 @@
   },
   "exports": {
     "environment": {
-      "IDF_CCACHE_ENABLE": 1
+      "IDF_CCACHE_ENABLE": "1"
     }
   }
 }

@@ -33,7 +33,7 @@
           "arduino-cli": "arduino-cli.exe"
         },
         "paths": {
-          "path": "."
+          "PATH": "."
         }
       }
     },
@@ -64,7 +64,7 @@
           "arduino-cli": "arduino-cli"
         },
         "paths": {
-          "path": "."
+          "PATH": "."
         }
       }
     }

@@ -38,7 +38,7 @@
           "ctest": "bin/ctest.exe"
         },
         "paths": {
-          "path": "bin"
+          "PATH": "bin"
         }
       }
     },
@@ -71,7 +71,7 @@
           "ctest": "bin/ctest"
         },
         "paths": {
-          "path": "bin"
+          "PATH": "bin"
         }
       }
     }

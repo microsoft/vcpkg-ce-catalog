@@ -42,7 +42,7 @@
           "IDF_TOOLS_PATH": "./.espressif"
         },
         "paths": {
-          "Path": [
+          "PATH": [
             "./components/esptool_py/esptool",
             "./components/app_update",
             "./components/espcoredump",

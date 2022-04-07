@@ -62,7 +62,7 @@
   },
   "exports": {
     "paths": {
-      "path": "bin"
+      "PATH": "bin"
     },
     "environment": {
       "OPENOCD_SCRIPTS": "${TOOL_PATH}/openocd-esp32/share/openocd/scripts"

@@ -62,7 +62,7 @@
   },
   "exports": {
     "paths": {
-      "path": "bin"
+      "PATH": "bin"
     }
   }
 }

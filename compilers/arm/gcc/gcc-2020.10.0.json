@@ -20,7 +20,7 @@
       },
       "exports": {
         "paths": {
-          "path": "bin"
+          "PATH": "bin"
         }
       }
     },
@@ -48,7 +48,7 @@
     "not windows": {
       "exports": {
         "paths": {
-          "path": "bin"
+          "PATH": "bin"
         }
       }
     },

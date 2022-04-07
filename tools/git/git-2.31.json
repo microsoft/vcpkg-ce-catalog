@@ -18,7 +18,7 @@
         "message": "using discovered git $0",
         "exports": {
           "paths": {
-            "path": "$0/.."
+            "PATH": "$0/.."
           },
           "aliases": {
             "git": "$0"
@@ -36,7 +36,7 @@
         "is": "'2.31' === $1",
         "exports": {
           "paths": {
-            "path": "$0/.."
+            "PATH": "$0/.."
           },
           "aliases": {
             "git": "$0"

@@ -30,7 +30,7 @@
   },
   "exports": {
     "paths": {
-      "path": "dfu-util-0.9-win64"
+      "PATH": "dfu-util-0.9-win64"
     }
   }
 }

@@ -26,7 +26,7 @@
           "arduino": "arduino.exe"
         },
         "paths": {
-          "path": "."
+          "PATH": "."
         }
       }
     },
@@ -57,7 +57,7 @@
           "arduino": "arduino"
         },
         "paths": {
-          "path": "."
+          "PATH": "."
         }
       }
     }
