@@ -1,0 +1,49 @@
+{
+  "info": {
+    "id": "system/git",
+    "version": "2.0.0",
+    "priority": 20
+  },
+  "demands": {
+    "windows and x64": {
+      "unless": {
+        "from": [
+          "$environment.Path",
+          "$environment.ProgramFiles/git/**"
+        ],
+        "where": "git.exe",
+        "run": "\"$0\" --version",
+        "select": "/git version (\\d+)/ig",
+        "is": "2 == $1",
+        "message": "using discovered git $0",
+        "exports": {
+          "paths": {
+            "PATH": "$0/.."
+          },
+          "aliases": {
+            "git": "{$0}"
+          }
+        }
+      },
+      "error": "This requires git 2 or higher installed\n"
+    },
+    "linux": {
+      "unless": {
+        "from": "$environment.PATH",
+        "where": "git",
+        "run": "$0 --version",
+        "select": "/git version (\\d+)/ig",
+        "is": "2 == $1",
+        "exports": {
+          "paths": {
+            "PATH": "$0/.."
+          },
+          "aliases": {
+            "git": "{$0}"
+          }
+        }
+      },
+      "error": "This requires git 2 or higher installed.\n"
+    }
+  }
+}

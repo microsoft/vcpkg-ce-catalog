@@ -1,0 +1,48 @@
+{
+  "info": {
+    "id": "tools/espressif/esp32ninja",
+    "version": "0.11.0",
+    "description": "This provides a list of all the tools that are required and/or provided by the espressif tool.json."
+  },
+  "contacts": {
+    "Garrett Campbell": {
+      "email": "gcampbell@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    },
+    "Garrett Serack": {
+      "email": "garretts@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    }
+  },
+  "demands": {
+    "linux and x64": {
+      "install": {
+        "untar": "https://dl.espressif.com/dl/ninja-1.10.2-linux64.tar.gz",
+        "sha256": "32bb769de4d57aa7ee0e292cfcb7553e7cc8ea0961f7aa2b3aee60aa407c4033"
+      }
+    },
+    "osx": {
+      "install": {
+        "untar": "https://dl.espressif.com/dl/ninja-1.10.2-osx.tar.gz",
+        "sha256": "847bb1ca4bc16d8dba6aeed3ecb5055498b86bc68c364c37583eb5738bb440f1"
+      }
+    },
+    "windows and x64": {
+      "install": {
+        "unzip": "https://dl.espressif.com/dl/ninja-1.10.2-win64.zip",
+        "sha256": "bbde850d247d2737c5764c927d1071cbb1f1957dcabda4a130fa8547c12c695f"
+      }
+    }
+  },
+  "exports": {
+    "paths": {
+      "PATH": "."
+    }
+  }
+}

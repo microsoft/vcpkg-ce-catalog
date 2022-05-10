@@ -1,0 +1,36 @@
+{
+  "info": {
+    "id": "tools/espressif/dfu_util",
+    "version": "0.11.0",
+    "description": "This provides a list of all the tools that are required and/or provided by the espressif tool.json."
+  },
+  "contacts": {
+    "Garrett Campbell": {
+      "email": "gcampbell@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    },
+    "Garrett Serack": {
+      "email": "garretts@microsoft.com",
+      "role": [
+        "publisher",
+        "originator"
+      ]
+    }
+  },
+  "demands": {
+    "windows and x64": {
+      "install": {
+        "unzip": "https://dl.espressif.com/dl/dfu-util-0.9-win64.zip",
+        "sha256": "5816d7ec68ef3ac07b5ac9fb9837c57d2efe45b6a80a2f2bbe6b40b1c15c470e"
+      }
+    }
+  },
+  "exports": {
+    "paths": {
+      "PATH": "dfu-util-0.9-win64"
+    }
+  }
+}
