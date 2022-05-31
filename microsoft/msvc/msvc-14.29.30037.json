@@ -1,0 +1,24 @@
+{
+    "info": {
+        "id": "microsoft/msvc",
+        "version": "14.29.30037",
+        "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
+        "summary": "The Microsoft Visual C++ Compiler (MSVC)"
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "demands": {
+        "not target": {
+            "error": "In order to use the MSVC compiler, the --target:<> must be set."
+        },
+        "windows and x64": {
+            "requires": {
+                "microsoft/msvc/x64_x86": "14.29.30037"
+            }
+        }
+    }
+}

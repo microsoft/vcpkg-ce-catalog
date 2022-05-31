@@ -1,0 +1,23 @@
+{
+    "info": {
+        "id": "sdks/microsoft/windows/windows.x64",
+        "version": "10.0.19041",
+        "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications (targeting x64).",
+        "summary": "Microsoft Windows SDK (targeting x64)",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.x64/10.0.19041.5"
+            ],
+            "sha256": "EE8B7BC43ED58D17BE795C8062AD32E355847AADAD7DC8096CC04CCD1F2FDC2E"
+        }
+    ]
+}

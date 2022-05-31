@@ -1,0 +1,21 @@
+{
+    "info": {
+        "id": "crts/microsoft/desktop",
+        "version": "14.29.30037",
+        "summary": "MSVC standard library libraries (desktop / kernel32)"
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "demands": {
+        "target:x86": {
+            "requires": {
+                "crts/microsoft/desktop/x86": "14.29.30037",
+                "crts/microsoft/onecore/x86": "14.29.30037"
+            }
+        }
+    }
+}
