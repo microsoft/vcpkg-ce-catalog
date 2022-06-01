@@ -1,7 +1,7 @@
 {
     "info": {
         "id": "microsoft/msvc/x64_x86",
-        "version": "14.29.30037",
+        "version": "14.28.29915",
         "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
         "summary": "The Microsoft Visual C++ Compiler (MSVC)"
     },
@@ -27,18 +27,18 @@
             "install": [
                 {
                     "unzip": [
-                        "vsix:///Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.base,version=14.29.30037,chip=x64/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/929136ec6dc5efd8662afe524c49962b481327acbdfd24b0aa9b295f076e8d01/Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.base.vsix"
+                        "vsix:///Microsoft.VisualCpp.Tools.HostX64.TargetX86,version=14.28.29915,chip=x64/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/95895274c82e72592ebba30782826527167c6b3e1d2c35dd10b61742caee752a/Microsoft.VisualCpp.Tools.HostX64.TargetX86.vsix"
                     ],
-                    "sha256": "929136ec6dc5efd8662afe524c49962b481327acbdfd24b0aa9b295f076e8d01",
+                    "sha256": "95895274c82e72592ebba30782826527167c6b3e1d2c35dd10b61742caee752a",
                     "strip": 8
                 },
                 {
                     "unzip": [
-                        "vsix:///Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.Resources.base,version=14.29.30037,chip=x64,language=en-US/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/33244d399e8d1320c1236e10b25b587521d8ce772d08c6cfd25991eb3abadea4/Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.Resources.base.enu.vsix"
+                        "vsix:///Microsoft.VisualCpp.Tools.HostX64.TargetX86.Resources,version=14.28.29915,chip=x64,language=en-US/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/22af9e98026dd848fbd8d481112c6d0c2fcc1c2bb89a42e29f3950fecf5678b2/Microsoft.VisualCpp.Tools.HostX64.TargetX86.Resources.deu.vsix"
                     ],
-                    "sha256": "33244d399e8d1320c1236e10b25b587521d8ce772d08c6cfd25991eb3abadea4",
+                    "sha256": "254f9ef9d949e7b5a28d14fe67088070870b4b35b6affa757c7b36c5b96fe9f7",
                     "strip": 8
                 }
             ]

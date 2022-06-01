@@ -1,7 +1,7 @@
 {
     "info": {
         "id": "microsoft/msvc",
-        "version": "14.29.30037",
+        "version": "14.28.29915",
         "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
         "summary": "The Microsoft Visual C++ Compiler (MSVC)"
     },
@@ -17,7 +17,7 @@
         },
         "windows and x64 and target:x86": {
             "requires": {
-                "microsoft/msvc/x64_x86": "14.29.30037"
+                "microsoft/msvc/x64_x86": "14.28.29915"
             }
         }
     }
