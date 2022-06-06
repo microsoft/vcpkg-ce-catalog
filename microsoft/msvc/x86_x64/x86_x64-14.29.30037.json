@@ -1,0 +1,171 @@
+{
+    "info": {
+        "id": "microsoft/msvc/x86_x64",
+        "version": "14.29.30037",
+        "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
+        "summary": "The Microsoft Visual C++ Compiler (MSVC)",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "tools": {
+            "CC:": "cl.exe",
+            "CXX:": "cl.exe",
+            "AR:": "lib.exe"
+        },
+        "paths": {
+            "PATH:": "."
+        },
+        "locations": {
+            "VC_ExecutablePath_x86_x64:": "."
+        }
+    },
+    "demands": {
+        "not windows and not x86": {
+            "error": "This variant if for a windows x86 host"
+        },
+        "windows and x86": {
+            "install": [
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.HostX86.TargetX64.base,version=14.29.30037/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/b9074399a85d4a3f977bd04830b2c14549dae0e7769d1433980518347636aea1/Microsoft.VC.14.29.16.10.Tools.HostX86.TargetX64.base.vsix"
+                    ],
+                    "sha256": "b9074399a85d4a3f977bd04830b2c14549dae0e7769d1433980518347636aea1",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=cs-CZ/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/bad536631af3572ed28b655302cd684ed54ee226f0523e7ce733c0c5c57bd0cb/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.csy.vsix"
+                    ],
+                    "sha256": "bad536631af3572ed28b655302cd684ed54ee226f0523e7ce733c0c5c57bd0cb",
+                    "lang": "cs-CZ",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=de-DE/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/c6ac36cddb41dec3ad3e2daeeecfebde6be737ea783db40c1c029b45534faf81/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.deu.vsix"
+                    ],
+                    "sha256": "c6ac36cddb41dec3ad3e2daeeecfebde6be737ea783db40c1c029b45534faf81",
+                    "lang": "de-DE",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=en-US/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/3e9a867829bee1f0f9999761178a5cfe1bdbd2746d93244f0208a6c2e449cd62/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.enu.vsix"
+                    ],
+                    "sha256": "3e9a867829bee1f0f9999761178a5cfe1bdbd2746d93244f0208a6c2e449cd62",
+                    "lang": "en-US",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=es-ES/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/96551518d2557e583b2e09b224a348944eeae21518e55d67c67d90bd320fff21/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.esn.vsix"
+                    ],
+                    "sha256": "96551518d2557e583b2e09b224a348944eeae21518e55d67c67d90bd320fff21",
+                    "lang": "es-ES",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=fr-FR/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/992db153b2ceef7f373b3ebc2c201866f00b0dc535198d580605bf3afe9eb2cc/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.fra.vsix"
+                    ],
+                    "sha256": "992db153b2ceef7f373b3ebc2c201866f00b0dc535198d580605bf3afe9eb2cc",
+                    "lang": "fr-FR",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=it-IT/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/95108dc0e93530616c17b7252d506e0b99c558ede112dcf0062f3babca05462a/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.ita.vsix"
+                    ],
+                    "sha256": "95108dc0e93530616c17b7252d506e0b99c558ede112dcf0062f3babca05462a",
+                    "lang": "it-IT",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=ja-JP/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/76e480f75cb41f90eb1dbfadac62a07b2b076c645737b337c9853391e157bce1/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.jpn.vsix"
+                    ],
+                    "sha256": "76e480f75cb41f90eb1dbfadac62a07b2b076c645737b337c9853391e157bce1",
+                    "lang": "ja-JP",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=ko-KR/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/ca1170e82453d81f87153ff78d714b68569ea06b3b351b1123aa565e913766bd/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.kor.vsix"
+                    ],
+                    "sha256": "ca1170e82453d81f87153ff78d714b68569ea06b3b351b1123aa565e913766bd",
+                    "lang": "ko-KR",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=pl-PL/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/cf71a3b82ed863b73517c08ee927f4ce77f3ac876d90968b051ffe0f90a705c7/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.plk.vsix"
+                    ],
+                    "sha256": "cf71a3b82ed863b73517c08ee927f4ce77f3ac876d90968b051ffe0f90a705c7",
+                    "lang": "pl-PL",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=pt-BR/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/18f70de1d135833f94f29ad0765b00d96f35bffe033871d767bf1b146899f233/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.ptb.vsix"
+                    ],
+                    "sha256": "18f70de1d135833f94f29ad0765b00d96f35bffe033871d767bf1b146899f233",
+                    "lang": "pt-BR",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=ru-RU/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/df252184642fce22106a70bf13689b95ec6245f649647a09fe7beb164a48404b/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.rus.vsix"
+                    ],
+                    "sha256": "df252184642fce22106a70bf13689b95ec6245f649647a09fe7beb164a48404b",
+                    "lang": "ru-RU",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=tr-TR/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/46ed1238f9370ae7febadb2889f02fa788b2cbccdf82b85fcdf263d2d8452f66/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.trk.vsix"
+                    ],
+                    "sha256": "46ed1238f9370ae7febadb2889f02fa788b2cbccdf82b85fcdf263d2d8452f66",
+                    "lang": "tr-TR",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=zh-CN/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/f3b86a0794644cb400cc85932dd42e6ef99d051783d758fa68e9f88fd2a05e13/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.chs.vsix"
+                    ],
+                    "sha256": "f3b86a0794644cb400cc85932dd42e6ef99d051783d758fa68e9f88fd2a05e13",
+                    "lang": "zh-CN",
+                    "strip": 8
+                },
+                {
+                    "unzip": [
+                        "vsix:///Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base,version=14.29.30037,language=zh-TW/payload.vsix",
+                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/ad94e0bbfe05aeb7d42a3618bca5be21d5da26dedf7975a73e9806606fe0f0a7/Microsoft.VC.14.29.16.10.Tools.Hostx86.Targetx64.Resources.base.cht.vsix"
+                    ],
+                    "sha256": "ad94e0bbfe05aeb7d42a3618bca5be21d5da26dedf7975a73e9806606fe0f0a7",
+                    "lang": "zh-TW",
+                    "strip": 8
+                }
+            ]
+        }
+    }
+}
