@@ -14,15 +14,15 @@
     },
     "exports": {
         "tools": {
-            "CC:": "cl.exe",
-            "CXX:": "cl.exe",
-            "AR:": "lib.exe"
+            "CC": "cl.exe",
+            "CXX": "cl.exe",
+            "AR": "lib.exe"
         },
         "paths": {
-            "PATH:": "."
+            "PATH": "."
         },
         "locations": {
-            "VC_ExecutablePath_x64_x64:": "."
+            "VC_ExecutablePath_x64_x64": "."
         }
     },
     "demands": {
