@@ -1,0 +1,35 @@
+{
+    "info": {
+        "id": "crts/microsoft/desktop-spectre/x86",
+        "version": "14.28.29915",
+        "summary": "MSVC standard library libraries (desktop / kernel32, + spectre)",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "lib": "."
+        },
+        "environment": {
+            "VC_LibraryPath_VC_x86_Desktop_spectre": "."
+        }
+    },
+    "requires": {
+        "crts/microsoft/headers": "14.28.29912"
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VisualCpp.CRT.x86.Desktop.spectre,version=14.28.29915/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/a3f472470df145b7432edd7e58f7bbbdc43d4e8f1a56aea1e5e41fb767fa6f75/Microsoft.VisualCpp.CRT.x86.Desktop.spectre.vsix"
+            ],
+            "sha256": "a3f472470df145b7432edd7e58f7bbbdc43d4e8f1a56aea1e5e41fb767fa6f75",
+            "strip": 7
+        }
+    ]
+}

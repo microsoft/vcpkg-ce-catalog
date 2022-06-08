@@ -1,0 +1,43 @@
+{
+    "info": {
+        "id": "crts/microsoft/desktop/arm64",
+        "version": "14.28.29915",
+        "summary": "MSVC standard library libraries (desktop / kernel32)",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "lib": "."
+        },
+        "environment": {
+            "VC_LibraryPath_VC_ARM64_Desktop": "."
+        }
+    },
+    "requires": {
+        "crts/microsoft/headers": "14.28.29912"
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VisualCpp.CRT.ARM64.Desktop,version=14.28.29915/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/c596b3b1b94db56000463a08304316d2a147f219f4f08b728cbe1717867782a7/Microsoft.VisualCpp.CRT.ARM64.Desktop.vsix"
+            ],
+            "sha256": "c596b3b1b94db56000463a08304316d2a147f219f4f08b728cbe1717867782a7",
+            "strip": 7
+        },
+        {
+            "unzip": [
+                "vsix:///Microsoft.VisualCpp.CRT.ARM64.Desktop.debug,version=14.28.29915/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/d23cf8a6ef6f4502862a40cfc3d21c2585b3bd53c0bd08d425b2ac46d5895981/Microsoft.VisualCpp.CRT.ARM64.Desktop.debug.vsix"
+            ],
+            "sha256": "d23cf8a6ef6f4502862a40cfc3d21c2585b3bd53c0bd08d425b2ac46d5895981",
+            "strip": 7
+        }
+    ]
+}

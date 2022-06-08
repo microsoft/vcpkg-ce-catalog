@@ -1,0 +1,43 @@
+{
+    "info": {
+        "id": "crts/microsoft/desktop/arm64",
+        "version": "14.29.30037",
+        "summary": "MSVC standard library libraries (desktop / kernel32)",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "lib": "."
+        },
+        "environment": {
+            "VC_LibraryPath_VC_ARM64_Desktop": "."
+        }
+    },
+    "requires": {
+        "crts/microsoft/headers": "14.29.30037"
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VC.14.29.16.10.CRT.ARM64.Desktop.base,version=14.29.30037/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/3ab74d8d0d6182c169c7798835f447d71b5f67232eb3bad73b9121081752c704/Microsoft.VC.14.29.16.10.CRT.ARM64.Desktop.base.vsix"
+            ],
+            "sha256": "3ab74d8d0d6182c169c7798835f447d71b5f67232eb3bad73b9121081752c704",
+            "strip": 7
+        },
+        {
+            "unzip": [
+                "vsix:///Microsoft.VC.14.29.16.10.CRT.ARM64.Desktop.debug.base,version=14.29.30037/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/f6dded1aab9b1936e39054336058860bbac0417bdc110b88fca128e5508e2f76/Microsoft.VC.14.29.16.10.CRT.ARM64.Desktop.debug.base.vsix"
+            ],
+            "sha256": "f6dded1aab9b1936e39054336058860bbac0417bdc110b88fca128e5508e2f76",
+            "strip": 7
+        }
+    ]
+}

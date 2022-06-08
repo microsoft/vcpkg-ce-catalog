@@ -21,7 +21,7 @@
         "paths": {
             "PATH": "."
         },
-        "locations": {
+        "environment": {
             "VC_ExecutablePath_x86_x86": "."
         }
     },

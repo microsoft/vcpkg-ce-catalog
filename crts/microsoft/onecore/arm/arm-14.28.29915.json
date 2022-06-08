@@ -1,0 +1,35 @@
+{
+    "info": {
+        "id": "crts/microsoft/onecore/arm",
+        "version": "14.28.29915",
+        "summary": "MSVC standard library libraries (OneCore / apisets)",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "lib": "."
+        },
+        "environment": {
+            "VC_LibraryPath_VC_ARM_OneCore": "."
+        }
+    },
+    "requires": {
+        "crts/microsoft/headers": "14.28.29912"
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VisualCpp.CRT.arm.OneCore.Desktop,version=14.28.29915/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/3c5ae9f1f93b546453b6c9e1778a578221a3fc9c6590de1868f080ddf9d714c0/Microsoft.VisualCpp.CRT.arm.OneCore.Desktop.vsix"
+            ],
+            "sha256": "3c5ae9f1f93b546453b6c9e1778a578221a3fc9c6590de1868f080ddf9d714c0",
+            "strip": 8
+        }
+    ]
+}
