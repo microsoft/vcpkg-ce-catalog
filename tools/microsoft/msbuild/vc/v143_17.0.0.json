@@ -17,7 +17,7 @@
                 "tools/microsoft/msbuild/vc/Desktop/v143": "17.0.0"
             }
         },
-        "ApplicationType:Windows Store": {
+        "ApplicationType:WindowsStore": {
             "requires": {
                 "tools/microsoft/msbuild/vc/UWP": "17.0.0"
             }

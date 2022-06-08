@@ -14,11 +14,11 @@
 	"requires": {
 		"microsoft.visualstudio.vc.msbuild.v170.base": "17.0.0"
 	},
-	"settings": {
-		"locations": {
-			"PlatformDirectory" : ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\Platforms\\ARM64EC"
-		}
-	},
+    "exports": {
+        "environment": {
+            "PlatformDirectory": ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\Platforms\\ARM64EC"
+        }
+    },
 	"install": [
 		{
 			"unzip": [
@@ -26,7 +26,7 @@
 				"https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/7311b6da2a6113c7d04c34bfdfe72eda05e35df46d33ec01d79b56e69e811158/payload.vsix"
 			],
 			"sha256": "7311b6da2a6113c7d04c34bfdfe72eda05e35df46d33ec01d79b56e69e811158",
-			"strip": "1"
+			"strip": 1
 		}
 	]
 }

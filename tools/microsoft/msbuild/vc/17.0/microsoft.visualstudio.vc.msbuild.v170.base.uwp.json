@@ -1,33 +1,33 @@
 {
-	"info": {
-		"id": "microsoft.visualstudio.vc.msbuild.v170.base.uwp",
-		"version": "17.0.0",
-		"description": "MSBuild support for vc projects (generated from VS install)",
-		"summary": "MSBuild support for vc projects (generated from VS install)"
-	}, 
-	"contacts": {
-		"Olga Arkhipova": {
-			"email": "olgaark@microsoft.com",
-			"role": "publisher"
-		}
-	},
-	"requires": {
-		"microsoft.visualstudio.vc.msbuild.v170.base": "17.0.0"
-	},
-	"settings": {
-		"locations": {
-			"ApplicationTypeDirectory" : ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\Application Type\\Windows Store",
-			"ApplicationTypeRevisionDirectory" : ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\Application Type\\Windows Store\\10.0"
-		}
-	},
-	"install": [
-		{
-			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.base.uwp,version=17.0.0,productArch=neutral/payload.vsix",
-				"https://download.visualstudio.microsoft.com/download/pr/1772f2ff-8ade-425c-a34a-7fad616734ec/578111b59b740eb60e224b82d799fd83238b49c44a905c6852c9cd0f1501e531/payload.vsix"
-			],
-			"sha256": "578111b59b740eb60e224b82d799fd83238b49c44a905c6852c9cd0f1501e531",
-			"strip": "1"
-		}
-	]
+    "info": {
+        "id": "microsoft.visualstudio.vc.msbuild.v170.base.uwp",
+        "version": "17.0.0",
+        "description": "MSBuild support for vc projects (generated from VS install)",
+        "summary": "MSBuild support for vc projects (generated from VS install)"
+    },
+    "contacts": {
+        "Olga Arkhipova": {
+            "email": "olgaark@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "requires": {
+        "microsoft.visualstudio.vc.msbuild.v170.base": "17.0.0"
+    },
+    "exports": {
+        "environment": {
+            "ApplicationTypeDirectory": ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\Application Type\\Windows Store",
+            "ApplicationTypeRevisionDirectory": ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\Application Type\\Windows Store\\10.0"
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///microsoft.visualstudio.vc.msbuild.v170.base.uwp,version=17.0.0,productArch=neutral/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/1772f2ff-8ade-425c-a34a-7fad616734ec/578111b59b740eb60e224b82d799fd83238b49c44a905c6852c9cd0f1501e531/payload.vsix"
+            ],
+            "sha256": "578111b59b740eb60e224b82d799fd83238b49c44a905c6852c9cd0f1501e531",
+            "strip": 1
+        }
+    ]
 }
