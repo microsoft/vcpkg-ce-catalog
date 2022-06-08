@@ -1,0 +1,35 @@
+{
+    "info": {
+        "id": "sdks/microsoft/atl-spectre",
+        "version": "14.29.30037",
+        "summary": "Active Template Library w/ Spectre mitigations"
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "demands": {
+        "target:x86": {
+            "requires": {
+                "sdks/microsoft/atl-spectre/x86": "14.29.30037"
+            }
+        },
+        "target:x64": {
+            "requires": {
+                "sdks/microsoft/atl-spectre/x64": "14.29.30037"
+            }
+        },
+        "target:arm": {
+            "requires": {
+                "sdks/microsoft/atl-spectre/arm": "14.29.30037"
+            }
+        },
+        "target:arm64": {
+            "requires": {
+                "sdks/microsoft/atl-spectre/arm64": "14.29.30037"
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "info": {
+        "id": "sdks/microsoft/mfc-spectre/unicode/arm64",
+        "version": "14.28.29914",
+        "summary": "Microsoft Foundation Classes, Unicode w/ Spectre mitigations",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "lib": ".",
+            "requires": "",
+            "crts/microsoft/headers": "14.28.29914"
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VisualCpp.MFC.ARM64.Spectre,version=14.28.29914/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/272a70458733128a6a6c1eab53affd084d635779cb7e8617be77e8d6f162f05f/Microsoft.VisualCpp.MFC.ARM64.Spectre.vsix"
+            ],
+            "sha256": "272a70458733128a6a6c1eab53affd084d635779cb7e8617be77e8d6f162f05f",
+            "strip": 9
+        },
+        {
+            "unzip": [
+                "vsix:///Microsoft.VisualCpp.MFC.ARM64.Debug.Spectre,version=14.28.29914/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/2a19d9c27593b53dda42f787041611b22ef9b05f1fa1533f935f79a87194d7cc/Microsoft.VisualCpp.MFC.ARM64.Debug.Spectre.vsix"
+            ],
+            "sha256": "2a19d9c27593b53dda42f787041611b22ef9b05f1fa1533f935f79a87194d7cc",
+            "strip": 9
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "info": {
+        "id": "sdks/microsoft/mfc-spectre/mbcs/arm64",
+        "version": "14.29.30037",
+        "summary": "Microsoft Foundation Classes, legacy MBCS libraries w/ Spectre mitigations",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "lib": ".",
+            "requires": "",
+            "crts/microsoft/headers": "14.29.30037"
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VC.14.29.16.10.MFC.MBCS.arm64.Spectre.base,version=14.29.30037/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/cdaac874458eebcab49bb494a18137043d903afa162eacc04992b12c29b4e0b9/Microsoft.VC.14.29.16.10.MFC.MBCS.arm64.Spectre.base.vsix"
+            ],
+            "sha256": "cdaac874458eebcab49bb494a18137043d903afa162eacc04992b12c29b4e0b9",
+            "strip": 9
+        },
+        {
+            "unzip": [
+                "vsix:///Microsoft.VC.14.29.16.10.MFC.MBCS.arm64.Spectre.base,version=14.29.30037/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/cdaac874458eebcab49bb494a18137043d903afa162eacc04992b12c29b4e0b9/Microsoft.VC.14.29.16.10.MFC.MBCS.arm64.Spectre.base.vsix"
+            ],
+            "sha256": "cdaac874458eebcab49bb494a18137043d903afa162eacc04992b12c29b4e0b9",
+            "strip": 9
+        }
+    ]
+}
