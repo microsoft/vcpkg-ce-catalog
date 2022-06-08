@@ -15,9 +15,30 @@
         "not target": {
             "error": "In order to use the MSVC compiler, the --target:<> must be set."
         },
-        "windows and x64 and target:x86": {
+        "not windows": {
+            "error": "The MSVC compiler must be run on Windows."
+        },
+        "not x64": {
+            "error": "The MSVC compiler must be run on an x64 machine."
+        },
+        "target:x86": {
             "requires": {
                 "microsoft/msvc/x64_x86": "14.29.30037"
+            }
+        },
+        "target:x64": {
+            "requires": {
+                "microsoft/msvc/x64_x64": "14.29.30037"
+            }
+        },
+        "target:arm": {
+            "requires": {
+                "microsoft/msvc/x64_arm": "14.29.30037"
+            }
+        },
+        "target:arm64": {
+            "requires": {
+                "microsoft/msvc/x64_arm64": "14.29.30037"
             }
         }
     }

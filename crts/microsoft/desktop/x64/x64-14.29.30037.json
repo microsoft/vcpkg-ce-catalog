@@ -11,12 +11,16 @@
             "role": [ "publisher" ]
         }
     },
-    "exports": {
-        "paths": {
-            "lib": "."
-        },
-        "environment": {
-            "VC_LibraryPath_VC_x64_Desktop": "."
+    "demands": {
+        "windows": {
+            "exports": {
+                "paths": {
+                    "LIB": "."
+                },
+                "environment": {
+                    "VC_LibraryPath_VC_x64_Desktop": "."
+                }
+            }
         }
     },
     "requires": {

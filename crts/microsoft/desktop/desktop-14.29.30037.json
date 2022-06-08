@@ -16,6 +16,24 @@
                 "crts/microsoft/desktop/x86": "14.29.30037",
                 "crts/microsoft/onecore/x86": "14.29.30037"
             }
+        },
+        "target:x64": {
+            "requires": {
+                "crts/microsoft/desktop/x64": "14.29.30037",
+                "crts/microsoft/onecore/x64": "14.29.30037"
+            }
+        },
+        "target:arm": {
+            "requires": {
+                "crts/microsoft/desktop/arm": "14.29.30037",
+                "crts/microsoft/onecore/arm": "14.29.30037"
+            }
+        },
+        "target:arm64": {
+            "requires": {
+                "crts/microsoft/desktop/arm64": "14.29.30037",
+                "crts/microsoft/onecore/arm64": "14.29.30037"
+            }
         }
     }
 }
