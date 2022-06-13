@@ -1,6 +1,6 @@
 {
     "info": {
-        "id": "sdks/microsoft/windows/windows",
+        "id": "sdks/microsoft/windows",
         "version": "10.0.19041",
         "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications.",
         "summary": "Microsoft Windows SDK"
