@@ -8,11 +8,6 @@
       "espidf"
     ]
   },
-  "requires": {
-    "system/python": "3.0.0",
-    "system/pip": "21.0.0",
-    "system/git": "2.0.0"
-  },
   "install": {
     "git": "https://github.com/espressif/esp-idf",
     "commit": "2f9d47c708f39772b0e8f92d147b9e85aa3a0b19",
@@ -22,19 +17,6 @@
     ]
   },
   "demands": {
-    "windows and not skip-long-path-check": {
-      "unless": {
-        "from": "$environment.Path",
-        "where": [
-          "pwsh.exe",
-          "powershell.exe"
-        ],
-        "run": "\"$0\" -command (Get-ItemProperty HKLM:\\SYSTEM\\CurrentControlSet\\Control\\FileSystem).LongPathsEnabled",
-        "select": "/(\\d*)/ig",
-        "is": "$1 == 0",
-        "error": "The ESP-IDF tools require long file name support in Windows. \n       Please enable long file names in the Windows registry by running the following \n       command in PowerShell and rebooting the computer. \n\n       New-ItemProperty -Path HKLM:\\SYSTEM\\CurrentControlSet\\Control\\FileSystem  -Name LongPathsEnabled -Value 1 -PropertyType DWORD -Force\n\n       Note: you can use --skip-long-path-check to skip this check."
-      }
-    },
     "windows": {
       "exports": {
         "tools": {
