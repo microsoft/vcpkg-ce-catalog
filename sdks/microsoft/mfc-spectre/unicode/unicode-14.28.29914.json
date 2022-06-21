@@ -1,0 +1,35 @@
+{
+    "info": {
+        "id": "sdks/microsoft/mfc-spectre/unicode",
+        "version": "14.28.29914",
+        "summary": "Microsoft Foundation Classes, Unicode w/ Spectre mitigations"
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "demands": {
+        "target:x86": {
+            "requires": {
+                "sdks/microsoft/mfc-spectre/unicode/x86": "14.28.29914"
+            }
+        },
+        "target:x64": {
+            "requires": {
+                "sdks/microsoft/mfc-spectre/unicode/x64": "14.28.29914"
+            }
+        },
+        "target:arm": {
+            "requires": {
+                "sdks/microsoft/mfc-spectre/unicode/arm": "14.28.29914"
+            }
+        },
+        "target:arm64": {
+            "requires": {
+                "sdks/microsoft/mfc-spectre/unicode/arm64": "14.28.29914"
+            }
+        }
+    }
+}

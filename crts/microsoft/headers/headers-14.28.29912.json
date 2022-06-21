@@ -1,0 +1,39 @@
+{
+    "info": {
+        "id": "crts/microsoft/headers",
+        "version": "14.28.29912",
+        "summary": "C runtime headers."
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "include": "."
+        },
+        "environment": {
+            "VC_VC_IncludePath": "."
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VisualCpp.CRT.Headers,version=14.28.29912/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/f0ca381a-91ee-464f-8f0f-71613e5c014a/73fe4a0b1f2e8c03b56622c769c2b01b47df5d5c12c43c58beb3ac7970f08994/Microsoft.VisualCpp.CRT.Headers.vsix"
+            ],
+            "sha256": "73fe4a0b1f2e8c03b56622c769c2b01b47df5d5c12c43c58beb3ac7970f08994",
+            "strip": 6
+        },
+        {
+            "unzip": [
+                "vsix:///Microsoft.VisualCpp.ASAN.Headers,version=14.28.29915/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/b1efe46ad35398be30182d02fc0564b45194f3e96379283a349e77ed36ac3395/Microsoft.VisualCpp.ASAN.Headers.vsix"
+            ],
+            "sha256": "b1efe46ad35398be30182d02fc0564b45194f3e96379283a349e77ed36ac3395",
+            "strip": 8
+        }
+    ]
+}

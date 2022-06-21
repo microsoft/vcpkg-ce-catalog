@@ -1,0 +1,39 @@
+{
+    "info": {
+        "id": "sdks/microsoft/mfc/unicode/arm64",
+        "version": "14.29.30037",
+        "summary": "Microsoft Foundation Classes, Unicode",
+        "options": [ "dependencyOnly" ]
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "lib": ".",
+            "requires": "",
+            "crts/microsoft/headers": "14.29.30037"
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VC.14.29.16.10.MFC.ARM64.base,version=14.29.30037/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/e8b4816bd2cb37455367f379e5d599bbab8fcc138fcbdaec7667a4c042013167/Microsoft.VC.14.29.16.10.MFC.ARM64.base.vsix"
+            ],
+            "sha256": "e8b4816bd2cb37455367f379e5d599bbab8fcc138fcbdaec7667a4c042013167",
+            "strip": 8
+        },
+        {
+            "unzip": [
+                "vsix:///Microsoft.VC.14.29.16.10.MFC.ARM64.Debug.base,version=14.29.30037/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/4fcbc49a648fdc13979e45cd33c87cdc3c971f99b07062206c0ccd651f86ad92/Microsoft.VC.14.29.16.10.MFC.ARM64.Debug.base.vsix"
+            ],
+            "sha256": "4fcbc49a648fdc13979e45cd33c87cdc3c971f99b07062206c0ccd651f86ad92",
+            "strip": 8
+        }
+    ]
+}
