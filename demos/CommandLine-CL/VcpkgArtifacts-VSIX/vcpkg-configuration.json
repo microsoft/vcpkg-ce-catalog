@@ -1,0 +1,19 @@
+{
+  "registries": [
+    {
+      "name": "demo1",
+      "location": "c:/VcpkgDemo/catalogs/vcpkg-ce-catalog.demo1",
+      "kind": "artifact"
+    },
+    {
+      "name": "microsoft",
+      "location": "https://aka.ms/vcpkg-ce-default",
+      "kind": "artifact"
+    }
+  ],
+    "requires": {
+        "demo1:sdks/microsoft/windows/windows": "*",
+        "demo1:crts/microsoft/desktop": "* 14.29.30037",
+        "demo1:microsoft/msvc": "14.29.30037"
+    }
+}
