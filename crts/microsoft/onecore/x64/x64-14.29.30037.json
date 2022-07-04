@@ -11,14 +11,14 @@
             "role": [ "publisher" ]
         }
     },
-    "exports": {
-        "paths": {
-            "lib": "."
-        },
-        "environment": {
-            "VC_LibraryPath_VC_x64_OneCore": "."
-        }
+  "exports": {
+    "paths": {
+      "LIB": "."
     },
+    "locations": {
+      "VC_LibraryPath_VC_x64_OneCore": "."
+    }
+  },
     "requires": {
         "crts/microsoft/headers": "14.29.30037"
     },

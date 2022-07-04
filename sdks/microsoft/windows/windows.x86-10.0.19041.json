@@ -28,7 +28,7 @@
             ],
             "PATH": "./bin"
         },
-        "environment": {
+        "locations": {
             "WindowsSDK_LibraryPath_x86": [
                 "./c/ucrt/x86",
                 "./c/um/x86"

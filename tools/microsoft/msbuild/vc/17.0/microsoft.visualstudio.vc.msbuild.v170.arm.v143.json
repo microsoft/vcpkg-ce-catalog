@@ -14,11 +14,11 @@
 	"requires": {
 		"microsoft.visualstudio.vc.msbuild.v170.arm": "17.0.0"
 	},
-    "exports": {
-        "environment": {
-            "ToolsetDirectory": ".\\Contents\\Msbuild\\Microsoft\\VC\\v170\\Platforms\\ARM\\PlatformToolsets\\v143"
-        }
-    },
+	"exports": {
+		"locations": {
+			"ToolsetDirectory" : "."
+		}
+	},
 	"install": [
 		{
 			"unzip": [
@@ -26,7 +26,7 @@
 				"https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/c69413d4b093b41f925c1dd13860aa4c7354ec9d157aaf2736eeb6224f67619d/payload.vsix"
 			],
 			"sha256": "c69413d4b093b41f925c1dd13860aa4c7354ec9d157aaf2736eeb6224f67619d",
-			"strip": 1
+			"strip": 9
 		}
 	]
 }
