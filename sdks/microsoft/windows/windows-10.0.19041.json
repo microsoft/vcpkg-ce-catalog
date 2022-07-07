@@ -57,7 +57,7 @@
       "_UCRTContentRoot": "./c"
     },
     "properties": {
-      "TargetPlatformVersion": "10.0.19041.0",
+      "WindowsTargetPlatformVersion": "10.0.19041.0",
       "WindowsSdkDir_10": "$(_WindowsSdkDir_10)\\",
       "WindowsSdkDir": "$(WindowsSdkDir_10)",
       "UCRTContentRoot": "$(_UCRTContentRoot)\\",
