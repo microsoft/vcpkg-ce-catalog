@@ -1,56 +1,68 @@
 {
-    "info": {
-        "id": "sdks/microsoft/windows",
-        "version": "10.0.19041",
-        "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications.",
-        "summary": "Microsoft Windows SDK"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "install": [
-        {
-            "unzip": [
-                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp/10.0.19041.5"
-            ],
-            "sha256": "35074cafacc99a47e87c25641f98e0952576487fe29607103f83d61540ad0523"
-        }
-    ],
-    "demands": {
-        "windows and target:arm": {
-            "requires": {
-                "sdks/microsoft/windows/windows.arm": "10.0.19041"
-            }
-        },
-        "windows and target:arm64": {
-            "requires": {
-                "sdks/microsoft/windows/windows.arm64": "10.0.19041"
-            }
-        },
-        "windows and target:x64": {
-            "requires": {
-                "sdks/microsoft/windows/windows.x64": "10.0.19041"
-            }
-        },
-        "windows and target:x86": {
-            "requires": {
-                "sdks/microsoft/windows/windows.x86": "10.0.19041"
-            }
-        }
-    },
-    "exports": {
-        "paths": {
-            "include": [
-                "./c/Include/10.0.19041.0/cppwinrt",
-                "./c/Include/10.0.19041.0/shared",
-                "./c/Include/10.0.19041.0/ucrt",
-                "./c/Include/10.0.19041.0/um",
-                "./c/Include/10.0.19041.0/winrt"
-            ],
-            "PATH": "./bin"
-        }
+  "info": {
+    "id": "sdks/microsoft/windows",
+    "version": "10.0.19041",
+    "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications.",
+    "summary": "Microsoft Windows SDK"
+  },
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [ "publisher" ]
     }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp/10.0.19041.5"
+      ],
+      "sha256": "35074cafacc99a47e87c25641f98e0952576487fe29607103f83d61540ad0523"
+    }
+  ],
+  "demands": {
+    "windows and target:arm": {
+      "requires": {
+        "sdks/microsoft/windows/windows.arm": "10.0.19041"
+      }
+    },
+    "windows and target:arm64": {
+      "requires": {
+        "sdks/microsoft/windows/windows.arm64": "10.0.19041"
+      }
+    },
+    "windows and target:x64": {
+      "requires": {
+        "sdks/microsoft/windows/windows.x64": "10.0.19041"
+      }
+    },
+    "windows and target:x86": {
+      "requires": {
+        "sdks/microsoft/windows/windows.x86": "10.0.19041"
+      }
+    }
+  },
+  "exports": {
+    "paths": {
+      "include": [
+        "./c/Include/10.0.19041.0/cppwinrt",
+        "./c/Include/10.0.19041.0/shared",
+        "./c/Include/10.0.19041.0/ucrt",
+        "./c/Include/10.0.19041.0/um",
+        "./c/Include/10.0.19041.0/winrt"
+      ],
+      "PATH": "./bin"
+    },
+    "locations": {
+      "_WindowsSdkDir_10": "./c",
+      "_UCRTContentRoot": "./c"
+    },
+    "properties": {
+      "TargetPlatformVersion": "10.0.19041.0",
+      "WindowsSdkDir_10": "$(_WindowsSdkDir_10)\\",
+      "WindowsSdkDir": "$(WindowsSdkDir_10)",
+      "UCRTContentRoot": "$(_UCRTContentRoot)\\",
+      "UniversalCRTSdkDir_10": "$(UCRTContentRoot)",
+      "UniversalCRTSdkDir": "$(UCRTContentRoot)"
+    }
+  }
 }
