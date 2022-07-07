@@ -1,16 +1,16 @@
 {
-    "info": {
-        "id": "crts/microsoft/onecore/x64",
-        "version": "14.29.30037",
-        "summary": "MSVC standard library libraries (OneCore / apisets)",
-        "options": [ "dependencyOnly" ]
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
+  "info": {
+    "id": "crts/microsoft/onecore/x64",
+    "version": "14.29.30037",
+    "summary": "MSVC standard library libraries (OneCore / apisets)",
+    "options": [ "dependencyOnly" ]
+  },
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [ "publisher" ]
+    }
+  },
   "exports": {
     "paths": {
       "LIB": "."
@@ -19,17 +19,17 @@
       "VC_LibraryPath_VC_x64_OneCore": "."
     }
   },
-    "requires": {
-        "crts/microsoft/headers": "14.29.30037"
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VC.14.29.16.10.CRT.x64.OneCore.Desktop.base,version=14.29.30037/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/3326b6c4eb13290c41f51a5478aedbca5471f2c2d0be123dce3932ed21bafb6a/Microsoft.VC.14.29.16.10.CRT.x64.OneCore.Desktop.base.vsix"
-            ],
-            "sha256": "3326b6c4eb13290c41f51a5478aedbca5471f2c2d0be123dce3932ed21bafb6a",
-            "strip": 8
-        }
-    ]
+  "requires": {
+    "crts/microsoft/headers": "14.29.30037"
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VC.14.29.16.10.CRT.x64.OneCore.Desktop.base,version=14.29.30037/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/3326b6c4eb13290c41f51a5478aedbca5471f2c2d0be123dce3932ed21bafb6a/Microsoft.VC.14.29.16.10.CRT.x64.OneCore.Desktop.base.vsix"
+      ],
+      "sha256": "3326b6c4eb13290c41f51a5478aedbca5471f2c2d0be123dce3932ed21bafb6a",
+      "strip": 8
+    }
+  ]
 }
