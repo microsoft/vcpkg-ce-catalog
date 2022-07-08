@@ -82,7 +82,7 @@
       "UniversalDebugCRT_ExecutablePath_ARM64": ".\\c\\bin\\10.0.19041.0\\ARM64\\ucrt",
 
       "UniversalCRT_IncludePath": ".\\c\\Include\\10.0.19041.0\\ucrt;",
-      "UniversalCRT_SourcePath": ".\\c\\Source\\10.0.19041.0\\ucrt;",
+      "UniversalCRT_SourcePath": ".\\c\\Source\\10.0.19041.0\\ucrt;"
     },
     "properties": {
       "WindowsTargetPlatformVersion": "10.0.19041.0",
@@ -93,7 +93,6 @@
 
       "WindowsSDK_IncludePath": "$(UM_IncludePath);$(KIT_SHARED_IncludePath);$(WinRT_IncludePath);$(CppWinRT_IncludePath);$(WindowsSDK_IncludePath)",
       "WindowsSDK_HasVersionedContent": "true"
-
     }
   }
 }
