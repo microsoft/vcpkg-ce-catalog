@@ -1,0 +1,23 @@
+{
+  "registries": [
+    {
+      "kind": "artifact",
+      "name": "demo1",
+      "location": "c:/vcpkgDemos2/catalogs/vcpkg-ce-catalog.demo1",
+    }
+  ],
+
+  "requires": {
+    "local:tools/microsoft/msbuild/vc/Desktop/v143": "17.0.0"
+  },
+
+  "demands" : {  
+    "not msbuild_only": {
+      "requires": {
+         "local:microsoft/msvc": "14.29.30037",
+         "local:crts/microsoft/desktop": "14.29.30037",
+         "local:sdks/microsoft/windows": "10.0.19041"
+      }
+    }
+  }
+}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  About Corext Packaging
+  http://sharepoint/sites/corext/LivingDocs/CoreXTv4.aspx
+
+  About This File
+  http://sharepoint/sites/corext/LivingDocs/Corext.config.aspx
+
+
+  Corext.exe package configuration
+   @cacheRoot      : install location for all packages
+   @generationRoot : generation dir for redirect files
+   @verbose        : 'true' to dump the nuget commandline and send the verbosity flag to nuget
+
+-->
+<corext cacheRoot="%NugetMachineInstallRoot%" generationRoot="%PackageAddressGenDir%" batchSize="10">
+  <repositories default="VS" buildagent="VS">
+    <!-- We must use only one nuget repository to mitigate against hijacking attacks. -->
+    <!-- See: https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-24105 -->
+    <!-- All other repositories are configured as upstreams on (as of 2020-12-14) -->
+    <!-- https://devdiv.visualstudio.com/DefaultCollection/DevDiv/_packaging?_a=settings&feed=MSVC&view=upstreams -->
+    <!-- <repo name="VS" uri="https://pkgs.dev.azure.com/devdiv/_packaging/msvc/nuget/v3/index.json" /> -->
+    <repo name="VS" uri="https://pkgs.dev.azure.com/devdiv/_packaging/VS-CoreXtFeeds/nuget/v3/index.json" />
+  </repositories>
+  <!--
+    * allowedLinkDestinations/directory : Directories where links to packages can be created
+  -->
+  <allowedLinkDestinations>
+    <directory>src\CompatibilityData</directory>
+    <directory>src\ExternalApis</directory>
+    <directory>src\public</directory>
+    <directory>src\tools\vctools</directory>
+    <directory>src\tools\DevDiv\BuildTasks</directory>
+    <directory>src\tools\DevDiv\NonShippingBuildTasks</directory>
+    <directory>src\tools\FxCop</directory>
+    <directory>src\tools\jobify</directory>
+    <directory>src\tools\Perl</directory>
+    <directory>src\tools\x86</directory>
+    <directory>src\tools\amd64</directory>
+    <directory>src\tools\contest</directory>
+    <directory>src\tools\netcore</directory>
+    <directory>src\tools\nuget</directory>
+    <directory>src\tools\devdiv\OptProf</directory>
+    <directory>src\tools\devdiv\x86</directory>
+    <directory>src\tools\Drop.App</directory>
+    <directory>src\tools\ManifestTool</directory>
+    <directory>src\tools\Runall</directory>
+    <directory>src\tools\vcpkg</directory>
+    <directory>src\tools\VstsClientLibraries\bin</directory>
+    <directory>src\tools\WindowsPerformanceToolkit</directory>
+    <directory>src\tools\WindowsSDK</directory>
+    <directory>src\tools\LLVM</directory>
+    <directory>src\tools\VisualStudio</directory>
+    <directory>src\redist</directory>
+    <directory>src\vctools\nonship\bin</directory>
+    <directory>src\vctools\nonship\cpfe</directory>
+    <directory>src\vctools\StaticAnalysis\tools\CommandLine</directory>
+    <directory>src\vctools\StaticAnalysis\tools\log4net</directory>
+    <directory>src\vctools\StaticAnalysis\tools\MicrosoftFxPortability</directory>
+    <directory>src\vctools\StaticAnalysis\tools\System.Data.SQLite</directory>
+    <directory>src\vctools\StaticAnalysis\tools\VSTest</directory>
+    <directory>src\vctools\StaticAnalysis\tools\Vulcan</directory>
+    <directory>src\vctools\StaticAnalysis\tools\WiX</directory>
+    <directory>src\vctools\StaticAnalysis\tools\XCeed</directory>
+    <directory>src\vctools\StaticAnalysis\APIScan\src\Data</directory>
+    <directory>src\vctools\StaticAnalysis\Test\APIScan\Functional\Basic\TestData</directory>
+    <directory>src\vctools\StaticAnalysis\Test\APIScan\Performance\Collateral</directory>
+    <directory>src\vctools\StaticAnalysis\Test\APIScan\Regression\DevDiv2.2014\TestData</directory>
+    <directory>src\vctools\StaticAnalysis\Test\APIScan\Unit\CommonSteps\TestData</directory>
+    <directory>src\vctools\StaticAnalysis\Test\APIScan\Unit\Decompression\TestData</directory>
+    <directory>src\vctools\StaticAnalysis\Test\APIScan\Unit\TestData</directory>
+    <directory>src\vctools\StaticAnalysis\Test\Max\TestBinaries</directory>
+    <directory>src\vctools\StaticAnalysis\Test\Vulcan\TestInputDefinitions\VulcanTestBinaries\bin</directory>
+    <directory>src\qa\testenv_external</directory>
+    <directory>src\qa\VC\BE\ippack</directory>
+    <directory>src\qa\VC\FE\perennial\CCVS_10_0\scaffold\objs</directory>
+    <directory>src\qa\BE\Regress\bin</directory>
+    <directory>src\qa\BE\Regress\netcore\dotnet-proxy\bin</directory>
+    <directory>src\tools\VM\Packages</directory>
+    <directory>src\tools\IRExplorer</directory>
+  </allowedLinkDestinations>
+  <!--
+    * packages
+    *   @baseScenario : CoreXT-inherited scenario that enforces a base package set
+    * packages/package
+    *   @id        : package name
+    *   @version   : current package version
+    *   @link      : where under %ROOT% the package should be linked (must be listed in allowedLinkDestinations above)
+    *  [@mode]     : Optional mode works as follows:
+    *                 Direct (or blank) - The root of the package in the package cache will be linked to the destination
+    *                 Contents          - The individual directory entries one level deep will be linked to the destination
+    *                 Skip              - Nothing will be linked (for debugging purposes)
+    *  [@tags]     : Optional list of strings (no spaces) that are used with profiles to select packages
+    *  [@override] : Optional override used to generate addresses
+    *  [@allMacros]: Optional true to force major.minor.version and major.minor.version.revision
+    *                even if a more specific ver exists.  Normally we skip between major.minor and fullest.
+    *  [@initOrder]: Optional ordering for init.cmd recursive runs.  Aggregates are all 50, default is
+    *                packageIndexPosition+100
+  -->
+  <packages>
+
+    <!-- VS Tools -->
+    <package id="MsBuild.Corext" mode="Contents" version="17.0.2" link="src\tools\VisualStudio" tags="build_common,vc,tools,contest" />
+    <package id="Microsoft.DevDiv.Engineering.Telemetry" version="1.0.85" tags="build_common,contest,tools,test,setup,oss,rlexe,spec" />
+
+    <!-- VC Toolset -->
+    <package id="VisualCppTools.Internal.VS2017Layout" version="14.29.30037" link="src\tools\Vctools\Dev16" tags="tools" />
+
+    <!-- Windows SDK Packages -->
+    <package id="Microsoft.Windows.SDK.CPP" version="10.0.22000.196" link="src\ExternalAPIs\WindowsSDKInc" mode="Contents" tags="sdk_all,sdk_win,vc,exapis" />
+    <package id="Microsoft.Windows.SDK.CPP.X86" version="10.0.22000.196" link="src\ExternalAPIs\WindowsSDKLib\x86" mode="Contents" tags="sdk_all,sdk_win,vc,exapis" />
+    <package id="Microsoft.Windows.SDK.CPP.X64" version="10.0.22000.196" link="src\ExternalAPIs\WindowsSDKLib\x64" mode="Contents" tags="sdk_all,sdk_win,vc,exapis" />
+    <package id="Microsoft.Windows.SDK.CPP.arm" version="10.0.22000.196" link="src\ExternalAPIs\WindowsSDKLib\arm" mode="Contents" tags="sdk_all,sdk_win,vc,exapis" />
+    <package id="Microsoft.Windows.SDK.CPP.arm64" version="10.0.22000.196" link="src\ExternalAPIs\WindowsSDKLib\arm64" mode="Contents" tags="sdk_all,sdk_win,vc,exapis" />
+    <package id="Microsoft.Windows.SDK.BuildTools" version="10.0.22000.197" link="src\tools\WindowsSDK" mode="Contents" tags="sdk_all,sdk_win,vc,tools,setup" />
+
+    <!-- Redist Packages -->
+    <package id="VS.Redist.Vctools.Amd64" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\amd64" tags="redist,debugger-redist" />
+    <package id="VS.Redist.Vctools.Arm" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\arm" tags="redist,debugger-redist" />
+    <package id="VS.Redist.Vctools.Arm64" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\arm64" tags="redist,debugger-redist" />
+    <package id="VS.Redist.VCTools.OneCore.amd64" version="1.0.5592057-17-1-20220103-01" link="src\redist\vctools\onecore\amd64" tags="redist,debugger-redist" />
+    <package id="VS.Redist.VCTools.OneCore.arm" version="1.0.5592057-17-1-20220103-01" link="src\redist\vctools\onecore\arm" tags="redist,debugger-redist" />
+    <package id="VS.Redist.VCTools.OneCore.arm64" version="1.0.5592057-17-1-20220103-01" link="src\redist\vctools\onecore\arm64" tags="redist,debugger-redist" />
+    <package id="VS.Redist.VCTools.OneCore.x86" version="1.0.5592057-17-1-20220103-01" link="src\redist\vctools\onecore\x86" tags="redist,debugger-redist" />
+    <package id="VS.Redist.Vctools.X86.Chs" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\chs" tags="redistLoc,zh,zh-CN,zh-SG" />
+    <package id="VS.Redist.Vctools.X86.Cht" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\cht" tags="redistLoc,zh,zh-HK,zh-MO,zh-TW" />
+    <package id="VS.Redist.Vctools.X86.Csy" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\csy" tags="redistLoc,cs,cs-CZ" />
+    <package id="VS.Redist.Vctools.X86.Deu" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\deu" tags="redistLoc,de,de-AT,de-DE,de-LI,de-LU,de-CH" />
+    <package id="VS.Redist.Vctools.X86.Enu" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\enu" tags="redist,redistLoc,en,en-US" />
+    <package id="VS.Redist.Vctools.X86.Esn" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\esn" tags="redistLoc,es,es-AR,es-VE,es-BO,es-CL,es-CO,es-CR,es-DO,es-EC,es-SV,es-GT,es-HN,es-MX,es-NI,es-PA,es-PY,es-PE,es-PR,es-ES,es-US,es-UY" />
+    <package id="VS.Redist.Vctools.X86.Fra" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\fra" tags="redistLoc,fr,fr-BE,fr-CA,fr-FR,fr-LU,fr-MC,fr-CH" />
+    <package id="VS.Redist.Vctools.X86.Ita" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\ita" tags="redistLoc,it,it-CH,it-IT" />
+    <package id="VS.Redist.Vctools.X86.Jpn" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\jpn" tags="redistLoc,ja,ja-JP" />
+    <package id="VS.Redist.Vctools.X86.Kor" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\kor" tags="redistLoc,ko,ko-KR" />
+    <package id="VS.Redist.Vctools.X86.Plk" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\plk" tags="redistLoc,pl,pl-PL" />
+    <package id="VS.Redist.Vctools.X86.Ptb" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\ptb" tags="redistLoc,pt,pt-BR" />
+    <package id="VS.Redist.Vctools.X86.Rus" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\rus" tags="redistLoc,ru,ru-RU" />
+    <package id="VS.Redist.Vctools.X86.Trk" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86\trk" tags="redistLoc,tr,tr-TR" />
+    <package id="VS.Redist.Vctools.X86Files" version="1.0.5592057-17-1-20220103-01" link="src\Redist\vctools\x86" mode="Contents" tags="exapis,debugger-redist" />
+
+  </packages>
+
+  <!--
+    * profiles/profile : Profiles that identify which packages to select for download, installation, and linking
+    *   @name         : name for the profile
+    *   @description  : description of the profile
+    *
+    * This schema is available for defining profiles and is preferred for new profiles:
+    *
+    * <profile name="name" description="description">
+    *   <include>
+    *     <id>id pattern</id>
+    *     <tag>aTag</tag>
+    *   </include>
+    *   <exclude>
+    *     <id>id pattern</id>
+    *     <tag>aTag</tag>
+    *   </exclude>
+    * </profile>
+    *
+    * Notes:
+    * - An include element is required but the exclude element is optional
+    * - [in/ex]clude elements can contain one or more id and/or tag elements
+    * - The id element supports wildcards (* and ?)
+    * - You cannot use both the deprecated attribute schema (below) and the new element schema (above) in the same profile
+    *
+    * Deprecated attributes:
+    *   @include  : list of tags which identifies which packages to include
+    *  [@exclude] : Optional list of tags which identifies which packages to exclude (takes precedence over include)
+  -->
+  <profiles>
+   <profile name="Default" include="tools,exapis,vc,test" description="Default Packages (tools and ExternalAPIs)" />
+   <profile name="BuildAll" include="pr_ci,test_submit,build_common,build_all,sdk_all,oss_all" description="Packages to build" />
+   <profile name="BuildFE" include="test_submit,build_common,sdk_ucrt,sdk_win,sdk_dotnet" description="Packages to build FE projects and submit test runs" />
+   <profile name="BuildBE" include="test_submit,build_common,build_be,sdk_ucrt,sdk_win,sdk_wincore,sdk_dotnet,oss_wil" description="Packages to build BE projects and submit test runs" />
+   <profile name="BuildController" include="test" description="Test-related packages only." />
+   <profile name="Contest" include="contest" description="Test-related packages for Contest only." />
+   <profile name="Setup" include="setup" description="Setup-related packages only." />
+   <profile name="PerfOSSTP" include="test,nuget,exapis,tp" description="Test,nuget,exapis related packages for CQ, OSS and TP testing. Can be later trimmed to a shorter list" />
+   <profile name="PureOSS" include="oss" description="Packages required for running OSS" />
+   <profile name="Tools" include="tools" description="Tools only" />
+   <profile name="OSSMTDIFF" include="oss,mtdiff" description="Packages required for running OSS MTDIFF project" />
+   <profile name="RL" include="test,nuget,exapis,rl,rlexe" description="Packages required for RL run" />
+   <profile name="RLExecuteOnly" include="rlexe,nuget,exapis" description="Packages required for RL execute only phase" />
+   <profile name="SpecBuild" include="test,nuget,exapis,tp,sdk_win" description="Packages required for building Spec 2017 + TBB" />
+   <profile name="SpecExecuteOnly" include="nuget,spec" description="Packages required for running and parsing the Spec benchmark suite in Azure Pipelines workflows" />
+   <profile name="SanitizerUnitTest" include="tools,exapis,vc,test,asan,nuget" description="Packages required for running sanitizer unit tests" />
+   <profile name="ContainerManager" include="containers" description="A slim profile with only required packages for running general PowerShell scripts that may manage Azure containers." />
+  </profiles>
+  <scenarios />
+</corext>

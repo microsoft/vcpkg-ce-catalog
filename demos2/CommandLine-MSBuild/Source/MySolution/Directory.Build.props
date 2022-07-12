@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<PropertyGroup>
+		<EnableVcpkgArtifactsIntegration>true</EnableVcpkgArtifactsIntegration>
+            <!-- <VcpkgEnableManifest>true</VcpkgEnableManifest> -->
+            <VCLibPackagePath>$(USERPROFILE)\.vcpkg\scripts\buildsystems\msbuild\vcpkg</VCLibPackagePath>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PreferredToolArchitecture>x64</PreferredToolArchitecture>
+		<OutDir>$(MsbuildThisFileDirectory)Outputs\$(Platform)\$(Configuration)\</OutDir>
+		<IntDir>$(MsbuildThisFileDirectory)Outputs\Intermediate\$(MSBuildProjectName)\$(Platform)\$(Configuration)\</IntDir>
+            <DisableRegistryUse>true</DisableRegistryUse>
+            <CheckMSVCComponents>false</CheckMSVCComponents>
+	</PropertyGroup>
+</Project>
+
