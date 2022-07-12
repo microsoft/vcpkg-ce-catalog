@@ -22,6 +22,10 @@
     },
     "locations": {
       "VC_ExecutablePath_x64_x86": "."
+    },
+    "properties": {
+      "VCToolArchitecture": "Native64Bit",
+      "VC_ExecutablePath_x86": "$(VC_ExecutablePath_x64_x86)"
     }
   },
   "demands": {

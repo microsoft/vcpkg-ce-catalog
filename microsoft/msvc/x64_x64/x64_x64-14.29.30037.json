@@ -21,9 +21,13 @@
         "paths": {
             "PATH": "."
         },
-        "locations": {
-            "VC_ExecutablePath_x64_x64": "."
-        }
+      "locations": {
+        "VC_ExecutablePath_x64_x64": "."
+      },
+      "properties": {
+        "VCToolArchitecture": "Native64Bit",
+        "VC_ExecutablePath_x64": "$(VC_ExecutablePath_x64_x64)"
+      }
     },
     "demands": {
         "not windows and not x64": {
