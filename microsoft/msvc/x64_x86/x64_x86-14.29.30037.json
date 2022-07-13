@@ -1,47 +1,56 @@
 {
-    "info": {
-        "id": "microsoft/msvc/x64_x86",
-        "version": "14.29.30037",
-        "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
-        "summary": "The Microsoft Visual C++ Compiler (MSVC)"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "demands": {
-        "windows": {
-            "exports": {
-                "paths": {
-                    "PATH": ".",
-                    "VC_ExecutablePath_x64_x86": "."
-                }
-            }
-        },
-        "not windows and not x64": {
-            "error": "This variant if for a windows x64 host"
-        },
-        "x64 and target:x86": {
-            "install": [
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.base,version=14.29.30037,chip=x64/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/929136ec6dc5efd8662afe524c49962b481327acbdfd24b0aa9b295f076e8d01/Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.base.vsix"
-                    ],
-                    "sha256": "929136ec6dc5efd8662afe524c49962b481327acbdfd24b0aa9b295f076e8d01",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.Resources.base,version=14.29.30037,chip=x64,language=en-US/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/33244d399e8d1320c1236e10b25b587521d8ce772d08c6cfd25991eb3abadea4/Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.Resources.base.enu.vsix"
-                    ],
-                    "sha256": "33244d399e8d1320c1236e10b25b587521d8ce772d08c6cfd25991eb3abadea4",
-                    "strip": 8
-                }
-            ]
-        }
+  "info": {
+    "id": "microsoft/msvc/x64_x86",
+    "version": "14.29.30037",
+    "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
+    "summary": "The Microsoft Visual C++ Compiler (MSVC)"
+  },
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [ "publisher" ]
     }
+  },
+  "exports": {
+    "tools": {
+      "CC": "cl.exe",
+      "CXX": "cl.exe",
+      "AR": "lib.exe"
+    },
+    "paths": {
+      "PATH": "."
+    },
+    "locations": {
+      "VC_ExecutablePath_x64_x86": "."
+    },
+    "properties": {
+      "VCToolArchitecture": "Native64Bit",
+      "VC_ExecutablePath_x86": "$(VC_ExecutablePath_x64_x86)"
+    }
+  },
+  "demands": {
+    "not windows and not x64": {
+      "error": "This variant if for a windows x64 host"
+    },
+    "x64 and target:x86": {
+      "install": [
+        {
+          "unzip": [
+            "vsix:///Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.base,version=14.29.30037,chip=x64/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/929136ec6dc5efd8662afe524c49962b481327acbdfd24b0aa9b295f076e8d01/Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.base.vsix"
+          ],
+          "sha256": "929136ec6dc5efd8662afe524c49962b481327acbdfd24b0aa9b295f076e8d01",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.Resources.base,version=14.29.30037,chip=x64,language=en-US/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/33244d399e8d1320c1236e10b25b587521d8ce772d08c6cfd25991eb3abadea4/Microsoft.VC.14.29.16.10.Tools.HostX64.TargetX86.Resources.base.enu.vsix"
+          ],
+          "sha256": "33244d399e8d1320c1236e10b25b587521d8ce772d08c6cfd25991eb3abadea4",
+          "strip": 8
+        }
+      ]
+    }
+  }
 }

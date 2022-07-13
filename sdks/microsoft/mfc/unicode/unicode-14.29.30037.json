@@ -1,35 +1,38 @@
 {
-    "info": {
-        "id": "sdks/microsoft/mfc/unicode",
-        "version": "14.29.30037",
-        "summary": "Microsoft Foundation Classes, Unicode"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "demands": {
-        "target:x86": {
-            "requires": {
-                "sdks/microsoft/mfc/unicode/x86": "14.29.30037"
-            }
-        },
-        "target:x64": {
-            "requires": {
-                "sdks/microsoft/mfc/unicode/x64": "14.29.30037"
-            }
-        },
-        "target:arm": {
-            "requires": {
-                "sdks/microsoft/mfc/unicode/arm": "14.29.30037"
-            }
-        },
-        "target:arm64": {
-            "requires": {
-                "sdks/microsoft/mfc/unicode/arm64": "14.29.30037"
-            }
-        }
+  "info": {
+    "id": "sdks/microsoft/mfc/unicode",
+    "version": "14.29.30037",
+    "summary": "Microsoft Foundation Classes, Unicode"
+  },
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [ "publisher" ]
     }
+  },
+  "requires": {
+    "crts/microsoft/headers": "14.29.30037"
+  },
+  "demands": {
+    "target:x86": {
+      "requires": {
+        "sdks/microsoft/mfc/unicode/x86": "14.29.30037"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "sdks/microsoft/mfc/unicode/x64": "14.29.30037"
+      }
+    },
+    "target:arm": {
+      "requires": {
+        "sdks/microsoft/mfc/unicode/arm": "14.29.30037"
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "sdks/microsoft/mfc/unicode/arm64": "14.29.30037"
+      }
+    }
+  }
 }
