@@ -3,7 +3,8 @@
 
 set SET_DEMO_ENVIRONMENT=-quiet
 call %~dp0\set-demo-environment.cmd %1
-set _echo=echo [DEBUG] command:
+set SET_DEMO_ENVIRONMENT=
+rem set _echo=echo [DEBUG] command:
 set _echo=
 
 if exist %$_vcpkgInstallDir% (
@@ -18,6 +19,20 @@ if exist %$_vcpkgCatalogsDir% (
     echo Deleting vcpkg catalogs '%$_vcpkgCatalogsDir%'...
     %_echo% rd /s /q %$_vcpkgCatalogsDir%
 )
+:reset_jsonfiles
+set _msgEmitted=false
+set _tmpfile=%TEMP%\%~n0.tmp
+where /r %$_vcpkgDemoDir% vcpkg-configuration.json >%_tmpfile% 2>&1
+if errorlevel 0 if not errorlevel 1 (
+    for /f "tokens=1*" %%f in (%_tmpfile%) do (
+    if "!_msgEmitted!" == "false" (
+        set _msgEmitted=true
+    )
+    set _fileT=%%f
+    if "%%g" NEQ "" set _fileT=!_fileT! %%g
+    del "!_fileT!"
+)
+:end_reset_jsonfiles
 if exist %$_vcpkgDemoDir%\Source\HelloWorld (
     set _msgEmitted=false
     for %%i in (obj exe pdb ilk) do (
@@ -33,6 +48,10 @@ if exist %$_vcpkgDemoDir%\Source\HelloWorld (
 if exist %$_vcpkgDemoDir%\Source\MySolution\.vcpkg (
     echo Deleting solution-local vcpkg directories in '%$_vcpkgDemoDir%\Source\MySolution'...
     %_echo% rd /s /q %$_vcpkgDemoDir%\Source\MySolution\.vcpkg
+)
+if exist %$_vcpkgDemoDir%\Source\MySolution\Outputs (
+    echo Deleting solution-local output directories in '%$_vcpkgDemoDir%\Source\MySolution'...
+    %_echo% rd /s /q %$_vcpkgDemoDir%\Source\MySolution\Outputs
 )
 if exist %$_corextNugetCache% (
     echo Deleting CoreXT NuGet cache '%$_corextNugetCache%'...

@@ -2,151 +2,205 @@
 
 :init
 if "%$_DEMO_ENVIRONMENT_INITIALIZED%" NEQ "" goto :skip_demo_env_init
-call ..\set-demo-environment.cmd
+set SET_DEMO_ENVIRONMENT=-quiet
+call %$_vcpkgDemoRoot%\set-demo-environment.cmd CommandLine-CL
+set SET_DEMO_ENVIRONMENT=
 set $_DEMO_ENVIRONMENT_INITIALIZED=1
 set $_envvarList=VCPKG Enable INC LIB VC_
+set $_vcpkgDemoSourceDir=%$_vcpkgDemoRoot%\%$_vcpkgDemoName%\Source\HelloWorld
 doskey reset_demo_env=set $_DEMO_ENVIRONMENT_INITIALIZED=
 :skip_demo_env_init
-set $_actionOptions=bootstrap acquire activate activatex86 activatex64 build
-set $_activateTarget=
-set $_activateShowConfig=true
-set $_actions=
+set $_actionOptions=reset bootstrap acquire activate clean build show_config
+set $_validActivateTargets=x64 x86
+set $_activateShowConfig=false
+set $_action=
+set $_actionArg=
 set $_exitCode=
-set $_cmdVcpkg=.\vcpkg-init.cmd
+set $_cmdVcpkg=%~dp0vcpkg-init.cmd
 
 :process_args
-set $_actions=%*
-if /I "%$_actions%" == "" echo Running all actions 'bootstrap acquire activate run'... & set $_actions=%$_actionOptions%
+set $_action=%1
+set $_actionArg=%2
+set $_buildArgs=%3
 setlocal enabledelayedexpansion
-set _allOptionsValid=true
-set _invalidActionList=
-for %%a in (%$_actions%) do (
-    set _fIsValidOption=false
-    for %%o in (%$_actionOptions%) do (
-        if /I "%%a" == "%%o" set _fIsValidOption=true
-    )
-    if "!_fIsValidOption!" == "false" (
-        set _allOptionsValid=false
-        set _invalidActionList=!_invalidActionList! %%a
-    )
+set _fIsValidAction=false
+for %%o in (%$_actionOptions%) do (
+    if /I "%$_action%" == "%%o" set _fIsValidAction=true
 )
-if "%_allOptionsValid%" == "false" (
-    echo ERROR: invalid actions '%_invalidActionList:~1%' specified, valid actions are {%$_actionOptions%}
+if "!_fIsValidAction!" == "false" (
+    echo ERROR: invalid action '%_action%' specified
     exit /b 1
 )
 endlocal
 
 :start
-for %%a in (%$_actions%) do (
-    call :%%a
-)
+call :%$_action% %$_actionArg%
 goto :done
 
+:reset
+pushd .
+echo [%TIME%] Start Reset...
+set $_exitCode=0
+set $cmd=%$_vcpkgDemoRoot%\reset-machine.cmd %$_vcpkgDemoName%
+call :run_command - Running reset script...
+set $_exitCode=%ERRORLEVEL%
+echo [%TIME%] Finish Reset.
+popd .
+exit /b %$_exitCode%
+
 :bootstrap
+pushd .
 echo [%TIME%] Start Bootstrap...
 set $_exitCode=0
 
 call :echo Installing Git...
 call where.exe git.exe >nul 2>&1
 if errorlevel 1 (
-    echo - Git not installed, please install from https://gitforwindows.org/
-    start https://gitforwindows.org/
+    set $cmd=start https://gitforwindows.org/
+    call :run_command - Git not installed: please install from https://gitforwindows.org/
 ) else (
     echo - Git is already installed
 )
 
 call :echo Installing vcpkg...
-if not exist "%$_vcpkgInstallDir%" (
-    echo - Downloading...
-    curl -LO https://aka.ms/vcpkg-init.cmd
-    echo - Running vcpkg-init...
-    if exist .\vcpkg-init.cmd call .\vcpkg-init.cmd
-) else (
+if exist "%$_vcpkgInstallDir%" if exist .\vcpkg-init.cmd (
     echo - Vcpkg is already installed
+) else (
+    set $cmd=curl -LO https://aka.ms/vcpkg-init.cmd
+    call :run_command - Downloading vcpkg...
+    if exist .\vcpkg-init.cmd (
+        set $cmd=.\vcpkg-init.cmd
+        call :run_command - Running vcpkg-init in %CD%...
+    )
 )
 
 :install_vcpkg_ce_catalog
 call :echo Installing vcpkg-ce-catalog (private)...
 if not exist %$_vcpkgCatalogRoot% (
-    echo - Cloning...
-    git clone https://github.com/markle11m/vcpkg-ce-catalog.git %$_vcpkgCatalogRoot%
+    rem git clone https://github.com/markle11m/vcpkg-ce-catalog.git %$_vcpkgCatalogRoot%
+    set $cmd=git clone https://github.com/olgaark/vcpkg-ce-catalog.git %$_vcpkgCatalogRoot%
+    call :run_command - Cloning...
     pushd %$_vcpkgCatalogRoot%
     echo - Updating to current branch...
-    git checkout msvc-experiments
-    git pull
+    set $cmd=git checkout msvc-experiments
+    call :run_command - - checkout...
+    set $cmd=git pull
+    call :run_command - - pull...
     popd
 ) else (
     echo - Updating to current branch...
     pushd %$_vcpkgCatalogRoot%
-    git checkout -f
-    git pull
-    git checkout msvc-experiments
-    git pull
+    set $cmd=git checkout -f
+    call :run_command - - 
+    set $cmd=git pull
+    call :run_command - - 
+    set $cmd=git checkout msvc-experiments
+    call :run_command - - 
+    set $cmd=git pull
+    call :run_command - - 
     popd
 )
 
 :update_catalog
-call :echo Updating catalog index
-call %$_cmdVcpkg% z-ce regenerate %$_vcpkgCatalogRoot%
+rem set $cmd=%$_cmdVcpkg% z-ce regenerate %$_vcpkgCatalogRoot%
+rem call :run_command Updating catalog index...
 
 :install_empty_manifest
-call :echo Activating empty manifest to bootstrap core dependencies...
-copy vcpkg-configuration.json-bootstrap vcpkg-configuration.json
-call %$_cmdVcpkg% activate
+echo Activating empty manifest to bootstrap core dependencies...
+set $cmd=copy vcpkg-configuration.json-bootstrap vcpkg-configuration.json
+call :run_command - copy bootstrap manifest...
+set $cmd=%$_cmdVcpkg% activate
+call :run_command - activate 
 
 :set_environment
 call :echo Setting bootstrapped demo environment...
 call setenv.cmd
 
 :end_bootstrap
-echo [%TIME%] Finish Bootstrap...
+echo [%TIME%] Finish Bootstrap.
+popd
 exit /b %$_exitCode%
 
 :acquire
+pushd .
 echo [%TIME%] Start Acquisition...
+set $_exitCode=0
 echo No action taken, acquisition will be done as part of the activation step.
 :end_acquire
-echo [%TIME%] Finish Acquisition...
+echo [%TIME%] Finish Acquisition.
+popd
 exit /b %$_exitCode%
 
-:activatex86
-set $_activateTarget=x86
-set $_activateShowConfig=
-goto :activate
-:activatex64
-set $_activateTarget=x64
-set $_activateShowConfig=
-goto :activate
-
 :activate
-if "%$_activateTarget%" == "" set $_activateTarget=x86
-echo [%TIME%] Start Activation (--target:%$_activateTarget%)...
-set $_exitCode=0
-call :echo Update to demo manifest...
-copy vcpkg-configuration.json-demo vcpkg-configuration.json
-if "%$_activateShowConfig%" == "true" (
-    start notepad vcpkg-configuration.json
-    pause
+set $_vcpkgActivateTarget=%1
+if "%$_vcpkgActivateTarget%" == "" (
+    set $_vcpkgActivateTarget=x86
+    goto :start_activation
 )
+for %%t in (%$_validActivateTargets%) do (
+    if /I "%%t" == "%$_vcpkgActivateTarget%" goto :start_activation
+)
+echo ERROR: cannot activate invalid target '%$_vcpkgActivateTarget%'
+exit /b 400
+:start_activation
+pushd .
+echo [%TIME%] Start Activation (--target:%$_vcpkgActivateTarget%)...
+set $_exitCode=0
+set $cmd=copy vcpkg-configuration.json-demo %$_vcpkgDemoSourceDir%\vcpkg-configuration.json
+call :run_command Update source to use demo manifest...
+setlocal enabledelayedexpansion
+if "%$_activateShowConfig%" == "true" (
+    set /P _responseT=- show vcpkg-configuration.json? [y/n] 
+    if "!_responseT:~0,1!" == "y" (
+        rem start notepad %$_vcpkgDemoDir%\Source\MySolution\vcpkg-configuration.json
+        rem pause
+        type %$_vcpkgDemoSourceDir%\vcpkg-configuration.json
+    )
+)
+endlocal
 call :show_environment initial
-call :echo Activating (%$_activateTarget%)...
-call %$_cmdVcpkg% activate --target:%$_activateTarget%
+call :echo Activating %$_vcpkgActivateTarget%...
+pushd %$_vcpkgDemoSourceDir%
+set $cmd=%$_cmdVcpkg% activate --target:%$_vcpkgActivateTarget%
+call :run_command -activate
+popd
 call :show_environment activated
 :end_activate
-echo [%TIME%] Finish Activation...
+echo [%TIME%] Finish Activation.
+popd
+exit /b %$_exitCode%
+
+:clean
+pushd .
+echo [%TIME%] Start Clean...
+set $_exitCode=0
+setlocal
+pushd %$_vcpkgDemoDir%\Source\MySolution
+set _target=%1
+if "%_target%" == "" set _target=%$_vcpkgActivateTarget%
+call test-project.cmd clean %$_vcpkgActivateTarget%
+popd
+endlocal
+:end_clean
+echo [%TIME%] Finish Clean.
+popd
 exit /b %$_exitCode%
 
 :build
+pushd .
 echo [%TIME%] Start Build and Run...
 set $_exitCode=0
 setlocal
-pushd %$_vcpkgDemoDir%\Samples\HelloWorld
-call buildit.cmd
-call runit.cmd
+pushd %$_vcpkgDemoDir%\Source\HelloWorld
+call test-project.cmd build %$_vcpkgActivateTarget% %$_buildArgs%
+call test-project.cmd run %$_vcpkgActivateTarget%
+rem call buildit.cmd %$_vcpkgActivateTarget%
+rem call runit.cmd %$_vcpkgActivateTarget%
 popd
 endlocal
 :end_build
-echo [%TIME%] Finish Build...
+echo [%TIME%] Finish Build.
+popd
 exit /b %$_exitCode%
 
 :echo
@@ -154,10 +208,35 @@ title %*
 echo [%TIME%] %*
 exit /b 0
 
+:show_config
+echo [%TIME%] Showing demo config...
+set $_exitCode=0
+set _demoConfig=%~dp0\vcpkg-configuration.json-demo
+if exist %_demoConfig% (
+    type %~dp0\vcpkg-configuration.json-demo
+) else (
+    call :echo - unable to locate demo config file '%_demoConfig%'
+    set $_exitCode=1
+)
+set _demoConfig=
+:end_show_config
+echo [%TIME%] Finish Showing demo config.
+exit /b %$_exitCode%
+
 :show_environment
 echo Showing environment variables (%*)...
+echo **********
 for %%e in (%$_envvarList%) do set %%e
+echo **********
 exit /b 0
+
+:run_command
+rem exitCode run_command(message) [$cmd]
+rem Prints the message+command, runs the command (in $cmd), returns the exit code from the command
+echo %* [command: %$cmd%]
+call %$cmd%
+set _exitCode=%ERRORLEVEL%
+exit /b %_exitCode%
 
 :done
 exit /b 0

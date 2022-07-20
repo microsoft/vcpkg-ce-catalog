@@ -10,9 +10,12 @@ if /I "%_targetArch%" NEQ "x64" if /I "%_targetArch%" NEQ "x86" (
     echo invalid Platform architecture '%_targetArch%' - running x64 instead
     set _targetArch=x64
 )
+set _archOutputDir=!_targetArch!
+if /I "%_targetArch%" == "x86" set _archOutputDir=Win32
 
 :start
-set $_exeFile=.\Outputs\%_targetArch%\Debug\ConsoleApplication.exe
+set $_configuration=Release
+set $_exeFile=.\Outputs\%_archOutputDir%\%$_configuration%\ConsoleApplication.exe
 if not exist %$_exeFile% (
     echo - error: unable to run - '%$_exeFile%' does not exist
     exit /b 1

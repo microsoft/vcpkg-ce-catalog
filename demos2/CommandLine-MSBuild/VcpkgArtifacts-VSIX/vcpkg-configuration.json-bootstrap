@@ -2,8 +2,8 @@
   "registries": [
     {
       "kind": "artifact",
-      "name": "demo1",
-      "location": "c:/vcpkgDemos2/catalogs/vcpkg-ce-catalog.demo1"
+      "name": "local",
+      "location": "c:/VcpkgDemos2/catalogs/vcpkg-ce-catalog.demo"
     },
     {
       "name": "microsoft",

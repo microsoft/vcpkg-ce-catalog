@@ -1,8 +1,8 @@
 {
   "registries": [
     {
-      "name": "demo1",
-      "location": "c:/VcpkgDemo/catalogs/vcpkg-ce-catalog.demo1",
+      "name": "local",
+      "location": "c:/VcpkgDemos2/catalogs/vcpkg-ce-catalog.demo",
       "kind": "artifact"
     },
     {

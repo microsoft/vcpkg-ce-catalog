@@ -3,7 +3,7 @@
     {
       "kind": "artifact",
       "name": "local",
-      "location": "c:/vcpkgDemos2/catalogs/vcpkg-ce-catalog.demo1"
+      "location": "c:/VcpkgDemos2/catalogs/vcpkg-ce-catalog.demo"
     }
   ],
 
