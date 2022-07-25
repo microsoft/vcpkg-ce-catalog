@@ -2,15 +2,17 @@
 
 :init
 if "%$_DEMO_ENVIRONMENT_INITIALIZED%" NEQ "" goto :skip_demo_env_init
+set $_DemoName=CommandLine-MSBuild
+set $_DemoSourceDir=Source\MySolution
 set SET_DEMO_ENVIRONMENT=-quiet
-call %$_vcpkgDemoRoot%\set-demo-environment.cmd CommandLine-MSBuild
+call %$_vcpkgDemoRoot%\set-demo-environment.cmd %$_DemoName%
 set SET_DEMO_ENVIRONMENT=
-set $_DEMO_ENVIRONMENT_INITIALIZED=1
+set $_vcpkgDemoSourceDir=%$_vcpkgDemoRoot%\%$_vcpkgDemoName%\%$_DemoSourceDir%
 set $_envvarList=VCPKG Enable INC LIB VC_
-set $_vcpkgDemoSourceDir=%$_vcpkgDemoRoot%\%$_vcpkgDemoName%\Source\MySolution
+set $_DEMO_ENVIRONMENT_INITIALIZED=1
 doskey reset_demo_env=set $_DEMO_ENVIRONMENT_INITIALIZED=
 :skip_demo_env_init
-set $_actionOptions=reset bootstrap acquire activate clean build rebuild show_config install_vcrt
+set $_actionOptions=reset bootstrap acquire activate clean build rebuild show_config install_vcrt install_vs
 set $_validActivateTargets=x64 x86
 set $_activateShowConfig=false
 set $_action=
@@ -21,6 +23,7 @@ set $_cmdVcpkg=%~dp0vcpkg-init.cmd
 :process_args
 set $_action=%1
 set $_actionArg=%2
+set $_buildArgs=%3
 setlocal enabledelayedexpansion
 set _fIsValidAction=false
 for %%o in (%$_actionOptions%) do (
@@ -61,23 +64,24 @@ if errorlevel 1 (
     echo - Git is already installed
 )
 
+:install_vcpkg
 call :echo Installing vcpkg...
 if exist "%$_vcpkgInstallDir%" if exist .\vcpkg-init.cmd (
     echo - Vcpkg is already installed
-) else (
-    set $cmd=curl -LO https://aka.ms/vcpkg-init.cmd
-    call :run_command - Downloading vcpkg...
-    if exist .\vcpkg-init.cmd (
-        set $cmd=.\vcpkg-init.cmd
-        call :run_command - Running vcpkg-init in %CD%...
-    )
+    goto :end_install_vcpkg
 )
+set $cmd=curl -LO https://aka.ms/vcpkg-init.cmd
+call :run_command - Downloading vcpkg...
+if exist .\vcpkg-init.cmd (
+    set $cmd=.\vcpkg-init.cmd
+    call :run_command - Running vcpkg-init in %CD%...
+)
+:end_install_vcpkg
 
 :install_vcpkg_ce_catalog
 call :echo Installing vcpkg-ce-catalog (private)...
 if not exist %$_vcpkgCatalogRoot% (
-    rem git clone https://github.com/markle11m/vcpkg-ce-catalog.git %$_vcpkgCatalogRoot%
-    set $cmd=git clone https://github.com/olgaark/vcpkg-ce-catalog.git %$_vcpkgCatalogRoot%
+    set $cmd=git clone https://github.com/microsoft/vcpkg-ce-catalog.git %$_vcpkgCatalogRoot%
     call :run_command - Cloning...
     pushd %$_vcpkgCatalogRoot%
     echo - Updating to current branch...
@@ -215,6 +219,18 @@ set _demoConfig=
 :end_show_config
 echo [%TIME%] Finish Showing demo config.
 exit /b %$_exitCode%
+
+:install_vs
+call :echo Installing VS...
+rem Use internal dogfood build
+set $cmd=start https://aka.ms/vs/17/intpreview/vs_community.exe
+call :run_command - Downloading latest internal preview VS Community installer...
+call :echo - To install MSBuild, run the installer and select the Desktop C++ workload
+call :echo - with only the C++ core desktop features selected.
+call :echo - Launch Programs and Features to verify VS installation...
+start appwiz.cpl
+echo [%TIME%] Finish Installing VS.
+exit /b 0
 
 :install_vcrt
 echo [%TIME%] Installing VC runtimes...

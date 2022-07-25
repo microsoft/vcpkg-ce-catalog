@@ -30,7 +30,12 @@ goto :%_action%
 :rebuild
 :build
 :clean
-if "%$_MSBuildExe%" == "" echo ERROR: unable to build - variable $_MSBuildExe not set& exit /b 1
+if "%$_MSBuildExe%" == "" (
+    echo ERROR: unable to build - variable $_MSBuildExe not set
+    echo - To install MSBuild, please run the install_vs command to download the Visual Studio installer
+    echo - and install the Desktop C++ workload with only the C++ core desktop features option selected.
+    exit /b 1
+)
 set $_MSBuildArgs=/t:%_msbuildTarget% /p:Configuration=%_msbuildConfig% /p:Platform=%_targetArch% /p:EnableExperimentalVcpkgIntegration=true
 echo Running %_msbuildTarget% command 'msbuild.exe %$_MSBuildArgs%'
 "%$_MSBuildExe%" %$_MSBuildArgs%
@@ -39,7 +44,7 @@ goto :done
 :run
 set $_exeFile=.\Outputs\%_archOutputDir%\%_msbuildConfig%\ConsoleApplication.exe
 if not exist %$_exeFile% (
-    echo - error: unable to run - '%$_exeFile%' does not exist
+    echo ERROR: unable to run - '%$_exeFile%' does not exist
     exit /b 1
 )
 echo Running '%$_exeFile%'...

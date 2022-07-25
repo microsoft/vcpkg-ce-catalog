@@ -28,7 +28,7 @@ if "%~dp0" == "%CD%\" pushd %$_vcpkgDemoDir%
 
 :set_shortcuts
 set _msg=demo commands must be run in the demo directory
-set _vcpkgDemoCommands=reset bootstrap acquire activate clean build rebuild show_config install_vcrt
+set _vcpkgDemoCommands=reset bootstrap acquire activate clean build rebuild show_config install_vcrt install_vs
 doskey help=%$_vcpkgDemoRoot%\%~nx0 help
 doskey reset_machine=%$_vcpkgDemoRoot%\reset_machine.cmd $*
 for %%c in (%_vcpkgDemoCommands%) do (
@@ -58,6 +58,7 @@ echo ^  build [{arch}]      Build and run demo project
 echo ^  rebuild [{arch}]    Rebuild and run demo project
 echo ^  show_config         Show vcpkg-configuration.json file for this build demo
 echo ^  install_vcrt        Download and install latest VC runtime (system-wide install)
+echo ^  install_vs          Download and run the Visual Studio installer
 echo ^  help                Display this usage message
 echo.
 :end_show_usage
