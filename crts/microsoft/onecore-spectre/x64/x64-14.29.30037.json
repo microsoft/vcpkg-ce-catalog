@@ -13,7 +13,7 @@
     },
     "exports": {
       "paths": {
-        "lib": ".",
+        "lib": "."
       },
         "locations": {
             "VC_LibraryPath_VC_x64_OneCore_spectre": "."
