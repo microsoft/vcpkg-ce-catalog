@@ -1,0 +1,56 @@
+{
+    "info": {
+        "id": "sdks/microsoft/windows",
+        "version": "10.0.22621",
+        "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications.",
+        "summary": "Microsoft Windows SDK"
+    },
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [ "publisher" ]
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp/10.0.22621.1"
+            ],
+            "sha256": "180172B69E7A3FF74262919985FA1D3B1C20A135570DE269514AFE754A36D80F"
+        }
+    ],
+    "demands": {
+        "windows and target:arm": {
+            "requires": {
+                "sdks/microsoft/windows/windows.arm": "10.0.22621"
+            }
+        },
+        "windows and target:arm64": {
+            "requires": {
+                "sdks/microsoft/windows/windows.arm64": "10.0.22621"
+            }
+        },
+        "windows and target:x64": {
+            "requires": {
+                "sdks/microsoft/windows/windows.x64": "10.0.22621"
+            }
+        },
+        "windows and target:x86": {
+            "requires": {
+                "sdks/microsoft/windows/windows.x86": "10.0.22621"
+            }
+        }
+    },
+    "exports": {
+        "paths": {
+            "include": [
+                "./c/Include/10.0.22621.0/cppwinrt",
+                "./c/Include/10.0.22621.0/shared",
+                "./c/Include/10.0.22621.0/ucrt",
+                "./c/Include/10.0.22621.0/um",
+                "./c/Include/10.0.22621.0/winrt"
+            ],
+            "PATH": "./bin"
+        }
+    }
+}
