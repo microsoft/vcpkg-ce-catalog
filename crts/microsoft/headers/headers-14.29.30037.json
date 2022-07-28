@@ -17,10 +17,12 @@
     "demands": {
         "windows": {
             "exports": {
-                "paths": {
-                    "INCLUDE": ".",
-                    "VC_VC_IncludePath": "."
-                }
+              "paths": {
+                "INCLUDE": "."
+              },
+              "locations": {
+                "VC_VC_IncludePath": "."
+              }
             }
         }
     },

@@ -10,11 +10,16 @@
             "role": [ "publisher" ]
         }
     },
+    "requires": {
+        "crts/microsoft/headers": "14.29.30037"
+    },
     "exports": {
         "paths": {
-            "include": ".",
-            "requires": "",
-            "crts/microsoft/headers": "14.29.30037"
+            "include": "."
+        },
+        "locations": {
+            "VC_ATLMFC_IncludePath": ".",
+            "VC_ATL_IncludePath": "."
         }
     },
     "install": [

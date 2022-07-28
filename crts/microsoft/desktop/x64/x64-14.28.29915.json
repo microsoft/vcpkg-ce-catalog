@@ -12,10 +12,10 @@
         }
     },
     "exports": {
-        "paths": {
-            "lib": "."
-        },
-        "environment": {
+      "paths": {
+        "lib": "."
+      },
+        "locations": {
             "VC_LibraryPath_VC_x64_Desktop": "."
         }
     },

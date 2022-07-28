@@ -1,39 +1,59 @@
 {
-    "info": {
-        "id": "crts/microsoft/desktop",
-        "version": "14.29.30037",
-        "summary": "MSVC standard library libraries (desktop / kernel32)"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "demands": {
-        "target:x86": {
-            "requires": {
-                "crts/microsoft/desktop/x86": "14.29.30037",
-                "crts/microsoft/onecore/x86": "14.29.30037"
-            }
-        },
-        "target:x64": {
-            "requires": {
-                "crts/microsoft/desktop/x64": "14.29.30037",
-                "crts/microsoft/onecore/x64": "14.29.30037"
-            }
-        },
-        "target:arm": {
-            "requires": {
-                "crts/microsoft/desktop/arm": "14.29.30037",
-                "crts/microsoft/onecore/arm": "14.29.30037"
-            }
-        },
-        "target:arm64": {
-            "requires": {
-                "crts/microsoft/desktop/arm64": "14.29.30037",
-                "crts/microsoft/onecore/arm64": "14.29.30037"
-            }
-        }
+  "info": {
+    "id": "crts/microsoft/desktop",
+    "version": "14.29.30037",
+    "summary": "MSVC standard library libraries (desktop / kernel32)"
+  },
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [ "publisher" ]
     }
+  },
+  "demands": {
+    "target:x86": {
+      "requires": {
+        "crts/microsoft/desktop/x86": "14.29.30037",
+        "crts/microsoft/onecore/x86": "14.29.30037"
+      },
+      "exports": {
+        "properties": {
+          "VC_LibraryPath_VC_x86": "$(VC_LibraryPath_VC_x86_Desktop);$(VC_LibraryPath_VC_x86_OneCore);$(VC_LibraryPath_VC_x86)"
+        }
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "crts/microsoft/desktop/x64": "14.29.30037",
+        "crts/microsoft/onecore/x64": "14.29.30037"
+      },
+      "exports": {
+        "properties": {
+          "VC_LibraryPath_VC_x64": "$(VC_LibraryPath_VC_x64_Desktop);$(VC_LibraryPath_VC_x64_OneCore);$(VC_LibraryPath_VC_x64)"
+        }
+      }
+    },
+    "target:arm": {
+      "requires": {
+        "crts/microsoft/desktop/arm": "14.29.30037",
+        "crts/microsoft/onecore/arm": "14.29.30037"
+      },
+      "exports": {
+        "properties": {
+          "VC_LibraryPath_VC_ARM": "$(VC_LibraryPath_VC_ARM_Desktop);$(VC_LibraryPath_VC_ARM_OneCore);$(VC_LibraryPath_VC_ARM)"
+        }
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "crts/microsoft/desktop/arm64": "14.29.30037",
+        "crts/microsoft/onecore/arm64": "14.29.30037"
+      },
+      "exports": {
+        "properties": {
+          "VC_LibraryPath_VC_ARM64": "$(VC_LibraryPath_VC_ARM64_Desktop);$(VC_LibraryPath_VC_ARM64_OneCore);$(VC_LibraryPath_VC_ARM64)"
+        }
+      }
+    }
+  }
 }

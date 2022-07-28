@@ -15,7 +15,7 @@
         "paths": {
             "lib": "."
         },
-        "environment": {
+        "locations": {
             "VC_LibraryPath_VC_x86_OneCore_spectre": "."
         }
     },
