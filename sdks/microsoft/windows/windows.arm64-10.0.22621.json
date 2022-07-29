@@ -19,5 +19,18 @@
             ],
             "sha256": "224072DA4E8DA888F260AA464DBDFCF5064BB42C408CE477A59DAFF47A255C5C"
         }
-    ]
+    ],
+    "exports": {
+        "paths": {
+            "LIB": [
+                "./c/ucrt/arm64",
+                "./c/um/arm64"
+            ],
+            "PATH": "./bin"
+        },
+        "locations": {
+            "WindowsSDK_LibraryPath_x86": "./c/um/arm64",
+            "UniversalCRT_LibraryPath_x86": "./c/ucrt/arm64"
+        }
+    }
 }
