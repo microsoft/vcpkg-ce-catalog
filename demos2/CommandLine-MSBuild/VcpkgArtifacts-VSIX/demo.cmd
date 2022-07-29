@@ -225,8 +225,8 @@ call :echo Installing VS...
 rem Use internal dogfood build
 set $cmd=start https://aka.ms/vs/17/intpreview/vs_community.exe
 call :run_command - Downloading latest internal preview VS Community installer...
-call :echo - To install MSBuild, run the installer and select the Desktop C++ workload
-call :echo - with only the C++ core desktop features selected.
+call :echo - To install MSBuild and C++ project support, run the installer and select
+call :echo - the Desktop C++ workload with only 'C++ core desktop features' enabled.
 call :echo - Launch Programs and Features to verify VS installation...
 start appwiz.cpl
 echo [%TIME%] Finish Installing VS.
