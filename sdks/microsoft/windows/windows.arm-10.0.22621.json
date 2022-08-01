@@ -29,8 +29,8 @@
             "PATH": "./bin"
         },
         "locations": {
-            "WindowsSDK_LibraryPath_x86": "./c/um/arm",
-            "UniversalCRT_LibraryPath_x86": "./c/ucrt/arm"
+            "WindowsSDK_LibraryPath_arm": "./c/um/arm",
+            "UniversalCRT_LibraryPath_arm": "./c/ucrt/arm"
         }
     }
 }
