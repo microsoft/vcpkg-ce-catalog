@@ -14,7 +14,7 @@
     "install": [
         {
             "unzip": [
-                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp/10.0.18362.0"
+                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp/10.0.18362.5"
             ],
             "sha256": "95A78B474A1C6DC3F1805763CB0FF88078B2A66015EB81C96649EBE0B64EC2D5"
         }
