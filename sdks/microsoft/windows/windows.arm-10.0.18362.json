@@ -1,7 +1,7 @@
 {
     "info": {
         "id": "sdks/microsoft/windows/windows.arm",
-        "version": "10.0.19041",
+        "version": "10.0.18362",
         "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications (targeting ARM).",
         "summary": "Microsoft Windows SDK (targeting ARM)",
         "options": [ "dependencyOnly" ]
@@ -15,9 +15,9 @@
     "install": [
         {
             "unzip": [
-                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.arm/10.0.19041.5"
+                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.arm/10.0.18362.5"
             ],
-            "sha256": "89342E1DA1A6C1482F7E50E7CF913AEA22A6124F21545D7AB891CF12B4FF6261"
+            "sha256": "15E5D8F6AAAC2805344F0042B03E389A1FAEBC780980E3A60A559ADA25247EAA"
         }
     ],
     "exports": {
