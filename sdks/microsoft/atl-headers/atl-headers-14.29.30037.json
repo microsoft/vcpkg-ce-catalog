@@ -1,35 +1,35 @@
 {
-    "info": {
-        "id": "sdks/microsoft/atl-headers",
-        "version": "14.29.30037",
-        "summary": "Active Template Library Headers"
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "requires": {
+    "crts/microsoft/headers": "14.29.30037"
+  },
+  "exports": {
+    "paths": {
+      "include": "."
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "requires": {
-        "crts/microsoft/headers": "14.29.30037"
-    },
-    "exports": {
-        "paths": {
-            "include": "."
-        },
-        "locations": {
-            "VC_ATLMFC_IncludePath": ".",
-            "VC_ATL_IncludePath": "."
-        }
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VC.14.29.16.10.ATL.Headers.base,version=14.29.30037/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/129438a063da8e6fe2120ae3e6f441844e73495b7de9eccc36ced0dab0129887/Microsoft.VC.14.29.16.10.ATL.Headers.base.vsix"
-            ],
-            "sha256": "129438a063da8e6fe2120ae3e6f441844e73495b7de9eccc36ced0dab0129887",
-            "strip": 7
-        }
-    ]
+    "msbuild-properties": {
+      "VC_ATLMFC_IncludePath": "{root}",
+      "VC_ATL_IncludePath": "{root}"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VC.14.29.16.10.ATL.Headers.base,version=14.29.30037/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/129438a063da8e6fe2120ae3e6f441844e73495b7de9eccc36ced0dab0129887/Microsoft.VC.14.29.16.10.ATL.Headers.base.vsix"
+      ],
+      "sha256": "129438a063da8e6fe2120ae3e6f441844e73495b7de9eccc36ced0dab0129887",
+      "strip": 7
+    }
+  ],
+  "id": "sdks/microsoft/atl-headers",
+  "version": "14.29.30037",
+  "summary": "Active Template Library Headers"
 }

@@ -1,32 +1,30 @@
 {
-	"info": {
-		"id": "microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143",
-		"version": "17.0.0",
-		"description": "MSBuild support for vc projects (generated from VS install)",
-		"summary": "MSBuild support for vc projects (generated from VS install)"
-	}, 
-	"contacts": {
-		"Olga Arkhipova": {
-			"email": "olgaark@microsoft.com",
-			"role": "publisher"
-		}
-	},
-	"requires": {
-		"microsoft.visualstudio.vc.msbuild.v170.arm64ec": "17.0.0"
-	},
-	"exports": {
-		"locations": {
-			"ToolsetDirectory" : "."
-		}
-	},
-	"install": [
-		{
-			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143,version=17.0.0,productArch=neutral/payload.vsix",
-				"https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/25d8db367f6cb2f483365340ee0826c84c5ce6756885db42d28f5be68b3c314d/payload.vsix"
-			],
-			"sha256": "25d8db367f6cb2f483365340ee0826c84c5ce6756885db42d28f5be68b3c314d",
-			"strip": 9
-		}
-	]
+  "contacts": {
+    "Olga Arkhipova": {
+      "email": "olgaark@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "requires": {
+    "microsoft.visualstudio.vc.msbuild.v170.arm64ec": "17.0.0"
+  },
+  "exports": {
+    "msbuild-properties": {
+      "ToolsetDirectory": "{root}"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143,version=17.0.0,productArch=neutral/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/25d8db367f6cb2f483365340ee0826c84c5ce6756885db42d28f5be68b3c314d/payload.vsix"
+      ],
+      "sha256": "25d8db367f6cb2f483365340ee0826c84c5ce6756885db42d28f5be68b3c314d",
+      "strip": 9
+    }
+  ],
+  "id": "microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143",
+  "version": "17.0.0",
+  "summary": "MSBuild support for vc projects (generated from VS install)",
+  "description": "MSBuild support for vc projects (generated from VS install)"
 }

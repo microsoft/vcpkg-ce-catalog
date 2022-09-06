@@ -1,32 +1,34 @@
 {
-    "info": {
-        "id": "crts/microsoft/asan/x64",
-        "version": "14.28.29915",
-        "summary": "Libraries supporting address sanitizer.",
-        "options": [ "dependencyOnly" ]
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-        "paths": {
-            "lib": ".",
-            "requires": "",
-            "crts/microsoft/headers": "14.28.29912",
-            "crts/microsoft/desktop": "14.28.29915"
-        }
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VisualCpp.ASAN.X64,version=14.28.29915/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/75d69b626654cdfea1c3a6a986a3476c87498121aead0091e0450b279d16db9a/Microsoft.VisualCpp.ASAN.X64.vsix"
-            ],
-            "sha256": "75d69b626654cdfea1c3a6a986a3476c87498121aead0091e0450b279d16db9a",
-            "strip": 7
-        }
-    ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": ".",
+      "requires": "",
+      "crts/microsoft/headers": "14.28.29912",
+      "crts/microsoft/desktop": "14.28.29915"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VisualCpp.ASAN.X64,version=14.28.29915/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/75d69b626654cdfea1c3a6a986a3476c87498121aead0091e0450b279d16db9a/Microsoft.VisualCpp.ASAN.X64.vsix"
+      ],
+      "sha256": "75d69b626654cdfea1c3a6a986a3476c87498121aead0091e0450b279d16db9a",
+      "strip": 7
+    }
+  ],
+  "id": "crts/microsoft/asan/x64",
+  "version": "14.28.29915",
+  "summary": "Libraries supporting address sanitizer.",
+  "options": [
+    "dependencyOnly"
+  ]
 }

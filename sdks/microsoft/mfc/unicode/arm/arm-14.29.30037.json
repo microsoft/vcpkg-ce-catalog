@@ -1,14 +1,10 @@
 {
-  "info": {
-    "id": "sdks/microsoft/mfc/unicode/arm",
-    "version": "14.29.30037",
-    "summary": "Microsoft Foundation Classes, Unicode",
-    "options": [ "dependencyOnly" ]
-  },
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
-      "role": [ "publisher" ]
+      "role": [
+        "publisher"
+      ]
     }
   },
   "exports": {
@@ -33,5 +29,11 @@
       "sha256": "4a834eea743f512f4d0726ab74fd58b587cf395ee76fc3ee326d2adc9ec76fc9",
       "strip": 8
     }
+  ],
+  "id": "sdks/microsoft/mfc/unicode/arm",
+  "version": "14.29.30037",
+  "summary": "Microsoft Foundation Classes, Unicode",
+  "options": [
+    "dependencyOnly"
   ]
 }

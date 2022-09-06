@@ -1,171 +1,173 @@
 {
-    "info": {
-        "id": "microsoft/msvc/x86_arm64",
-        "version": "14.28.29915",
-        "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
-        "summary": "The Microsoft Visual C++ Compiler (MSVC)",
-        "options": [ "dependencyOnly" ]
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-        "tools": {
-            "CC": "cl.exe",
-            "CXX": "cl.exe",
-            "AR": "lib.exe"
-        },
-        "paths": {
-            "PATH": "."
-        },
-        "locations": {
-            "VC_ExecutablePath_x86_arm64": "."
-        }
-    },
-    "demands": {
-        "not windows and not x86": {
-            "error": "This variant if for a windows x86 host"
-        },
-        "windows and x86": {
-            "install": [
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.Hostx86.Targetarm64,version=14.28.29915/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/129473a5aa2557fd9fa392e659d7c68f2f2c0a99daa73a4e32e39b401020bfaf/Microsoft.VisualCpp.Tools.Hostx86.Targetarm64.vsix"
-                    ],
-                    "sha256": "129473a5aa2557fd9fa392e659d7c68f2f2c0a99daa73a4e32e39b401020bfaf",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=cs-CZ/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/1f01903396af9d51d866fb0ecffeaf5723a665e5d6025ebb0babf1a51b93b1ba/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.csy.vsix"
-                    ],
-                    "sha256": "1f01903396af9d51d866fb0ecffeaf5723a665e5d6025ebb0babf1a51b93b1ba",
-                    "lang": "cs-CZ",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=de-DE/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/c81ca9d134aba76ce9ff360962c2b2e124eca920c8d08ede5398d03e21422da2/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.deu.vsix"
-                    ],
-                    "sha256": "c81ca9d134aba76ce9ff360962c2b2e124eca920c8d08ede5398d03e21422da2",
-                    "lang": "de-DE",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=en-US/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/d5de52fb467e13204da42c300285bd1ff0bc1e944a9402d2132226b49a7fcfec/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.enu.vsix"
-                    ],
-                    "sha256": "d5de52fb467e13204da42c300285bd1ff0bc1e944a9402d2132226b49a7fcfec",
-                    "lang": "en-US",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=es-ES/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/27132e095dba1cc412ec77152d805474692cdf61dcde653d8c611fcf5ddb3a4c/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.esn.vsix"
-                    ],
-                    "sha256": "27132e095dba1cc412ec77152d805474692cdf61dcde653d8c611fcf5ddb3a4c",
-                    "lang": "es-ES",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=fr-FR/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/59c8a8837ea741621e54742f3e8bf9751f646d1761e8cf2175db9c1bbc5ad4cb/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.fra.vsix"
-                    ],
-                    "sha256": "59c8a8837ea741621e54742f3e8bf9751f646d1761e8cf2175db9c1bbc5ad4cb",
-                    "lang": "fr-FR",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=it-IT/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/a0f369bbce5d21729110e7dd79b5cc4bd956c070b7f506a5f9a047536a8dfdd2/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.ita.vsix"
-                    ],
-                    "sha256": "a0f369bbce5d21729110e7dd79b5cc4bd956c070b7f506a5f9a047536a8dfdd2",
-                    "lang": "it-IT",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=ja-JP/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/faf4b32397c3715c6f3f10a096bf353d099533732f591f662ff775065180daea/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.jpn.vsix"
-                    ],
-                    "sha256": "faf4b32397c3715c6f3f10a096bf353d099533732f591f662ff775065180daea",
-                    "lang": "ja-JP",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=ko-KR/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/17f229c20625a66b7c57a901b8adf1af28211186b227e8dafecde89a79390a21/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.kor.vsix"
-                    ],
-                    "sha256": "17f229c20625a66b7c57a901b8adf1af28211186b227e8dafecde89a79390a21",
-                    "lang": "ko-KR",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=pl-PL/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/a45fae87f2c42706f47f3568e83a6215ecbaab88b9961c16a4839cbcbbfdf9ef/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.plk.vsix"
-                    ],
-                    "sha256": "a45fae87f2c42706f47f3568e83a6215ecbaab88b9961c16a4839cbcbbfdf9ef",
-                    "lang": "pl-PL",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=pt-BR/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/8ceacaf10a97d4613086d37918c543cfefd8550669968f3ddb9eec77910cf28e/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.ptb.vsix"
-                    ],
-                    "sha256": "8ceacaf10a97d4613086d37918c543cfefd8550669968f3ddb9eec77910cf28e",
-                    "lang": "pt-BR",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=ru-RU/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/78c0a7325c4219005a949817bec1510a65552c9edb97c7bbbba38cf2c36a799c/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.rus.vsix"
-                    ],
-                    "sha256": "78c0a7325c4219005a949817bec1510a65552c9edb97c7bbbba38cf2c36a799c",
-                    "lang": "ru-RU",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=tr-TR/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/286aef13160ae238a480b3d4209aee54e1bd1e22e7488d6b958e4385b61b4249/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.trk.vsix"
-                    ],
-                    "sha256": "286aef13160ae238a480b3d4209aee54e1bd1e22e7488d6b958e4385b61b4249",
-                    "lang": "tr-TR",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=zh-CN/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/7a85deb5310da69b79d455ce309464d5021410aa173d1e0bb4ed96e8a526597a/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.chs.vsix"
-                    ],
-                    "sha256": "7a85deb5310da69b79d455ce309464d5021410aa173d1e0bb4ed96e8a526597a",
-                    "lang": "zh-CN",
-                    "strip": 8
-                },
-                {
-                    "unzip": [
-                        "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=zh-TW/payload.vsix",
-                        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/64dca57293a36c13b9180824c686f4857a205421c053a4e6eaf246821206809a/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.cht.vsix"
-                    ],
-                    "sha256": "64dca57293a36c13b9180824c686f4857a205421c053a4e6eaf246821206809a",
-                    "lang": "zh-TW",
-                    "strip": 8
-                }
-            ]
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "exports": {
+    "tools": {
+      "CC": "cl.exe",
+      "CXX": "cl.exe",
+      "AR": "lib.exe"
+    },
+    "paths": {
+      "PATH": "."
+    },
+    "msbuild-properties": {
+      "VC_ExecutablePath_x86_arm64": "{root}"
+    }
+  },
+  "demands": {
+    "not windows and not x86": {
+      "error": "This variant if for a windows x86 host"
+    },
+    "windows and x86": {
+      "install": [
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.Hostx86.Targetarm64,version=14.28.29915/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/129473a5aa2557fd9fa392e659d7c68f2f2c0a99daa73a4e32e39b401020bfaf/Microsoft.VisualCpp.Tools.Hostx86.Targetarm64.vsix"
+          ],
+          "sha256": "129473a5aa2557fd9fa392e659d7c68f2f2c0a99daa73a4e32e39b401020bfaf",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=cs-CZ/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/1f01903396af9d51d866fb0ecffeaf5723a665e5d6025ebb0babf1a51b93b1ba/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.csy.vsix"
+          ],
+          "sha256": "1f01903396af9d51d866fb0ecffeaf5723a665e5d6025ebb0babf1a51b93b1ba",
+          "lang": "cs-CZ",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=de-DE/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/c81ca9d134aba76ce9ff360962c2b2e124eca920c8d08ede5398d03e21422da2/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.deu.vsix"
+          ],
+          "sha256": "c81ca9d134aba76ce9ff360962c2b2e124eca920c8d08ede5398d03e21422da2",
+          "lang": "de-DE",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=en-US/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/d5de52fb467e13204da42c300285bd1ff0bc1e944a9402d2132226b49a7fcfec/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.enu.vsix"
+          ],
+          "sha256": "d5de52fb467e13204da42c300285bd1ff0bc1e944a9402d2132226b49a7fcfec",
+          "lang": "en-US",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=es-ES/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/27132e095dba1cc412ec77152d805474692cdf61dcde653d8c611fcf5ddb3a4c/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.esn.vsix"
+          ],
+          "sha256": "27132e095dba1cc412ec77152d805474692cdf61dcde653d8c611fcf5ddb3a4c",
+          "lang": "es-ES",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=fr-FR/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/59c8a8837ea741621e54742f3e8bf9751f646d1761e8cf2175db9c1bbc5ad4cb/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.fra.vsix"
+          ],
+          "sha256": "59c8a8837ea741621e54742f3e8bf9751f646d1761e8cf2175db9c1bbc5ad4cb",
+          "lang": "fr-FR",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=it-IT/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/a0f369bbce5d21729110e7dd79b5cc4bd956c070b7f506a5f9a047536a8dfdd2/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.ita.vsix"
+          ],
+          "sha256": "a0f369bbce5d21729110e7dd79b5cc4bd956c070b7f506a5f9a047536a8dfdd2",
+          "lang": "it-IT",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=ja-JP/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/faf4b32397c3715c6f3f10a096bf353d099533732f591f662ff775065180daea/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.jpn.vsix"
+          ],
+          "sha256": "faf4b32397c3715c6f3f10a096bf353d099533732f591f662ff775065180daea",
+          "lang": "ja-JP",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=ko-KR/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/17f229c20625a66b7c57a901b8adf1af28211186b227e8dafecde89a79390a21/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.kor.vsix"
+          ],
+          "sha256": "17f229c20625a66b7c57a901b8adf1af28211186b227e8dafecde89a79390a21",
+          "lang": "ko-KR",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=pl-PL/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/a45fae87f2c42706f47f3568e83a6215ecbaab88b9961c16a4839cbcbbfdf9ef/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.plk.vsix"
+          ],
+          "sha256": "a45fae87f2c42706f47f3568e83a6215ecbaab88b9961c16a4839cbcbbfdf9ef",
+          "lang": "pl-PL",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=pt-BR/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/8ceacaf10a97d4613086d37918c543cfefd8550669968f3ddb9eec77910cf28e/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.ptb.vsix"
+          ],
+          "sha256": "8ceacaf10a97d4613086d37918c543cfefd8550669968f3ddb9eec77910cf28e",
+          "lang": "pt-BR",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=ru-RU/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/78c0a7325c4219005a949817bec1510a65552c9edb97c7bbbba38cf2c36a799c/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.rus.vsix"
+          ],
+          "sha256": "78c0a7325c4219005a949817bec1510a65552c9edb97c7bbbba38cf2c36a799c",
+          "lang": "ru-RU",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=tr-TR/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/286aef13160ae238a480b3d4209aee54e1bd1e22e7488d6b958e4385b61b4249/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.trk.vsix"
+          ],
+          "sha256": "286aef13160ae238a480b3d4209aee54e1bd1e22e7488d6b958e4385b61b4249",
+          "lang": "tr-TR",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=zh-CN/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/7a85deb5310da69b79d455ce309464d5021410aa173d1e0bb4ed96e8a526597a/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.chs.vsix"
+          ],
+          "sha256": "7a85deb5310da69b79d455ce309464d5021410aa173d1e0bb4ed96e8a526597a",
+          "lang": "zh-CN",
+          "strip": 8
+        },
+        {
+          "unzip": [
+            "vsix:///Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources,version=14.28.29915,language=zh-TW/payload.vsix",
+            "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/64dca57293a36c13b9180824c686f4857a205421c053a4e6eaf246821206809a/Microsoft.VisualCpp.Tools.HostX86.TargetARM64.Resources.cht.vsix"
+          ],
+          "sha256": "64dca57293a36c13b9180824c686f4857a205421c053a4e6eaf246821206809a",
+          "lang": "zh-TW",
+          "strip": 8
+        }
+      ]
+    }
+  },
+  "id": "microsoft/msvc/x86_arm64",
+  "version": "14.28.29915",
+  "summary": "The Microsoft Visual C++ Compiler (MSVC)",
+  "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
+  "options": [
+    "dependencyOnly"
+  ]
 }

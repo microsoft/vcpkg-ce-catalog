@@ -1,35 +1,37 @@
 {
-    "info": {
-        "id": "sdks/microsoft/atl-spectre/x86",
-        "version": "14.28.29914",
-        "summary": "Active Template Library w/ Spectre mitigations",
-        "options": [ "dependencyOnly" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": "."
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-        "paths": {
-            "lib": "."
-        },
-        "locations": {
-            "VC_LibraryPath_ATL_x86_spectre": "."
-        }
-    },
-    "requires": {
-        "sdks/microsoft/atl-headers": "14.28.29914"
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VisualCpp.ATL.X86.Spectre,version=14.28.29914/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/8d212a6dd7a894374c235d598a86e2fe9f98099e23efb134b88fa4a721069bf9/Microsoft.VisualCpp.ATL.X86.Spectre.vsix"
-            ],
-            "sha256": "8d212a6dd7a894374c235d598a86e2fe9f98099e23efb134b88fa4a721069bf9",
-            "strip": 9
-        }
-    ]
+    "msbuild-properties": {
+      "VC_LibraryPath_ATL_x86_spectre": "{root}"
+    }
+  },
+  "requires": {
+    "sdks/microsoft/atl-headers": "14.28.29914"
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VisualCpp.ATL.X86.Spectre,version=14.28.29914/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/8d212a6dd7a894374c235d598a86e2fe9f98099e23efb134b88fa4a721069bf9/Microsoft.VisualCpp.ATL.X86.Spectre.vsix"
+      ],
+      "sha256": "8d212a6dd7a894374c235d598a86e2fe9f98099e23efb134b88fa4a721069bf9",
+      "strip": 9
+    }
+  ],
+  "id": "sdks/microsoft/atl-spectre/x86",
+  "version": "14.28.29914",
+  "summary": "Active Template Library w/ Spectre mitigations",
+  "options": [
+    "dependencyOnly"
+  ]
 }

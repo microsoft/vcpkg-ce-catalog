@@ -1,35 +1,37 @@
 {
-    "info": {
-        "id": "crts/microsoft/desktop/x64",
-        "version": "14.28.29915",
-        "summary": "MSVC standard library libraries (desktop / kernel32)",
-        "options": [ "dependencyOnly" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": "."
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-      "paths": {
-        "lib": "."
-      },
-        "locations": {
-            "VC_LibraryPath_VC_x64_Desktop": "."
-        }
-    },
-    "requires": {
-        "crts/microsoft/headers": "14.28.29912"
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VisualCpp.CRT.x64.Desktop,version=14.28.29915/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/b54ce74725cf56f02e88d7fdfb10c1c3aef27bd7522493a7ca1a9c1c368c8b9b/Microsoft.VisualCpp.CRT.x64.Desktop.vsix"
-            ],
-            "sha256": "b54ce74725cf56f02e88d7fdfb10c1c3aef27bd7522493a7ca1a9c1c368c8b9b",
-            "strip": 7
-        }
-    ]
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_x64_Desktop": "{root}"
+    }
+  },
+  "requires": {
+    "crts/microsoft/headers": "14.28.29912"
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VisualCpp.CRT.x64.Desktop,version=14.28.29915/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/88992ef1-1067-4f7b-8ef5-f7d0faec91da/b54ce74725cf56f02e88d7fdfb10c1c3aef27bd7522493a7ca1a9c1c368c8b9b/Microsoft.VisualCpp.CRT.x64.Desktop.vsix"
+      ],
+      "sha256": "b54ce74725cf56f02e88d7fdfb10c1c3aef27bd7522493a7ca1a9c1c368c8b9b",
+      "strip": 7
+    }
+  ],
+  "id": "crts/microsoft/desktop/x64",
+  "version": "14.28.29915",
+  "summary": "MSVC standard library libraries (desktop / kernel32)",
+  "options": [
+    "dependencyOnly"
+  ]
 }

@@ -1,35 +1,35 @@
 {
-    "info": {
-        "id": "sdks/microsoft/atl",
-        "version": "14.28.29914",
-        "summary": "Active Template Library"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "demands": {
-        "target:x86": {
-            "requires": {
-                "sdks/microsoft/atl/x86": "14.28.29914"
-            }
-        },
-        "target:x64": {
-            "requires": {
-                "sdks/microsoft/atl/x64": "14.28.29914"
-            }
-        },
-        "target:arm": {
-            "requires": {
-                "sdks/microsoft/atl/arm": "14.28.29914"
-            }
-        },
-        "target:arm64": {
-            "requires": {
-                "sdks/microsoft/atl/arm64": "14.28.29914"
-            }
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "demands": {
+    "target:x86": {
+      "requires": {
+        "sdks/microsoft/atl/x86": "14.28.29914"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "sdks/microsoft/atl/x64": "14.28.29914"
+      }
+    },
+    "target:arm": {
+      "requires": {
+        "sdks/microsoft/atl/arm": "14.28.29914"
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "sdks/microsoft/atl/arm64": "14.28.29914"
+      }
+    }
+  },
+  "id": "sdks/microsoft/atl",
+  "version": "14.28.29914",
+  "summary": "Active Template Library"
 }

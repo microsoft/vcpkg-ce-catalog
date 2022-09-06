@@ -1,39 +1,41 @@
 {
-    "info": {
-        "id": "sdks/microsoft/mfc/unicode/x64",
-        "version": "14.28.29914",
-        "summary": "Microsoft Foundation Classes, Unicode",
-        "options": [ "dependencyOnly" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": ".",
+      "requires": "",
+      "crts/microsoft/headers": "14.28.29914"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VisualCpp.MFC.X64,version=14.28.29914/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/179ff98a5a531b36c4210b814c6ef3dec5b571cf66e7cb9b9d3dd20e7260f26d/Microsoft.VisualCpp.MFC.X64.vsix"
+      ],
+      "sha256": "179ff98a5a531b36c4210b814c6ef3dec5b571cf66e7cb9b9d3dd20e7260f26d",
+      "strip": 8
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-        "paths": {
-            "lib": ".",
-            "requires": "",
-            "crts/microsoft/headers": "14.28.29914"
-        }
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VisualCpp.MFC.X64,version=14.28.29914/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/179ff98a5a531b36c4210b814c6ef3dec5b571cf66e7cb9b9d3dd20e7260f26d/Microsoft.VisualCpp.MFC.X64.vsix"
-            ],
-            "sha256": "179ff98a5a531b36c4210b814c6ef3dec5b571cf66e7cb9b9d3dd20e7260f26d",
-            "strip": 8
-        },
-        {
-            "unzip": [
-                "vsix:///Microsoft.VisualCpp.MFC.X64.Debug,version=14.28.29914/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/06730cba4d65fd05cbc02ec1387b4fcb87d041787f06df8354fc204d7e738cb8/Microsoft.VisualCpp.MFC.X64.Debug.vsix"
-            ],
-            "sha256": "06730cba4d65fd05cbc02ec1387b4fcb87d041787f06df8354fc204d7e738cb8",
-            "strip": 8
-        }
-    ]
+    {
+      "unzip": [
+        "vsix:///Microsoft.VisualCpp.MFC.X64.Debug,version=14.28.29914/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/06730cba4d65fd05cbc02ec1387b4fcb87d041787f06df8354fc204d7e738cb8/Microsoft.VisualCpp.MFC.X64.Debug.vsix"
+      ],
+      "sha256": "06730cba4d65fd05cbc02ec1387b4fcb87d041787f06df8354fc204d7e738cb8",
+      "strip": 8
+    }
+  ],
+  "id": "sdks/microsoft/mfc/unicode/x64",
+  "version": "14.28.29914",
+  "summary": "Microsoft Foundation Classes, Unicode",
+  "options": [
+    "dependencyOnly"
+  ]
 }

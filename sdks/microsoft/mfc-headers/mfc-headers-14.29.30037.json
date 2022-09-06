@@ -1,13 +1,10 @@
 {
-  "info": {
-    "id": "sdks/microsoft/mfc-headers",
-    "version": "14.29.30037",
-    "summary": "Microsoft Foundation Classes Headers"
-  },
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
-      "role": [ "publisher" ]
+      "role": [
+        "publisher"
+      ]
     }
   },
   "requires": {
@@ -17,10 +14,8 @@
     "paths": {
       "include": "."
     },
-    "locations": {
-      "VC_MFC_IncludePath": "."
-    },
-    "properties": {
+    "msbuild-properties": {
+      "VC_MFC_IncludePath": "{root}",
       "VC_ATLMFC_IncludePath": "$(VC_MFC_IncludePath);$(VC_ATLMFC_IncludePath)"
     }
   },
@@ -33,5 +28,8 @@
       "sha256": "754f9e2e4d46d6b3cbfaa7beec30af37f4570e3cc063785a985d96535832d3c7",
       "strip": 7
     }
-  ]
+  ],
+  "id": "sdks/microsoft/mfc-headers",
+  "version": "14.29.30037",
+  "summary": "Microsoft Foundation Classes Headers"
 }

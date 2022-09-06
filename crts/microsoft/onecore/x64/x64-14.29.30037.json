@@ -1,22 +1,18 @@
 {
-  "info": {
-    "id": "crts/microsoft/onecore/x64",
-    "version": "14.29.30037",
-    "summary": "MSVC standard library libraries (OneCore / apisets)",
-    "options": [ "dependencyOnly" ]
-  },
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
-      "role": [ "publisher" ]
+      "role": [
+        "publisher"
+      ]
     }
   },
   "exports": {
     "paths": {
       "LIB": "."
     },
-    "locations": {
-      "VC_LibraryPath_VC_x64_OneCore": "."
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_x64_OneCore": "{root}"
     }
   },
   "requires": {
@@ -31,5 +27,11 @@
       "sha256": "3326b6c4eb13290c41f51a5478aedbca5471f2c2d0be123dce3932ed21bafb6a",
       "strip": 8
     }
+  ],
+  "id": "crts/microsoft/onecore/x64",
+  "version": "14.29.30037",
+  "summary": "MSVC standard library libraries (OneCore / apisets)",
+  "options": [
+    "dependencyOnly"
   ]
 }

@@ -1,35 +1,37 @@
 {
-    "info": {
-        "id": "sdks/microsoft/atl/arm64",
-        "version": "14.28.29914",
-        "summary": "Active Template Library",
-        "options": [ "dependencyOnly" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": "."
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-        "paths": {
-            "lib": "."
-        },
-        "locations": {
-            "VC_LibraryPath_ATL_ARM64": "."
-        }
-    },
-    "requires": {
-        "sdks/microsoft/atl-headers": "14.28.29914"
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VisualCpp.ATL.ARM64,version=14.28.29914/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/ac758511cbdeeee7c67e3fc599aee6a78fc5cad0c7a8c4ca576db8828f2d35c1/Microsoft.VisualCpp.ATL.ARM64.vsix"
-            ],
-            "sha256": "ac758511cbdeeee7c67e3fc599aee6a78fc5cad0c7a8c4ca576db8828f2d35c1",
-            "strip": 8
-        }
-    ]
+    "msbuild-properties": {
+      "VC_LibraryPath_ATL_ARM64": "{root}"
+    }
+  },
+  "requires": {
+    "sdks/microsoft/atl-headers": "14.28.29914"
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VisualCpp.ATL.ARM64,version=14.28.29914/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/ac758511cbdeeee7c67e3fc599aee6a78fc5cad0c7a8c4ca576db8828f2d35c1/Microsoft.VisualCpp.ATL.ARM64.vsix"
+      ],
+      "sha256": "ac758511cbdeeee7c67e3fc599aee6a78fc5cad0c7a8c4ca576db8828f2d35c1",
+      "strip": 8
+    }
+  ],
+  "id": "sdks/microsoft/atl/arm64",
+  "version": "14.28.29914",
+  "summary": "Active Template Library",
+  "options": [
+    "dependencyOnly"
+  ]
 }

@@ -1,33 +1,31 @@
 {
-	"info": {
-		"id": "microsoft.visualstudio.vc.msbuild.v170.arm.uwp",
-		"version": "17.0.0",
-		"description": "MSBuild support for vc projects (generated from VS install)",
-		"summary": "MSBuild support for vc projects (generated from VS install)"
-	}, 
-	"contacts": {
-		"Olga Arkhipova": {
-			"email": "olgaark@microsoft.com",
-			"role": "publisher"
-		}
-	},
-	"requires": {
-		"microsoft.visualstudio.vc.msbuild.v170.base.uwp": "17.0.0"
-	},
-	"exports": {
-		"locations": {
-			"PlatformDirectory" : ".",
-			"ToolsetDirectory" : ".\\PlatformToolsets\\v143"
-		}
-	},
-	"install": [
-		{
-			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.arm.uwp,version=17.0.0,productArch=neutral/payload.vsix",
-				"https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/becd641486f0f9ac3f7828dfcab26d1c1c201a9244be5f4e426e58cb0937369e/payload.vsix"
-			],
-			"sha256": "becd641486f0f9ac3f7828dfcab26d1c1c201a9244be5f4e426e58cb0937369e",
-			"strip": 10
-		}
-	]
+  "contacts": {
+    "Olga Arkhipova": {
+      "email": "olgaark@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "requires": {
+    "microsoft.visualstudio.vc.msbuild.v170.base.uwp": "17.0.0"
+  },
+  "exports": {
+    "msbuild-properties": {
+      "PlatformDirectory": "{root}",
+      "ToolsetDirectory": "{root}\\PlatformToolsets\\v143"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///microsoft.visualstudio.vc.msbuild.v170.arm.uwp,version=17.0.0,productArch=neutral/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/becd641486f0f9ac3f7828dfcab26d1c1c201a9244be5f4e426e58cb0937369e/payload.vsix"
+      ],
+      "sha256": "becd641486f0f9ac3f7828dfcab26d1c1c201a9244be5f4e426e58cb0937369e",
+      "strip": 10
+    }
+  ],
+  "id": "microsoft.visualstudio.vc.msbuild.v170.arm.uwp",
+  "version": "17.0.0",
+  "summary": "MSBuild support for vc projects (generated from VS install)",
+  "description": "MSBuild support for vc projects (generated from VS install)"
 }

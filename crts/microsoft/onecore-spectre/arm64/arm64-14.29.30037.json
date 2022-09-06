@@ -1,43 +1,45 @@
 {
-    "info": {
-        "id": "crts/microsoft/onecore-spectre/arm64",
-        "version": "14.29.30037",
-        "summary": "MSVC standard library libraries (onecore / apisets, + spectre)",
-        "options": [ "dependencyOnly" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": "."
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_ARM64_OneCore_spectre": "{root}"
+    }
+  },
+  "requires": {
+    "crts/microsoft/headers": "14.29.30037"
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VC.14.29.16.10.CRT.ARM64.OneCore.Desktop.spectre.base,version=14.29.30037/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/99ba4975ea15e8b77a49eec1ac8a69296d49365807a74de7adf4e54acb08c1ce/Microsoft.VC.14.29.16.10.CRT.ARM64.OneCore.Desktop.spectre.base.vsix"
+      ],
+      "sha256": "99ba4975ea15e8b77a49eec1ac8a69296d49365807a74de7adf4e54acb08c1ce",
+      "strip": 8
     },
-    "exports": {
-        "paths": {
-            "lib": "."
-        },
-        "locations": {
-            "VC_LibraryPath_VC_ARM64_OneCore_spectre": "."
-        }
-    },
-    "requires": {
-        "crts/microsoft/headers": "14.29.30037"
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VC.14.29.16.10.CRT.ARM64.OneCore.Desktop.spectre.base,version=14.29.30037/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/99ba4975ea15e8b77a49eec1ac8a69296d49365807a74de7adf4e54acb08c1ce/Microsoft.VC.14.29.16.10.CRT.ARM64.OneCore.Desktop.spectre.base.vsix"
-            ],
-            "sha256": "99ba4975ea15e8b77a49eec1ac8a69296d49365807a74de7adf4e54acb08c1ce",
-            "strip": 8
-        },
-        {
-            "unzip": [
-                "vsix:///Microsoft.VC.14.29.16.10.CRT.ARM64.OneCore.Desktop.spectre.debug.base,version=14.29.30037/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/f8477c42e72caf1d4abe5875edced7a133e6338dd561b3cf8d28e1ac1141820e/Microsoft.VC.14.29.16.10.CRT.ARM64.OneCore.Desktop.spectre.debug.base.vsix"
-            ],
-            "sha256": "f8477c42e72caf1d4abe5875edced7a133e6338dd561b3cf8d28e1ac1141820e",
-            "strip": 8
-        }
-    ]
+    {
+      "unzip": [
+        "vsix:///Microsoft.VC.14.29.16.10.CRT.ARM64.OneCore.Desktop.spectre.debug.base,version=14.29.30037/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/f8477c42e72caf1d4abe5875edced7a133e6338dd561b3cf8d28e1ac1141820e/Microsoft.VC.14.29.16.10.CRT.ARM64.OneCore.Desktop.spectre.debug.base.vsix"
+      ],
+      "sha256": "f8477c42e72caf1d4abe5875edced7a133e6338dd561b3cf8d28e1ac1141820e",
+      "strip": 8
+    }
+  ],
+  "id": "crts/microsoft/onecore-spectre/arm64",
+  "version": "14.29.30037",
+  "summary": "MSVC standard library libraries (onecore / apisets, + spectre)",
+  "options": [
+    "dependencyOnly"
+  ]
 }
