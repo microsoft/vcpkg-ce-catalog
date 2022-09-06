@@ -1,23 +1,19 @@
 {
-	"info": {
-		"id": "microsoft.visualstudio.vc.msbuild.v170.base",
-		"version": "17.0.0",
-		"description": "MSBuild support for vc projects (generated from VS install)",
-		"summary": "MSBuild support for vc projects (generated from VS install)"
-	}, 
+	"id": "microsoft.visualstudio.vc.msbuild.v170.base",
+	"version": "17.0.0",
+	"description": "MSBuild support for vc projects (generated from VS install)",
+	"summary": "MSBuild support for vc projects (generated from VS install)",
 	"contacts": {
 		"Olga Arkhipova": {
 			"email": "olgaark@microsoft.com",
 			"role": "publisher"
 		}
-	},
+	}, 
 	"exports": {
-		"locations": {
-			"VCTargetsPath17" : ".\\"
-		},
-		"properties": {
-			"VcpkgInstalledVCTargets" : "true",
-			"DisableInstalledVCTargetsUse" : "true"
+		"msbuild-properties": {
+			"VCTargetsPath17": "{root}\\",
+			"VcpkgInstalledVCTargets": "true",
+			"DisableInstalledVCTargetsUse": "true"
 		}
 	},
 	"install": [

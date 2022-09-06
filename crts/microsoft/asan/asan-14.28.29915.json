@@ -1,25 +1,25 @@
 {
-    "info": {
-        "id": "crts/microsoft/asan",
-        "version": "14.28.29915",
-        "summary": "Libraries supporting address sanitizer."
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "demands": {
-        "target:x86": {
-            "requires": {
-                "crts/microsoft/asan/x86": "14.28.29915"
-            }
-        },
-        "target:x64": {
-            "requires": {
-                "crts/microsoft/asan/x64": "14.28.29915"
-            }
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "demands": {
+    "target:x86": {
+      "requires": {
+        "crts/microsoft/asan/x86": "14.28.29915"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "crts/microsoft/asan/x64": "14.28.29915"
+      }
+    }
+  },
+  "id": "crts/microsoft/asan",
+  "version": "14.28.29915",
+  "summary": "Libraries supporting address sanitizer."
 }

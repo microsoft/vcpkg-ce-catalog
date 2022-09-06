@@ -1,14 +1,10 @@
 {
-  "info": {
-    "id": "crts/microsoft/onecore/x86",
-    "version": "14.29.30037",
-    "summary": "MSVC standard library libraries (desktop / onecore)",
-    "options": [ "dependencyOnly" ]
-  },
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
-      "role": [ "publisher" ]
+      "role": [
+        "publisher"
+      ]
     }
   },
   "requires": {
@@ -18,8 +14,8 @@
     "paths": {
       "LIB": "."
     },
-    "locations": {
-      "VC_LibraryPath_VC_x86_Onecore": "."
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_x86_Onecore": "{root}"
     }
   },
   "demands": {
@@ -41,5 +37,11 @@
       "sha256": "0f6de0c065116aa4e1353cb27d1aace4d28cd833d25f5f5789be5c89e4a9277c",
       "strip": 8
     }
+  ],
+  "id": "crts/microsoft/onecore/x86",
+  "version": "14.29.30037",
+  "summary": "MSVC standard library libraries (desktop / onecore)",
+  "options": [
+    "dependencyOnly"
   ]
 }

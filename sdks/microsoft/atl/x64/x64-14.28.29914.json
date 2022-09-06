@@ -1,35 +1,37 @@
 {
-    "info": {
-        "id": "sdks/microsoft/atl/x64",
-        "version": "14.28.29914",
-        "summary": "Active Template Library",
-        "options": [ "dependencyOnly" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": "."
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-        "paths": {
-            "lib": "."
-        },
-        "locations": {
-            "VC_LibraryPath_ATL_x64": "."
-        }
-    },
-    "requires": {
-        "sdks/microsoft/atl-headers": "14.28.29914"
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VisualCpp.ATL.X64,version=14.28.29914/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/1d63c39394f699b7446e1fac786cfbda73a9752e5027806cbcbad827489c1ada/Microsoft.VisualCpp.ATL.X64.vsix"
-            ],
-            "sha256": "1d63c39394f699b7446e1fac786cfbda73a9752e5027806cbcbad827489c1ada",
-            "strip": 8
-        }
-    ]
+    "msbuild-properties": {
+      "VC_LibraryPath_ATL_x64": "{root}"
+    }
+  },
+  "requires": {
+    "sdks/microsoft/atl-headers": "14.28.29914"
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VisualCpp.ATL.X64,version=14.28.29914/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/3c309edd-88c5-4207-ab8d-fc1fda49d203/1d63c39394f699b7446e1fac786cfbda73a9752e5027806cbcbad827489c1ada/Microsoft.VisualCpp.ATL.X64.vsix"
+      ],
+      "sha256": "1d63c39394f699b7446e1fac786cfbda73a9752e5027806cbcbad827489c1ada",
+      "strip": 8
+    }
+  ],
+  "id": "sdks/microsoft/atl/x64",
+  "version": "14.28.29914",
+  "summary": "Active Template Library",
+  "options": [
+    "dependencyOnly"
+  ]
 }

@@ -1,35 +1,35 @@
 {
-    "info": {
-        "id": "crts/microsoft/onecore",
-        "version": "14.28.29915",
-        "summary": "MSVC standard library libraries (OneCore / apisets)"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "demands": {
-        "target:x86": {
-            "requires": {
-                "crts/microsoft/onecore/x86": "14.28.29915"
-            }
-        },
-        "target:x64": {
-            "requires": {
-                "crts/microsoft/onecore/x64": "14.28.29915"
-            }
-        },
-        "target:arm": {
-            "requires": {
-                "crts/microsoft/onecore/arm": "14.28.29915"
-            }
-        },
-        "target:arm64": {
-            "requires": {
-                "crts/microsoft/onecore/arm64": "14.28.29915"
-            }
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "demands": {
+    "target:x86": {
+      "requires": {
+        "crts/microsoft/onecore/x86": "14.28.29915"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "crts/microsoft/onecore/x64": "14.28.29915"
+      }
+    },
+    "target:arm": {
+      "requires": {
+        "crts/microsoft/onecore/arm": "14.28.29915"
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "crts/microsoft/onecore/arm64": "14.28.29915"
+      }
+    }
+  },
+  "id": "crts/microsoft/onecore",
+  "version": "14.28.29915",
+  "summary": "MSVC standard library libraries (OneCore / apisets)"
 }

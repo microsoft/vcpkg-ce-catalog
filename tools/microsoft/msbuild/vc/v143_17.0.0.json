@@ -1,26 +1,24 @@
 {
-    "info": {
-        "id": "tools/microsoft/msbuild/vc/v143",
-        "version": "17.0.0",
-        "description": "Msbuild support for MSVC v143 toolset",
-        "summary": "Msbuild support for MSVC v143 toolset"
-    },
-    "contacts": {
-        "Olga Arkhipova": {
-            "email": "olgaark@microsoft.com",
-            "role": "publisher"
-        }
-    },
-    "demands": {
-        "not ApplicationType": {
-            "requires": {
-                "tools/microsoft/msbuild/vc/Desktop/v143": "17.0.0"
-            }
-        },
-        "ApplicationType:WindowsStore": {
-            "requires": {
-                "tools/microsoft/msbuild/vc/UWP": "17.0.0"
-            }
-        }
+  "contacts": {
+    "Olga Arkhipova": {
+      "email": "olgaark@microsoft.com",
+      "role": "publisher"
     }
+  },
+  "demands": {
+    "not ApplicationType": {
+      "requires": {
+        "tools/microsoft/msbuild/vc/Desktop/v143": "17.0.0"
+      }
+    },
+    "ApplicationType:WindowsStore": {
+      "requires": {
+        "tools/microsoft/msbuild/vc/UWP": "17.0.0"
+      }
+    }
+  },
+  "id": "tools/microsoft/msbuild/vc/v143",
+  "version": "17.0.0",
+  "summary": "Msbuild support for MSVC v143 toolset",
+  "description": "Msbuild support for MSVC v143 toolset"
 }

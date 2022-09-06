@@ -1,36 +1,38 @@
 {
-    "info": {
-        "id": "sdks/microsoft/windows/windows.arm",
-        "version": "10.0.19041",
-        "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications (targeting ARM).",
-        "summary": "Microsoft Windows SDK (targeting ARM)",
-        "options": [ "dependencyOnly" ]
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "install": [
-        {
-            "unzip": [
-                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.arm/10.0.19041.5"
-            ],
-            "sha256": "89342E1DA1A6C1482F7E50E7CF913AEA22A6124F21545D7AB891CF12B4FF6261"
-        }
-    ],
-    "exports": {
-        "paths": {
-            "LIB": [
-                "./c/ucrt/arm",
-                "./c/um/arm"
-            ],
-            "PATH": "./bin"
-        },
-        "locations": {
-            "WindowsSDK_LibraryPath_arm": "./c/um/arm",
-            "UniversalCRT_LibraryPath_arm": "./c/ucrt/arm"
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.arm/10.0.19041.5"
+      ],
+      "sha256": "89342E1DA1A6C1482F7E50E7CF913AEA22A6124F21545D7AB891CF12B4FF6261"
+    }
+  ],
+  "exports": {
+    "paths": {
+      "LIB": [
+        "./c/ucrt/arm",
+        "./c/um/arm"
+      ],
+      "PATH": "./bin"
+    },
+    "msbuild-properties": {
+      "WindowsSDK_LibraryPath_arm": "./c/um/arm",
+      "UniversalCRT_LibraryPath_arm": "./c/ucrt/arm"
+    }
+  },
+  "id": "sdks/microsoft/windows/windows.arm",
+  "version": "10.0.19041",
+  "summary": "Microsoft Windows SDK (targeting ARM)",
+  "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications (targeting ARM).",
+  "options": [
+    "dependencyOnly"
+  ]
 }

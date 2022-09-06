@@ -1,39 +1,41 @@
 {
-    "info": {
-        "id": "crts/microsoft/desktop/x64",
-        "version": "14.29.30037",
-        "summary": "MSVC standard library libraries (desktop / kernel32)",
-        "options": [ "dependencyOnly" ]
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "windows": {
+      "exports": {
+        "paths": {
+          "LIB": "."
+        },
+        "msbuild-properties": {
+          "VC_LibraryPath_VC_x64_Desktop": "{root}"
         }
-    },
-    "demands": {
-        "windows": {
-            "exports": {
-              "paths": {
-                "LIB": "."
-              },
-              "locations": {
-                "VC_LibraryPath_VC_x64_Desktop": "."
-              }
-            }
-        }
-    },
-    "requires": {
-        "crts/microsoft/headers": "14.29.30037"
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VC.14.29.16.10.CRT.x64.Desktop.base,version=14.29.30037/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/70da2f64fb9925501103b6977b0ab6cd85b974a778cf2fb01daba9740cddb59f/Microsoft.VC.14.29.16.10.CRT.x64.Desktop.base.vsix"
-            ],
-            "sha256": "70da2f64fb9925501103b6977b0ab6cd85b974a778cf2fb01daba9740cddb59f",
-            "strip": 7
-        }
-    ]
+      }
+    }
+  },
+  "requires": {
+    "crts/microsoft/headers": "14.29.30037"
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VC.14.29.16.10.CRT.x64.Desktop.base,version=14.29.30037/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/70da2f64fb9925501103b6977b0ab6cd85b974a778cf2fb01daba9740cddb59f/Microsoft.VC.14.29.16.10.CRT.x64.Desktop.base.vsix"
+      ],
+      "sha256": "70da2f64fb9925501103b6977b0ab6cd85b974a778cf2fb01daba9740cddb59f",
+      "strip": 7
+    }
+  ],
+  "id": "crts/microsoft/desktop/x64",
+  "version": "14.29.30037",
+  "summary": "MSVC standard library libraries (desktop / kernel32)",
+  "options": [
+    "dependencyOnly"
+  ]
 }

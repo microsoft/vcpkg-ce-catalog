@@ -1,35 +1,37 @@
 {
-    "info": {
-        "id": "crts/microsoft/desktop/arm",
-        "version": "14.29.30037",
-        "summary": "MSVC standard library libraries (desktop / kernel32)",
-        "options": [ "dependencyOnly" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": "."
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-        "paths": {
-            "lib": "."
-        },
-        "locations": {
-            "VC_LibraryPath_VC_ARM_Desktop": "."
-        }
-    },
-    "requires": {
-        "crts/microsoft/headers": "14.29.30037"
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VC.14.29.16.10.CRT.arm.Desktop.base,version=14.29.30037/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/46fac747c89f72554659b94725281d266728b6d8fffa4c70f4fb113d50b82a5a/Microsoft.VC.14.29.16.10.CRT.arm.Desktop.base.vsix"
-            ],
-            "sha256": "46fac747c89f72554659b94725281d266728b6d8fffa4c70f4fb113d50b82a5a",
-            "strip": 7
-        }
-    ]
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_ARM_Desktop": "{root}"
+    }
+  },
+  "requires": {
+    "crts/microsoft/headers": "14.29.30037"
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VC.14.29.16.10.CRT.arm.Desktop.base,version=14.29.30037/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/46fac747c89f72554659b94725281d266728b6d8fffa4c70f4fb113d50b82a5a/Microsoft.VC.14.29.16.10.CRT.arm.Desktop.base.vsix"
+      ],
+      "sha256": "46fac747c89f72554659b94725281d266728b6d8fffa4c70f4fb113d50b82a5a",
+      "strip": 7
+    }
+  ],
+  "id": "crts/microsoft/desktop/arm",
+  "version": "14.29.30037",
+  "summary": "MSVC standard library libraries (desktop / kernel32)",
+  "options": [
+    "dependencyOnly"
+  ]
 }

@@ -1,35 +1,35 @@
 {
-    "info": {
-        "id": "sdks/microsoft/mfc/mbcs",
-        "version": "14.28.29914",
-        "summary": "Microsoft Foundation Classes, legacy MBCS libraries"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "demands": {
-        "target:x86": {
-            "requires": {
-                "sdks/microsoft/mfc/mbcs/x86": "14.28.29914"
-            }
-        },
-        "target:x64": {
-            "requires": {
-                "sdks/microsoft/mfc/mbcs/x64": "14.28.29914"
-            }
-        },
-        "target:arm": {
-            "requires": {
-                "sdks/microsoft/mfc/mbcs/arm": "14.28.29914"
-            }
-        },
-        "target:arm64": {
-            "requires": {
-                "sdks/microsoft/mfc/mbcs/arm64": "14.28.29914"
-            }
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "demands": {
+    "target:x86": {
+      "requires": {
+        "sdks/microsoft/mfc/mbcs/x86": "14.28.29914"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "sdks/microsoft/mfc/mbcs/x64": "14.28.29914"
+      }
+    },
+    "target:arm": {
+      "requires": {
+        "sdks/microsoft/mfc/mbcs/arm": "14.28.29914"
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "sdks/microsoft/mfc/mbcs/arm64": "14.28.29914"
+      }
+    }
+  },
+  "id": "sdks/microsoft/mfc/mbcs",
+  "version": "14.28.29914",
+  "summary": "Microsoft Foundation Classes, legacy MBCS libraries"
 }

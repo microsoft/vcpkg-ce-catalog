@@ -1,13 +1,10 @@
 {
-  "info": {
-    "id": "crts/microsoft/desktop",
-    "version": "14.29.30037",
-    "summary": "MSVC standard library libraries (desktop / kernel32)"
-  },
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
-      "role": [ "publisher" ]
+      "role": [
+        "publisher"
+      ]
     }
   },
   "demands": {
@@ -17,7 +14,7 @@
         "crts/microsoft/onecore/x86": "14.29.30037"
       },
       "exports": {
-        "properties": {
+        "msbuild-properties": {
           "VC_LibraryPath_VC_x86": "$(VC_LibraryPath_VC_x86_Desktop);$(VC_LibraryPath_VC_x86_OneCore);$(VC_LibraryPath_VC_x86)"
         }
       }
@@ -28,7 +25,7 @@
         "crts/microsoft/onecore/x64": "14.29.30037"
       },
       "exports": {
-        "properties": {
+        "msbuild-properties": {
           "VC_LibraryPath_VC_x64": "$(VC_LibraryPath_VC_x64_Desktop);$(VC_LibraryPath_VC_x64_OneCore);$(VC_LibraryPath_VC_x64)"
         }
       }
@@ -39,7 +36,7 @@
         "crts/microsoft/onecore/arm": "14.29.30037"
       },
       "exports": {
-        "properties": {
+        "msbuild-properties": {
           "VC_LibraryPath_VC_ARM": "$(VC_LibraryPath_VC_ARM_Desktop);$(VC_LibraryPath_VC_ARM_OneCore);$(VC_LibraryPath_VC_ARM)"
         }
       }
@@ -50,10 +47,13 @@
         "crts/microsoft/onecore/arm64": "14.29.30037"
       },
       "exports": {
-        "properties": {
+        "msbuild-properties": {
           "VC_LibraryPath_VC_ARM64": "$(VC_LibraryPath_VC_ARM64_Desktop);$(VC_LibraryPath_VC_ARM64_OneCore);$(VC_LibraryPath_VC_ARM64)"
         }
       }
     }
-  }
+  },
+  "id": "crts/microsoft/desktop",
+  "version": "14.29.30037",
+  "summary": "MSVC standard library libraries (desktop / kernel32)"
 }

@@ -1,37 +1,39 @@
 {
-    "info": {
-        "id": "sdks/microsoft/mfc/unicode/x86",
-        "version": "14.29.30037",
-        "summary": "Microsoft Foundation Classes, Unicode",
-        "options": [ "dependencyOnly" ]
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "lib": "."
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "vsix:///Microsoft.VC.14.29.16.10.MFC.X86.base,version=14.29.30037/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/abc19bc68fb27833f4ea9db98745b9c3a7a686d0e3b05afc784c04c17983f5fd/Microsoft.VC.14.29.16.10.MFC.X86.base.vsix"
+      ],
+      "sha256": "abc19bc68fb27833f4ea9db98745b9c3a7a686d0e3b05afc784c04c17983f5fd",
+      "strip": 8
     },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "exports": {
-        "paths": {
-            "lib": "."
-        }
-    },
-    "install": [
-        {
-            "unzip": [
-                "vsix:///Microsoft.VC.14.29.16.10.MFC.X86.base,version=14.29.30037/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/abc19bc68fb27833f4ea9db98745b9c3a7a686d0e3b05afc784c04c17983f5fd/Microsoft.VC.14.29.16.10.MFC.X86.base.vsix"
-            ],
-            "sha256": "abc19bc68fb27833f4ea9db98745b9c3a7a686d0e3b05afc784c04c17983f5fd",
-            "strip": 8
-        },
-        {
-            "unzip": [
-                "vsix:///Microsoft.VC.14.29.16.10.MFC.X86.Debug.base,version=14.29.30037/payload.vsix",
-                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/67715665a85cb14bd62ba3e767cb8cb5630467f5bc248635bd19c2b292b51bca/Microsoft.VC.14.29.16.10.MFC.X86.Debug.base.vsix"
-            ],
-            "sha256": "67715665a85cb14bd62ba3e767cb8cb5630467f5bc248635bd19c2b292b51bca",
-            "strip": 8
-        }
-    ]
+    {
+      "unzip": [
+        "vsix:///Microsoft.VC.14.29.16.10.MFC.X86.Debug.base,version=14.29.30037/payload.vsix",
+        "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/67715665a85cb14bd62ba3e767cb8cb5630467f5bc248635bd19c2b292b51bca/Microsoft.VC.14.29.16.10.MFC.X86.Debug.base.vsix"
+      ],
+      "sha256": "67715665a85cb14bd62ba3e767cb8cb5630467f5bc248635bd19c2b292b51bca",
+      "strip": 8
+    }
+  ],
+  "id": "sdks/microsoft/mfc/unicode/x86",
+  "version": "14.29.30037",
+  "summary": "Microsoft Foundation Classes, Unicode",
+  "options": [
+    "dependencyOnly"
+  ]
 }

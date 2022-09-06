@@ -1,36 +1,38 @@
 {
-    "info": {
-        "id": "sdks/microsoft/windows/windows.x86",
-        "version": "10.0.22621",
-        "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications (targeting x86).",
-        "summary": "Microsoft Windows SDK (targeting x86)",
-        "options": [ "dependencyOnly" ]
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "install": [
-        {
-            "unzip": [
-                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.x86/10.0.22621.1"
-            ],
-            "sha256": "CB2EDC4C54B89AF374FA983BC4306E6E323F8D1AF627601FAF005EE4642254C7"
-        }
-    ],
-    "exports": {
-        "paths": {
-            "LIB": [
-                "./c/ucrt/x86",
-                "./c/um/x86"
-            ],
-            "PATH": "./bin"
-        },
-        "locations": {
-            "WindowsSDK_LibraryPath_x86": "./c/um/x86",
-            "UniversalCRT_LibraryPath_x86": "./c/ucrt/x86"
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.x86/10.0.22621.1"
+      ],
+      "sha256": "CB2EDC4C54B89AF374FA983BC4306E6E323F8D1AF627601FAF005EE4642254C7"
+    }
+  ],
+  "exports": {
+    "paths": {
+      "LIB": [
+        "./c/ucrt/x86",
+        "./c/um/x86"
+      ],
+      "PATH": "./bin"
+    },
+    "msbuild-properties": {
+      "WindowsSDK_LibraryPath_x86": "{root}\\c\\um\\x86",
+      "UniversalCRT_LibraryPath_x86": "{root}\\c\\ucrt\\x86"
+    }
+  },
+  "id": "sdks/microsoft/windows/windows.x86",
+  "version": "10.0.22621",
+  "summary": "Microsoft Windows SDK (targeting x86)",
+  "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications (targeting x86).",
+  "options": [
+    "dependencyOnly"
+  ]
 }

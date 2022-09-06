@@ -1,20 +1,20 @@
 {
-    "info": {
-        "id": "crts/microsoft/onecore",
-        "version": "14.29.30037",
-        "summary": "MSVC standard library libraries (desktop / onecore)"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "demands": {
-        "target:x86": {
-            "requires": {
-                "crts/microsoft/onecore/x86": "14.29.30037"
-            }
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "demands": {
+    "target:x86": {
+      "requires": {
+        "crts/microsoft/onecore/x86": "14.29.30037"
+      }
+    }
+  },
+  "id": "crts/microsoft/onecore",
+  "version": "14.29.30037",
+  "summary": "MSVC standard library libraries (desktop / onecore)"
 }

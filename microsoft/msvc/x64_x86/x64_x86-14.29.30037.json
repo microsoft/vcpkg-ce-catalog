@@ -1,14 +1,10 @@
 {
-  "info": {
-    "id": "microsoft/msvc/x64_x86",
-    "version": "14.29.30037",
-    "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment.",
-    "summary": "The Microsoft Visual C++ Compiler (MSVC)"
-  },
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
-      "role": [ "publisher" ]
+      "role": [
+        "publisher"
+      ]
     }
   },
   "exports": {
@@ -20,12 +16,10 @@
     "paths": {
       "PATH": "."
     },
-    "locations": {
-      "VC_ExecutablePath_x64_x86": "."
-    },
-    "properties": {
+    "msbuild-properties": {
+      "VC_ExecutablePath_x64_x86": "{root}",
       "VCToolArchitecture": "Native64Bit",
-      "VC_ExecutablePath_x86": "$(VC_ExecutablePath_x64_x86)"
+      "VC_ExecutablePath_x86": "$(VC_ExecutablePath_x64_x86);;$(VC_ExecutablePath_x86)"
     }
   },
   "demands": {
@@ -52,5 +46,9 @@
         }
       ]
     }
-  }
+  },
+  "id": "microsoft/msvc/x64_x86",
+  "version": "14.29.30037",
+  "summary": "The Microsoft Visual C++ Compiler (MSVC)",
+  "description": "The Microsoft Visual C++ Compiler (MSVC), linker, and other associated build tools. Combine with microsoft/cppruntime and microsoft/windowssdk for a complete development environment."
 }

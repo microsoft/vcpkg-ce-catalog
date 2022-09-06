@@ -1,90 +1,88 @@
 {
-    "info": {
-        "id": "sdks/microsoft/windows",
-        "version": "10.0.22621",
-        "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications.",
-        "summary": "Microsoft Windows SDK"
-    },
-    "contacts": {
-        "Mark Levine": {
-            "email": "markle@microsoft.com",
-            "role": [ "publisher" ]
-        }
-    },
-    "install": [
-        {
-            "unzip": [
-                "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp/10.0.22621.1"
-            ],
-            "sha256": "180172B69E7A3FF74262919985FA1D3B1C20A135570DE269514AFE754A36D80F"
-        }
-    ],
-    "demands": {
-        "windows and target:arm": {
-            "requires": {
-                "sdks/microsoft/windows/windows.arm": "10.0.22621"
-            }
-        },
-        "windows and target:arm64": {
-            "requires": {
-                "sdks/microsoft/windows/windows.arm64": "10.0.22621"
-            }
-        },
-        "windows and target:x64": {
-            "requires": {
-                "sdks/microsoft/windows/windows.x64": "10.0.22621"
-            }
-        },
-        "windows and target:x86": {
-            "requires": {
-                "sdks/microsoft/windows/windows.x86": "10.0.22621"
-            }
-        }
-    },
-    "exports": {
-        "paths": {
-            "include": [
-                "./c/Include/10.0.22621.0/cppwinrt",
-                "./c/Include/10.0.22621.0/shared",
-                "./c/Include/10.0.22621.0/ucrt",
-                "./c/Include/10.0.22621.0/um",
-                "./c/Include/10.0.22621.0/winrt"
-            ],
-            "PATH": "./bin"
-        },
-        "locations": {
-          "UM_IncludePath": ".\\c\\Include\\10.0.22621.0\\um",
-          "KIT_SHARED_IncludePath": ".\\c\\Include\\10.0.22621.0\\shared",
-          "WinRT_IncludePath": ".\\c\\Include\\10.0.22621.0\\winrt",
-          "CppWinRT_IncludePath": ".\\c\\Include\\10.0.22621.0\\cppwinrt",
-          "WindowsSDK_MetadataFoundationPath": ".\\c\\References\\10.0.22621.0\\windows.foundation.foundationcontract\\4.0.0.0",
-          "WindowsSDK_MetadataPath": ".\\c\\References",
-          "WindowsSDK_MetadataPathVersioned": ".\\c\\References\\\\10.0.22621.0",
-          "WindowsSDK_PlatformPath": ".\\c\\Platforms\\UAP",
-          "WindowsSDK_UnionMetadataPath": ".\\c\\UnionMetadata\\10.0.22621.0",
-          "WindowsSDK_ExecutablePath_x86": ".\\c\\bin\\10.0.22621.0\\x86;",
-          "WindowsSDK_SupportedAPIs_x64": ".\\c\\bin\\10.0.22621.0\\x64\\PInvoke\\SupportedAPIs.xml",
-          "WindowsSDK_ExecutablePath_x64": ".\\c\\bin\\10.0.22621.0\\x64;",
-          "WindowsSDK_SupportedAPIs_x86": ".\\c\\bin\\10.0.22621.0\\x86\\PInvoke\\SupportedAPIs.xml",
-          "WindowsSDK_ExecutablePath_arm": ".\\c\\bin\\10.0.22621.0\\arm;",
-          "WindowsSDK_SupportedAPIs_arm": ".\\c\\bin\\10.0.22621.0\\arm\\PInvoke\\SupportedAPIs.xml",
-          "WindowsSDK_ExecutablePath_arm64": ".\\c\\bin\\10.0.22621.0\\arm64;",
-          "WindowsSDK_SupportedAPIs_arm64": ".\\c\\bin\\10.0.22621.0\\arm64\\PInvoke\\SupportedAPIs.xml",
-          "UniversalDebugCRT_ExecutablePath_x86": ".\\c\\bin\\10.0.22621.0\\x86\\ucrt",
-          "UniversalDebugCRT_ExecutablePath_x64": ".\\c\\bin\\10.0.22621.0\\x64\\ucrt",
-          "UniversalDebugCRT_ExecutablePath_ARM": ".\\c\\bin\\10.0.22621.0\\ARM\\ucrt",
-          "UniversalDebugCRT_ExecutablePath_ARM64": ".\\c\\bin\\10.0.22621.0\\ARM64\\ucrt",
-          "UniversalCRT_IncludePath": ".\\c\\Include\\10.0.22621.0\\ucrt;",
-          "UniversalCRT_SourcePath": ".\\c\\Source\\10.0.22621.0\\ucrt;"
-        },
-        "properties": {
-          "WindowsTargetPlatformVersion": "10.0.22621.0",
-          "WindowsSdkDir_10": "WindowsSdkDir_10_not_defined\\",
-          "WindowsSdkDir": "$(WindowsSdkDir_10)",
-          "UCRTContentRoot": "$(_UCRTContentRoot)\\",
-          "UniversalCRTSdkDir_10": "UniversalCRTSdkDir_10_not_defined\\",
-          "WindowsSDK_IncludePath": "$(UM_IncludePath);$(KIT_SHARED_IncludePath);$(WinRT_IncludePath);$(CppWinRT_IncludePath);$(WindowsSDK_IncludePath)",
-          "WindowsSDK_HasVersionedContent": "true"
-        }
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
     }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp/10.0.22621.1"
+      ],
+      "sha256": "180172B69E7A3FF74262919985FA1D3B1C20A135570DE269514AFE754A36D80F"
+    }
+  ],
+  "demands": {
+    "windows and target:arm": {
+      "requires": {
+        "sdks/microsoft/windows/windows.arm": "10.0.22621"
+      }
+    },
+    "windows and target:arm64": {
+      "requires": {
+        "sdks/microsoft/windows/windows.arm64": "10.0.22621"
+      }
+    },
+    "windows and target:x64": {
+      "requires": {
+        "sdks/microsoft/windows/windows.x64": "10.0.22621"
+      }
+    },
+    "windows and target:x86": {
+      "requires": {
+        "sdks/microsoft/windows/windows.x86": "10.0.22621"
+      }
+    }
+  },
+  "exports": {
+    "paths": {
+      "include": [
+        "./c/Include/10.0.22621.0/cppwinrt",
+        "./c/Include/10.0.22621.0/shared",
+        "./c/Include/10.0.22621.0/ucrt",
+        "./c/Include/10.0.22621.0/um",
+        "./c/Include/10.0.22621.0/winrt"
+      ],
+      "PATH": "./bin"
+    },
+    "msbuild-properties": {
+      "UM_IncludePath": "{root}\\c\\Include\\10.0.22621.0\\um",
+      "KIT_SHARED_IncludePath": "{root}\\c\\Include\\10.0.22621.0\\shared",
+      "WinRT_IncludePath": "{root}\\c\\Include\\10.0.22621.0\\winrt",
+      "CppWinRT_IncludePath": "{root}\\c\\Include\\10.0.22621.0\\cppwinrt",
+      "WindowsSDK_MetadataFoundationPath": "{root}\\c\\References\\10.0.22621.0\\windows.foundation.foundationcontract\\4.0.0.0",
+      "WindowsSDK_MetadataPath": "{root}\\c\\References",
+      "WindowsSDK_MetadataPathVersioned": "{root}\\c\\References\\\\10.0.22621.0",
+      "WindowsSDK_PlatformPath": "{root}\\c\\Platforms\\UAP",
+      "WindowsSDK_UnionMetadataPath": "{root}\\c\\UnionMetadata\\10.0.22621.0",
+      "WindowsSDK_ExecutablePath_x86": "{root}\\c\\bin\\10.0.22621.0\\x86;",
+      "WindowsSDK_SupportedAPIs_x64": "{root}\\c\\bin\\10.0.22621.0\\x64\\PInvoke\\SupportedAPIs.xml",
+      "WindowsSDK_ExecutablePath_x64": "{root}\\c\\bin\\10.0.22621.0\\x64;",
+      "WindowsSDK_SupportedAPIs_x86": "{root}\\c\\bin\\10.0.22621.0\\x86\\PInvoke\\SupportedAPIs.xml",
+      "WindowsSDK_ExecutablePath_arm": "{root}\\c\\bin\\10.0.22621.0\\arm;",
+      "WindowsSDK_SupportedAPIs_arm": "{root}\\c\\bin\\10.0.22621.0\\arm\\PInvoke\\SupportedAPIs.xml",
+      "WindowsSDK_ExecutablePath_arm64": "{root}\\c\\bin\\10.0.22621.0\\arm64;",
+      "WindowsSDK_SupportedAPIs_arm64": "{root}\\c\\bin\\10.0.22621.0\\arm64\\PInvoke\\SupportedAPIs.xml",
+      "UniversalDebugCRT_ExecutablePath_x86": "{root}\\c\\bin\\10.0.22621.0\\x86\\ucrt",
+      "UniversalDebugCRT_ExecutablePath_x64": "{root}\\c\\bin\\10.0.22621.0\\x64\\ucrt",
+      "UniversalDebugCRT_ExecutablePath_ARM": "{root}\\c\\bin\\10.0.22621.0\\ARM\\ucrt",
+      "UniversalDebugCRT_ExecutablePath_ARM64": "{root}\\c\\bin\\10.0.22621.0\\ARM64\\ucrt",
+      "UniversalCRT_IncludePath": "{root}\\c\\Include\\10.0.22621.0\\ucrt;",
+      "UniversalCRT_SourcePath": "{root}\\c\\Source\\10.0.22621.0\\ucrt;",
+      "WindowsTargetPlatformVersion": "10.0.22621.0",
+      "WindowsSdkDir_10": "WindowsSdkDir_10_not_defined\\",
+      "WindowsSdkDir": "$(WindowsSdkDir_10)",
+      "UCRTContentRoot": "$(_UCRTContentRoot)\\",
+      "UniversalCRTSdkDir_10": "UniversalCRTSdkDir_10_not_defined\\",
+      "WindowsSDK_IncludePath": "$(UM_IncludePath);$(KIT_SHARED_IncludePath);$(WinRT_IncludePath);$(CppWinRT_IncludePath);$(WindowsSDK_IncludePath)",
+      "WindowsSDK_HasVersionedContent": "true"
+    }
+  },
+  "id": "sdks/microsoft/windows",
+  "version": "10.0.22621",
+  "summary": "Microsoft Windows SDK",
+  "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications."
 }

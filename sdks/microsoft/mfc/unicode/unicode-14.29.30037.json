@@ -1,13 +1,10 @@
 {
-  "info": {
-    "id": "sdks/microsoft/mfc/unicode",
-    "version": "14.29.30037",
-    "summary": "Microsoft Foundation Classes, Unicode"
-  },
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
-      "role": [ "publisher" ]
+      "role": [
+        "publisher"
+      ]
     }
   },
   "requires": {
@@ -34,5 +31,8 @@
         "sdks/microsoft/mfc/unicode/arm64": "14.29.30037"
       }
     }
-  }
+  },
+  "id": "sdks/microsoft/mfc/unicode",
+  "version": "14.29.30037",
+  "summary": "Microsoft Foundation Classes, Unicode"
 }
