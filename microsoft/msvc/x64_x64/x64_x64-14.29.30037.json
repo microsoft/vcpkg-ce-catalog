@@ -19,7 +19,7 @@
     "msbuild-properties": {
       "VC_ExecutablePath_x64_x64": "{root}",
       "VCToolArchitecture": "Native64Bit",
-      "VC_ExecutablePath_x64": "$(VC_ExecutablePath_x64_x64);$(VC_ExecutablePath_x64)"
+      "VC_ExecutablePath_x64": "{root};$(VC_ExecutablePath_x64)"
     }
   },
   "demands": {

@@ -1,4 +1,10 @@
 {
+  "id": "crts/microsoft/desktop/arm",
+  "version": "14.28.29915",
+  "summary": "MSVC standard library libraries (desktop / kernel32)",
+  "options": [
+    "dependencyOnly"
+  ],
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
@@ -12,7 +18,7 @@
       "lib": "."
     },
     "msbuild-properties": {
-      "VC_LibraryPath_VC_ARM_Desktop": "."
+      "VC_LibraryPath_VC_ARM_Desktop": "{root}"
     }
   },
   "requires": {
@@ -27,11 +33,5 @@
       "sha256": "6e893932951d3a970fc8c9ab25cbd6ad5a30018e841951966ed7fd1f0cc5f04e",
       "strip": 7
     }
-  ],
-  "id": "crts/microsoft/desktop/arm",
-  "version": "14.28.29915",
-  "summary": "MSVC standard library libraries (desktop / kernel32)",
-  "options": [
-    "dependencyOnly"
   ]
 }

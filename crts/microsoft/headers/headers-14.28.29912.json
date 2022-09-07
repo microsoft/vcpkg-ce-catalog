@@ -12,7 +12,8 @@
       "include": "."
     },
     "msbuild-properties": {
-      "VC_VC_IncludePath": "{root}"
+      "VC_VC_IncludePath": "{root}",
+      "VCManifestDir": "{root}\\Manifest\\"
     }
   },
   "install": [
