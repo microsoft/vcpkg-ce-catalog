@@ -12,7 +12,7 @@
       "lib": "."
     },
     "msbuild-properties": {
-      "VC_LibraryPath_ATL_ARM_spectre": "{root}"
+      "VC_LibraryPath_ATL_ARM_spectre": "{root};(VC_LibraryPath_ATL_ARM_spectre)"
     }
   },
   "requires": {

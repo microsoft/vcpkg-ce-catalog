@@ -10,18 +10,14 @@
   "requires": {
     "crts/microsoft/headers": "14.29.30037"
   },
-  "demands": {
-    "windows": {
-      "exports": {
-        "paths": {
-          "LIB": ".",
-          "LIBPATH": "."
-        },
-        "msbuild-properties": {
-          "VC_LibraryPath_VC_x86_Desktop": "{root}",
-          "VC_LibraryPath_VC_x86": "{root};$(VC_LibraryPath_VC_x86)"
-        }
-      }
+  "exports": {
+    "paths": {
+      "LIB": ".",
+      "LIBPATH": "."
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_x86_Desktop": "{root}",
+      "VC_LibraryPath_VC_x86": "{root};$(VC_LibraryPath_VC_x86)"
     }
   },
   "install": [

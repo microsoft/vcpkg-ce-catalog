@@ -10,17 +10,13 @@
   "requires": {
     "crts/microsoft/headers": "14.29.30037"
   },
-  "demands": {
-    "windows": {
-      "exports": {
-        "paths": {
-          "INCLUDE": "."
-        },
-        "msbuild-properties": {
-          "VC_VC_IncludePath": "{root}",
-          "VCManifestDir": "{root}\\Manifest\\"
-        }
-      }
+  "exports": {
+    "paths": {
+      "INCLUDE": "."
+    },
+    "msbuild-properties": {
+      "VC_VC_IncludePath": "{root}",
+      "VCManifestDir": "{root}\\Manifest\\"
     }
   },
   "install": [
