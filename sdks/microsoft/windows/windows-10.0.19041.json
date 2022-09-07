@@ -1,4 +1,8 @@
 {
+  "id": "sdks/microsoft/windows",
+  "version": "10.0.19041",
+  "summary": "Microsoft Windows SDK",
+  "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications.",
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
@@ -53,6 +57,7 @@
       "KIT_SHARED_IncludePath": "{root}\\c\\Include\\10.0.19041.0\\shared",
       "WinRT_IncludePath": "{root}\\c\\Include\\10.0.19041.0\\winrt",
       "CppWinRT_IncludePath": "{root}\\c\\Include\\10.0.19041.0\\cppwinrt",
+      "WindowsSDK_IncludePath": "$(UM_IncludePath);$(KIT_SHARED_IncludePath);$(WinRT_IncludePath);$(CppWinRT_IncludePath);$(WindowsSDK_IncludePath)",
       "WindowsSDK_MetadataFoundationPath": "{root}\\c\\References\\10.0.19041.0\\windows.foundation.foundationcontract\\4.0.0.0",
       "WindowsSDK_MetadataPath": "{root}\\c\\References",
       "WindowsSDK_MetadataPathVersioned": "{root}\\c\\References\\\\10.0.19041.0",
@@ -74,15 +79,10 @@
       "UniversalCRT_SourcePath": "{root}\\c\\Source\\10.0.19041.0\\ucrt;",
       "WindowsTargetPlatformVersion": "10.0.19041.0",
       "WindowsSdkDir_10": "WindowsSdkDir_10_not_defined\\",
-      "WindowsSdkDir": "$(WindowsSdkDir_10)",
-      "UCRTContentRoot": "$(_UCRTContentRoot)\\",
+      "WindowsSdkDir": "$(WindowsSdkDir_10_not_defined\\)",
+      "UCRTContentRoot": "UniversalCRTRoot_not_defined\\",
       "UniversalCRTSdkDir_10": "UniversalCRTSdkDir_10_not_defined\\",
-      "WindowsSDK_IncludePath": "$(UM_IncludePath);$(KIT_SHARED_IncludePath);$(WinRT_IncludePath);$(CppWinRT_IncludePath);$(WindowsSDK_IncludePath)",
       "WindowsSDK_HasVersionedContent": "true"
     }
-  },
-  "id": "sdks/microsoft/windows",
-  "version": "10.0.19041",
-  "summary": "Microsoft Windows SDK",
-  "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications."
+  }
 }

@@ -18,7 +18,8 @@
           "LIBPATH": "."
         },
         "msbuild-properties": {
-          "VC_LibraryPath_VC_x86_Desktop": "{root}"
+          "VC_LibraryPath_VC_x86_Desktop": "{root}",
+          "VC_LibraryPath_VC_x86": "{root};$(VC_LibraryPath_VC_x86)"
         }
       }
     }

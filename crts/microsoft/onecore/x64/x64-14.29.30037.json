@@ -12,7 +12,8 @@
       "LIB": "."
     },
     "msbuild-properties": {
-      "VC_LibraryPath_VC_x64_OneCore": "{root}"
+      "VC_LibraryPath_VC_x64_OneCore": "{root}",
+      "VC_LibraryPath_VC_x64": "$(VC_LibraryPath_VC_x64);{root}"
     }
   },
   "requires": {
