@@ -10,7 +10,14 @@
   "exports": {
     "paths": {
       "lib": "."
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_ATL_ARM": "{root};$(VC_LibraryPath_ATL_ARM)"
     }
+  },
+  "requires": {
+    "sdks/microsoft/mfc-headers": "14.29.30037",
+    "sdks/microsoft/atl/arm": "14.29.30037"
   },
   "install": [
     {

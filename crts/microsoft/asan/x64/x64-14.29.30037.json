@@ -9,11 +9,11 @@
   },
   "exports": {
     "paths": {
-      "lib": ".",
-      "requires": "",
-      "crts/microsoft/headers": "14.29.30037",
-      "crts/microsoft/desktop": "14.29.30037"
+      "lib": "."
     }
+  },
+  "requires": {
+      "crts/microsoft/desktop": "14.29.30037"
   },
   "install": [
     {

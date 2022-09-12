@@ -12,7 +12,7 @@
       "lib": "."
     },
     "msbuild-properties": {
-      "VC_LibraryPath_ATL_x86": "{root}"
+      "VC_LibraryPath_ATL_x86": "{root};$(VC_LibraryPath_ATL_x86)"
     }
   },
   "requires": {

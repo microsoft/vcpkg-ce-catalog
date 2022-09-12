@@ -9,10 +9,15 @@
   },
   "exports": {
     "paths": {
-      "lib": ".",
-      "requires": "",
-      "crts/microsoft/headers": "14.29.30037"
+      "lib": "."
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_ATL_ARM64": "{root};$(VC_LibraryPath_ATL_ARM64)"
     }
+  },
+  "requires": {
+    "sdks/microsoft/mfc-headers": "14.29.30037",
+    "sdks/microsoft/atl/arm64": "14.29.30037"
   },
   "install": [
     {

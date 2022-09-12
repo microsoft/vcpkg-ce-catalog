@@ -7,9 +7,6 @@
       ]
     }
   },
-  "requires": {
-    "crts/microsoft/headers": "14.29.30037"
-  },
   "demands": {
     "target:x86": {
       "requires": {

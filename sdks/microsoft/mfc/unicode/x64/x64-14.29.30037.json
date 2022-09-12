@@ -1,4 +1,10 @@
 {
+  "id": "sdks/microsoft/mfc/unicode/x64",
+  "version": "14.29.30037",
+  "summary": "Microsoft Foundation Classes, Unicode",
+  "options": [
+    "dependencyOnly"
+  ],
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
@@ -10,7 +16,14 @@
   "exports": {
     "paths": {
       "lib": "."
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_ATL_x64": "{root};$(VC_LibraryPath_ATL_x64)"
     }
+  },
+  "requires": {
+    "sdks/microsoft/mfc-headers": "14.29.30037",
+    "sdks/microsoft/atl/x64": "14.29.30037"
   },
   "install": [
     {
@@ -29,11 +42,5 @@
       "sha256": "501d702b38a9fc75ce2ddf09addcb44d595e618346a503063320096e63d13e4e",
       "strip": 8
     }
-  ],
-  "id": "sdks/microsoft/mfc/unicode/x64",
-  "version": "14.29.30037",
-  "summary": "Microsoft Foundation Classes, Unicode",
-  "options": [
-    "dependencyOnly"
   ]
 }
