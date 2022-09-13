@@ -1,931 +1,954 @@
 # MANIFEST-INDEX
 items:
   [
-    compilers/arm/gcc/gcc-2020.10.0.json,    crts/microsoft/asan/asan-14.29.30037.json,    crts/microsoft/asan/asan-14.28.29915.json,    crts/microsoft/asan/x64/x64-14.28.29915.json,    crts/microsoft/asan/x64/x64-14.29.30037.json,    crts/microsoft/asan/x86/x86-14.28.29915.json,    crts/microsoft/asan/x86/x86-14.29.30037.json,    crts/microsoft/desktop/arm/arm-14.28.29915.json,    crts/microsoft/desktop/arm/arm-14.29.30037.json,    crts/microsoft/desktop/arm64/arm64-14.28.29915.json,    crts/microsoft/desktop/desktop-14.28.29915.json,    crts/microsoft/desktop/desktop-14.29.30037.json,    crts/microsoft/desktop/arm64/arm64-14.29.30037.json,    crts/microsoft/desktop/x64/x64-14.29.30037.json,    crts/microsoft/desktop/x64/x64-14.28.29915.json,    crts/microsoft/desktop/x86/x86-14.28.29915.json,    crts/microsoft/desktop/x86/x86-14.29.30037.json,    crts/microsoft/desktop-spectre/arm/arm-14.28.29915.json,    crts/microsoft/desktop-spectre/arm/arm-14.29.30037.json,    crts/microsoft/desktop-spectre/arm64/arm64-14.28.29915.json,    crts/microsoft/desktop-spectre/arm64/arm64-14.29.30037.json,    crts/microsoft/desktop-spectre/desktop-spectre-14.29.30037.json,    crts/microsoft/desktop-spectre/x64/x64-14.28.29915.json,    crts/microsoft/desktop-spectre/x64/x64-14.29.30037.json,    crts/microsoft/desktop-spectre/desktop-spectre-14.28.29915.json,    crts/microsoft/desktop-spectre/x86/x86-14.29.30037.json,    crts/microsoft/desktop-spectre/x86/x86-14.28.29915.json,    crts/microsoft/headers/headers-14.28.29912.json,    crts/microsoft/headers/headers-14.29.30037.json,    crts/microsoft/onecore-spectre/arm/arm-14.28.29915.json,    crts/microsoft/onecore-spectre/arm/arm-14.29.30037.json,    crts/microsoft/onecore-spectre/arm64/arm64-14.29.30037.json,    crts/microsoft/onecore-spectre/arm64/arm64-14.28.29915.json,    crts/microsoft/onecore-spectre/onecore-spectre-14.28.29915.json,    crts/microsoft/onecore-spectre/onecore-spectre-14.29.30037.json,    crts/microsoft/onecore-spectre/x64/x64-14.29.30037.json,    crts/microsoft/onecore-spectre/x64/x64-14.28.29915.json,    crts/microsoft/onecore-spectre/x86/x86-14.29.30037.json,    crts/microsoft/onecore-spectre/x86/x86-14.28.29915.json,    crts/microsoft/onecore/arm/arm-14.28.29915.json,    crts/microsoft/onecore/arm/arm-14.29.30037.json,    crts/microsoft/onecore/arm64/arm64-14.29.30037.json,    crts/microsoft/onecore/onecore-14.29.30037.json,    crts/microsoft/onecore/arm64/arm64-14.28.29915.json,    crts/microsoft/onecore/onecore-14.28.29915.json,    crts/microsoft/onecore/x64/x64-14.29.30037.json,    crts/microsoft/onecore/x64/x64-14.28.29915.json,    crts/microsoft/onecore/x86/x86-14.29.30037.json,    crts/microsoft/onecore/x86/x86-14.28.29915.json,    tools/arduino/arduino-ide-1.18.15.json,    tools/arduino/arduino-cli-0.18.3.json,    tools/compuphase/termite-3.4.0.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm.v143.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64ec.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64.v143.json,    tools/microsoft/openocd-0.11.0.json,    tools/kitware/cmake-3.20.1.json,    tools/microsoft/openocd-0.11.0-ms1.json,    tools/microsoft/msbuild/vc/UWP_17.0.0.json,    tools/raspberrypi/pico-sdk-1.3.0.json,    tools/microsoft/msbuild/vc/v143_17.0.0.json,    tools/microsoft/msbuild/vc/Desktop_v143_17.0.0.json,    tools/ninja-build/ninja-1.10.2.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64ec.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.base.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.base.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x64.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x64.v143.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x86.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x64.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x86.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x86.v143.json,    sdks/microsoft/atl/arm/arm-14.28.29914.json,    sdks/microsoft/atl/arm/arm-14.29.30037.json,    sdks/microsoft/atl/arm64/arm64-14.29.30037.json,    sdks/microsoft/atl/arm64/arm64-14.28.29914.json,    sdks/microsoft/atl/atl-14.28.29914.json,    sdks/microsoft/atl/atl-14.29.30037.json,    sdks/microsoft/atl/x64/x64-14.28.29914.json,    sdks/microsoft/atl/x64/x64-14.29.30037.json,    sdks/microsoft/atl/x86/x86-14.29.30037.json,    sdks/microsoft/atl/x86/x86-14.28.29914.json,    sdks/microsoft/atl-headers/atl-headers-14.29.30037.json,    sdks/microsoft/atl-headers/atl-headers-14.28.29914.json,    sdks/microsoft/atl-spectre/arm/arm-14.29.30037.json,    sdks/microsoft/atl-spectre/arm/arm-14.28.29914.json,    sdks/microsoft/atl-spectre/arm64/arm64-14.28.29914.json,    sdks/microsoft/atl-spectre/arm64/arm64-14.29.30037.json,    sdks/microsoft/atl-spectre/atl-spectre-14.28.29914.json,    sdks/microsoft/atl-spectre/atl-spectre-14.29.30037.json,    sdks/microsoft/atl-spectre/x86/x86-14.28.29914.json,    sdks/microsoft/atl-spectre/x86/x86-14.29.30037.json,    sdks/microsoft/atl-spectre/x64/x64-14.29.30037.json,    sdks/microsoft/atl-spectre/x64/x64-14.28.29914.json,    sdks/microsoft/mfc/mbcs/arm/arm-14.28.29914.json,    sdks/microsoft/mfc/mbcs/arm/arm-14.29.30037.json,    sdks/microsoft/mfc/mbcs/arm64/arm64-14.29.30037.json,    sdks/microsoft/mfc/mbcs/mbcs-14.28.29914.json,    sdks/microsoft/mfc/mbcs/arm64/arm64-14.28.29914.json,    sdks/microsoft/mfc/mbcs/x64/x64-14.28.29914.json,    sdks/microsoft/mfc/mbcs/x64/x64-14.29.30037.json,    sdks/microsoft/mfc/mbcs/mbcs-14.29.30037.json,    sdks/microsoft/mfc/mbcs/x86/x86-14.28.29914.json,    sdks/microsoft/mfc/mbcs/x86/x86-14.29.30037.json,    sdks/microsoft/mfc/unicode/arm64/arm64-14.28.29914.json,    sdks/microsoft/mfc/unicode/arm64/arm64-14.29.30037.json,    sdks/microsoft/mfc/unicode/arm/arm-14.28.29914.json,    sdks/microsoft/mfc/unicode/unicode-14.28.29914.json,    sdks/microsoft/mfc/unicode/arm/arm-14.29.30037.json,    sdks/microsoft/mfc/unicode/x64/x64-14.28.29914.json,    sdks/microsoft/mfc/unicode/x64/x64-14.29.30037.json,    sdks/microsoft/mfc/unicode/unicode-14.29.30037.json,    sdks/microsoft/mfc/unicode/x86/x86-14.28.29914.json,    sdks/microsoft/mfc/unicode/x86/x86-14.29.30037.json,    sdks/microsoft/mfc-headers/mfc-headers-14.29.30037.json,    sdks/microsoft/mfc-headers/mfc-headers-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/arm/arm-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/arm/arm-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/arm64/arm64-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/mbcs-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/arm64/arm64-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/mbcs-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/x64/x64-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/x64/x64-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/x86/x86-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/x86/x86-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/arm/arm-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/arm/arm-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/arm64/arm64-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/arm64/arm64-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/unicode-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/x64/x64-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/x64/x64-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/unicode-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/x86/x86-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/x86/x86-14.29.30037.json,    sdks/microsoft/windows/windows-10.0.17763.json,    sdks/microsoft/windows/windows-10.0.22621.json,    sdks/microsoft/windows/windows-10.0.18362.json,    sdks/microsoft/windows/windows-10.0.19041.json,    sdks/microsoft/windows/windows.arm-10.0.17763.json,    sdks/microsoft/windows/windows.arm-10.0.22621.json,    sdks/microsoft/windows/windows.arm64-10.0.17763.json,    sdks/microsoft/windows/windows.arm64-10.0.18362.json,    sdks/microsoft/windows/windows.arm64-10.0.19041.json,    sdks/microsoft/windows/windows.arm64-10.0.22621.json,    sdks/microsoft/windows/windows.x64-10.0.18362.json,    sdks/microsoft/windows/windows.x64-10.0.17763.json,    sdks/microsoft/windows/windows.x64-10.0.19041.json,    microsoft/diasdk/diasdk-14.29.30037.json,    microsoft/diasdk/diasdk-14.28.29915.json,    sdks/microsoft/windows/windows.x64-10.0.22621.json,    sdks/microsoft/windows/windows.x86-10.0.17763.json,    microsoft/msvc/msvc-14.29.30037.json,    microsoft/msvc/msvc-14.28.29915.json,    sdks/microsoft/windows/windows.x86-10.0.18362.json,    sdks/microsoft/windows/windows.x86-10.0.19041.json,    microsoft/msvc/x64_arm/x64_arm-14.29.30037.json,    microsoft/msvc/x64_arm/x64_arm-14.28.29915.json,    sdks/microsoft/windows/windows.arm-10.0.18362.json,    sdks/microsoft/windows/windows.x86-10.0.22621.json,    microsoft/msvc/x64_x64/x64_x64-14.29.30037.json,    microsoft/msvc/x64_x64/x64_x64-14.28.29915.json,    sdks/microsoft/windows/windows.arm-10.0.19041.json,    microsoft/msvc/x64_arm64/x64_arm64-14.29.30037.json,    microsoft/msvc/x64_arm64/x64_arm64-14.28.29915.json,    microsoft/msvc/x64_x86/x64_x86-14.28.29915.json,    microsoft/msvc/x64_x86/x64_x86-14.29.30037.json,    microsoft/msvc/x86_arm/x86_arm-14.29.30037.json,    microsoft/msvc/x86_arm/x86_arm-14.28.29915.json,    microsoft/msvc/x86_x86/x86_x86-14.28.29915.json,    microsoft/msvc/x86_x86/x86_x86-14.29.30037.json,    microsoft/msvc/x86_x64/x86_x64-14.28.29915.json,    microsoft/msvc/x86_x64/x86_x64-14.29.30037.json,    microsoft/msvc/x86_arm64/x86_arm64-14.28.29915.json,    microsoft/msvc/x86_arm64/x86_arm64-14.29.30037.json
+    crts/microsoft/asan/asan-14.28.29915.json,    crts/microsoft/asan/asan-14.29.30037.json,    crts/microsoft/asan/x64/x64-14.28.29915.json,    compilers/arm/gcc/gcc-2020.10.0.json,    crts/microsoft/asan/x64/x64-14.29.30037.json,    crts/microsoft/asan/x86/x86-14.29.30037.json,    crts/microsoft/asan/x86/x86-14.28.29915.json,    crts/microsoft/desktop/arm/arm-14.28.29915.json,    crts/microsoft/desktop/desktop-14.28.29915.json,    crts/microsoft/desktop/arm/arm-14.29.30037.json,    crts/microsoft/desktop/desktop-14.29.30037.json,    crts/microsoft/desktop/arm64/arm64-14.28.29915.json,    crts/microsoft/desktop/arm64/arm64-14.29.30037.json,    crts/microsoft/desktop/x64/x64-14.29.30037.json,    crts/microsoft/desktop/x64/x64-14.28.29915.json,    crts/microsoft/desktop/x86/x86-14.29.30037.json,    crts/microsoft/desktop/x86/x86-14.28.29915.json,    crts/microsoft/desktop-spectre/arm/arm-14.28.29915.json,    crts/microsoft/desktop-spectre/arm/arm-14.29.30037.json,    crts/microsoft/desktop-spectre/desktop-spectre-14.29.30037.json,    crts/microsoft/desktop-spectre/arm64/arm64-14.29.30037.json,    crts/microsoft/desktop-spectre/arm64/arm64-14.28.29915.json,    crts/microsoft/desktop-spectre/x64/x64-14.28.29915.json,    crts/microsoft/desktop-spectre/x64/x64-14.29.30037.json,    crts/microsoft/desktop-spectre/x86/x86-14.28.29915.json,    crts/microsoft/desktop-spectre/x86/x86-14.29.30037.json,    crts/microsoft/headers/headers-14.29.30037.json,    crts/microsoft/desktop-spectre/desktop-spectre-14.28.29915.json,    crts/microsoft/headers/headers-14.28.29912.json,    crts/microsoft/onecore/arm/arm-14.28.29915.json,    crts/microsoft/onecore/arm/arm-14.29.30037.json,    crts/microsoft/onecore/arm64/arm64-14.29.30037.json,    crts/microsoft/onecore/arm64/arm64-14.28.29915.json,    crts/microsoft/onecore/onecore-14.28.29915.json,    crts/microsoft/onecore/onecore-14.29.30037.json,    crts/microsoft/onecore/x64/x64-14.29.30037.json,    crts/microsoft/onecore/x64/x64-14.28.29915.json,    crts/microsoft/onecore/x86/x86-14.28.29915.json,    crts/microsoft/onecore/x86/x86-14.29.30037.json,    crts/microsoft/onecore-spectre/arm/arm-14.29.30037.json,    crts/microsoft/onecore-spectre/arm64/arm64-14.28.29915.json,    crts/microsoft/onecore-spectre/arm/arm-14.28.29915.json,    crts/microsoft/onecore-spectre/arm64/arm64-14.29.30037.json,    crts/microsoft/onecore-spectre/onecore-spectre-14.28.29915.json,    crts/microsoft/onecore-spectre/onecore-spectre-14.29.30037.json,    crts/microsoft/onecore-spectre/x64/x64-14.28.29915.json,    crts/microsoft/onecore-spectre/x64/x64-14.29.30037.json,    crts/microsoft/store/store-14.32.31328.json,    crts/microsoft/onecore-spectre/x86/x86-14.29.30037.json,    crts/microsoft/onecore-spectre/x86/x86-14.28.29915.json,    crts/microsoft/store/x64/x64-14.29.30037.json,    tools/arduino/arduino-ide-1.18.15.json,    tools/arduino/arduino-cli-0.18.3.json,    tools/kitware/cmake-3.20.1.json,    tools/compuphase/termite-3.4.0.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm.v143.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64.v143.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64.uwp.json,    tools/ninja-build/ninja-1.10.2.json,    tools/microsoft/openocd-0.11.0.json,    tools/microsoft/openocd-0.11.0-ms1.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64ec.json,    tools/microsoft/msbuild/vc/v143_17.0.0.json,    tools/raspberrypi/pico-sdk-1.3.0.json,    tools/microsoft/msbuild/vc/UWP_17.0.0.json,    tools/microsoft/msbuild/vc/Desktop_v143_17.0.0.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64ec.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.base.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.base.uwp.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x64.json,    sdks/microsoft/atl/arm/arm-14.29.30037.json,    sdks/microsoft/atl/arm/arm-14.28.29914.json,    sdks/microsoft/atl/atl-14.29.30037.json,    sdks/microsoft/atl/atl-14.28.29914.json,    sdks/microsoft/atl/arm64/arm64-14.29.30037.json,    sdks/microsoft/atl/x64/x64-14.29.30037.json,    sdks/microsoft/atl/x64/x64-14.28.29914.json,    sdks/microsoft/atl/x86/x86-14.29.30037.json,    sdks/microsoft/atl/x86/x86-14.28.29914.json,    sdks/microsoft/atl/arm64/arm64-14.28.29914.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x64.uwp.json,    sdks/microsoft/atl-headers/atl-headers-14.29.30037.json,    sdks/microsoft/atl-headers/atl-headers-14.28.29914.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x64.v143.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x86.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x86.uwp.json,    sdks/microsoft/atl-spectre/arm/arm-14.29.30037.json,    sdks/microsoft/atl-spectre/atl-spectre-14.29.30037.json,    sdks/microsoft/atl-spectre/arm64/arm64-14.29.30037.json,    sdks/microsoft/atl-spectre/atl-spectre-14.28.29914.json,    sdks/microsoft/atl-spectre/arm/arm-14.28.29914.json,    sdks/microsoft/atl-spectre/arm64/arm64-14.28.29914.json,    sdks/microsoft/atl-spectre/x86/x86-14.29.30037.json,    sdks/microsoft/atl-spectre/x86/x86-14.28.29914.json,    sdks/microsoft/atl-spectre/x64/x64-14.29.30037.json,    sdks/microsoft/atl-spectre/x64/x64-14.28.29914.json,    tools/microsoft/msbuild/vc/17.0/microsoft.visualstudio.vc.msbuild.v170.x86.v143.json,    sdks/microsoft/mfc/unicode/arm/arm-14.29.30037.json,    sdks/microsoft/mfc/unicode/arm/arm-14.28.29914.json,    sdks/microsoft/mfc/unicode/arm64/arm64-14.28.29914.json,    sdks/microsoft/mfc/unicode/unicode-14.28.29914.json,    sdks/microsoft/mfc/unicode/arm64/arm64-14.29.30037.json,    sdks/microsoft/mfc/unicode/unicode-14.29.30037.json,    sdks/microsoft/mfc/unicode/x64/x64-14.28.29914.json,    sdks/microsoft/mfc/unicode/x64/x64-14.29.30037.json,    sdks/microsoft/mfc/unicode/x86/x86-14.28.29914.json,    sdks/microsoft/mfc/unicode/x86/x86-14.29.30037.json,    sdks/microsoft/mfc/mbcs/arm/arm-14.29.30037.json,    sdks/microsoft/mfc/mbcs/arm/arm-14.28.29914.json,    sdks/microsoft/mfc/mbcs/arm64/arm64-14.29.30037.json,    sdks/microsoft/mfc/mbcs/arm64/arm64-14.28.29914.json,    sdks/microsoft/mfc/mbcs/mbcs-14.28.29914.json,    sdks/microsoft/mfc/mbcs/x64/x64-14.29.30037.json,    sdks/microsoft/mfc/mbcs/x64/x64-14.28.29914.json,    sdks/microsoft/mfc/mbcs/mbcs-14.29.30037.json,    sdks/microsoft/mfc/mbcs/x86/x86-14.29.30037.json,    sdks/microsoft/mfc/mbcs/x86/x86-14.28.29914.json,    sdks/microsoft/mfc-headers/mfc-headers-14.28.29914.json,    sdks/microsoft/mfc-headers/mfc-headers-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/arm/arm-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/arm/arm-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/arm64/arm64-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/arm64/arm64-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/mbcs-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/mbcs-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/x64/x64-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/x64/x64-14.29.30037.json,    sdks/microsoft/mfc-spectre/mbcs/x86/x86-14.28.29914.json,    sdks/microsoft/mfc-spectre/mbcs/x86/x86-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/arm/arm-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/arm/arm-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/arm64/arm64-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/arm64/arm64-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/unicode-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/unicode-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/x64/x64-14.28.29914.json,    sdks/microsoft/mfc-spectre/unicode/x64/x64-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/x86/x86-14.29.30037.json,    sdks/microsoft/mfc-spectre/unicode/x86/x86-14.28.29914.json,    sdks/microsoft/windows/windows-10.0.19041.json,    sdks/microsoft/windows/windows-10.0.17763.json,    sdks/microsoft/windows/windows-10.0.18362.json,    sdks/microsoft/windows/windows-10.0.22621.json,    sdks/microsoft/windows/windows.arm-10.0.22621.json,    sdks/microsoft/windows/windows.arm64-10.0.17763.json,    sdks/microsoft/windows/windows.arm64-10.0.18362.json,    sdks/microsoft/windows/windows.arm64-10.0.19041.json,    sdks/microsoft/windows/windows.arm64-10.0.22621.json,    sdks/microsoft/windows/windows.x64-10.0.17763.json,    microsoft/msvc/msvc-14.29.30037.json,    sdks/microsoft/windows/windows.x64-10.0.18362.json,    microsoft/diasdk/diasdk-14.29.30037.json,    microsoft/diasdk/diasdk-14.28.29915.json,    microsoft/msvc/msvc-14.28.29915.json,    microsoft/msvc/x64_arm/x64_arm-14.29.30037.json,    microsoft/msvc/x64_arm/x64_arm-14.28.29915.json,    sdks/microsoft/windows/windows.x64-10.0.19041.json,    microsoft/msvc/x64_x64/x64_x64-14.29.30037.json,    microsoft/msvc/x64_arm64/x64_arm64-14.29.30037.json,    microsoft/msvc/x64_x64/x64_x64-14.28.29915.json,    microsoft/msvc/x64_arm64/x64_arm64-14.28.29915.json,    microsoft/msvc/x64_x86/x64_x86-14.29.30037.json,    microsoft/msvc/x64_x86/x64_x86-14.28.29915.json,    microsoft/msvc/x86_arm/x86_arm-14.29.30037.json,    microsoft/msvc/x86_arm/x86_arm-14.28.29915.json,    sdks/microsoft/windows/windows.x64-10.0.22621.json,    microsoft/msvc/x86_x86/x86_x86-14.29.30037.json,    sdks/microsoft/windows/windows.x86-10.0.17763.json,    microsoft/msvc/x86_x64/x86_x64-14.29.30037.json,    microsoft/msvc/x86_x86/x86_x86-14.28.29915.json,    microsoft/msvc/x86_x64/x86_x64-14.28.29915.json,    sdks/microsoft/windows/windows.x86-10.0.18362.json,    microsoft/msvc/x86_arm64/x86_arm64-14.29.30037.json,    sdks/microsoft/windows/windows.x86-10.0.19041.json,    sdks/microsoft/windows/windows.x86-10.0.22621.json,    microsoft/msvc/x86_arm64/x86_arm64-14.28.29915.json,    sdks/microsoft/windows/windows.arm-10.0.19041.json,    sdks/microsoft/windows/windows.arm-10.0.18362.json,    sdks/microsoft/windows/windows.arm-10.0.17763.json
   ]
 indexes:
   IdentityKey/id:
     keys:
-      compilers/arm/gcc: [ 0 ]
-      crts/microsoft/asan: [ 1, 2 ]
-      crts/microsoft/asan/x64: [ 3, 4 ]
+      compilers/arm/gcc: [ 3 ]
+      crts/microsoft/asan: [ 0, 1 ]
+      crts/microsoft/asan/x64: [ 2, 4 ]
       crts/microsoft/asan/x86: [ 5, 6 ]
-      crts/microsoft/desktop: [ 10, 11 ]
-      crts/microsoft/desktop-spectre: [ 21, 24 ]
+      crts/microsoft/desktop: [ 8, 10 ]
+      crts/microsoft/desktop-spectre: [ 19, 27 ]
       crts/microsoft/desktop-spectre/arm: [ 17, 18 ]
-      crts/microsoft/desktop-spectre/arm64: [ 19, 20 ]
+      crts/microsoft/desktop-spectre/arm64: [ 20, 21 ]
       crts/microsoft/desktop-spectre/x64: [ 22, 23 ]
-      crts/microsoft/desktop-spectre/x86: [ 25, 26 ]
-      crts/microsoft/desktop/arm: [ 7, 8 ]
-      crts/microsoft/desktop/arm64: [ 9, 12 ]
+      crts/microsoft/desktop-spectre/x86: [ 24, 25 ]
+      crts/microsoft/desktop/arm: [ 7, 9 ]
+      crts/microsoft/desktop/arm64: [ 11, 12 ]
       crts/microsoft/desktop/x64: [ 13, 14 ]
       crts/microsoft/desktop/x86: [ 15, 16 ]
-      crts/microsoft/headers: [ 27, 28 ]
-      crts/microsoft/onecore: [ 42, 44 ]
-      crts/microsoft/onecore-spectre: [ 33, 34 ]
-      crts/microsoft/onecore-spectre/arm: [ 29, 30 ]
-      crts/microsoft/onecore-spectre/arm64: [ 31, 32 ]
-      crts/microsoft/onecore-spectre/x64: [ 35, 36 ]
-      crts/microsoft/onecore-spectre/x86: [ 37, 38 ]
-      crts/microsoft/onecore/arm: [ 39, 40 ]
-      crts/microsoft/onecore/arm64: [ 41, 43 ]
-      crts/microsoft/onecore/x64: [ 45, 46 ]
-      crts/microsoft/onecore/x86: [ 47, 48 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm: [ 52 ]
+      crts/microsoft/headers: [ 26, 28 ]
+      crts/microsoft/onecore: [ 33, 34 ]
+      crts/microsoft/onecore-spectre: [ 43, 44 ]
+      crts/microsoft/onecore-spectre/arm: [ 39, 41 ]
+      crts/microsoft/onecore-spectre/arm64: [ 40, 42 ]
+      crts/microsoft/onecore-spectre/x64: [ 45, 46 ]
+      crts/microsoft/onecore-spectre/x86: [ 48, 49 ]
+      crts/microsoft/onecore/arm: [ 29, 30 ]
+      crts/microsoft/onecore/arm64: [ 31, 32 ]
+      crts/microsoft/onecore/x64: [ 35, 36 ]
+      crts/microsoft/onecore/x86: [ 37, 38 ]
+      crts/microsoft/store: [ 47 ]
+      crts/microsoft/store/x64: [ 50 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm: [ 58 ]
       microsoft.visualstudio.vc.msbuild.v170.arm.uwp: [ 55 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm.v143: [ 53 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64: [ 56 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64.uwp: [ 54 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64.v143: [ 58 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64ec: [ 57 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64ec.uwp: [ 67 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143: [ 68 ]
-      microsoft.visualstudio.vc.msbuild.v170.base: [ 70 ]
-      microsoft.visualstudio.vc.msbuild.v170.base.uwp: [ 69 ]
-      microsoft.visualstudio.vc.msbuild.v170.x64: [ 71 ]
-      microsoft.visualstudio.vc.msbuild.v170.x64.uwp: [ 74 ]
-      microsoft.visualstudio.vc.msbuild.v170.x64.v143: [ 72 ]
-      microsoft.visualstudio.vc.msbuild.v170.x86: [ 73 ]
-      microsoft.visualstudio.vc.msbuild.v170.x86.uwp: [ 75 ]
-      microsoft.visualstudio.vc.msbuild.v170.x86.v143: [ 76 ]
-      microsoft/diasdk: [ 154, 155 ]
-      microsoft/msvc: [ 158, 159 ]
-      microsoft/msvc/x64_arm: [ 162, 163 ]
-      microsoft/msvc/x64_arm64: [ 169, 170 ]
-      microsoft/msvc/x64_x64: [ 166, 167 ]
-      microsoft/msvc/x64_x86: [ 171, 172 ]
-      microsoft/msvc/x86_arm: [ 173, 174 ]
-      microsoft/msvc/x86_arm64: [ 179, 180 ]
-      microsoft/msvc/x86_x64: [ 177, 178 ]
-      microsoft/msvc/x86_x86: [ 175, 176 ]
-      raspberrypi/pico-sdk: [ 63 ]
-      sdks/microsoft/atl: [ 81, 82 ]
-      sdks/microsoft/atl-headers: [ 87, 88 ]
-      sdks/microsoft/atl-spectre: [ 93, 94 ]
-      sdks/microsoft/atl-spectre/arm: [ 89, 90 ]
-      sdks/microsoft/atl-spectre/arm64: [ 91, 92 ]
-      sdks/microsoft/atl-spectre/x64: [ 97, 98 ]
-      sdks/microsoft/atl-spectre/x86: [ 95, 96 ]
-      sdks/microsoft/atl/arm: [ 77, 78 ]
-      sdks/microsoft/atl/arm64: [ 79, 80 ]
-      sdks/microsoft/atl/x64: [ 83, 84 ]
-      sdks/microsoft/atl/x86: [ 85, 86 ]
-      sdks/microsoft/mfc-headers: [ 119, 120 ]
-      sdks/microsoft/mfc-spectre/mbcs: [ 124, 126 ]
-      sdks/microsoft/mfc-spectre/mbcs/arm: [ 121, 122 ]
-      sdks/microsoft/mfc-spectre/mbcs/arm64: [ 123, 125 ]
-      sdks/microsoft/mfc-spectre/mbcs/x64: [ 127, 128 ]
-      sdks/microsoft/mfc-spectre/mbcs/x86: [ 129, 130 ]
-      sdks/microsoft/mfc-spectre/unicode: [ 135, 138 ]
-      sdks/microsoft/mfc-spectre/unicode/arm: [ 131, 132 ]
-      sdks/microsoft/mfc-spectre/unicode/arm64: [ 133, 134 ]
-      sdks/microsoft/mfc-spectre/unicode/x64: [ 136, 137 ]
-      sdks/microsoft/mfc-spectre/unicode/x86: [ 139, 140 ]
-      sdks/microsoft/mfc/mbcs: [ 102, 106 ]
-      sdks/microsoft/mfc/mbcs/arm: [ 99, 100 ]
-      sdks/microsoft/mfc/mbcs/arm64: [ 101, 103 ]
-      sdks/microsoft/mfc/mbcs/x64: [ 104, 105 ]
-      sdks/microsoft/mfc/mbcs/x86: [ 107, 108 ]
-      sdks/microsoft/mfc/unicode: [ 112, 116 ]
-      sdks/microsoft/mfc/unicode/arm: [ 111, 113 ]
-      sdks/microsoft/mfc/unicode/arm64: [ 109, 110 ]
-      sdks/microsoft/mfc/unicode/x64: [ 114, 115 ]
-      sdks/microsoft/mfc/unicode/x86: [ 117, 118 ]
-      sdks/microsoft/windows: [ 141, 142, 143, 144 ]
-      sdks/microsoft/windows/windows.arm: [ 145, 146, 164, 168 ]
-      sdks/microsoft/windows/windows.arm64: [ 147, 148, 149, 150 ]
-      sdks/microsoft/windows/windows.x64: [ 151, 152, 153, 156 ]
-      sdks/microsoft/windows/windows.x86: [ 157, 160, 161, 165 ]
-      tools/arduino/arduino-cli: [ 50 ]
-      tools/arduino/arduino-ide: [ 49 ]
-      tools/compuphase/termite: [ 51 ]
-      tools/kitware/cmake: [ 60 ]
-      tools/microsoft/msbuild/vc/Desktop/v143: [ 65 ]
-      tools/microsoft/msbuild/vc/uwp: [ 62 ]
-      tools/microsoft/msbuild/vc/v143: [ 64 ]
-      tools/microsoft/openocd: [ 59, 61 ]
-      tools/ninja-build/ninja: [ 66 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm.v143: [ 56 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64: [ 57 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64.uwp: [ 60 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64.v143: [ 59 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64ec: [ 64 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64ec.uwp: [ 69 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143: [ 70 ]
+      microsoft.visualstudio.vc.msbuild.v170.base: [ 71 ]
+      microsoft.visualstudio.vc.msbuild.v170.base.uwp: [ 72 ]
+      microsoft.visualstudio.vc.msbuild.v170.x64: [ 73 ]
+      microsoft.visualstudio.vc.msbuild.v170.x64.uwp: [ 84 ]
+      microsoft.visualstudio.vc.msbuild.v170.x64.v143: [ 87 ]
+      microsoft.visualstudio.vc.msbuild.v170.x86: [ 88 ]
+      microsoft.visualstudio.vc.msbuild.v170.x86.uwp: [ 89 ]
+      microsoft.visualstudio.vc.msbuild.v170.x86.v143: [ 100 ]
+      microsoft/diasdk: [ 155, 156 ]
+      microsoft/msvc: [ 153, 157 ]
+      microsoft/msvc/x64_arm: [ 158, 159 ]
+      microsoft/msvc/x64_arm64: [ 162, 164 ]
+      microsoft/msvc/x64_x64: [ 161, 163 ]
+      microsoft/msvc/x64_x86: [ 165, 166 ]
+      microsoft/msvc/x86_arm: [ 167, 168 ]
+      microsoft/msvc/x86_arm64: [ 176, 179 ]
+      microsoft/msvc/x86_x64: [ 172, 174 ]
+      microsoft/msvc/x86_x86: [ 170, 173 ]
+      raspberrypi/pico-sdk: [ 66 ]
+      sdks/microsoft/atl: [ 76, 77 ]
+      sdks/microsoft/atl-headers: [ 85, 86 ]
+      sdks/microsoft/atl-spectre: [ 91, 93 ]
+      sdks/microsoft/atl-spectre/arm: [ 90, 94 ]
+      sdks/microsoft/atl-spectre/arm64: [ 92, 95 ]
+      sdks/microsoft/atl-spectre/x64: [ 98, 99 ]
+      sdks/microsoft/atl-spectre/x86: [ 96, 97 ]
+      sdks/microsoft/atl/arm: [ 74, 75 ]
+      sdks/microsoft/atl/arm64: [ 78, 83 ]
+      sdks/microsoft/atl/x64: [ 79, 80 ]
+      sdks/microsoft/atl/x86: [ 81, 82 ]
+      sdks/microsoft/mfc-headers: [ 121, 122 ]
+      sdks/microsoft/mfc-spectre/mbcs: [ 127, 128 ]
+      sdks/microsoft/mfc-spectre/mbcs/arm: [ 123, 124 ]
+      sdks/microsoft/mfc-spectre/mbcs/arm64: [ 125, 126 ]
+      sdks/microsoft/mfc-spectre/mbcs/x64: [ 129, 130 ]
+      sdks/microsoft/mfc-spectre/mbcs/x86: [ 131, 132 ]
+      sdks/microsoft/mfc-spectre/unicode: [ 137, 138 ]
+      sdks/microsoft/mfc-spectre/unicode/arm: [ 133, 134 ]
+      sdks/microsoft/mfc-spectre/unicode/arm64: [ 135, 136 ]
+      sdks/microsoft/mfc-spectre/unicode/x64: [ 139, 140 ]
+      sdks/microsoft/mfc-spectre/unicode/x86: [ 141, 142 ]
+      sdks/microsoft/mfc/mbcs: [ 115, 118 ]
+      sdks/microsoft/mfc/mbcs/arm: [ 111, 112 ]
+      sdks/microsoft/mfc/mbcs/arm64: [ 113, 114 ]
+      sdks/microsoft/mfc/mbcs/x64: [ 116, 117 ]
+      sdks/microsoft/mfc/mbcs/x86: [ 119, 120 ]
+      sdks/microsoft/mfc/unicode: [ 104, 106 ]
+      sdks/microsoft/mfc/unicode/arm: [ 101, 102 ]
+      sdks/microsoft/mfc/unicode/arm64: [ 103, 105 ]
+      sdks/microsoft/mfc/unicode/x64: [ 107, 108 ]
+      sdks/microsoft/mfc/unicode/x86: [ 109, 110 ]
+      sdks/microsoft/windows: [ 143, 144, 145, 146 ]
+      sdks/microsoft/windows/windows.arm: [ 147, 180, 181, 182 ]
+      sdks/microsoft/windows/windows.arm64: [ 148, 149, 150, 151 ]
+      sdks/microsoft/windows/windows.x64: [ 152, 154, 160, 169 ]
+      sdks/microsoft/windows/windows.x86: [ 171, 175, 177, 178 ]
+      tools/arduino/arduino-cli: [ 52 ]
+      tools/arduino/arduino-ide: [ 51 ]
+      tools/compuphase/termite: [ 54 ]
+      tools/kitware/cmake: [ 53 ]
+      tools/microsoft/msbuild/vc/Desktop/v143: [ 68 ]
+      tools/microsoft/msbuild/vc/uwp: [ 67 ]
+      tools/microsoft/msbuild/vc/v143: [ 65 ]
+      tools/microsoft/openocd: [ 62, 63 ]
+      tools/ninja-build/ninja: [ 61 ]
     words:
-      Desktop: [ 65 ]
-      Desktop/v143: [ 65 ]
-      arduino: [ 49, 50 ]
-      arduino-cli: [ 50 ]
-      arduino-ide: [ 49 ]
-      arduino/arduino: [ 49, 50 ]
-      arduino/arduino-cli: [ 50 ]
-      arduino/arduino-ide: [ 49 ]
+      Desktop: [ 68 ]
+      Desktop/v143: [ 68 ]
+      arduino: [ 51, 52 ]
+      arduino-cli: [ 52 ]
+      arduino-ide: [ 51 ]
+      arduino/arduino: [ 51, 52 ]
+      arduino/arduino-cli: [ 52 ]
+      arduino/arduino-ide: [ 51 ]
       arm:
-        [0,7,8,17,18,29,30,39,40,52,53,55,77,78,89,90,99,100,111,113,121,122,131,132,145,146,164,          168
+        [3,7,9,17,18,29,30,39,41,55,56,58,74,75,90,94,101,102,111,112,123,124,133,134,147,180,181,          182
         ]
       arm.uwp: [ 55 ]
-      arm.v143: [ 53 ]
-      arm/gcc: [ 0 ]
+      arm.v143: [ 56 ]
+      arm/gcc: [ 3 ]
       arm64:
-        [9,12,19,20,31,32,41,43,54,56,58,79,80,91,92,101,103,109,110,123,125,133,134,147,148,149,          150
+        [11,12,20,21,31,32,40,42,57,59,60,78,83,92,95,103,105,113,114,125,126,135,136,148,149,150,          151
         ]
-      arm64.uwp: [ 54 ]
-      arm64.v143: [ 58 ]
-      arm64ec: [ 57, 67, 68 ]
-      arm64ec.uwp: [ 67 ]
-      arm64ec.v143: [ 68 ]
-      asan: [ 1, 2, 3, 4, 5, 6 ]
-      asan/x64: [ 3, 4 ]
+      arm64.uwp: [ 60 ]
+      arm64.v143: [ 59 ]
+      arm64ec: [ 64, 69, 70 ]
+      arm64ec.uwp: [ 69 ]
+      arm64ec.v143: [ 70 ]
+      asan: [ 0, 1, 2, 4, 5, 6 ]
+      asan/x64: [ 2, 4 ]
       asan/x86: [ 5, 6 ]
       atl:
-        [77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,          98
+        [74,75,76,77,78,79,80,81,82,83,85,86,90,91,92,93,94,95,96,97,98,          99
         ]
-      atl-headers: [ 87, 88 ]
-      atl-spectre: [ 89, 90, 91, 92, 93, 94, 95, 96, 97, 98 ]
-      atl-spectre/arm: [ 89, 90 ]
-      atl-spectre/arm64: [ 91, 92 ]
-      atl-spectre/x64: [ 97, 98 ]
-      atl-spectre/x86: [ 95, 96 ]
-      atl/arm: [ 77, 78 ]
-      atl/arm64: [ 79, 80 ]
-      atl/x64: [ 83, 84 ]
-      atl/x86: [ 85, 86 ]
-      base: [ 69, 70 ]
-      base.uwp: [ 69 ]
-      build: [ 66 ]
-      build/ninja: [ 66 ]
-      cli: [ 50 ]
-      cmake: [ 60 ]
-      compilers: [ 0 ]
-      compilers/arm: [ 0 ]
-      compilers/arm/gcc: [ 0 ]
-      compuphase: [ 51 ]
-      compuphase/termite: [ 51 ]
+      atl-headers: [ 85, 86 ]
+      atl-spectre: [ 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ]
+      atl-spectre/arm: [ 90, 94 ]
+      atl-spectre/arm64: [ 92, 95 ]
+      atl-spectre/x64: [ 98, 99 ]
+      atl-spectre/x86: [ 96, 97 ]
+      atl/arm: [ 74, 75 ]
+      atl/arm64: [ 78, 83 ]
+      atl/x64: [ 79, 80 ]
+      atl/x86: [ 81, 82 ]
+      base: [ 71, 72 ]
+      base.uwp: [ 72 ]
+      build: [ 61 ]
+      build/ninja: [ 61 ]
+      cli: [ 52 ]
+      cmake: [ 53 ]
+      compilers: [ 3 ]
+      compilers/arm: [ 3 ]
+      compilers/arm/gcc: [ 3 ]
+      compuphase: [ 54 ]
+      compuphase/termite: [ 54 ]
       crts:
-        [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,          48
+        [0,1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,          50
         ]
       crts/microsoft:
-        [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,          48
+        [0,1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,          50
         ]
-      crts/microsoft/asan: [ 1, 2, 3, 4, 5, 6 ]
-      crts/microsoft/asan/x64: [ 3, 4 ]
+      crts/microsoft/asan: [ 0, 1, 2, 4, 5, 6 ]
+      crts/microsoft/asan/x64: [ 2, 4 ]
       crts/microsoft/asan/x86: [ 5, 6 ]
       crts/microsoft/desktop:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,          26
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,          27
         ]
-      crts/microsoft/desktop-spectre: [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
+      crts/microsoft/desktop-spectre: [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 27 ]
       crts/microsoft/desktop-spectre/arm: [ 17, 18 ]
-      crts/microsoft/desktop-spectre/arm64: [ 19, 20 ]
+      crts/microsoft/desktop-spectre/arm64: [ 20, 21 ]
       crts/microsoft/desktop-spectre/x64: [ 22, 23 ]
-      crts/microsoft/desktop-spectre/x86: [ 25, 26 ]
-      crts/microsoft/desktop/arm: [ 7, 8 ]
-      crts/microsoft/desktop/arm64: [ 9, 12 ]
+      crts/microsoft/desktop-spectre/x86: [ 24, 25 ]
+      crts/microsoft/desktop/arm: [ 7, 9 ]
+      crts/microsoft/desktop/arm64: [ 11, 12 ]
       crts/microsoft/desktop/x64: [ 13, 14 ]
       crts/microsoft/desktop/x86: [ 15, 16 ]
-      crts/microsoft/headers: [ 27, 28 ]
+      crts/microsoft/headers: [ 26, 28 ]
       crts/microsoft/onecore:
-        [29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,          48
+        [29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,48,          49
         ]
-      crts/microsoft/onecore-spectre: [ 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ]
-      crts/microsoft/onecore-spectre/arm: [ 29, 30 ]
-      crts/microsoft/onecore-spectre/arm64: [ 31, 32 ]
-      crts/microsoft/onecore-spectre/x64: [ 35, 36 ]
-      crts/microsoft/onecore-spectre/x86: [ 37, 38 ]
-      crts/microsoft/onecore/arm: [ 39, 40 ]
-      crts/microsoft/onecore/arm64: [ 41, 43 ]
-      crts/microsoft/onecore/x64: [ 45, 46 ]
-      crts/microsoft/onecore/x86: [ 47, 48 ]
+      crts/microsoft/onecore-spectre: [ 39, 40, 41, 42, 43, 44, 45, 46, 48, 49 ]
+      crts/microsoft/onecore-spectre/arm: [ 39, 41 ]
+      crts/microsoft/onecore-spectre/arm64: [ 40, 42 ]
+      crts/microsoft/onecore-spectre/x64: [ 45, 46 ]
+      crts/microsoft/onecore-spectre/x86: [ 48, 49 ]
+      crts/microsoft/onecore/arm: [ 29, 30 ]
+      crts/microsoft/onecore/arm64: [ 31, 32 ]
+      crts/microsoft/onecore/x64: [ 35, 36 ]
+      crts/microsoft/onecore/x86: [ 37, 38 ]
+      crts/microsoft/store: [ 47, 50 ]
+      crts/microsoft/store/x64: [ 50 ]
       desktop:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,          26
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,          27
         ]
-      desktop-spectre: [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
+      desktop-spectre: [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 27 ]
       desktop-spectre/arm: [ 17, 18 ]
-      desktop-spectre/arm64: [ 19, 20 ]
+      desktop-spectre/arm64: [ 20, 21 ]
       desktop-spectre/x64: [ 22, 23 ]
-      desktop-spectre/x86: [ 25, 26 ]
-      desktop/arm: [ 7, 8 ]
-      desktop/arm64: [ 9, 12 ]
+      desktop-spectre/x86: [ 24, 25 ]
+      desktop/arm: [ 7, 9 ]
+      desktop/arm64: [ 11, 12 ]
       desktop/x64: [ 13, 14 ]
       desktop/x86: [ 15, 16 ]
-      diasdk: [ 154, 155 ]
-      gcc: [ 0 ]
-      headers: [ 27, 28, 87, 88, 119, 120 ]
-      ide: [ 49 ]
-      kitware: [ 60 ]
-      kitware/cmake: [ 60 ]
+      diasdk: [ 155, 156 ]
+      gcc: [ 3 ]
+      headers: [ 26, 28, 85, 86, 121, 122 ]
+      ide: [ 51 ]
+      kitware: [ 53 ]
+      kitware/cmake: [ 53 ]
       mbcs:
-        [99,100,101,102,103,104,105,106,107,108,121,122,123,124,125,126,127,128,129,          130
+        [111,112,113,114,115,116,117,118,119,120,123,124,125,126,127,128,129,130,131,          132
         ]
-      mbcs/arm: [ 99, 100, 121, 122 ]
-      mbcs/arm64: [ 101, 103, 123, 125 ]
-      mbcs/x64: [ 104, 105, 127, 128 ]
-      mbcs/x86: [ 107, 108, 129, 130 ]
+      mbcs/arm: [ 111, 112, 123, 124 ]
+      mbcs/arm64: [ 113, 114, 125, 126 ]
+      mbcs/x64: [ 116, 117, 129, 130 ]
+      mbcs/x86: [ 119, 120, 131, 132 ]
       mfc:
-        [99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
-      mfc-headers: [ 119, 120 ]
+      mfc-headers: [ 121, 122 ]
       mfc-spectre:
-        [121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
       mfc-spectre/mbcs:
-        [121,122,123,124,125,126,127,128,129,          130
+        [123,124,125,126,127,128,129,130,131,          132
         ]
-      mfc-spectre/mbcs/arm: [ 121, 122 ]
-      mfc-spectre/mbcs/arm64: [ 123, 125 ]
-      mfc-spectre/mbcs/x64: [ 127, 128 ]
-      mfc-spectre/mbcs/x86: [ 129, 130 ]
+      mfc-spectre/mbcs/arm: [ 123, 124 ]
+      mfc-spectre/mbcs/arm64: [ 125, 126 ]
+      mfc-spectre/mbcs/x64: [ 129, 130 ]
+      mfc-spectre/mbcs/x86: [ 131, 132 ]
       mfc-spectre/unicode:
-        [131,132,133,134,135,136,137,138,139,          140
+        [133,134,135,136,137,138,139,140,141,          142
         ]
-      mfc-spectre/unicode/arm: [ 131, 132 ]
-      mfc-spectre/unicode/arm64: [ 133, 134 ]
-      mfc-spectre/unicode/x64: [ 136, 137 ]
-      mfc-spectre/unicode/x86: [ 139, 140 ]
-      mfc/mbcs: [ 99, 100, 101, 102, 103, 104, 105, 106, 107, 108 ]
-      mfc/mbcs/arm: [ 99, 100 ]
-      mfc/mbcs/arm64: [ 101, 103 ]
-      mfc/mbcs/x64: [ 104, 105 ]
-      mfc/mbcs/x86: [ 107, 108 ]
+      mfc-spectre/unicode/arm: [ 133, 134 ]
+      mfc-spectre/unicode/arm64: [ 135, 136 ]
+      mfc-spectre/unicode/x64: [ 139, 140 ]
+      mfc-spectre/unicode/x86: [ 141, 142 ]
+      mfc/mbcs:
+        [111,112,113,114,115,116,117,118,119,          120
+        ]
+      mfc/mbcs/arm: [ 111, 112 ]
+      mfc/mbcs/arm64: [ 113, 114 ]
+      mfc/mbcs/x64: [ 116, 117 ]
+      mfc/mbcs/x86: [ 119, 120 ]
       mfc/unicode:
-        [109,110,111,112,113,114,115,116,117,          118
+        [101,102,103,104,105,106,107,108,109,          110
         ]
-      mfc/unicode/arm: [ 111, 113 ]
-      mfc/unicode/arm64: [ 109, 110 ]
-      mfc/unicode/x64: [ 114, 115 ]
-      mfc/unicode/x86: [ 117, 118 ]
+      mfc/unicode/arm: [ 101, 102 ]
+      mfc/unicode/arm64: [ 103, 105 ]
+      mfc/unicode/x64: [ 107, 108 ]
+      mfc/unicode/x86: [ 109, 110 ]
       microsoft:
-        [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,52,53,54,55,56,57,58,59,61,62,64,65,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,          180
+        [0,1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,55,56,57,58,59,60,62,63,64,65,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,          182
         ]
       microsoft.visualstudio:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       microsoft.visualstudio.vc:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       microsoft.visualstudio.vc.msbuild:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       microsoft.visualstudio.vc.msbuild.v170:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      microsoft.visualstudio.vc.msbuild.v170.arm: [ 52, 53, 55 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm: [ 55, 56, 58 ]
       microsoft.visualstudio.vc.msbuild.v170.arm.uwp: [ 55 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm.v143: [ 53 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64: [ 54, 56, 58 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64.uwp: [ 54 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64.v143: [ 58 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64ec: [ 57, 67, 68 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64ec.uwp: [ 67 ]
-      microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143: [ 68 ]
-      microsoft.visualstudio.vc.msbuild.v170.base: [ 69, 70 ]
-      microsoft.visualstudio.vc.msbuild.v170.base.uwp: [ 69 ]
-      microsoft.visualstudio.vc.msbuild.v170.x64: [ 71, 72, 74 ]
-      microsoft.visualstudio.vc.msbuild.v170.x64.uwp: [ 74 ]
-      microsoft.visualstudio.vc.msbuild.v170.x64.v143: [ 72 ]
-      microsoft.visualstudio.vc.msbuild.v170.x86: [ 73, 75, 76 ]
-      microsoft.visualstudio.vc.msbuild.v170.x86.uwp: [ 75 ]
-      microsoft.visualstudio.vc.msbuild.v170.x86.v143: [ 76 ]
-      microsoft/asan: [ 1, 2, 3, 4, 5, 6 ]
-      microsoft/asan/x64: [ 3, 4 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm.v143: [ 56 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64: [ 57, 59, 60 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64.uwp: [ 60 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64.v143: [ 59 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64ec: [ 64, 69, 70 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64ec.uwp: [ 69 ]
+      microsoft.visualstudio.vc.msbuild.v170.arm64ec.v143: [ 70 ]
+      microsoft.visualstudio.vc.msbuild.v170.base: [ 71, 72 ]
+      microsoft.visualstudio.vc.msbuild.v170.base.uwp: [ 72 ]
+      microsoft.visualstudio.vc.msbuild.v170.x64: [ 73, 84, 87 ]
+      microsoft.visualstudio.vc.msbuild.v170.x64.uwp: [ 84 ]
+      microsoft.visualstudio.vc.msbuild.v170.x64.v143: [ 87 ]
+      microsoft.visualstudio.vc.msbuild.v170.x86: [ 88, 89, 100 ]
+      microsoft.visualstudio.vc.msbuild.v170.x86.uwp: [ 89 ]
+      microsoft.visualstudio.vc.msbuild.v170.x86.v143: [ 100 ]
+      microsoft/asan: [ 0, 1, 2, 4, 5, 6 ]
+      microsoft/asan/x64: [ 2, 4 ]
       microsoft/asan/x86: [ 5, 6 ]
       microsoft/atl:
-        [77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,          98
+        [74,75,76,77,78,79,80,81,82,83,85,86,90,91,92,93,94,95,96,97,98,          99
         ]
-      microsoft/atl-headers: [ 87, 88 ]
-      microsoft/atl-spectre: [ 89, 90, 91, 92, 93, 94, 95, 96, 97, 98 ]
-      microsoft/atl-spectre/arm: [ 89, 90 ]
-      microsoft/atl-spectre/arm64: [ 91, 92 ]
-      microsoft/atl-spectre/x64: [ 97, 98 ]
-      microsoft/atl-spectre/x86: [ 95, 96 ]
-      microsoft/atl/arm: [ 77, 78 ]
-      microsoft/atl/arm64: [ 79, 80 ]
-      microsoft/atl/x64: [ 83, 84 ]
-      microsoft/atl/x86: [ 85, 86 ]
+      microsoft/atl-headers: [ 85, 86 ]
+      microsoft/atl-spectre: [ 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ]
+      microsoft/atl-spectre/arm: [ 90, 94 ]
+      microsoft/atl-spectre/arm64: [ 92, 95 ]
+      microsoft/atl-spectre/x64: [ 98, 99 ]
+      microsoft/atl-spectre/x86: [ 96, 97 ]
+      microsoft/atl/arm: [ 74, 75 ]
+      microsoft/atl/arm64: [ 78, 83 ]
+      microsoft/atl/x64: [ 79, 80 ]
+      microsoft/atl/x86: [ 81, 82 ]
       microsoft/desktop:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,          26
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,          27
         ]
-      microsoft/desktop-spectre: [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
+      microsoft/desktop-spectre: [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 27 ]
       microsoft/desktop-spectre/arm: [ 17, 18 ]
-      microsoft/desktop-spectre/arm64: [ 19, 20 ]
+      microsoft/desktop-spectre/arm64: [ 20, 21 ]
       microsoft/desktop-spectre/x64: [ 22, 23 ]
-      microsoft/desktop-spectre/x86: [ 25, 26 ]
-      microsoft/desktop/arm: [ 7, 8 ]
-      microsoft/desktop/arm64: [ 9, 12 ]
+      microsoft/desktop-spectre/x86: [ 24, 25 ]
+      microsoft/desktop/arm: [ 7, 9 ]
+      microsoft/desktop/arm64: [ 11, 12 ]
       microsoft/desktop/x64: [ 13, 14 ]
       microsoft/desktop/x86: [ 15, 16 ]
-      microsoft/diasdk: [ 154, 155 ]
-      microsoft/headers: [ 27, 28 ]
+      microsoft/diasdk: [ 155, 156 ]
+      microsoft/headers: [ 26, 28 ]
       microsoft/mfc:
-        [99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
-      microsoft/mfc-headers: [ 119, 120 ]
+      microsoft/mfc-headers: [ 121, 122 ]
       microsoft/mfc-spectre:
-        [121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
       microsoft/mfc-spectre/mbcs:
-        [121,122,123,124,125,126,127,128,129,          130
+        [123,124,125,126,127,128,129,130,131,          132
         ]
-      microsoft/mfc-spectre/mbcs/arm: [ 121, 122 ]
-      microsoft/mfc-spectre/mbcs/arm64: [ 123, 125 ]
-      microsoft/mfc-spectre/mbcs/x64: [ 127, 128 ]
-      microsoft/mfc-spectre/mbcs/x86: [ 129, 130 ]
+      microsoft/mfc-spectre/mbcs/arm: [ 123, 124 ]
+      microsoft/mfc-spectre/mbcs/arm64: [ 125, 126 ]
+      microsoft/mfc-spectre/mbcs/x64: [ 129, 130 ]
+      microsoft/mfc-spectre/mbcs/x86: [ 131, 132 ]
       microsoft/mfc-spectre/unicode:
-        [131,132,133,134,135,136,137,138,139,          140
+        [133,134,135,136,137,138,139,140,141,          142
         ]
-      microsoft/mfc-spectre/unicode/arm: [ 131, 132 ]
-      microsoft/mfc-spectre/unicode/arm64: [ 133, 134 ]
-      microsoft/mfc-spectre/unicode/x64: [ 136, 137 ]
-      microsoft/mfc-spectre/unicode/x86: [ 139, 140 ]
-      microsoft/mfc/mbcs: [ 99, 100, 101, 102, 103, 104, 105, 106, 107, 108 ]
-      microsoft/mfc/mbcs/arm: [ 99, 100 ]
-      microsoft/mfc/mbcs/arm64: [ 101, 103 ]
-      microsoft/mfc/mbcs/x64: [ 104, 105 ]
-      microsoft/mfc/mbcs/x86: [ 107, 108 ]
+      microsoft/mfc-spectre/unicode/arm: [ 133, 134 ]
+      microsoft/mfc-spectre/unicode/arm64: [ 135, 136 ]
+      microsoft/mfc-spectre/unicode/x64: [ 139, 140 ]
+      microsoft/mfc-spectre/unicode/x86: [ 141, 142 ]
+      microsoft/mfc/mbcs:
+        [111,112,113,114,115,116,117,118,119,          120
+        ]
+      microsoft/mfc/mbcs/arm: [ 111, 112 ]
+      microsoft/mfc/mbcs/arm64: [ 113, 114 ]
+      microsoft/mfc/mbcs/x64: [ 116, 117 ]
+      microsoft/mfc/mbcs/x86: [ 119, 120 ]
       microsoft/mfc/unicode:
-        [109,110,111,112,113,114,115,116,117,          118
+        [101,102,103,104,105,106,107,108,109,          110
         ]
-      microsoft/mfc/unicode/arm: [ 111, 113 ]
-      microsoft/mfc/unicode/arm64: [ 109, 110 ]
-      microsoft/mfc/unicode/x64: [ 114, 115 ]
-      microsoft/mfc/unicode/x86: [ 117, 118 ]
-      microsoft/msbuild: [ 62, 64, 65 ]
-      microsoft/msbuild/vc: [ 62, 64, 65 ]
-      microsoft/msbuild/vc/Desktop: [ 65 ]
-      microsoft/msbuild/vc/Desktop/v143: [ 65 ]
-      microsoft/msbuild/vc/uwp: [ 62 ]
-      microsoft/msbuild/vc/v143: [ 64 ]
+      microsoft/mfc/unicode/arm: [ 101, 102 ]
+      microsoft/mfc/unicode/arm64: [ 103, 105 ]
+      microsoft/mfc/unicode/x64: [ 107, 108 ]
+      microsoft/mfc/unicode/x86: [ 109, 110 ]
+      microsoft/msbuild: [ 65, 67, 68 ]
+      microsoft/msbuild/vc: [ 65, 67, 68 ]
+      microsoft/msbuild/vc/Desktop: [ 68 ]
+      microsoft/msbuild/vc/Desktop/v143: [ 68 ]
+      microsoft/msbuild/vc/uwp: [ 67 ]
+      microsoft/msbuild/vc/v143: [ 65 ]
       microsoft/msvc:
-        [158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
-      microsoft/msvc/x64_arm: [ 162, 163 ]
-      microsoft/msvc/x64_arm64: [ 169, 170 ]
-      microsoft/msvc/x64_x64: [ 166, 167 ]
-      microsoft/msvc/x64_x86: [ 171, 172 ]
-      microsoft/msvc/x86_arm: [ 173, 174 ]
-      microsoft/msvc/x86_arm64: [ 179, 180 ]
-      microsoft/msvc/x86_x64: [ 177, 178 ]
-      microsoft/msvc/x86_x86: [ 175, 176 ]
+      microsoft/msvc/x64_arm: [ 158, 159 ]
+      microsoft/msvc/x64_arm64: [ 162, 164 ]
+      microsoft/msvc/x64_x64: [ 161, 163 ]
+      microsoft/msvc/x64_x86: [ 165, 166 ]
+      microsoft/msvc/x86_arm: [ 167, 168 ]
+      microsoft/msvc/x86_arm64: [ 176, 179 ]
+      microsoft/msvc/x86_x64: [ 172, 174 ]
+      microsoft/msvc/x86_x86: [ 170, 173 ]
       microsoft/onecore:
-        [29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,          48
+        [29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,48,          49
         ]
-      microsoft/onecore-spectre: [ 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ]
-      microsoft/onecore-spectre/arm: [ 29, 30 ]
-      microsoft/onecore-spectre/arm64: [ 31, 32 ]
-      microsoft/onecore-spectre/x64: [ 35, 36 ]
-      microsoft/onecore-spectre/x86: [ 37, 38 ]
-      microsoft/onecore/arm: [ 39, 40 ]
-      microsoft/onecore/arm64: [ 41, 43 ]
-      microsoft/onecore/x64: [ 45, 46 ]
-      microsoft/onecore/x86: [ 47, 48 ]
-      microsoft/openocd: [ 59, 61 ]
+      microsoft/onecore-spectre: [ 39, 40, 41, 42, 43, 44, 45, 46, 48, 49 ]
+      microsoft/onecore-spectre/arm: [ 39, 41 ]
+      microsoft/onecore-spectre/arm64: [ 40, 42 ]
+      microsoft/onecore-spectre/x64: [ 45, 46 ]
+      microsoft/onecore-spectre/x86: [ 48, 49 ]
+      microsoft/onecore/arm: [ 29, 30 ]
+      microsoft/onecore/arm64: [ 31, 32 ]
+      microsoft/onecore/x64: [ 35, 36 ]
+      microsoft/onecore/x86: [ 37, 38 ]
+      microsoft/openocd: [ 62, 63 ]
+      microsoft/store: [ 47, 50 ]
+      microsoft/store/x64: [ 50 ]
       microsoft/windows:
-        [141,142,143,144,145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [143,144,145,146,147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
       microsoft/windows/windows:
-        [145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
-      microsoft/windows/windows.arm: [ 145, 146, 164, 168 ]
-      microsoft/windows/windows.arm64: [ 147, 148, 149, 150 ]
-      microsoft/windows/windows.x64: [ 151, 152, 153, 156 ]
-      microsoft/windows/windows.x86: [ 157, 160, 161, 165 ]
+      microsoft/windows/windows.arm: [ 147, 180, 181, 182 ]
+      microsoft/windows/windows.arm64: [ 148, 149, 150, 151 ]
+      microsoft/windows/windows.x64: [ 152, 154, 160, 169 ]
+      microsoft/windows/windows.x86: [ 171, 175, 177, 178 ]
       msbuild:
-        [52,53,54,55,56,57,58,62,64,65,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,65,67,68,69,70,71,72,73,84,87,88,89,          100
         ]
       msbuild.v170:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      msbuild.v170.arm: [ 52, 53, 55 ]
+      msbuild.v170.arm: [ 55, 56, 58 ]
       msbuild.v170.arm.uwp: [ 55 ]
-      msbuild.v170.arm.v143: [ 53 ]
-      msbuild.v170.arm64: [ 54, 56, 58 ]
-      msbuild.v170.arm64.uwp: [ 54 ]
-      msbuild.v170.arm64.v143: [ 58 ]
-      msbuild.v170.arm64ec: [ 57, 67, 68 ]
-      msbuild.v170.arm64ec.uwp: [ 67 ]
-      msbuild.v170.arm64ec.v143: [ 68 ]
-      msbuild.v170.base: [ 69, 70 ]
-      msbuild.v170.base.uwp: [ 69 ]
-      msbuild.v170.x64: [ 71, 72, 74 ]
-      msbuild.v170.x64.uwp: [ 74 ]
-      msbuild.v170.x64.v143: [ 72 ]
-      msbuild.v170.x86: [ 73, 75, 76 ]
-      msbuild.v170.x86.uwp: [ 75 ]
-      msbuild.v170.x86.v143: [ 76 ]
-      msbuild/vc: [ 62, 64, 65 ]
-      msbuild/vc/Desktop: [ 65 ]
-      msbuild/vc/Desktop/v143: [ 65 ]
-      msbuild/vc/uwp: [ 62 ]
-      msbuild/vc/v143: [ 64 ]
+      msbuild.v170.arm.v143: [ 56 ]
+      msbuild.v170.arm64: [ 57, 59, 60 ]
+      msbuild.v170.arm64.uwp: [ 60 ]
+      msbuild.v170.arm64.v143: [ 59 ]
+      msbuild.v170.arm64ec: [ 64, 69, 70 ]
+      msbuild.v170.arm64ec.uwp: [ 69 ]
+      msbuild.v170.arm64ec.v143: [ 70 ]
+      msbuild.v170.base: [ 71, 72 ]
+      msbuild.v170.base.uwp: [ 72 ]
+      msbuild.v170.x64: [ 73, 84, 87 ]
+      msbuild.v170.x64.uwp: [ 84 ]
+      msbuild.v170.x64.v143: [ 87 ]
+      msbuild.v170.x86: [ 88, 89, 100 ]
+      msbuild.v170.x86.uwp: [ 89 ]
+      msbuild.v170.x86.v143: [ 100 ]
+      msbuild/vc: [ 65, 67, 68 ]
+      msbuild/vc/Desktop: [ 68 ]
+      msbuild/vc/Desktop/v143: [ 68 ]
+      msbuild/vc/uwp: [ 67 ]
+      msbuild/vc/v143: [ 65 ]
       msvc:
-        [158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
-      msvc/x64_arm: [ 162, 163 ]
-      msvc/x64_arm64: [ 169, 170 ]
-      msvc/x64_x64: [ 166, 167 ]
-      msvc/x64_x86: [ 171, 172 ]
-      msvc/x86_arm: [ 173, 174 ]
-      msvc/x86_arm64: [ 179, 180 ]
-      msvc/x86_x64: [ 177, 178 ]
-      msvc/x86_x86: [ 175, 176 ]
-      ninja: [ 66 ]
-      ninja-build: [ 66 ]
-      ninja-build/ninja: [ 66 ]
+      msvc/x64_arm: [ 158, 159 ]
+      msvc/x64_arm64: [ 162, 164 ]
+      msvc/x64_x64: [ 161, 163 ]
+      msvc/x64_x86: [ 165, 166 ]
+      msvc/x86_arm: [ 167, 168 ]
+      msvc/x86_arm64: [ 176, 179 ]
+      msvc/x86_x64: [ 172, 174 ]
+      msvc/x86_x86: [ 170, 173 ]
+      ninja: [ 61 ]
+      ninja-build: [ 61 ]
+      ninja-build/ninja: [ 61 ]
       onecore:
-        [29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,          48
+        [29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,48,          49
         ]
-      onecore-spectre: [ 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ]
-      onecore-spectre/arm: [ 29, 30 ]
-      onecore-spectre/arm64: [ 31, 32 ]
-      onecore-spectre/x64: [ 35, 36 ]
-      onecore-spectre/x86: [ 37, 38 ]
-      onecore/arm: [ 39, 40 ]
-      onecore/arm64: [ 41, 43 ]
-      onecore/x64: [ 45, 46 ]
-      onecore/x86: [ 47, 48 ]
-      openocd: [ 59, 61 ]
-      pico: [ 63 ]
-      pico-sdk: [ 63 ]
-      raspberrypi: [ 63 ]
-      raspberrypi/pico: [ 63 ]
-      raspberrypi/pico-sdk: [ 63 ]
-      sdk: [ 63 ]
+      onecore-spectre: [ 39, 40, 41, 42, 43, 44, 45, 46, 48, 49 ]
+      onecore-spectre/arm: [ 39, 41 ]
+      onecore-spectre/arm64: [ 40, 42 ]
+      onecore-spectre/x64: [ 45, 46 ]
+      onecore-spectre/x86: [ 48, 49 ]
+      onecore/arm: [ 29, 30 ]
+      onecore/arm64: [ 31, 32 ]
+      onecore/x64: [ 35, 36 ]
+      onecore/x86: [ 37, 38 ]
+      openocd: [ 62, 63 ]
+      pico: [ 66 ]
+      pico-sdk: [ 66 ]
+      raspberrypi: [ 66 ]
+      raspberrypi/pico: [ 66 ]
+      raspberrypi/pico-sdk: [ 66 ]
+      sdk: [ 66 ]
       sdks:
-        [77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [74,75,76,77,78,79,80,81,82,83,85,86,90,91,92,93,94,95,96,97,98,99,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
       sdks/microsoft:
-        [77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [74,75,76,77,78,79,80,81,82,83,85,86,90,91,92,93,94,95,96,97,98,99,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
       sdks/microsoft/atl:
-        [77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,          98
+        [74,75,76,77,78,79,80,81,82,83,85,86,90,91,92,93,94,95,96,97,98,          99
         ]
-      sdks/microsoft/atl-headers: [ 87, 88 ]
-      sdks/microsoft/atl-spectre: [ 89, 90, 91, 92, 93, 94, 95, 96, 97, 98 ]
-      sdks/microsoft/atl-spectre/arm: [ 89, 90 ]
-      sdks/microsoft/atl-spectre/arm64: [ 91, 92 ]
-      sdks/microsoft/atl-spectre/x64: [ 97, 98 ]
-      sdks/microsoft/atl-spectre/x86: [ 95, 96 ]
-      sdks/microsoft/atl/arm: [ 77, 78 ]
-      sdks/microsoft/atl/arm64: [ 79, 80 ]
-      sdks/microsoft/atl/x64: [ 83, 84 ]
-      sdks/microsoft/atl/x86: [ 85, 86 ]
+      sdks/microsoft/atl-headers: [ 85, 86 ]
+      sdks/microsoft/atl-spectre: [ 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ]
+      sdks/microsoft/atl-spectre/arm: [ 90, 94 ]
+      sdks/microsoft/atl-spectre/arm64: [ 92, 95 ]
+      sdks/microsoft/atl-spectre/x64: [ 98, 99 ]
+      sdks/microsoft/atl-spectre/x86: [ 96, 97 ]
+      sdks/microsoft/atl/arm: [ 74, 75 ]
+      sdks/microsoft/atl/arm64: [ 78, 83 ]
+      sdks/microsoft/atl/x64: [ 79, 80 ]
+      sdks/microsoft/atl/x86: [ 81, 82 ]
       sdks/microsoft/mfc:
-        [99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
-      sdks/microsoft/mfc-headers: [ 119, 120 ]
+      sdks/microsoft/mfc-headers: [ 121, 122 ]
       sdks/microsoft/mfc-spectre:
-        [121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
       sdks/microsoft/mfc-spectre/mbcs:
-        [121,122,123,124,125,126,127,128,129,          130
+        [123,124,125,126,127,128,129,130,131,          132
         ]
-      sdks/microsoft/mfc-spectre/mbcs/arm: [ 121, 122 ]
-      sdks/microsoft/mfc-spectre/mbcs/arm64: [ 123, 125 ]
-      sdks/microsoft/mfc-spectre/mbcs/x64: [ 127, 128 ]
-      sdks/microsoft/mfc-spectre/mbcs/x86: [ 129, 130 ]
+      sdks/microsoft/mfc-spectre/mbcs/arm: [ 123, 124 ]
+      sdks/microsoft/mfc-spectre/mbcs/arm64: [ 125, 126 ]
+      sdks/microsoft/mfc-spectre/mbcs/x64: [ 129, 130 ]
+      sdks/microsoft/mfc-spectre/mbcs/x86: [ 131, 132 ]
       sdks/microsoft/mfc-spectre/unicode:
-        [131,132,133,134,135,136,137,138,139,          140
+        [133,134,135,136,137,138,139,140,141,          142
         ]
-      sdks/microsoft/mfc-spectre/unicode/arm: [ 131, 132 ]
-      sdks/microsoft/mfc-spectre/unicode/arm64: [ 133, 134 ]
-      sdks/microsoft/mfc-spectre/unicode/x64: [ 136, 137 ]
-      sdks/microsoft/mfc-spectre/unicode/x86: [ 139, 140 ]
-      sdks/microsoft/mfc/mbcs: [ 99, 100, 101, 102, 103, 104, 105, 106, 107, 108 ]
-      sdks/microsoft/mfc/mbcs/arm: [ 99, 100 ]
-      sdks/microsoft/mfc/mbcs/arm64: [ 101, 103 ]
-      sdks/microsoft/mfc/mbcs/x64: [ 104, 105 ]
-      sdks/microsoft/mfc/mbcs/x86: [ 107, 108 ]
+      sdks/microsoft/mfc-spectre/unicode/arm: [ 133, 134 ]
+      sdks/microsoft/mfc-spectre/unicode/arm64: [ 135, 136 ]
+      sdks/microsoft/mfc-spectre/unicode/x64: [ 139, 140 ]
+      sdks/microsoft/mfc-spectre/unicode/x86: [ 141, 142 ]
+      sdks/microsoft/mfc/mbcs:
+        [111,112,113,114,115,116,117,118,119,          120
+        ]
+      sdks/microsoft/mfc/mbcs/arm: [ 111, 112 ]
+      sdks/microsoft/mfc/mbcs/arm64: [ 113, 114 ]
+      sdks/microsoft/mfc/mbcs/x64: [ 116, 117 ]
+      sdks/microsoft/mfc/mbcs/x86: [ 119, 120 ]
       sdks/microsoft/mfc/unicode:
-        [109,110,111,112,113,114,115,116,117,          118
+        [101,102,103,104,105,106,107,108,109,          110
         ]
-      sdks/microsoft/mfc/unicode/arm: [ 111, 113 ]
-      sdks/microsoft/mfc/unicode/arm64: [ 109, 110 ]
-      sdks/microsoft/mfc/unicode/x64: [ 114, 115 ]
-      sdks/microsoft/mfc/unicode/x86: [ 117, 118 ]
+      sdks/microsoft/mfc/unicode/arm: [ 101, 102 ]
+      sdks/microsoft/mfc/unicode/arm64: [ 103, 105 ]
+      sdks/microsoft/mfc/unicode/x64: [ 107, 108 ]
+      sdks/microsoft/mfc/unicode/x86: [ 109, 110 ]
       sdks/microsoft/windows:
-        [141,142,143,144,145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [143,144,145,146,147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
       sdks/microsoft/windows/windows:
-        [145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
-      sdks/microsoft/windows/windows.arm: [ 145, 146, 164, 168 ]
-      sdks/microsoft/windows/windows.arm64: [ 147, 148, 149, 150 ]
-      sdks/microsoft/windows/windows.x64: [ 151, 152, 153, 156 ]
-      sdks/microsoft/windows/windows.x86: [ 157, 160, 161, 165 ]
+      sdks/microsoft/windows/windows.arm: [ 147, 180, 181, 182 ]
+      sdks/microsoft/windows/windows.arm64: [ 148, 149, 150, 151 ]
+      sdks/microsoft/windows/windows.x64: [ 152, 154, 160, 169 ]
+      sdks/microsoft/windows/windows.x86: [ 171, 175, 177, 178 ]
       spectre:
-        [17,18,19,20,21,22,23,24,25,26,29,30,31,32,33,34,35,36,37,38,89,90,91,92,93,94,95,96,97,98,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [17,18,19,20,21,22,23,24,25,27,39,40,41,42,43,44,45,46,48,49,90,91,92,93,94,95,96,97,98,99,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
-      spectre/arm: [ 17, 18, 29, 30, 89, 90 ]
-      spectre/arm64: [ 19, 20, 31, 32, 91, 92 ]
+      spectre/arm: [ 17, 18, 39, 41, 90, 94 ]
+      spectre/arm64: [ 20, 21, 40, 42, 92, 95 ]
       spectre/mbcs:
-        [121,122,123,124,125,126,127,128,129,          130
+        [123,124,125,126,127,128,129,130,131,          132
         ]
-      spectre/mbcs/arm: [ 121, 122 ]
-      spectre/mbcs/arm64: [ 123, 125 ]
-      spectre/mbcs/x64: [ 127, 128 ]
-      spectre/mbcs/x86: [ 129, 130 ]
+      spectre/mbcs/arm: [ 123, 124 ]
+      spectre/mbcs/arm64: [ 125, 126 ]
+      spectre/mbcs/x64: [ 129, 130 ]
+      spectre/mbcs/x86: [ 131, 132 ]
       spectre/unicode:
-        [131,132,133,134,135,136,137,138,139,          140
+        [133,134,135,136,137,138,139,140,141,          142
         ]
-      spectre/unicode/arm: [ 131, 132 ]
-      spectre/unicode/arm64: [ 133, 134 ]
-      spectre/unicode/x64: [ 136, 137 ]
-      spectre/unicode/x86: [ 139, 140 ]
-      spectre/x64: [ 22, 23, 35, 36, 97, 98 ]
-      spectre/x86: [ 25, 26, 37, 38, 95, 96 ]
-      termite: [ 51 ]
-      tools: [ 49, 50, 51, 59, 60, 61, 62, 64, 65, 66 ]
-      tools/arduino: [ 49, 50 ]
-      tools/arduino/arduino: [ 49, 50 ]
-      tools/arduino/arduino-cli: [ 50 ]
-      tools/arduino/arduino-ide: [ 49 ]
-      tools/compuphase: [ 51 ]
-      tools/compuphase/termite: [ 51 ]
-      tools/kitware: [ 60 ]
-      tools/kitware/cmake: [ 60 ]
-      tools/microsoft: [ 59, 61, 62, 64, 65 ]
-      tools/microsoft/msbuild: [ 62, 64, 65 ]
-      tools/microsoft/msbuild/vc: [ 62, 64, 65 ]
-      tools/microsoft/msbuild/vc/Desktop: [ 65 ]
-      tools/microsoft/msbuild/vc/Desktop/v143: [ 65 ]
-      tools/microsoft/msbuild/vc/uwp: [ 62 ]
-      tools/microsoft/msbuild/vc/v143: [ 64 ]
-      tools/microsoft/openocd: [ 59, 61 ]
-      tools/ninja: [ 66 ]
-      tools/ninja-build: [ 66 ]
-      tools/ninja-build/ninja: [ 66 ]
+      spectre/unicode/arm: [ 133, 134 ]
+      spectre/unicode/arm64: [ 135, 136 ]
+      spectre/unicode/x64: [ 139, 140 ]
+      spectre/unicode/x86: [ 141, 142 ]
+      spectre/x64: [ 22, 23, 45, 46, 98, 99 ]
+      spectre/x86: [ 24, 25, 48, 49, 96, 97 ]
+      store: [ 47, 50 ]
+      store/x64: [ 50 ]
+      termite: [ 54 ]
+      tools: [ 51, 52, 53, 54, 61, 62, 63, 65, 67, 68 ]
+      tools/arduino: [ 51, 52 ]
+      tools/arduino/arduino: [ 51, 52 ]
+      tools/arduino/arduino-cli: [ 52 ]
+      tools/arduino/arduino-ide: [ 51 ]
+      tools/compuphase: [ 54 ]
+      tools/compuphase/termite: [ 54 ]
+      tools/kitware: [ 53 ]
+      tools/kitware/cmake: [ 53 ]
+      tools/microsoft: [ 62, 63, 65, 67, 68 ]
+      tools/microsoft/msbuild: [ 65, 67, 68 ]
+      tools/microsoft/msbuild/vc: [ 65, 67, 68 ]
+      tools/microsoft/msbuild/vc/Desktop: [ 68 ]
+      tools/microsoft/msbuild/vc/Desktop/v143: [ 68 ]
+      tools/microsoft/msbuild/vc/uwp: [ 67 ]
+      tools/microsoft/msbuild/vc/v143: [ 65 ]
+      tools/microsoft/openocd: [ 62, 63 ]
+      tools/ninja: [ 61 ]
+      tools/ninja-build: [ 61 ]
+      tools/ninja-build/ninja: [ 61 ]
       unicode:
-        [109,110,111,112,113,114,115,116,117,118,131,132,133,134,135,136,137,138,139,          140
+        [101,102,103,104,105,106,107,108,109,110,133,134,135,136,137,138,139,140,141,          142
         ]
-      unicode/arm: [ 111, 113, 131, 132 ]
-      unicode/arm64: [ 109, 110, 133, 134 ]
-      unicode/x64: [ 114, 115, 136, 137 ]
-      unicode/x86: [ 117, 118, 139, 140 ]
-      uwp: [ 54, 55, 62, 67, 69, 74, 75 ]
-      v143: [ 53, 58, 64, 65, 68, 72, 76 ]
+      unicode/arm: [ 101, 102, 133, 134 ]
+      unicode/arm64: [ 103, 105, 135, 136 ]
+      unicode/x64: [ 107, 108, 139, 140 ]
+      unicode/x86: [ 109, 110, 141, 142 ]
+      uwp: [ 55, 60, 67, 69, 72, 84, 89 ]
+      v143: [ 56, 59, 65, 68, 70, 87, 100 ]
       v170:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      v170.arm: [ 52, 53, 55 ]
+      v170.arm: [ 55, 56, 58 ]
       v170.arm.uwp: [ 55 ]
-      v170.arm.v143: [ 53 ]
-      v170.arm64: [ 54, 56, 58 ]
-      v170.arm64.uwp: [ 54 ]
-      v170.arm64.v143: [ 58 ]
-      v170.arm64ec: [ 57, 67, 68 ]
-      v170.arm64ec.uwp: [ 67 ]
-      v170.arm64ec.v143: [ 68 ]
-      v170.base: [ 69, 70 ]
-      v170.base.uwp: [ 69 ]
-      v170.x64: [ 71, 72, 74 ]
-      v170.x64.uwp: [ 74 ]
-      v170.x64.v143: [ 72 ]
-      v170.x86: [ 73, 75, 76 ]
-      v170.x86.uwp: [ 75 ]
-      v170.x86.v143: [ 76 ]
+      v170.arm.v143: [ 56 ]
+      v170.arm64: [ 57, 59, 60 ]
+      v170.arm64.uwp: [ 60 ]
+      v170.arm64.v143: [ 59 ]
+      v170.arm64ec: [ 64, 69, 70 ]
+      v170.arm64ec.uwp: [ 69 ]
+      v170.arm64ec.v143: [ 70 ]
+      v170.base: [ 71, 72 ]
+      v170.base.uwp: [ 72 ]
+      v170.x64: [ 73, 84, 87 ]
+      v170.x64.uwp: [ 84 ]
+      v170.x64.v143: [ 87 ]
+      v170.x86: [ 88, 89, 100 ]
+      v170.x86.uwp: [ 89 ]
+      v170.x86.v143: [ 100 ]
       vc:
-        [52,53,54,55,56,57,58,62,64,65,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,65,67,68,69,70,71,72,73,84,87,88,89,          100
         ]
       vc.msbuild:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       vc.msbuild.v170:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      vc.msbuild.v170.arm: [ 52, 53, 55 ]
+      vc.msbuild.v170.arm: [ 55, 56, 58 ]
       vc.msbuild.v170.arm.uwp: [ 55 ]
-      vc.msbuild.v170.arm.v143: [ 53 ]
-      vc.msbuild.v170.arm64: [ 54, 56, 58 ]
-      vc.msbuild.v170.arm64.uwp: [ 54 ]
-      vc.msbuild.v170.arm64.v143: [ 58 ]
-      vc.msbuild.v170.arm64ec: [ 57, 67, 68 ]
-      vc.msbuild.v170.arm64ec.uwp: [ 67 ]
-      vc.msbuild.v170.arm64ec.v143: [ 68 ]
-      vc.msbuild.v170.base: [ 69, 70 ]
-      vc.msbuild.v170.base.uwp: [ 69 ]
-      vc.msbuild.v170.x64: [ 71, 72, 74 ]
-      vc.msbuild.v170.x64.uwp: [ 74 ]
-      vc.msbuild.v170.x64.v143: [ 72 ]
-      vc.msbuild.v170.x86: [ 73, 75, 76 ]
-      vc.msbuild.v170.x86.uwp: [ 75 ]
-      vc.msbuild.v170.x86.v143: [ 76 ]
-      vc/Desktop: [ 65 ]
-      vc/Desktop/v143: [ 65 ]
-      vc/uwp: [ 62 ]
-      vc/v143: [ 64 ]
+      vc.msbuild.v170.arm.v143: [ 56 ]
+      vc.msbuild.v170.arm64: [ 57, 59, 60 ]
+      vc.msbuild.v170.arm64.uwp: [ 60 ]
+      vc.msbuild.v170.arm64.v143: [ 59 ]
+      vc.msbuild.v170.arm64ec: [ 64, 69, 70 ]
+      vc.msbuild.v170.arm64ec.uwp: [ 69 ]
+      vc.msbuild.v170.arm64ec.v143: [ 70 ]
+      vc.msbuild.v170.base: [ 71, 72 ]
+      vc.msbuild.v170.base.uwp: [ 72 ]
+      vc.msbuild.v170.x64: [ 73, 84, 87 ]
+      vc.msbuild.v170.x64.uwp: [ 84 ]
+      vc.msbuild.v170.x64.v143: [ 87 ]
+      vc.msbuild.v170.x86: [ 88, 89, 100 ]
+      vc.msbuild.v170.x86.uwp: [ 89 ]
+      vc.msbuild.v170.x86.v143: [ 100 ]
+      vc/Desktop: [ 68 ]
+      vc/Desktop/v143: [ 68 ]
+      vc/uwp: [ 67 ]
+      vc/v143: [ 65 ]
       visualstudio:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       visualstudio.vc:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       visualstudio.vc.msbuild:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       visualstudio.vc.msbuild.v170:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      visualstudio.vc.msbuild.v170.arm: [ 52, 53, 55 ]
+      visualstudio.vc.msbuild.v170.arm: [ 55, 56, 58 ]
       visualstudio.vc.msbuild.v170.arm.uwp: [ 55 ]
-      visualstudio.vc.msbuild.v170.arm.v143: [ 53 ]
-      visualstudio.vc.msbuild.v170.arm64: [ 54, 56, 58 ]
-      visualstudio.vc.msbuild.v170.arm64.uwp: [ 54 ]
-      visualstudio.vc.msbuild.v170.arm64.v143: [ 58 ]
-      visualstudio.vc.msbuild.v170.arm64ec: [ 57, 67, 68 ]
-      visualstudio.vc.msbuild.v170.arm64ec.uwp: [ 67 ]
-      visualstudio.vc.msbuild.v170.arm64ec.v143: [ 68 ]
-      visualstudio.vc.msbuild.v170.base: [ 69, 70 ]
-      visualstudio.vc.msbuild.v170.base.uwp: [ 69 ]
-      visualstudio.vc.msbuild.v170.x64: [ 71, 72, 74 ]
-      visualstudio.vc.msbuild.v170.x64.uwp: [ 74 ]
-      visualstudio.vc.msbuild.v170.x64.v143: [ 72 ]
-      visualstudio.vc.msbuild.v170.x86: [ 73, 75, 76 ]
-      visualstudio.vc.msbuild.v170.x86.uwp: [ 75 ]
-      visualstudio.vc.msbuild.v170.x86.v143: [ 76 ]
+      visualstudio.vc.msbuild.v170.arm.v143: [ 56 ]
+      visualstudio.vc.msbuild.v170.arm64: [ 57, 59, 60 ]
+      visualstudio.vc.msbuild.v170.arm64.uwp: [ 60 ]
+      visualstudio.vc.msbuild.v170.arm64.v143: [ 59 ]
+      visualstudio.vc.msbuild.v170.arm64ec: [ 64, 69, 70 ]
+      visualstudio.vc.msbuild.v170.arm64ec.uwp: [ 69 ]
+      visualstudio.vc.msbuild.v170.arm64ec.v143: [ 70 ]
+      visualstudio.vc.msbuild.v170.base: [ 71, 72 ]
+      visualstudio.vc.msbuild.v170.base.uwp: [ 72 ]
+      visualstudio.vc.msbuild.v170.x64: [ 73, 84, 87 ]
+      visualstudio.vc.msbuild.v170.x64.uwp: [ 84 ]
+      visualstudio.vc.msbuild.v170.x64.v143: [ 87 ]
+      visualstudio.vc.msbuild.v170.x86: [ 88, 89, 100 ]
+      visualstudio.vc.msbuild.v170.x86.uwp: [ 89 ]
+      visualstudio.vc.msbuild.v170.x86.v143: [ 100 ]
       windows:
-        [141,142,143,144,145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [143,144,145,146,147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
-      windows.arm: [ 145, 146, 164, 168 ]
-      windows.arm64: [ 147, 148, 149, 150 ]
-      windows.x64: [ 151, 152, 153, 156 ]
-      windows.x86: [ 157, 160, 161, 165 ]
+      windows.arm: [ 147, 180, 181, 182 ]
+      windows.arm64: [ 148, 149, 150, 151 ]
+      windows.x64: [ 152, 154, 160, 169 ]
+      windows.x86: [ 171, 175, 177, 178 ]
       windows/windows:
-        [145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
-      windows/windows.arm: [ 145, 146, 164, 168 ]
-      windows/windows.arm64: [ 147, 148, 149, 150 ]
-      windows/windows.x64: [ 151, 152, 153, 156 ]
-      windows/windows.x86: [ 157, 160, 161, 165 ]
+      windows/windows.arm: [ 147, 180, 181, 182 ]
+      windows/windows.arm64: [ 148, 149, 150, 151 ]
+      windows/windows.x64: [ 152, 154, 160, 169 ]
+      windows/windows.x86: [ 171, 175, 177, 178 ]
       x64:
-        [3,4,13,14,22,23,35,36,45,46,71,72,74,83,84,97,98,104,105,114,115,127,128,136,137,151,152,153,          156
+        [2,4,13,14,22,23,35,36,45,46,50,73,79,80,84,87,98,99,107,108,116,117,129,130,139,140,152,154,160,          169
         ]
-      x64.uwp: [ 74 ]
-      x64.v143: [ 72 ]
-      x64_arm: [ 162, 163 ]
-      x64_arm64: [ 169, 170 ]
-      x64_x64: [ 166, 167 ]
-      x64_x86: [ 171, 172 ]
+      x64.uwp: [ 84 ]
+      x64.v143: [ 87 ]
+      x64_arm: [ 158, 159 ]
+      x64_arm64: [ 162, 164 ]
+      x64_x64: [ 161, 163 ]
+      x64_x86: [ 165, 166 ]
       x86:
-        [5,6,15,16,25,26,37,38,47,48,73,75,76,85,86,95,96,107,108,117,118,129,130,139,140,157,160,161,          165
+        [5,6,15,16,24,25,37,38,48,49,81,82,88,89,96,97,100,109,110,119,120,131,132,141,142,171,175,177,          178
         ]
-      x86.uwp: [ 75 ]
-      x86.v143: [ 76 ]
-      x86_arm: [ 173, 174 ]
-      x86_arm64: [ 179, 180 ]
-      x86_x64: [ 177, 178 ]
-      x86_x86: [ 175, 176 ]
+      x86.uwp: [ 89 ]
+      x86.v143: [ 100 ]
+      x86_arm: [ 167, 168 ]
+      x86_arm64: [ 176, 179 ]
+      x86_x64: [ 172, 174 ]
+      x86_x86: [ 170, 173 ]
   SemverKey/version:
     keys:
-      0.11.0-ms1: [ 61 ]
-      0.11.0: [ 59 ]
-      0.18.3: [ 50 ]
-      1.3.0: [ 63 ]
-      1.10.2: [ 66 ]
-      1.18.15: [ 49 ]
-      3.4.0: [ 51 ]
-      3.20.1: [ 60 ]
-      10.0.17763: [ 141, 145, 147, 152, 157 ]
-      10.0.18362: [ 143, 148, 151, 160, 164 ]
-      10.0.19041: [ 144, 149, 153, 161, 168 ]
-      10.0.22621: [ 142, 146, 150, 156, 165 ]
-      14.28.29912: [ 27 ]
+      0.11.0-ms1: [ 63 ]
+      0.11.0: [ 62 ]
+      0.18.3: [ 52 ]
+      1.3.0: [ 66 ]
+      1.10.2: [ 61 ]
+      1.18.15: [ 51 ]
+      3.4.0: [ 54 ]
+      3.20.1: [ 53 ]
+      10.0.17763: [ 144, 148, 152, 171, 182 ]
+      10.0.18362: [ 145, 149, 154, 175, 181 ]
+      10.0.19041: [ 143, 150, 160, 177, 180 ]
+      10.0.22621: [ 146, 147, 151, 169, 178 ]
+      14.28.29912: [ 28 ]
       14.28.29914:
-        [77,80,81,83,86,88,90,91,93,95,98,99,102,103,104,107,109,111,112,114,117,120,122,124,125,127,129,131,133,135,137,          139
+        [75,77,80,82,83,86,93,94,95,97,99,102,103,104,107,109,112,114,115,117,120,121,124,125,128,129,131,133,135,138,139,          142
         ]
       14.28.29915:
-        [2,3,5,7,9,10,14,15,17,19,22,24,26,29,32,33,36,38,39,43,44,46,48,155,159,163,167,170,171,174,175,177,          179
+        [0,2,6,7,8,11,14,16,17,21,22,24,27,29,32,33,36,37,40,41,43,45,49,156,157,159,163,164,166,168,173,174,          179
         ]
       14.29.30037:
-        [1,4,6,8,11,12,13,16,18,20,21,23,25,28,30,31,34,35,37,40,41,42,45,47,78,79,82,84,85,87,89,92,94,96,97,100,101,105,106,108,110,113,115,116,118,119,121,123,126,128,130,132,134,136,138,140,154,158,162,166,169,172,173,176,178,          180
+        [1,4,5,9,10,12,13,15,18,19,20,23,25,26,30,31,34,35,38,39,42,44,46,48,50,74,76,78,79,81,85,90,91,92,96,98,101,105,106,108,110,111,113,116,118,119,122,123,126,127,130,132,134,136,137,140,141,153,155,158,161,162,165,167,170,172,          176
         ]
+      14.32.31328: [ 47 ]
       17.0.0:
-        [52,53,54,55,56,57,58,62,64,65,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,65,67,68,69,70,71,72,73,84,87,88,89,          100
         ]
-      2020.10.0: [ 0 ]
+      2020.10.0: [ 3 ]
   StringKey/summary:
     keys:
-      Active Template Library: [ 77, 78, 79, 80, 81, 82, 83, 84, 85, 86 ]
-      Active Template Library Headers: [ 87, 88 ]
-      Active Template Library w/ Spectre mitigations: [ 89, 90, 91, 92, 93, 94, 95, 96, 97, 98 ]
-      Arduino IDE: [ 49, 50 ]
-      C runtime headers: [ 28 ]
-      C runtime headers.: [ 27 ]
-      Debug Interface Access SDK: [ 154, 155 ]
-      Free and open on-chip debugging: [ 59, 61 ]
-      GCC compiler for ARM CPUs.: [ 0 ]
-      Kitware's cmake tool: [ 60 ]
-      Libraries supporting address sanitizer.: [ 1, 2, 3, 4, 5, 6 ]
-      Microsoft Foundation Classes Headers: [ 119, 120 ]
-      "Microsoft Foundation Classes, legacy MBCS libraries": [ 99, 100, 101, 102, 103, 104, 105, 106, 107, 108 ]
+      Active Template Library: [ 74, 75, 76, 77, 78, 79, 80, 81, 82, 83 ]
+      Active Template Library Headers: [ 85, 86 ]
+      Active Template Library w/ Spectre mitigations: [ 90, 91, 92, 93, 94, 95, 96, 97, 98, 99 ]
+      Arduino IDE: [ 51, 52 ]
+      C runtime headers: [ 26 ]
+      C runtime headers.: [ 28 ]
+      Debug Interface Access SDK: [ 155, 156 ]
+      Free and open on-chip debugging: [ 62, 63 ]
+      GCC compiler for ARM CPUs.: [ 3 ]
+      Kitware's cmake tool: [ 53 ]
+      Libraries supporting address sanitizer.: [ 0, 1, 2, 4, 5, 6 ]
+      Microsoft Foundation Classes Headers: [ 121, 122 ]
+      "Microsoft Foundation Classes, legacy MBCS libraries":
+        [111,112,113,114,115,116,117,118,119,          120
+        ]
       "Microsoft Foundation Classes, legacy MBCS libraries w/ Spectre mitigations":
-        [121,122,123,124,125,126,127,128,129,          130
+        [123,124,125,126,127,128,129,130,131,          132
         ]
       "Microsoft Foundation Classes, Unicode":
-        [109,110,111,112,113,114,115,116,117,          118
+        [101,102,103,104,105,106,107,108,109,          110
         ]
       "Microsoft Foundation Classes, Unicode w/ Spectre mitigations":
-        [131,132,133,134,135,136,137,138,139,          140
+        [133,134,135,136,137,138,139,140,141,          142
         ]
-      Microsoft Windows SDK: [ 141, 142, 143, 144 ]
-      Microsoft Windows SDK (targeting ARM): [ 145, 146, 164, 168 ]
-      Microsoft Windows SDK (targeting ARM64): [ 147, 148, 149, 150 ]
-      Microsoft Windows SDK (targeting x64): [ 151, 152, 153, 156 ]
-      Microsoft Windows SDK (targeting x86): [ 157, 160, 161, 165 ]
-      Msbuild support for MSVC v143 toolset: [ 64, 65 ]
-      Msbuild support for MSVC v143 toolset for UWP: [ 62 ]
+      Microsoft Windows SDK: [ 143, 144, 145, 146 ]
+      Microsoft Windows SDK (targeting ARM): [ 147, 180, 181, 182 ]
+      Microsoft Windows SDK (targeting ARM64): [ 148, 149, 150, 151 ]
+      Microsoft Windows SDK (targeting x64): [ 152, 154, 160, 169 ]
+      Microsoft Windows SDK (targeting x86): [ 171, 175, 177, 178 ]
+      Msbuild support for MSVC v143 toolset: [ 65, 68 ]
+      Msbuild support for MSVC v143 toolset for UWP: [ 67 ]
       MSBuild support for vc projects (generated from VS install):
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      "MSVC standard library libraries (desktop / kernel32, + spectre)": [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 ]
+      "MSVC standard library libraries (desktop / kernel32, + spectre)": [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 27 ]
       MSVC standard library libraries (desktop / kernel32): [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
-      MSVC standard library libraries (desktop / onecore): [ 42, 47 ]
-      "MSVC standard library libraries (onecore / apisets, + spectre)": [ 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ]
-      MSVC standard library libraries (OneCore / apisets): [ 39, 40, 41, 43, 44, 45, 46, 48 ]
-      Ninja is a small build system with a focus on speed.: [ 66 ]
-      Termite is an easy to use and easy to configure RS232 terminal.: [ 51 ]
+      MSVC standard library libraries (desktop / onecore): [ 34, 38 ]
+      "MSVC standard library libraries (onecore / apisets, + spectre)": [ 39, 40, 41, 42, 43, 44, 45, 46, 48, 49 ]
+      MSVC standard library libraries (OneCore / apisets): [ 29, 30, 31, 32, 33, 35, 36, 37 ]
+      MSVC standard library libraries (store): [ 50 ]
+      MSVC standard library libraries (todo): [ 47 ]
+      Ninja is a small build system with a focus on speed.: [ 61 ]
+      Termite is an easy to use and easy to configure RS232 terminal.: [ 54 ]
       The Microsoft Visual C++ Compiler (MSVC):
-        [158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
-      The Raspberry Pi Pico SDK: [ 63 ]
+      The Raspberry Pi Pico SDK: [ 66 ]
     words:
-      ARM: [ 0, 145, 146, 164, 168 ]
-      ARM): [ 145, 146, 164, 168 ]
-      ARM64: [ 147, 148, 149, 150 ]
-      ARM64): [ 147, 148, 149, 150 ]
-      Access: [ 154, 155 ]
+      ARM: [ 3, 147, 180, 181, 182 ]
+      ARM): [ 147, 180, 181, 182 ]
+      ARM64: [ 148, 149, 150, 151 ]
+      ARM64): [ 148, 149, 150, 151 ]
+      Access: [ 155, 156 ]
       Active:
-        [77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,          98
+        [74,75,76,77,78,79,80,81,82,83,85,86,90,91,92,93,94,95,96,97,98,          99
         ]
-      Arduino: [ 49, 50 ]
+      Arduino: [ 51, 52 ]
       C:
-        [27,28,158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [26,28,153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
-      CPUs: [ 0 ]
-      CPUs.: [ 0 ]
+      CPUs: [ 3 ]
+      CPUs.: [ 3 ]
       Classes:
-        [99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
       Compiler:
-        [158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
-      Debug: [ 154, 155 ]
+      Debug: [ 155, 156 ]
       Foundation:
-        [99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
-      Free: [ 59, 61 ]
-      GCC: [ 0 ]
-      Headers: [ 87, 88, 119, 120 ]
-      IDE: [ 49, 50 ]
-      Interface: [ 154, 155 ]
-      Kitware: [ 60 ]
-      Kitware's: [ 60 ]
-      Libraries: [ 1, 2, 3, 4, 5, 6 ]
+      Free: [ 62, 63 ]
+      GCC: [ 3 ]
+      Headers: [ 85, 86, 121, 122 ]
+      IDE: [ 51, 52 ]
+      Interface: [ 155, 156 ]
+      Kitware: [ 53 ]
+      Kitware's: [ 53 ]
+      Libraries: [ 0, 1, 2, 4, 5, 6 ]
       Library:
-        [77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,          98
+        [74,75,76,77,78,79,80,81,82,83,85,86,90,91,92,93,94,95,96,97,98,          99
         ]
       MBCS:
-        [99,100,101,102,103,104,105,106,107,108,121,122,123,124,125,126,127,128,129,          130
+        [111,112,113,114,115,116,117,118,119,120,123,124,125,126,127,128,129,130,131,          132
         ]
       MSBuild:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       MSVC:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,62,64,65,158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,65,67,68,153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
       MSVC):
-        [158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
       Microsoft:
-        [99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,          180
+        [101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,          182
         ]
-      Msbuild: [ 62, 64, 65 ]
-      Ninja: [ 66 ]
-      OneCore: [ 39, 40, 41, 43, 44, 45, 46, 48 ]
-      Pi: [ 63 ]
-      Pico: [ 63 ]
-      RS232: [ 51 ]
-      Raspberry: [ 63 ]
+      Msbuild: [ 65, 67, 68 ]
+      Ninja: [ 61 ]
+      OneCore: [ 29, 30, 31, 32, 33, 35, 36, 37 ]
+      Pi: [ 66 ]
+      Pico: [ 66 ]
+      RS232: [ 54 ]
+      Raspberry: [ 66 ]
       SDK:
-        [63,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,160,161,164,165,          168
+        [66,143,144,145,146,147,148,149,150,151,152,154,155,156,160,169,171,175,177,178,180,181,          182
         ]
       Spectre:
-        [89,90,91,92,93,94,95,96,97,98,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [90,91,92,93,94,95,96,97,98,99,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
       Template:
-        [77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,          98
+        [74,75,76,77,78,79,80,81,82,83,85,86,90,91,92,93,94,95,96,97,98,          99
         ]
-      Termite: [ 51 ]
+      Termite: [ 54 ]
       The:
-        [63,158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [66,153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
-      UWP: [ 62 ]
+      UWP: [ 67 ]
       Unicode:
-        [109,110,111,112,113,114,115,116,117,118,131,132,133,134,135,136,137,138,139,          140
+        [101,102,103,104,105,106,107,108,109,110,133,134,135,136,137,138,139,140,141,          142
         ]
       VS:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       Visual:
-        [158,159,162,163,166,167,169,170,171,172,173,174,175,176,177,178,179,          180
+        [153,157,158,159,161,162,163,164,165,166,167,168,170,172,173,174,176,          179
         ]
       Windows:
-        [141,142,143,144,145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [143,144,145,146,147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
-      a: [ 66 ]
-      address: [ 1, 2, 3, 4, 5, 6 ]
-      an: [ 51 ]
-      and: [ 51, 59, 61 ]
+      a: [ 61 ]
+      address: [ 0, 1, 2, 4, 5, 6 ]
+      an: [ 54 ]
+      and: [ 54, 62, 63 ]
       apisets:
-        [29,30,31,32,33,34,35,36,37,38,39,40,41,43,44,45,46,          48
+        [29,30,31,32,33,35,36,37,39,40,41,42,43,44,45,46,48,          49
         ]
-      apisets): [ 39, 40, 41, 43, 44, 45, 46, 48 ]
-      build: [ 66 ]
-      chip: [ 59, 61 ]
-      cmake: [ 60 ]
-      compiler: [ 0 ]
-      configure: [ 51 ]
-      debugging: [ 59, 61 ]
+      apisets): [ 29, 30, 31, 32, 33, 35, 36, 37 ]
+      build: [ 61 ]
+      chip: [ 62, 63 ]
+      cmake: [ 53 ]
+      compiler: [ 3 ]
+      configure: [ 54 ]
+      debugging: [ 62, 63 ]
       desktop:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,42,          47
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,34,          38
         ]
-      easy: [ 51 ]
-      focus: [ 66 ]
+      easy: [ 54 ]
+      focus: [ 61 ]
       for:
-        [0,52,53,54,55,56,57,58,62,64,65,67,68,69,70,71,72,73,74,75,          76
+        [3,55,56,57,58,59,60,64,65,67,68,69,70,71,72,73,84,87,88,89,          100
         ]
       from:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       generated:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      headers: [ 27, 28 ]
-      headers.: [ 27 ]
+      headers: [ 26, 28 ]
+      headers.: [ 28 ]
       install:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       install):
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      is: [ 51, 66 ]
+      is: [ 54, 61 ]
       kernel32:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,          26
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,          27
         ]
       kernel32): [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
       legacy:
-        [99,100,101,102,103,104,105,106,107,108,121,122,123,124,125,126,127,128,129,          130
+        [111,112,113,114,115,116,117,118,119,120,123,124,125,126,127,128,129,130,131,          132
         ]
       libraries:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,99,100,101,102,103,104,105,106,107,108,121,122,123,124,125,126,127,128,129,          130
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,111,112,113,114,115,116,117,118,119,120,123,124,125,126,127,128,129,130,131,          132
         ]
       library:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,          48
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,          50
         ]
       mitigations:
-        [89,90,91,92,93,94,95,96,97,98,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [90,91,92,93,94,95,96,97,98,99,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
-      on: [ 59, 61, 66 ]
-      on-chip: [ 59, 61 ]
+      on: [ 61, 62, 63 ]
+      on-chip: [ 62, 63 ]
       onecore:
-        [29,30,31,32,33,34,35,36,37,38,42,          47
+        [34,38,39,40,41,42,43,44,45,46,48,          49
         ]
-      onecore): [ 42, 47 ]
-      open: [ 59, 61 ]
+      onecore): [ 34, 38 ]
+      open: [ 62, 63 ]
       projects:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
-      runtime: [ 27, 28 ]
-      s: [ 60 ]
-      sanitizer: [ 1, 2, 3, 4, 5, 6 ]
-      sanitizer.: [ 1, 2, 3, 4, 5, 6 ]
-      small: [ 66 ]
+      runtime: [ 26, 28 ]
+      s: [ 53 ]
+      sanitizer: [ 0, 1, 2, 4, 5, 6 ]
+      sanitizer.: [ 0, 1, 2, 4, 5, 6 ]
+      small: [ 61 ]
       spectre:
-        [17,18,19,20,21,22,23,24,25,26,29,30,31,32,33,34,35,36,37,          38
+        [17,18,19,20,21,22,23,24,25,27,39,40,41,42,43,44,45,46,48,          49
         ]
       spectre):
-        [17,18,19,20,21,22,23,24,25,26,29,30,31,32,33,34,35,36,37,          38
+        [17,18,19,20,21,22,23,24,25,27,39,40,41,42,43,44,45,46,48,          49
         ]
-      speed: [ 66 ]
-      speed.: [ 66 ]
+      speed: [ 61 ]
+      speed.: [ 61 ]
       standard:
-        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,          48
+        [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,27,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,          50
         ]
+      store: [ 50 ]
+      store): [ 50 ]
       support:
-        [52,53,54,55,56,57,58,62,64,65,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,65,67,68,69,70,71,72,73,84,87,88,89,          100
         ]
-      supporting: [ 1, 2, 3, 4, 5, 6 ]
-      system: [ 66 ]
+      supporting: [ 0, 1, 2, 4, 5, 6 ]
+      system: [ 61 ]
       targeting:
-        [145,146,147,148,149,150,151,152,153,156,157,160,161,164,165,          168
+        [147,148,149,150,151,152,154,160,169,171,175,177,178,180,181,          182
         ]
-      terminal: [ 51 ]
-      terminal.: [ 51 ]
-      to: [ 51 ]
-      tool: [ 60 ]
-      toolset: [ 62, 64, 65 ]
-      use: [ 51 ]
-      v143: [ 62, 64, 65 ]
+      terminal: [ 54 ]
+      terminal.: [ 54 ]
+      to: [ 54 ]
+      todo: [ 47 ]
+      todo): [ 47 ]
+      tool: [ 53 ]
+      toolset: [ 65, 67, 68 ]
+      use: [ 54 ]
+      v143: [ 65, 67, 68 ]
       vc:
-        [52,53,54,55,56,57,58,67,68,69,70,71,72,73,74,75,          76
+        [55,56,57,58,59,60,64,69,70,71,72,73,84,87,88,89,          100
         ]
       w:
-        [89,90,91,92,93,94,95,96,97,98,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,          140
+        [90,91,92,93,94,95,96,97,98,99,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,          142
         ]
-      with: [ 66 ]
-      x64: [ 151, 152, 153, 156 ]
-      x64): [ 151, 152, 153, 156 ]
-      x86: [ 157, 160, 161, 165 ]
-      x86): [ 157, 160, 161, 165 ]
+      with: [ 61 ]
+      x64: [ 152, 154, 160, 169 ]
+      x64): [ 152, 154, 160, 169 ]
+      x86: [ 171, 175, 177, 178 ]
+      x86): [ 171, 175, 177, 178 ]

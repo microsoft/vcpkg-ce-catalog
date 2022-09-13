@@ -22,11 +22,12 @@
     "target:x64": {
       "requires": {
         "crts/microsoft/desktop/x64": "14.29.30037",
-        "crts/microsoft/onecore/x64": "14.29.30037"
+        "crts/microsoft/onecore/x64": "14.29.30037",
+        "crts/microsoft/store/x64": "14.29.30037"
       },
       "exports": {
         "msbuild-properties": {
-          "VC_LibraryPath_VC_x64": "$(VC_LibraryPath_VC_x64_Desktop);$(VC_LibraryPath_VC_x64_OneCore);$(VC_LibraryPath_VC_x64)"
+          "VC_LibraryPath_VC_x64": "$(VC_LibraryPath_VC_x64_Desktop);$(VC_LibraryPath_VC_x64_OneCore);$(VC_LibraryPath_VC_x64_Store);$(VC_LibraryPath_VC_x64)"
         }
       }
     },
