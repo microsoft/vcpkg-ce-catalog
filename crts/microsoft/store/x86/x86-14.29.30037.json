@@ -1,0 +1,38 @@
+{
+    "contacts": {
+        "Mark Levine": {
+            "email": "markle@microsoft.com",
+            "role": [
+                "publisher"
+            ]
+        }
+    },
+    "exports": {
+        "paths": {
+            "LIB": "."
+        },
+        "msbuild-properties": {
+            "VC_LibraryPath_VC_x86_Store": "{root}",
+            "VC_LibraryPath_VC_x86": "{root};$(VC_LibraryPath_VC_x86)"
+        }
+    },
+    "requires": {
+        "crts/microsoft/headers": "14.29.30037"
+    },
+    "install": [
+        {
+            "unzip": [
+                "vsix:///Microsoft.VC.14.29.16.10.CRT.x86.Store.base,version=14.29.30037/payload.vsix",
+                "https://download.visualstudio.microsoft.com/download/pr/c0ac19c1-e1d7-47e2-bde8-fd11c4410cca/76d2ca963ec257735b4e2e5c2213a2b3c2b8a335c601d4e69a3c577cf6640d3c/Microsoft.VC.14.29.16.10.CRT.x86.Store.base.vsix"
+            ],
+            "sha256": "76d2ca963ec257735b4e2e5c2213a2b3c2b8a335c601d4e69a3c577cf6640d3c",
+            "strip": 7
+        }
+    ],
+    "id": "crts/microsoft/store/x86",
+    "version": "14.29.30037",
+    "summary": "MSVC standard library libraries (store)",
+    "options": [
+        "dependencyOnly"
+    ]
+}
