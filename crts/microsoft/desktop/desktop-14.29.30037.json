@@ -12,7 +12,7 @@
       "requires": {
         "crts/microsoft/desktop/x86": "14.29.30037",
         "crts/microsoft/onecore/x86": "14.29.30037",
-        "crts/microsoft/store/x64": "14.29.30037"
+        "crts/microsoft/store/x86": "14.29.30037"
       },
       "exports": {
         "msbuild-properties": {
