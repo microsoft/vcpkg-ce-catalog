@@ -1,0 +1,55 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "atlmfc/lib/arm",
+        "atlmfc/src/mfc/arm",
+        "."
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.arm/Microsoft.VC.14.32.17.2.MFC.ARM.vsix"
+      ],
+      "sha256": "a7cc87bfb4ac96b38833c92f5b633e49245d414dae825d32f5421e1217a4fd84",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.arm.base/Microsoft.VC.14.32.17.2.MFC.ARM.base.vsix"
+      ],
+      "sha256": "9c4c23f33703e62e4d8e37fe13924c309d282c1421f4c308d13873225e6578e7",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.arm.debug/Microsoft.VC.14.32.17.2.MFC.ARM.Debug.vsix"
+      ],
+      "sha256": "469cb188c02d60cd3254d95cfa93eaf60ef7d13d0306e49f0c33aa21767437bb",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.arm.debug.base/Microsoft.VC.14.32.17.2.MFC.ARM.Debug.base.vsix"
+      ],
+      "sha256": "a1fbe376705a7961791abc6af6704ed7fd7b3fb925ef740f081b648eb3c7088d",
+      "strip": 8
+    }
+  ],
+  "id": "crts/microsoft/mfc/arm",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "atlmfc/lib/x64",
+        "atlmfc/src/atl/atls/x64"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.atl.x64/Microsoft.VC.14.32.17.2.ATL.X64.vsix"
+      ],
+      "sha256": "dab40042e5034a1efb5d0fa674135a637c3812ea9c19628886d61262ea7102d0",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.atl.x64.base/Microsoft.VC.14.32.17.2.ATL.X64.base.vsix"
+      ],
+      "sha256": "ad72d4feb647742fbe38b0f05424a7fe852f7e69dd9beb0ed820172318d83877",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/atl/x64",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

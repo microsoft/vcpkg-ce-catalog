@@ -1,0 +1,100 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        ".",
+        "Auxiliary",
+        "lib/spectre/onecore/arm64",
+        "spectre/onecore/arm64/Microsoft.VC143.CRT",
+        "spectre/onecore/arm64/Microsoft.VC143.OpenMP",
+        "spectre/onecore/debug"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.desktop.spectre/Microsoft.VC.14.32.17.2.CRT.ARM64.Desktop.spectre.vsix"
+      ],
+      "sha256": "29d2026e7bce2db8a451f65190777f66e8e258005bef3542606540b35346fdf0",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.desktop.spectre.base/Microsoft.VC.14.32.17.2.CRT.ARM64.Desktop.spectre.base.vsix"
+      ],
+      "sha256": "ec59e5bb45fd44d7b0c533c32f81ccd95d60dac2746cbf68885a3df9f1746815",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.desktop.spectre.debug/Microsoft.VC.14.32.17.2.CRT.ARM64.Desktop.spectre.debug.vsix"
+      ],
+      "sha256": "4fb31f334858c9876151af4ad3a915be5280a1044aff88e42eed1241cd24a68c",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.desktop.spectre.debug.base/Microsoft.VC.14.32.17.2.CRT.ARM64.Desktop.spectre.debug.base.vsix"
+      ],
+      "sha256": "d55d7958a615aa968833f231706536d88212dfb7be4bf15081b814f0a827a88b",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.onecore.desktop.spectre/Microsoft.VC.14.32.17.2.CRT.ARM64.OneCore.Desktop.spectre.vsix"
+      ],
+      "sha256": "d15df59b1315d07aa417eefbe6e0fd04981c562db73d0837d5d8bd88fad9bd2e",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.onecore.desktop.spectre.base/Microsoft.VC.14.32.17.2.CRT.ARM64.OneCore.Desktop.spectre.base.vsix"
+      ],
+      "sha256": "7e5c34c495b0ace8efc450dd05d4778567ca874f065a290a92ec9dd0da0e762d",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.onecore.desktop.spectre.debug/Microsoft.VC.14.32.17.2.CRT.ARM64.OneCore.Desktop.spectre.debug.vsix"
+      ],
+      "sha256": "b5018dd106eeaf24bd8b43229957047505f2adaa9f74a11e50949538771c0751",
+      "strip": 9
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.onecore.desktop.spectre.debug.base/Microsoft.VC.14.32.17.2.CRT.ARM64.OneCore.Desktop.spectre.debug.base.vsix"
+      ],
+      "sha256": "982591118fdbfa454025721bbf4e030ab7585a9377d7bb8fdad667e388c41774",
+      "strip": 9
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.arm64.onecore.desktop.spectre/Microsoft.VC.14.32.17.2.CRT.Redist.ARM64.OneCore.Desktop.spectre.vsix"
+      ],
+      "sha256": "e77dd7b9fc48ad52f58f845d21013e1fb2e3a0d4a1f166ffa3b9d0f1f6003aec",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.arm64.onecore.desktop.spectre.base/Microsoft.VC.14.32.17.2.CRT.Redist.ARM64.OneCore.Desktop.spectre.base.vsix"
+      ],
+      "sha256": "cf74b4e723ade9ea33aa75aa0de14009f7c62df7e86818ba9d7e6f3f594a5063",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/desktop-spectre/arm64",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

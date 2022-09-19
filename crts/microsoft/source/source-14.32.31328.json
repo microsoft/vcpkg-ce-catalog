@@ -1,0 +1,43 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "crt/src/concrt",
+        "crt/src/linkopts",
+        "crt/src/stl",
+        "crt/src/vccorlib",
+        "crt/src/vcruntime"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.source/Microsoft.VC.14.32.17.2.CRT.Source.vsix"
+      ],
+      "sha256": "35a0cf7699ebf9824523a5c1577ae5a86878ebf20ea3c2a9222830b359956b36",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.source.base/Microsoft.VC.14.32.17.2.CRT.Source.base.vsix"
+      ],
+      "sha256": "8113111612755f10d2213eaac356351b1c3c8c93f47c7d41e85a1c2e8cf94f57",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/source",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

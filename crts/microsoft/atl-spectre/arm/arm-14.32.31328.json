@@ -1,0 +1,40 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "."
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.atl.arm.spectre/Microsoft.VC.14.32.17.2.ATL.ARM.Spectre.vsix"
+      ],
+      "sha256": "f272c714e14b1ffff1eef4ff444f6558a59cc949754253b0a6fad137d83c7b28",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.atl.arm.spectre.base/Microsoft.VC.14.32.17.2.ATL.ARM.Spectre.base.vsix"
+      ],
+      "sha256": "742965c6e8d613968b0e1e9576ed991fa2bd09b9a100602c931900c562a5461d",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/atl-spectre/arm",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

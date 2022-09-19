@@ -1,0 +1,40 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "atlmfc/lib/spectre/x86"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.atl.x86.spectre/Microsoft.VC.14.32.17.2.ATL.X86.Spectre.vsix"
+      ],
+      "sha256": "4a3a71bb4a4ed6fa87a15030b7ba1f31e7820ea727814a9a20142bd37bb914e7",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.atl.x86.spectre.base/Microsoft.VC.14.32.17.2.ATL.X86.Spectre.base.vsix"
+      ],
+      "sha256": "6c04463585798d44c6a998abc124f71da213ebb5c3dc65989b34ce75134a1a4f",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/atl-spectre/x86",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "debug",
+        "x64/Microsoft.VC143.CRT",
+        "x64/Microsoft.VC143.CXXAMP",
+        "x64/Microsoft.VC143.OpenMP"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.x64/Microsoft.VC.14.32.17.2.CRT.Redist.X64.vsix"
+      ],
+      "sha256": "ddd47fdfa0d1022b51367b59cdf236d556ce67b6329d5dc3cf79de3a21cba14b",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.x64.base/Microsoft.VC.14.32.17.2.CRT.Redist.X64.base.vsix"
+      ],
+      "sha256": "cf04eca8447c004d4b3358f4a1ac34d18e2e79a95dae324057c2e8b3e2b81d33",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/redist/x64",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

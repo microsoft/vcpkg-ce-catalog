@@ -1,0 +1,41 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "debug",
+        "arm64/Microsoft.VC143.MFC",
+        "arm64/Microsoft.VC143.MFCLOC"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.redist.arm64/Microsoft.VC.14.32.17.2.MFC.Redist.ARM64.vsix"
+      ],
+      "sha256": "380e26bab4d62ba0fe7b9031c04f6f4be9364594d982ccc137e1d4514f46a66c",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.redist.arm64.base/Microsoft.VC.14.32.17.2.MFC.Redist.ARM64.base.vsix"
+      ],
+      "sha256": "da930d99048c85b39edb6a8c728b01758c8c425d9ca577e2b23db60a53b55062",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/mfc-redist/arm64",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

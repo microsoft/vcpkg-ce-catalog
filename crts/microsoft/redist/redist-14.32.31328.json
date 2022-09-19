@@ -1,0 +1,38 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "target:arm": {
+      "requires": {
+        "crts/microsoft/redist/arm": "14.32.31328"
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "crts/microsoft/redist/arm64": "14.32.31328"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "crts/microsoft/redist/x64": "14.32.31328"
+      }
+    },
+    "target:x86": {
+      "requires": {
+        "crts/microsoft/redist/x86": "14.32.31328"
+      }
+    }
+  },
+  "id": "crts/microsoft/redist",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

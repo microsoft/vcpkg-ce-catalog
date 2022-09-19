@@ -1,0 +1,39 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "."
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.pgo.arm/Microsoft.VC.14.32.17.2.PGO.ARM.vsix"
+      ],
+      "sha256": "3bec3cf75dd98deb48790367512fe23530202e2291facd92b01f10301991f167",
+      "strip": 7
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.pgo.arm.base/Microsoft.VC.14.32.17.2.PGO.ARM.base.vsix"
+      ],
+      "sha256": "20bb8cd6d3a1dd5e5db8bb8aa113e87951cfea3a18e69a10b59f0d7e37022922",
+      "strip": 7
+    }
+  ],
+  "id": "crts/microsoft/pgo/arm",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

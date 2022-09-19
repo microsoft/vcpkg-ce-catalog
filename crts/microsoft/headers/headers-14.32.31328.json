@@ -1,0 +1,44 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "windows": {
+      "exports": {
+        "paths": {
+          "INCLUDE": "."
+        },
+        "msbuild-properties": {
+          "VC_VC_IncludePath": "{root}"
+        }
+      }
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.headers/Microsoft.VC.14.32.17.2.CRT.Headers.vsix"
+      ],
+      "sha256": "84d880c1b93e55114c2681587ca64b99d63815c2d6d7fd6869ab3ae347f04f3c",
+      "strip": 6
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.headers.base/Microsoft.VC.14.32.17.2.CRT.Headers.base.vsix"
+      ],
+      "sha256": "e3b65c29df5fdd500c1d0cf54910c57fc988108acfe7d320b4019f5116b38d6c",
+      "strip": 6
+    }
+  ],
+  "id": "crts/microsoft/headers",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

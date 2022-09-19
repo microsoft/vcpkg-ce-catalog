@@ -1,0 +1,53 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "."
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.mbcs.x64/Microsoft.VC.14.32.17.2.MFC.MBCS.X64.vsix"
+      ],
+      "sha256": "19497f46630d3d481a2d94dc1fe0848a1d458b83ab329f373d89a7d4ac199b5a",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.mbcs.x64.base/Microsoft.VC.14.32.17.2.MFC.MBCS.X64.base.vsix"
+      ],
+      "sha256": "551b0d0d769ff1048fb06f655b37ec904cb0023b68643ec8e8860111d7ddcb9e",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.mbcs.x64.debug/Microsoft.VC.14.32.17.2.MFC.MBCS.X64.Debug.vsix"
+      ],
+      "sha256": "0240a2e9de10da4349c5ba890316730fb0d44439fb6fe22a80f3011e96bf50d4",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.mbcs.x64.debug.base/Microsoft.VC.14.32.17.2.MFC.MBCS.X64.Debug.base.vsix"
+      ],
+      "sha256": "088fad9aa32c34e23cb5b0597c32f38ef4d4eb7706436f6f93ce560e6da35852",
+      "strip": 8
+    }
+  ],
+  "id": "crts/microsoft/mfc-mbcs/x64",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

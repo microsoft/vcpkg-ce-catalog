@@ -1,0 +1,50 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "atlmfc/src/mfc",
+        "atlmfc/src/mfc/l.chs",
+        "atlmfc/src/mfc/l.cht",
+        "atlmfc/src/mfc/l.deu",
+        "atlmfc/src/mfc/l.esn",
+        "atlmfc/src/mfc/l.fra",
+        "atlmfc/src/mfc/l.ita",
+        "atlmfc/src/mfc/l.jpn",
+        "atlmfc/src/mfc/l.kor",
+        "atlmfc/src/mfc/l.rus",
+        "atlmfc/src/mfcm",
+        "atlmfc/src/mfcm/interfaces"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.source/Microsoft.VC.14.32.17.2.MFC.Source.vsix"
+      ],
+      "sha256": "57f10cd59cf10945ad392992bc747d3e92ef1ccd31c34deb5f1dae3de7c0ab27",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.source.base/Microsoft.VC.14.32.17.2.MFC.Source.base.vsix"
+      ],
+      "sha256": "30c5a038ce7c4412e44410eb81e3b176477a274d80e549a288492344c4515a8c",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/mfc-source",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

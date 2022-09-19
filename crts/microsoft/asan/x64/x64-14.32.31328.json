@@ -1,0 +1,39 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "lib/x64"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.asan.x64/Microsoft.VC.14.32.17.2.ASAN.X64.vsix"
+      ],
+      "sha256": "00d1c0321d7fa9490c927e9a5afbbd3073fe2d84f6604a46f417270ac373dfde",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.asan.x64.base/Microsoft.VC.14.32.17.2.ASAN.X64.base.vsix"
+      ],
+      "sha256": "73588d68a3fe5b4ff3e4d5cd8d45248291b9905f57e247f2bf8c6f51a6384297",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/asan/x64",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

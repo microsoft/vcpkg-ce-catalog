@@ -1,0 +1,72 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        ".",
+        "Auxiliary",
+        "lib/spectre/onecore/arm",
+        "spectre/onecore/arm/Microsoft.VC143.CRT",
+        "spectre/onecore/arm/Microsoft.VC143.OpenMP",
+        "spectre/onecore/debug"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm.desktop.spectre/Microsoft.VC.14.32.17.2.CRT.arm.Desktop.spectre.vsix"
+      ],
+      "sha256": "eaeeff50d90a7023fe459955bff32bc8328d0c8e889aa54e00bfffdad2574d66",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm.desktop.spectre.base/Microsoft.VC.14.32.17.2.CRT.arm.Desktop.spectre.base.vsix"
+      ],
+      "sha256": "3d534e9ae1c5b8505bc2821aa7de441d8edfbdc38b8cc339dd6fbff291ff660b",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm.onecore.desktop.spectre/Microsoft.VC.14.32.17.2.CRT.arm.OneCore.Desktop.spectre.vsix"
+      ],
+      "sha256": "c2f9fc052f3b1933cb2e5eb248464e9cf071f531bcd831dc700620db925e21a6",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm.onecore.desktop.spectre.base/Microsoft.VC.14.32.17.2.CRT.arm.OneCore.Desktop.spectre.base.vsix"
+      ],
+      "sha256": "55e373af5c5aec22e049b8b7acf4803a401fc3f524fe2fbf33ef72c8c4ba56e8",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.arm.onecore.desktop.spectre/Microsoft.VC.14.32.17.2.CRT.Redist.arm.OneCore.Desktop.spectre.vsix"
+      ],
+      "sha256": "39ce734b218bb20ca44ccf9899ca9a7e3073559974d2003fc70e52660367f5f1",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.arm.onecore.desktop.spectre.base/Microsoft.VC.14.32.17.2.CRT.Redist.arm.OneCore.Desktop.spectre.base.vsix"
+      ],
+      "sha256": "261ab6d1349f8d9df9f05ce5736a91f2506dfcb8386ea5322bd6de4e499da6e1",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/desktop-spectre/arm",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "."
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.atl.arm/Microsoft.VC.14.32.17.2.ATL.ARM.vsix"
+      ],
+      "sha256": "f6918da4e41d823b36fd42fe391e5188bf66855d00a82be172923428ea0ca07c",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.atl.arm.base/Microsoft.VC.14.32.17.2.ATL.ARM.base.vsix"
+      ],
+      "sha256": "230f0ed1f8400421ae4c4f09f5a1300b9c880ee9484a2b7368c2ac78c80242ad",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/atl/arm",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

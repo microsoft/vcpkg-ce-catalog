@@ -1,0 +1,41 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "debug",
+        "spectre/arm64/Microsoft.VC143.MFC",
+        "spectre/arm64/Microsoft.VC143.MFCLOC"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.redist.arm64.spectre/Microsoft.VC.14.32.17.2.MFC.Redist.ARM64.Spectre.vsix"
+      ],
+      "sha256": "4fe4a04d186aef4d6b20dd3f75664a1f73a11e6cdb74a4bba1d930e488359714",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.redist.arm64.spectre.base/Microsoft.VC.14.32.17.2.MFC.Redist.ARM64.Spectre.base.vsix"
+      ],
+      "sha256": "3858a00a68d0994ce17accc297d2dd16c7b17e61de3f73e7eac528a35ca418cd",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/mfc-redist-spectre/arm64",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

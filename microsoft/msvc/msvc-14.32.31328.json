@@ -1,0 +1,78 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "arm64 and target:arm": {
+      "requires": {
+        "microsoft/msvc/arm64_arm": "14.32.31328"
+      }
+    },
+    "x64 and target:arm": {
+      "requires": {
+        "microsoft/msvc/x64_arm": "14.32.31328"
+      }
+    },
+    "x86 and target:arm": {
+      "requires": {
+        "microsoft/msvc/x86_arm": "14.32.31328"
+      }
+    },
+    "arm64 and target:arm64": {
+      "requires": {
+        "microsoft/msvc/arm64_arm64": "14.32.31328"
+      }
+    },
+    "x64 and target:arm64": {
+      "requires": {
+        "microsoft/msvc/x64_arm64": "14.32.31328"
+      }
+    },
+    "x86 and target:arm64": {
+      "requires": {
+        "microsoft/msvc/x86_arm64": "14.32.31328"
+      }
+    },
+    "arm64 and target:x64": {
+      "requires": {
+        "microsoft/msvc/arm64_x64": "14.32.31328"
+      }
+    },
+    "x64 and target:x64": {
+      "requires": {
+        "microsoft/msvc/x64_x64": "14.32.31328"
+      }
+    },
+    "x86 and target:x64": {
+      "requires": {
+        "microsoft/msvc/x86_x64": "14.32.31328"
+      }
+    },
+    "arm64 and target:x86": {
+      "requires": {
+        "microsoft/msvc/arm64_x86": "14.32.31328"
+      }
+    },
+    "x64 and target:x86": {
+      "requires": {
+        "microsoft/msvc/x64_x86": "14.32.31328"
+      }
+    },
+    "x86 and target:x86": {
+      "requires": {
+        "microsoft/msvc/x86_x86": "14.32.31328"
+      }
+    }
+  },
+  "id": "microsoft/msvc",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

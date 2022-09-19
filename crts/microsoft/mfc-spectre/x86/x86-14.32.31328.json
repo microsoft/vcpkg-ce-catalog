@@ -1,0 +1,53 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "."
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.x86.debug.spectre/Microsoft.VC.14.32.17.2.MFC.X86.Debug.Spectre.vsix"
+      ],
+      "sha256": "86b3abbe7b4b09a48fbd3556b096dbbd3ee034fb15efb023a588eef40a229187",
+      "strip": 9
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.x86.debug.spectre.base/Microsoft.VC.14.32.17.2.MFC.X86.Debug.Spectre.base.vsix"
+      ],
+      "sha256": "f148524d4d9200aa015c9f72c50dce7ce284003a3d83a5a090b12403673033e1",
+      "strip": 9
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.x86.spectre/Microsoft.VC.14.32.17.2.MFC.X86.Spectre.vsix"
+      ],
+      "sha256": "a3568fa4ac62fd977d7f9cfe4fbd6fe6542eb2f2e1eb02900b31fecad87e86ed",
+      "strip": 9
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.x86.spectre.base/Microsoft.VC.14.32.17.2.MFC.X86.Spectre.base.vsix"
+      ],
+      "sha256": "722be50f75dc77880a4d9ecb1b51651f949eaf72d402cc83397ea48e1af7bf9a",
+      "strip": 9
+    }
+  ],
+  "id": "crts/microsoft/mfc-spectre/x86",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

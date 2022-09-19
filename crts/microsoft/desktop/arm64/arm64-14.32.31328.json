@@ -1,0 +1,100 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        ".",
+        "Auxiliary",
+        "lib/onecore/arm64",
+        "onecore/arm64/Microsoft.VC143.CRT",
+        "onecore/arm64/Microsoft.VC143.OpenMP",
+        "onecore/debug"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.desktop/Microsoft.VC.14.32.17.2.CRT.ARM64.Desktop.vsix"
+      ],
+      "sha256": "64e48cebff897053e6e0da232672bbd2b8eef89f4209069864f4fe10ac796f26",
+      "strip": 7
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.desktop.base/Microsoft.VC.14.32.17.2.CRT.ARM64.Desktop.base.vsix"
+      ],
+      "sha256": "6e7d58e9bcca486ad59d627c11f18da7860c9b96a283f763dcea417da385b4a3",
+      "strip": 7
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.desktop.debug/Microsoft.VC.14.32.17.2.CRT.ARM64.Desktop.debug.vsix"
+      ],
+      "sha256": "7e8445d930df9b5f2094dc5d6d64b2f6bf633627b5f08eecd009ab51b0b3b0b3",
+      "strip": 7
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.desktop.debug.base/Microsoft.VC.14.32.17.2.CRT.ARM64.Desktop.debug.base.vsix"
+      ],
+      "sha256": "072c38bd2faaab32b1538affa1d9833eb382bd88dec059a2a2f179fd0fce5ff6",
+      "strip": 7
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.onecore.desktop/Microsoft.VC.14.32.17.2.CRT.ARM64.OneCore.Desktop.vsix"
+      ],
+      "sha256": "7de526fda3e8cb115b79520cd07a2f9c450346411dbb8605e809d88f648b9668",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.onecore.desktop.base/Microsoft.VC.14.32.17.2.CRT.ARM64.OneCore.Desktop.base.vsix"
+      ],
+      "sha256": "f5f869356d40bb0e1707d9a22f3736f6729438ea26a6e28503aba19c49b3a59b",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.onecore.desktop.debug/Microsoft.VC.14.32.17.2.CRT.ARM64.OneCore.Desktop.debug.vsix"
+      ],
+      "sha256": "7e4ce4211eec83fbb206abbe2d66c062ed7ef8346e494c8f1391909ad9344985",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64.onecore.desktop.debug.base/Microsoft.VC.14.32.17.2.CRT.ARM64.OneCore.Desktop.debug.base.vsix"
+      ],
+      "sha256": "b8ab465b3c7e65a232527022392387540a741557a576548a85498a4da8d0d860",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.arm64.onecore.desktop/Microsoft.VC.14.32.17.2.CRT.Redist.ARM64.OneCore.Desktop.vsix"
+      ],
+      "sha256": "db67583d99afccb0e287e6be3221c5d3787cae11ed24189ad6c973e81095bcf9",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.arm64.onecore.desktop.base/Microsoft.VC.14.32.17.2.CRT.Redist.ARM64.OneCore.Desktop.base.vsix"
+      ],
+      "sha256": "cda56a18037272d47e7e06f3577030f4f84a60a01aaa024860caf1e431eeb208",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/desktop/arm64",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}
