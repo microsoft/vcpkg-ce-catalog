@@ -1,4 +1,8 @@
 {
+  "id": "tools/microsoft/msbuild/vc/Desktop/v143",
+  "version": "17.0.0",
+  "summary": "Msbuild support for MSVC v143 toolset",
+  "description": "Msbuild support for MSVC v143 toolset",
   "contacts": {
     "Olga Arkhipova": {
       "email": "olgaark@microsoft.com",
@@ -23,13 +27,13 @@
     },
     "Platform:ARM64": {
       "requires": {
-        "microsoft.visualstudio.vc.msbuild.v170.ARM64.v143": "17.0.0",
+        "microsoft.visualstudio.vc.msbuild.v170.ARM64.v143": "17.0.0"
+      }
+    },
+    "Platform:ARM64CE": {
+      "requires": {
         "microsoft.visualstudio.vc.msbuild.v170.ARM64CE.v143": "17.0.0"
       }
     }
-  },
-  "id": "tools/microsoft/msbuild/vc/Desktop/v143",
-  "version": "17.0.0",
-  "summary": "Msbuild support for MSVC v143 toolset",
-  "description": "Msbuild support for MSVC v143 toolset"
+  }
 }

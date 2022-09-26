@@ -1,0 +1,36 @@
+{
+  "id": "sdks/microsoft/windows",
+  "version": "10.0.22621",
+  "summary": "Microsoft Windows SDK",
+  "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications.",
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "windows and target:arm": {
+      "requires": {
+        "sdks/microsoft/windows/arm": "10.0.22621"
+      }
+    },
+    "windows and target:arm64": {
+      "requires": {
+        "sdks/microsoft/windows/arm64": "10.0.22621"
+      }
+    },
+    "windows and target:x64": {
+      "requires": {
+        "sdks/microsoft/windows/x64": "10.0.22621"
+      }
+    },
+    "windows and target:x86": {
+      "requires": {
+        "sdks/microsoft/windows/x86": "10.0.22621"
+      }
+    }
+  }
+}

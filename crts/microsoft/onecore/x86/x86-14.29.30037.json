@@ -16,8 +16,7 @@
       "LIBPATH": "."
     },
     "msbuild-properties": {
-      "VC_LibraryPath_VC_x86_Onecore": "{root}",
-      "VC_LibraryPath_VC_x86": "$(VC_LibraryPath_VC_x86);{root}"
+      "VC_LibraryPath_VC_x86_Onecore": "{root}"
     }
   },
   "install": [
