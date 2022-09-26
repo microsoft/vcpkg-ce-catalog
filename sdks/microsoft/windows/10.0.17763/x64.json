@@ -7,12 +7,15 @@
       ]
     }
   },
+  "requires": {
+    "sdks/microsoft/windows/core": "10.0.17763"
+  },
   "install": [
     {
       "unzip": [
-        "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.x64/10.0.19041.5"
+        "https://www.nuget.org/api/v2/package/Microsoft.Windows.SDK.cpp.x64/10.0.17763.4"
       ],
-      "sha256": "EE8B7BC43ED58D17BE795C8062AD32E355847AADAD7DC8096CC04CCD1F2FDC2E"
+      "sha256": "FEFE826138D9C04A4CE02F6F94C781DBBAB77DD07D47045792C5EF97ACF666A1"
     }
   ],
   "exports": {
@@ -29,7 +32,7 @@
     }
   },
   "id": "sdks/microsoft/windows/windows.x64",
-  "version": "10.0.19041",
+  "version": "10.0.17763",
   "summary": "Microsoft Windows SDK (targeting x64)",
   "description": "The Windows SDK available as a NuGet package for more seamless acquisition and CI/CD integration. This package is designed for C++ applications (targeting x64).",
   "options": [
