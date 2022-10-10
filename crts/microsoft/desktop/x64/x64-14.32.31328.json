@@ -19,6 +19,9 @@
       ]
     }
   },
+  "requires": {
+    "crts/microsoft/headers": "14.32.31328"
+  },
   "install": [
     {
       "unzip": [
