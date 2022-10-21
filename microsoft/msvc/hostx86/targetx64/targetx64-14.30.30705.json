@@ -1,0 +1,255 @@
+{
+  "id": "tools/hostx86/targetx64",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "PATH": [
+        "bin/Hostx86/x64"
+      ]
+    },
+    "tools": {
+      "CC": "cl.exe",
+      "CXX": "cl.exe",
+      "AR": "lib.exe"
+    },
+    "msbuild-properties": {
+      "VC_ExecutablePath_x86_x64": "{root}"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.tools.hostx86.targetx64/Microsoft.VC.14.30.17.0.Tools.HostX86.TargetX64.vsix"
+      ],
+      "sha256": "2ac0401237e15605709c2989ad15090f44dde86536368afd74e64137ed0e00dc",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.tools.hostx86.targetx64.base/Microsoft.VC.14.30.17.0.Tools.HostX86.TargetX64.base.vsix"
+      ],
+      "sha256": "29f559921cf3c84b1c5546121cadfe247b6a669590abddc1203f3b8ca29081a4",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;csy/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.csy.vsix"
+      ],
+      "sha256": "82ee154ec4c34d8928fe5a1fea06619915b162e6680df388595110c19b801bd6",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;csy/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.csy.vsix"
+      ],
+      "sha256": "1329968740574d727b31df8db314cba65d5badb904a48330a55d78e9a3e48ee2",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;deu/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.deu.vsix"
+      ],
+      "sha256": "2f731b38dd3ec36bc445d371b18dea93ddbe01d37d52ace58fc864ecc820990a",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;deu/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.deu.vsix"
+      ],
+      "sha256": "f2d7f39a28c83517eae244ee3434b58e80a19280ec912916e5fc6f9089eb444a",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;enu/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.enu.vsix"
+      ],
+      "sha256": "ab63341da965f342982c7df8d48ccf24f9f5377e19294618ff5d5988a7f6ddaa",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;enu/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.enu.vsix"
+      ],
+      "sha256": "99a21073364dd956f490eea57c5d5b064aad6917401599153d8755e8761f6081",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;esn/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.esn.vsix"
+      ],
+      "sha256": "bfbefdbd36444e39a09f5b679dfcb6c98b3cbe76b8f3ebfb145cbe6309cfb0e8",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;esn/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.esn.vsix"
+      ],
+      "sha256": "50b0853162e063d484f2724748df3f19b1d131f9bfa786791c353951c33d8194",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;fra/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.fra.vsix"
+      ],
+      "sha256": "02e9ca3099a5232d7b77154eeb46a03171217cd4cc2766a91d12d0b59791407b",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;fra/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.fra.vsix"
+      ],
+      "sha256": "9a43c865908e49c33384a777c157972929a8c5a7460aae9ba6d1ea31130421bf",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;ita/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.ita.vsix"
+      ],
+      "sha256": "8a53eb197cb1f52116912855154eca7f967b79ab29e87524fc5b6821af8dd778",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;ita/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.ita.vsix"
+      ],
+      "sha256": "3f80d4a946cf8ebccf845a0500e998efd08f93a3187844d0b2961e192aa61cfc",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;jpn/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.jpn.vsix"
+      ],
+      "sha256": "75944d273613b24cecf8833ec20c07aba9dc8bafdbd4275fa90a804e7cd1bf21",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;jpn/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.jpn.vsix"
+      ],
+      "sha256": "a2283305a2f0219384a0020e515edeaf3bf6fb54b24016d1aa8351faad1c73e4",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;kor/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.kor.vsix"
+      ],
+      "sha256": "bd5c0ab9e04ec0d11c89a84501ad14374fc4781c4caa85c70bd9e9f5c9ff6ea0",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;kor/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.kor.vsix"
+      ],
+      "sha256": "72cd44f1cc2746762827568d2638cddd54c6fc3f97ad2fbb6a2c9e53487e0d1c",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;plk/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.plk.vsix"
+      ],
+      "sha256": "27294e20a98efe5cfd75351671ff19ac1f64cc7afebb41ba93ed3c91077de7ef",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;plk/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.plk.vsix"
+      ],
+      "sha256": "917642e2eba590701a832300a0fbb3b0ebeb42d9006b59767157eb8a77b33376",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;ptb/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.ptb.vsix"
+      ],
+      "sha256": "7a9dee669371f1a8dcee83ccae95bbe70d9dc5dcf258faf571d980ed83105d99",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;ptb/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.ptb.vsix"
+      ],
+      "sha256": "32b4090eacdd8d698567f3adb055352ed4894fe745428ec1590ff53c7d8b2cbc",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;rus/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.rus.vsix"
+      ],
+      "sha256": "6378f696b74b660d7633c23c9fb2855818c2ebc94b310ee1c5deb07157ca62cd",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;rus/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.rus.vsix"
+      ],
+      "sha256": "e76ad69f92af07008b86bc9d9bbbf4a8535536342dcb97f41ddedc2bc18b1dae",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;trk/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.trk.vsix"
+      ],
+      "sha256": "556e8b892edffd1817abacc32b5e3c6aff5f3dc9a71bfb04a70ce1412c85ce5c",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;trk/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.trk.vsix"
+      ],
+      "sha256": "b3db3332f22bbe59eee20fca47fb704abb5cbcb6ce125220fd52cdf60fcc4d83",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;chs/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.chs.vsix"
+      ],
+      "sha256": "79ee72f60144cb7dae64b9b6d86e1039ecdedd68617231b8317bb2b2f5aec985",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;chs/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.chs.vsix"
+      ],
+      "sha256": "1bf3691324712259f937dfb7fd59a0112f08d3b3d918744ef3196a7085b8aed5",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;cht/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.cht.vsix"
+      ],
+      "sha256": "6a37d2b04adf1c4142983415f9b0db723eb90ef81ce84e6509f3a9eb4d92cc29",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;cht/microsoft.vc.14.30.17.0.tools.hostx86.targetx64.resources.base/Microsoft.VC.14.30.17.0.Tools.Hostx86.Targetx64.Resources.base.cht.vsix"
+      ],
+      "sha256": "f9e69153b2d9fb41f7e14504f6d80b958bd3a1eb7c98822ffbca103bb1ea1649",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.asan.x64/Microsoft.VC.14.30.17.0.ASAN.X64.vsix"
+      ],
+      "sha256": "c208408d0b6de5b1de8b0dd59c0ce18a33cc623143e5e29efe5de5442dd8af72",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.asan.x64.base/Microsoft.VC.14.30.17.0.ASAN.X64.base.vsix"
+      ],
+      "sha256": "1136f95ab3f13d331cbdd4aebd860bb49380cd8e23347515924f3400f0a8c6d9",
+      "strip": 5
+    }
+  ]
+}

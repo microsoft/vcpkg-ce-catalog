@@ -1,0 +1,46 @@
+{
+  "id": "crt/x86/store",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "crt/src/i386",
+        "lib/x86",
+        "lib/x86/store",
+        "lib/x86/uwp"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_x86_Desktop": "{root};$(VC_LibraryPath_VC_x86_Desktop)",
+      "VC_LibraryPath_VC_x86_Store": "{root}",
+      "VC_LibraryPath_VC_x86_UWP": "{root}"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.x86.store/Microsoft.VC.14.30.17.0.CRT.x86.Store.vsix"
+      ],
+      "sha256": "722e61596c815614b7f1b686453fcba98da8e980af8c5ce682a90dedd7d63729",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.x86.store.base/Microsoft.VC.14.30.17.0.CRT.x86.Store.base.vsix"
+      ],
+      "sha256": "2b6cdbf93a905c29dcf8349698dbdc3441e1feffe6f808f34f6b50c58818bac4",
+      "strip": 5
+    }
+  ]
+}

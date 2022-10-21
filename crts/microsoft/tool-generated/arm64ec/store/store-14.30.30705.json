@@ -1,0 +1,42 @@
+{
+  "id": "crt/arm64ec/store",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "crt/src/arm64ec",
+        "lib/arm64ec",
+        "lib/arm64ec/store",
+        "lib/arm64ec/uwp"
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64ec.store/Microsoft.VC.14.30.17.0.CRT.ARM64EC.Store.vsix"
+      ],
+      "sha256": "34470b3ad9380248a8f40882f3d934a6bf19f8744855efb311a184e00cd98104",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64ec.store.base/Microsoft.VC.14.30.17.0.CRT.ARM64EC.Store.base.vsix"
+      ],
+      "sha256": "b58a3a41168a68e8949b21d7a0c0eeabd17ed2b33361a8e384c86656123f2633",
+      "strip": 5
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "crt/redist/x64",
+  "version": "14.30.30704",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "debug",
+        "debug",
+        "debug",
+        "debug",
+        "x64/Microsoft.VC$(VCRedistRelVerShort).CRT",
+        "x64/Microsoft.VC$(VCRedistRelVerShort).CXXAMP",
+        "x64/Microsoft.VC$(VCRedistRelVerShort).OpenMP"
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.redist.x64/Microsoft.VC.14.30.17.0.CRT.Redist.X64.vsix"
+      ],
+      "sha256": "58d9315adfb88a69ef34fce060642330992b7684346beb40aa47132f9dec07ef",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.redist.x64.base/Microsoft.VC.14.30.17.0.CRT.Redist.X64.base.vsix"
+      ],
+      "sha256": "f4e9fdcc2c904699fe99f6655f2b388a4f6cb59858c11d8005fe3a0d08c73db2",
+      "strip": 5
+    }
+  ]
+}

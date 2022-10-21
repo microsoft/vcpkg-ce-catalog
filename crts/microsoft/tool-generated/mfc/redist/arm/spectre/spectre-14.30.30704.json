@@ -1,0 +1,40 @@
+{
+  "id": "mfc/redist/arm/spectre",
+  "version": "14.30.30704",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "spectre/debug",
+        "spectre/arm/Microsoft.VC$(VCRedistRelVerShort).MFC",
+        "spectre/arm/Microsoft.VC$(VCRedistRelVerShort).MFCLOC"
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.mfc.redist.arm.spectre/Microsoft.VC.14.30.17.0.MFC.Redist.ARM.Spectre.vsix"
+      ],
+      "sha256": "663fe9cf256a30a611f0addc87cfee303f15f982f6c4226ff3ac9e2b94bbb67e",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.mfc.redist.arm.spectre.base/Microsoft.VC.14.30.17.0.MFC.Redist.ARM.Spectre.base.vsix"
+      ],
+      "sha256": "9f9593e592b14622e14b4a20d1ac6101733b1600274fa2af4f7c764a3fd7d980",
+      "strip": 5
+    }
+  ]
+}

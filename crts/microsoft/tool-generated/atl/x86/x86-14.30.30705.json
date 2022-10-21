@@ -1,0 +1,45 @@
+{
+  "id": "atl/x86",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "atlmfc/lib/x86"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_x86_Desktop": "{root};$(VC_LibraryPath_VC_x86_Desktop)",
+      "VC_LibraryPath_ATL_x86": "{root};$(VC_LibraryPath_ATL_x86)"
+    }
+  },
+  "requires": {
+    "atl/headers": "14.30.30705"
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.atl.x86/Microsoft.VC.14.30.17.0.ATL.X86.vsix"
+      ],
+      "sha256": "0c69da2f3e7c0ddf16cd0a061d234fc91f0ee90f9e71b091bde95f1cc1a92d0a",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.atl.x86.base/Microsoft.VC.14.30.17.0.ATL.X86.base.vsix"
+      ],
+      "sha256": "2191f2aa48b2a919fe58bdc2c3468bd142e7509706c629d6323dd1d455499b70",
+      "strip": 5
+    }
+  ]
+}

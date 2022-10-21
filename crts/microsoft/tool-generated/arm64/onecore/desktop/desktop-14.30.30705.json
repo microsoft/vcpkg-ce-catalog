@@ -1,0 +1,44 @@
+{
+  "id": "crt/arm64/onecore/desktop",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "lib/onecore/arm64"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_ARM64_OneCore": "{root};$(VC_LibraryPath_VC_ARM64_OneCore)"
+    }
+  },
+  "requires": {
+    "crt/headers": "14.30.30705"
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64.onecore.desktop/Microsoft.VC.14.30.17.0.CRT.ARM64.OneCore.Desktop.vsix"
+      ],
+      "sha256": "a49cd68d48562c2c9277f83da599a033e4e2bd8eab99c892728f783b595a3a3e",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64.onecore.desktop.base/Microsoft.VC.14.30.17.0.CRT.ARM64.OneCore.Desktop.base.vsix"
+      ],
+      "sha256": "60fb25eefce0940ffee054d6d0013b27c5af4bec346e793f632889cf0846dbd2",
+      "strip": 5
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "crt/arm64/desktop/debug",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "."
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_ARM64_Desktop": "{root};$(VC_LibraryPath_VC_ARM64_Desktop)"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64.desktop.debug/Microsoft.VC.14.30.17.0.CRT.ARM64.Desktop.debug.vsix"
+      ],
+      "sha256": "1d067c77ff796e71b5652b1f9c62b296e9e858a0544d8af09d97cf1f888d4d4c",
+      "strip": 7
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64.desktop.debug.base/Microsoft.VC.14.30.17.0.CRT.ARM64.Desktop.debug.base.vsix"
+      ],
+      "sha256": "0dee067c97e395a39d3cf9b9c921cc6ee126e1ea89abd722e2e74896989c61ea",
+      "strip": 7
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "target:x64": {
+      "requires": {
+        "asan/x64": "14.30.30705"
+      }
+    },
+    "target:x86": {
+      "requires": {
+        "asan/x86": "14.30.30705"
+      }
+    }
+  },
+  "id": "crts/microsoft/asan",
+  "version": "14.30.30705",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "mfc/x86/debug/spectre",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "."
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_x86_Desktop_spectre": "{root};$(VC_LibraryPath_VC_x86_Desktop_spectre)",
+      "VC_LibraryPath_ATL_x86_spectre": "{root};$(VC_LibraryPath_ATL_x86_spectre)"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.mfc.x86.debug.spectre/Microsoft.VC.14.30.17.0.MFC.X86.Debug.Spectre.vsix"
+      ],
+      "sha256": "5af57dc12e2c6c7abd37edb9560c52bcf2b081b46c0254e94168be75b72d40ae",
+      "strip": 9
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.mfc.x86.debug.spectre.base/Microsoft.VC.14.30.17.0.MFC.X86.Debug.Spectre.base.vsix"
+      ],
+      "sha256": "51a42bff56f25ee77671ed25b75f05764afb5c917ee404304845a20cccfe4ef9",
+      "strip": 9
+    }
+  ]
+}
