@@ -24,9 +24,14 @@
     },
     "target:x64": {
       "requires": {
-        "crt/x64/desktop": "14.30.30705",
         "crt/x64/onecore/desktop": "14.30.30705",
-        "crt/x64/store": "14.30.30705"
+        "crt/x64/store": "14.30.30705",
+        "crt/x64/desktop": "14.30.30705"
+      },
+      "exports": {
+        "msbuild-properties": {
+          "VC_LibraryPath_VC_x64": "$(VC_LibraryPath_VC_x64_Desktop);$(VC_LibraryPath_VC_x64_OneCore);$(VC_LibraryPath_VC_x64_Store);$(VC_LibraryPath_VC_x64)"
+      }
       }
     },
     "target:x86": {
