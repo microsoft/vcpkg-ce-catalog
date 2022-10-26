@@ -31,14 +31,19 @@
       "exports": {
         "msbuild-properties": {
           "VC_LibraryPath_VC_x64": "$(VC_LibraryPath_VC_x64_Desktop);$(VC_LibraryPath_VC_x64_OneCore);$(VC_LibraryPath_VC_x64_Store);$(VC_LibraryPath_VC_x64)"
-      }
+        }
       }
     },
     "target:x86": {
       "requires": {
-        "crt/x86/desktop": "14.30.30705",
         "crt/x86/onecore/desktop": "14.30.30705",
-        "crt/x86/store": "14.30.30705"
+        "crt/x86/store": "14.30.30705",
+        "crt/x86/desktop": "14.30.30705"
+      },
+      "exports": {
+        "msbuild-properties": {
+          "VC_LibraryPath_VC_x86": "$(VC_LibraryPath_VC_x86_Desktop);$(VC_LibraryPath_VC_x86_OneCore);$(VC_LibraryPath_VC_x86_Store);$(VC_LibraryPath_VC_x86)"
+        }
       }
     }
   },
