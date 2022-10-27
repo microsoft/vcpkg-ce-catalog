@@ -23,7 +23,8 @@
       "AR": "lib.exe"
     },
     "msbuild-properties": {
-      "VC_ExecutablePath_x86_x64": "{root}"
+      "VC_ExecutablePath_x86_x64": "{root}\\bin\\Hostx86\\x64",
+      "VC_ExecutablePath_x64": "{root}\\bin\\Hostx86\\x64;$(VC_ExecutablePath_x64)"
     }
   },
   "install": [
