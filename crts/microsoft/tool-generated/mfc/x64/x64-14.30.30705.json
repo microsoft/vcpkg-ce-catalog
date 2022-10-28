@@ -19,12 +19,13 @@
       ]
     },
     "msbuild-properties": {
-      "VC_LibraryPath_VC_x64_Desktop": "{root};$(VC_LibraryPath_VC_x64_Desktop)",
-      "VC_LibraryPath_ATL_x64": "{root};$(VC_LibraryPath_ATL_x64)"
+      "VC_LibraryPath_VC_x64_Desktop": "{root}\\atlmfc\\lib\\x64;$(VC_LibraryPath_VC_x64_Desktop)",
+      "VC_LibraryPath_ATL_x64": "{root}\\atlmfc\\lib\\x64;$(VC_LibraryPath_ATL_x64)"
     }
   },
   "requires": {
-    "mfc/headers": "14.30.30705"
+    "mfc/headers": "14.30.30705",
+    "mfc/x64/debug": "14.30.30705" 
   },
   "install": [
     {

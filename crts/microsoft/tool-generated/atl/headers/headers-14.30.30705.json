@@ -27,7 +27,8 @@
       ]
     },
     "msbuild-properties": {
-      "VC_VC_IncludePath": "{root};$(VC_VC_IncludePath)"
+      "VC_ATL_IncludePath": "{root}\\atlmfc\\include",
+      "VC_ATLMFC_IncludePath": "{root}\\atlmfc\\include;$(VC_ATLMFC_IncludePath)"
     }
   },
   "install": [

@@ -7,6 +7,9 @@
       ]
     }
   },
+  "requires": {
+    "atl/headers": "14.30.30705"
+  },
   "demands": {
     "target:arm": {
       "requires": {

@@ -22,8 +22,8 @@
       ]
     },
     "msbuild-properties": {
-      "VC_LibraryPath_VC_x86_Store": "{root}\\lib\\x86\\store",
-      "VC_LibraryPath_VC_x86_UWP": "{root}\\lib\\x86\\store"
+      "VC_LibraryPath_VC_x86_Store": "{root}\\lib\\x86",
+      "VC_LibraryPath_VC_x86_UWP": "{root}\\lib\\x86"
     }
   },
   "install": [

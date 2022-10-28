@@ -11,6 +11,9 @@
       "role": "publisher"
     }
   },
+  "requires": {
+    "atl/headers": "14.30.30705"
+  },
   "exports": {
     "paths": {
       "INCLUDE": [
@@ -18,7 +21,8 @@
       ]
     },
     "msbuild-properties": {
-      "VC_VC_IncludePath": "{root};$(VC_VC_IncludePath)"
+      "VC_MFC_IncludePath": "{root}",
+      "VC_ATLMFC_IncludePath": "{root};$(VC_ATLMFC_IncludePath)"
     }
   },
   "install": [

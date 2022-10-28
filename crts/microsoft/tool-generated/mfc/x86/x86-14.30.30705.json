@@ -23,7 +23,8 @@
     }
   },
   "requires": {
-    "mfc/headers": "14.30.30705"
+    "mfc/headers": "14.30.30705",
+    "mfc/x86/debug": "14.30.30705" 
   },
   "install": [
     {
