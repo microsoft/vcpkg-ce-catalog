@@ -18,8 +18,8 @@
       ]
     },
     "msbuild-properties": {
-      "VC_LibraryPath_VC_x86_Desktop": "{root};$(VC_LibraryPath_VC_x86_Desktop)",
-      "VC_LibraryPath_ATL_x86": "{root};$(VC_LibraryPath_ATL_x86)"
+      "VC_LibraryPath_VC_x86_Desktop": "{root}\\atlmfc\\lib\\x86;$(VC_LibraryPath_VC_x86_Desktop)",
+      "VC_LibraryPath_ATL_x86": "{root}\\atlmfc\\lib\\x86;$(VC_LibraryPath_ATL_x86)"
     }
   },
   "requires": {
