@@ -1,0 +1,52 @@
+{
+    "id": "tools/microsoft/msbuild/x64",
+    "version": "17.4.0",
+    "summary": "(todo)",
+    "options": [
+        "dependencyOnly"
+    ],
+    "contacts": {
+        "Vcpkg Team": {
+            "email": "vcpkg@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "exports": {
+        "paths": {
+            "PATH": "MSBuild/Current/bin/amd64",
+            "VcpkgPathToVCSDKResolvers": "./Contents/Msbuild/Current/Bin",
+            "VcpkgPathToNuGetSDKResolver": ".",
+            "VcpkgPathToTracker": "./Contents/Msbuild/Current/Bin"
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/29169ae3-8a48-4d24-910f-fc01755a07b1/e8ea6cf8a5beaa3221d6e012a3525d9a7d48316b7889e200f94479d0ef89aaae/Microsoft.Build.vsix"
+            ],
+            "sha256": "E8EA6CF8A5BEAA3221D6E012A3525D9A7D48316B7889E200F94479D0EF89AAAE",
+            "strip": 1
+        },
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/2cf60fbd-e06e-4905-b7ba-3e657e46a74c/8f367f6de269d7cbddc43329f1f970aa9e113f427f971cdd4feca16dd15adab2/NuGet.Tools.vsix"
+            ],
+            "sha256": "8F367F6DE269D7CBDDC43329F1F970AA9E113F427F971CDD4FECA16DD15ADAB2",
+            "strip": 0
+        },
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/6e945cf1-e379-4764-89db-b83926f4d271/40f662b13952f6ed156b034e6c7fa89dd66d08476831163792163ab7d73821eb/payload.vsix"
+            ],
+            "sha256": "40F662B13952F6ED156B034E6C7FA89DD66D08476831163792163AB7D73821EB",
+            "strip": 0
+        },
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/6e945cf1-e379-4764-89db-b83926f4d271/fe9300ad0b8d6fc7532308fea9fbcda085648f9638522d45ed5f8e713bf4cdbe/payload.vsix"
+            ],
+            "sha256": "FE9300AD0B8D6FC7532308FEA9FBCDA085648F9638522D45ED5F8E713BF4CDBE",
+            "strip": 0
+        }
+    ]
+}
