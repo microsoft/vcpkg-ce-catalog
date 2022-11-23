@@ -1,0 +1,35 @@
+{
+    "contacts": {
+        "markle": {
+            "email": "markle@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "demands": {
+        "Platform:Win32": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.v170.x86.uwp": "17.3.7"
+            }
+        },
+        "Platform:x64": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.v170.x64.uwp": "17.3.7"
+            }
+        },
+        "Platform:ARM": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.v170.ARM.uwp": "17.3.7"
+            }
+        },
+        "Platform:ARM64": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.v170.ARM64.uwp": "17.3.7",
+                "microsoft.vs.msbuild.vc.v170.ARM64CE.uwp": "17.3.7"
+            }
+        }
+    },
+    "id": "microsoft.vs.msbuild.vc.v143.uwp",
+    "version": "17.3.7",
+    "summary": "Msbuild support for MSVC v143 toolset for UWP",
+    "description": "Msbuild support for MSVC v143 toolset for UWP"
+}

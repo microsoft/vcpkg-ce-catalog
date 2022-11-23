@@ -1,0 +1,35 @@
+{
+    "contacts": {
+        "markle": {
+            "email": "markle@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "demands": {
+        "Platform:Win32": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.desktop.v170.x86.v143": "17.3.7"
+            }
+        },
+        "Platform:x64": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.desktop.v170.x64.v143": "17.3.7"
+            }
+        },
+        "Platform:ARM": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.desktop.v170.ARM.v143": "17.3.7"
+            }
+        },
+        "Platform:ARM64": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.desktop.ARM64.v143": "17.3.7",
+                "microsoft.vs.msbuild.vc.desktop.v170.ARM64CE.v143": "17.3.7"
+            }
+        }
+    },
+    "id": "microsoft.vs.msbuild.vc.v143.desktop",
+    "version": "17.3.7",
+    "summary": "Msbuild support for MSVC v143 toolset",
+    "description": "Msbuild support for MSVC v143 toolset"
+}
