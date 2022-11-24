@@ -1,0 +1,24 @@
+{
+    "contacts": {
+        "markle": {
+            "email": "markle@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "demands": {
+        "not ApplicationType": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.v143.desktop": "17.4.0"
+            }
+        },
+        "ApplicationType:WindowsStore": {
+            "requires": {
+                "microsoft.vs.msbuild.vc.v143.uwp": "17.4.0"
+            }
+        }
+    },
+    "id": "microsoft.vs.msbuild.vc.v143",
+    "version": "17.4.0",
+    "summary": "MSBuild support for MSVC v143 toolset",
+    "description": "MSBuild support for MSVC v143 toolset"
+}

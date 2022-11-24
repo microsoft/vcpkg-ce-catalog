@@ -1,0 +1,69 @@
+{
+    "id": "microsoft.vs.msbuild.x64",
+    "version": "17.4.0",
+    "summary": "MSBuild Engine (x64)",
+    "options": [
+        "dependencyOnly"
+    ],
+    "contacts": {
+        "Vcpkg Team": {
+            "email": "vcpkg@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "exports": {
+        "paths": {
+            "PATH": "MSBuild/Current/bin/amd64",
+            "VCTargetsPath0": "./Contents/MSBuild/Microsoft/VC/v170/",
+            "VcpkgPathToVCSDKResolvers": "./Contents/Msbuild/Current/Bin",
+            "VcpkgPathToNuGetSDKResolver": ".",
+            "VcpkgPathToTracker": "./Contents/Msbuild/Current/Bin"
+        },
+        "environment": [
+            "Microsoft.Build",
+            "Microsoft.Build.UnGAC (skipped: exe)",
+            "Microsoft.Build.Arm64 (skipped: machineArch=arm64)",
+            "Microsoft.Build.Dependencies",
+            "Microsoft.VisualStudio.NuGet.Core",
+            "Microsoft.DataAI.NuGetRecommender",
+            "Microsoft.VisualStudio.NuGet.BuildTools"
+        ]
+    },
+    "install": [
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/29169ae3-8a48-4d24-910f-fc01755a07b1/e8ea6cf8a5beaa3221d6e012a3525d9a7d48316b7889e200f94479d0ef89aaae/Microsoft.Build.vsix"
+            ],
+            "sha256": "e8ea6cf8a5beaa3221d6e012a3525d9a7d48316b7889e200f94479d0ef89aaae",
+            "strip": 1
+        },
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/6e945cf1-e379-4764-89db-b83926f4d271/fe9300ad0b8d6fc7532308fea9fbcda085648f9638522d45ed5f8e713bf4cdbe/payload.vsix"
+            ],
+            "sha256": "fe9300ad0b8d6fc7532308fea9fbcda085648f9638522d45ed5f8e713bf4cdbe",
+            "strip": 0
+        },
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/2cf60fbd-e06e-4905-b7ba-3e657e46a74c/8f367f6de269d7cbddc43329f1f970aa9e113f427f971cdd4feca16dd15adab2/NuGet.Tools.vsix"
+            ],
+            "sha256": "8f367f6de269d7cbddc43329f1f970aa9e113f427f971cdd4feca16dd15adab2",
+            "strip": 1
+        },
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/f9269a3a-c988-4f39-a172-49cfa3655220/edb9faa4169259775e72872e19eab855b379731f3427a3ff0de1175a10fee2fe/Microsoft.DataAI.NuGetRecommender.vsix"
+            ],
+            "sha256": "edb9faa4169259775e72872e19eab855b379731f3427a3ff0de1175a10fee2fe",
+            "strip": 0
+        },
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/2cf60fbd-e06e-4905-b7ba-3e657e46a74c/6e84efee4b6f1fcc90500296b76c606214119c8b6d607bfd24f5e1de40b97eb2/Microsoft.VisualStudio.NuGet.BuildTools.vsix"
+            ],
+            "sha256": "6e84efee4b6f1fcc90500296b76c606214119c8b6d607bfd24f5e1de40b97eb2",
+            "strip": 1
+        }
+    ]
+}
