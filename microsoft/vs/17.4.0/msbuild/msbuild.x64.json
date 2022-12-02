@@ -14,17 +14,14 @@
     "exports": {
         "paths": {
             "PATH": "MSBuild/Current/bin/amd64",
-            "VCTargetsPath": "./MSBuild/Microsoft/VC/v170/",
-            "VcpkgPathToVCSDKResolvers": "./Msbuild/Current/Bin",
-            "VcpkgPathToNuGetSDKResolver": ".",
-            "VcpkgPathToTracker": "./Msbuild/Current/Bin"
+            "VCTargetsPath": "MSBuild/Microsoft/VC/v170/"
         },
         "environment": [
             "Microsoft.Build",
             "Microsoft.Build.UnGAC (skipped: exe)",
             "Microsoft.Build.Arm64 (skipped: machineArch=arm64)",
             "Microsoft.Build.Dependencies (for tracker)",
-            "Microsoft.VisualStudio.NuGet.Core",
+            "Microsoft.VisualStudio.NuGet.Core (skipped: NuGetSDKResolver is in NuGet.BuildTools)",
             "Microsoft.DataAI.NuGetRecommender",
             "Microsoft.VisualStudio.NuGet.BuildTools",
             "Microsoft.VisualStudio.VC.MSBuild.v170.base (+resources)"
@@ -43,13 +40,6 @@
                 "https://download.visualstudio.microsoft.com/download/pr/6e945cf1-e379-4764-89db-b83926f4d271/fe9300ad0b8d6fc7532308fea9fbcda085648f9638522d45ed5f8e713bf4cdbe/payload.vsix"
             ],
             "sha256": "fe9300ad0b8d6fc7532308fea9fbcda085648f9638522d45ed5f8e713bf4cdbe",
-            "strip": 1
-        },
-        {
-            "unzip": [
-                "https://download.visualstudio.microsoft.com/download/pr/2cf60fbd-e06e-4905-b7ba-3e657e46a74c/8f367f6de269d7cbddc43329f1f970aa9e113f427f971cdd4feca16dd15adab2/NuGet.Tools.vsix"
-            ],
-            "sha256": "8f367f6de269d7cbddc43329f1f970aa9e113f427f971cdd4feca16dd15adab2",
             "strip": 1
         },
         {
