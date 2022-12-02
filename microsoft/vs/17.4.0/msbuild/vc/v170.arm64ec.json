@@ -1,6 +1,6 @@
 {
-	"id": "microsoft.visualstudio.vc.msbuild.v170.arm64ec",
-	"version": "17.3.7",
+	"id": "microsoft.vs.msbuild.vc.desktop.v170.arm64ec",
+	"version": "17.4.0",
 	"description": "MSBuild support for vc projects (generated from VS install)",
 	"summary": "MSBuild support for vc projects (generated from VS install)",
 	"contacts": {
@@ -10,7 +10,7 @@
 		}
 	}, 
 	"requires": {
-		"microsoft.visualstudio.vc.msbuild.v170.base": "17.3.7"
+		"microsoft.vs.msbuild.vc.desktop.v170.base": "17.4.0"
 	},
 	"exports": {
 		"msbuild-properties": {
@@ -20,7 +20,7 @@
 	"install": [
 		{
 			"unzip": [
-				"vsix:///microsoft.visualstudio.vc.msbuild.v170.arm64ec,version=17.3.7,productArch=neutral/payload.vsix",
+				"vsix:///microsoft.vs.msbuild.vc.v170.arm64ec,version=17.4.0,productArch=neutral/payload.vsix",
 				"https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/7311b6da2a6113c7d04c34bfdfe72eda05e35df46d33ec01d79b56e69e811158/payload.vsix"
 			],
 			"sha256": "7311b6da2a6113c7d04c34bfdfe72eda05e35df46d33ec01d79b56e69e811158",
