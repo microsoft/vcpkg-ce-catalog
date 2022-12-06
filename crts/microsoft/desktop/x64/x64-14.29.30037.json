@@ -12,8 +12,7 @@
       "LIB": "."
     },
     "msbuild-properties": {
-      "VC_LibraryPath_VC_x64_Desktop": "{root}",
-      "VC_LibraryPath_VC_x64": "{root};$(VC_LibraryPath_VC_x64)"
+      "VC_LibraryPath_VC_x64_Desktop": "{root}"
     }
   },
   "requires": {

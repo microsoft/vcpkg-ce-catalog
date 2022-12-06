@@ -3,6 +3,9 @@
 	"version": "17.0.0",
 	"description": "MSBuild support for vc projects (generated from VS install)",
 	"summary": "MSBuild support for vc projects (generated from VS install)",
+	"options": [
+		"dependencyOnly"
+	],
 	"contacts": {
 		"Olga Arkhipova": {
 			"email": "olgaark@microsoft.com",

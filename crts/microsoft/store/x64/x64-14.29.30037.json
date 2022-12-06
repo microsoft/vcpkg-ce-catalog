@@ -1,4 +1,10 @@
 {
+  "id": "crts/microsoft/store/x64",
+  "version": "14.29.30037",
+  "summary": "MSVC standard library libraries (store)",
+  "options": [
+    "dependencyOnly"
+  ],
   "contacts": {
     "Mark Levine": {
       "email": "markle@microsoft.com",
@@ -12,8 +18,7 @@
       "LIB": "."
     },
     "msbuild-properties": {
-      "VC_LibraryPath_VC_x64_Store": "{root}",
-      "VC_LibraryPath_VC_x64": "{root};$(VC_LibraryPath_VC_x64)"
+      "VC_LibraryPath_VC_x64_Store": "{root}"
     }
   },
   "requires": {
@@ -28,11 +33,5 @@
       "sha256": "6f3916fc74ef39cfaec35b3f7bb12ddea64caeb356bfe2e0530ffdbfbf8d8848",
       "strip": 7
     }
-  ],
-  "id": "crts/microsoft/store/x64",
-  "version": "14.29.30037",
-  "summary": "MSVC standard library libraries (store)",
-  "options": [
-    "dependencyOnly"
   ]
 }
