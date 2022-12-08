@@ -1,0 +1,39 @@
+{
+  "id": "asan/headers",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "INCLUDE": [
+        "include/fuzzer",
+        "include/sanitizer"
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.asan.headers/Microsoft.VC.14.30.17.0.ASAN.Headers.vsix"
+      ],
+      "sha256": "9855473b9fb38fc965b4599c11bdc257d0341bce90e9a6d83f98ce7bcf61e10f",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.asan.headers.base/Microsoft.VC.14.30.17.0.ASAN.Headers.base.vsix"
+      ],
+      "sha256": "e8b22c779689c2079a46f17c0f4a499d152d81e67b92c9dc2ed74a09e2c4bc4f",
+      "strip": 5
+    }
+  ]
+}

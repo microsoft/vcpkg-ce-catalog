@@ -1,0 +1,49 @@
+{
+  "id": "crt/arm64/store",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "crt/src/arm64",
+        "lib/arm64",
+        "lib/arm64/store",
+        "lib/arm64/uwp"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_ARM64_Desktop": "{root};$(VC_LibraryPath_VC_ARM64_Desktop)",
+      "VC_LibraryPath_VC_ARM64_Store": "{root}",
+      "VC_LibraryPath_VC_ARM64_UWP": "{root}"
+    }
+  },
+  "requires": {
+    "crt/headers": "14.30.30705"
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64.store/Microsoft.VC.14.30.17.0.CRT.ARM64.Store.vsix"
+      ],
+      "sha256": "a954e54ca2113891dafbb0d8ca82ad039c47c786942b3401f7b1f9816bd901d3",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64.store.base/Microsoft.VC.14.30.17.0.CRT.ARM64.Store.base.vsix"
+      ],
+      "sha256": "39482f8c5d8a343d9cb415905ec3a33a46fedb601141ff6c63bb43ab94578c45",
+      "strip": 5
+    }
+  ]
+}

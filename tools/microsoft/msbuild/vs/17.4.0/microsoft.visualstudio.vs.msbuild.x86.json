@@ -1,0 +1,30 @@
+{
+    "id": "tools/microsoft/msbuild/x86",
+    "version": "17.4.0",
+    "summary": "(todo)",
+    "options": [
+        "dependencyOnly"
+    ],
+    "contacts": {
+        "Vcpkg Team": {
+            "email": "vcpkg@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "exports": {
+        "paths": {
+            "PATH": [
+                "MSBuild/Current/bin"
+            ]
+        }
+    },
+    "install": [
+        {
+            "unzip": [
+                "https://download.visualstudio.microsoft.com/download/pr/29169ae3-8a48-4d24-910f-fc01755a07b1/e8ea6cf8a5beaa3221d6e012a3525d9a7d48316b7889e200f94479d0ef89aaae/Microsoft.Build.vsix"
+            ],
+            "sha256": "E8EA6CF8A5BEAA3221D6E012A3525D9A7D48316B7889E200F94479D0EF89AAAE",
+            "strip": 1
+        }
+    ]
+}

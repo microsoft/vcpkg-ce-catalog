@@ -1,0 +1,39 @@
+{
+  "id": "cli/source",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "crt/src/stl",
+        "crt/src/vcruntime"
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.cli.source/Microsoft.VC.14.30.17.0.CLI.Source.vsix"
+      ],
+      "sha256": "f9d2cfcd6d3801f3466aa47fcf31076bdfa5082583d74234a7fbf660c747d4c2",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.cli.source.base/Microsoft.VC.14.30.17.0.CLI.Source.base.vsix"
+      ],
+      "sha256": "b6b46e51d12ec1efce69b34f796ca193716d0c7638f0054580d7fde6c43a563b",
+      "strip": 5
+    }
+  ]
+}

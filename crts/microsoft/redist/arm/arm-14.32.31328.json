@@ -1,0 +1,42 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "arm/Microsoft.VC143.CRT",
+        "arm/Microsoft.VC143.CXXAMP",
+        "arm/Microsoft.VC143.OPENMP",
+        "debug"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.arm/Microsoft.VC.14.32.17.2.CRT.Redist.ARM.vsix"
+      ],
+      "sha256": "bcb55dbad3cfeb911499de601a75e07726123eb8af636e1dd82bce58384227a2",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.arm.base/Microsoft.VC.14.32.17.2.CRT.Redist.ARM.base.vsix"
+      ],
+      "sha256": "938ec433b92e71d2f0bf24fb3e3550a4d700e489cd8662810a05185594115590",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/redist/arm",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

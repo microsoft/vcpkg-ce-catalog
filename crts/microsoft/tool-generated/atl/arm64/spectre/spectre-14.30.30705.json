@@ -1,0 +1,39 @@
+{
+  "id": "atl/arm64/spectre",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "."
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.atl.arm64.spectre/Microsoft.VC.14.30.17.0.ATL.ARM64.Spectre.vsix"
+      ],
+      "sha256": "743918755e5c1bc3f10c818ab93e1d6c0523a7eb0a5c8b2bf1a4df0a8400abb7",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.atl.arm64.spectre.base/Microsoft.VC.14.30.17.0.ATL.ARM64.Spectre.base.vsix"
+      ],
+      "sha256": "bc8eaa6f110ad93fe8320c45469784f55d3e2d4e521beee916d23e54b1781905",
+      "strip": 5
+    }
+  ]
+}

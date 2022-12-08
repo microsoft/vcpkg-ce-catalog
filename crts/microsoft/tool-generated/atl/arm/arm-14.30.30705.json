@@ -1,0 +1,42 @@
+{
+  "id": "atl/arm",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "."
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "requires": {
+    "atl/headers": "14.30.30705"
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.atl.arm/Microsoft.VC.14.30.17.0.ATL.ARM.vsix"
+      ],
+      "sha256": "550ecfbbea181df68b5cee7b282aa67bd032c6401318ef42f35344671fa0932f",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.atl.arm.base/Microsoft.VC.14.30.17.0.ATL.ARM.base.vsix"
+      ],
+      "sha256": "40c37739d9f2eb6c5fa2d658d12a4e3bfdce27237cde8046575c0fc53887e4d5",
+      "strip": 5
+    }
+  ]
+}

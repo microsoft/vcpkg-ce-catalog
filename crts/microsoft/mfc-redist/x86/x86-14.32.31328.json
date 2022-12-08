@@ -1,0 +1,41 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "debug",
+        "x86/Microsoft.VC143.MFC",
+        "x86/Microsoft.VC143.MFCLOC"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.redist.x86/Microsoft.VC.14.32.17.2.MFC.Redist.X86.vsix"
+      ],
+      "sha256": "cc9b14dc04a2307ef11679f6a289c0d5af35e6fc9f94ee9b928b2a93b2c19905",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.redist.x86.base/Microsoft.VC.14.32.17.2.MFC.Redist.X86.base.vsix"
+      ],
+      "sha256": "dc2e88558ef8f1c4a872a8de04e72406387aa3575f7fcdf6dda47e3c4fb2d609",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/mfc-redist/x86",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

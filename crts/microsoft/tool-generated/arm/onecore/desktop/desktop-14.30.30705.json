@@ -1,0 +1,41 @@
+{
+  "id": "crt/arm/onecore/desktop",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "lib/onecore/arm"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_ARM_OneCore": "{root}"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm.onecore.desktop/Microsoft.VC.14.30.17.0.CRT.arm.OneCore.Desktop.vsix"
+      ],
+      "sha256": "7c0832239026f5f2e89ee7e2775d9cea6371fe7e51a94e568d077730625558cd",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm.onecore.desktop.base/Microsoft.VC.14.30.17.0.CRT.arm.OneCore.Desktop.base.vsix"
+      ],
+      "sha256": "d891cf0ba16eee3f47d558feceb1468a825dd7bf970507bf904cf2e492ec144f",
+      "strip": 5
+    }
+  ]
+}

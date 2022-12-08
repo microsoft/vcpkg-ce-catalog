@@ -1,0 +1,39 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "INCLUDE": [
+        "."
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.asan.headers/Microsoft.VC.14.32.17.2.ASAN.Headers.vsix"
+      ],
+      "sha256": "19cb9592db2796e2c388cc0ae8243f9807fc068fa4501cac21fa0ecd518e65f4",
+      "strip": 6
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.asan.headers.base/Microsoft.VC.14.32.17.2.ASAN.Headers.base.vsix"
+      ],
+      "sha256": "7f0fe9bae9b795e3d765171cce5c2c5c77a6d8e2f917172aff6b23aa85b4f2d1",
+      "strip": 6
+    }
+  ],
+  "id": "crts/microsoft/asan-headers",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

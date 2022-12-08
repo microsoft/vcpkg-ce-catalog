@@ -1,0 +1,41 @@
+{
+  "id": "mfc/mbcs/arm64",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "."
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_ARM64_Desktop": "{root};$(VC_LibraryPath_VC_ARM64_Desktop)",
+      "VC_LibraryPath_ATL_ARM64": "{root};$(VC_LibraryPath_ATL_ARM64)"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.mfc.mbcs.arm64/Microsoft.VC.14.30.17.0.MFC.MBCS.arm64.vsix"
+      ],
+      "sha256": "2e9d56a6b56ef0ed07cad1e7f9bb6573a769ee2f66b3c31ae68c521f72bec728",
+      "strip": 8
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.mfc.mbcs.arm64.base/Microsoft.VC.14.30.17.0.MFC.MBCS.arm64.base.vsix"
+      ],
+      "sha256": "c59140238115775301ed506b1cd7bc889785cde9089a2cbcd6bc8280633e8654",
+      "strip": 8
+    }
+  ]
+}

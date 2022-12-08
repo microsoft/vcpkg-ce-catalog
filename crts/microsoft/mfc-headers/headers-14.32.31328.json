@@ -1,0 +1,39 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "INCLUDE": [
+        "."
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.headers/Microsoft.VC.14.32.17.2.MFC.Headers.vsix"
+      ],
+      "sha256": "1d95c801d62f3d169db2c9b58487c9ce0cec444988146847d8d9093372be745f",
+      "strip": 7
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.mfc.headers.base/Microsoft.VC.14.32.17.2.MFC.Headers.base.vsix"
+      ],
+      "sha256": "064a59dfcef41c22cba07f2ee7f09d950acf703c67f7e7eed13287d192b021f8",
+      "strip": 7
+    }
+  ],
+  "id": "crts/microsoft/mfc-headers",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

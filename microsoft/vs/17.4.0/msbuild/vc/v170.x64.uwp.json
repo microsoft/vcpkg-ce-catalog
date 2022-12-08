@@ -1,0 +1,31 @@
+{
+	"id": "microsoft.visualstudio.vc.msbuild.v170.x64.uwp",
+	"version": "17.3.7",
+	"description": "MSBuild support for vc projects (generated from VS install)",
+	"summary": "MSBuild support for vc projects (generated from VS install)",
+	"contacts": {
+		"Olga Arkhipova": {
+			"email": "olgaark@microsoft.com",
+			"role": "publisher"
+		}
+	}, 
+	"requires": {
+		"microsoft.visualstudio.vc.msbuild.v170.base.uwp": "17.3.7"
+	},
+	"exports": {
+		"msbuild-properties": {
+			"PlatformDirectory": "{root}",
+			"ToolsetDirectory": "{root}\\PlatformToolsets\\v143"
+		}
+	},
+	"install": [
+		{
+			"unzip": [
+				"vsix:///microsoft.visualstudio.vc.msbuild.v170.x64.uwp,version=17.3.7,productArch=neutral/payload.vsix",
+				"https://download.visualstudio.microsoft.com/download/pr/f84477aa-ef95-484f-a213-840989c199bc/f935720873c536a3da48046d06325b236da2e151dea24f5a92af47379e64b65a/payload.vsix"
+			],
+			"sha256": "f935720873c536a3da48046d06325b236da2e151dea24f5a92af47379e64b65a",
+			"strip": 10
+		}
+	]
+}

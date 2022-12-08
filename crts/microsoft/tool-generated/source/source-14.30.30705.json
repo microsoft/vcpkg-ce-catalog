@@ -1,0 +1,42 @@
+{
+  "id": "crt/source",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "crt/src/concrt",
+        "crt/src/linkopts",
+        "crt/src/stl",
+        "crt/src/vccorlib",
+        "crt/src/vcruntime"
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.source/Microsoft.VC.14.30.17.0.CRT.Source.vsix"
+      ],
+      "sha256": "92879cb6213849ec0ddd82d7c6795b5d9c10a62ac64ddf540ab778957b6f0978",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.source.base/Microsoft.VC.14.30.17.0.CRT.Source.base.vsix"
+      ],
+      "sha256": "d144119f1023a2713647bb20f7d9be4b0a8a212f6df15b24766d602ecd6c7e24",
+      "strip": 5
+    }
+  ]
+}

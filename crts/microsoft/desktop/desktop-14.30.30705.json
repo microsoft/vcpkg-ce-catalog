@@ -1,0 +1,56 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "target:arm": {
+      "requires": {
+        "crt/arm/desktop": "14.30.30705",
+        "crt/arm/onecore/desktop": "14.30.30705",
+        "crt/arm/store": "14.30.30705"
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "crt/arm64/desktop": "14.30.30705",
+        "crt/arm64/onecore/desktop": "14.30.30705",
+        "crt/arm64/store": "14.30.30705"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "crt/x64/onecore/desktop": "14.30.30705",
+        "crt/x64/store": "14.30.30705",
+        "crt/x64/desktop": "14.30.30705"
+      },
+      "exports": {
+        "msbuild-properties": {
+          "VC_LibraryPath_VC_x64": "$(VC_LibraryPath_VC_x64_Desktop);$(VC_LibraryPath_VC_x64_OneCore);$(VC_LibraryPath_VC_x64_Store);$(VC_LibraryPath_VC_x64)"
+        }
+      }
+    },
+    "target:x86": {
+      "requires": {
+        "crt/x86/onecore/desktop": "14.30.30705",
+        "crt/x86/store": "14.30.30705",
+        "crt/x86/desktop": "14.30.30705"
+      },
+      "exports": {
+        "msbuild-properties": {
+          "VC_LibraryPath_VC_x86": "$(VC_LibraryPath_VC_x86_Desktop);$(VC_LibraryPath_VC_x86_OneCore);$(VC_LibraryPath_VC_x86_Store);$(VC_LibraryPath_VC_x86)"
+        }
+      }
+    }
+  },
+  "id": "crts/microsoft/desktop",
+  "version": "14.30.30705",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

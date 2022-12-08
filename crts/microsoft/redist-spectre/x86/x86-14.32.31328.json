@@ -1,0 +1,42 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "spectre/debug",
+        "spectre/x86/Microsoft.VC143.CRT",
+        "spectre/x86/Microsoft.VC143.CXXAMP",
+        "spectre/x86/Microsoft.VC143.OPENMP"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.x86.spectre/Microsoft.VC.14.32.17.2.CRT.Redist.X86.spectre.vsix"
+      ],
+      "sha256": "9f4bf1b034b0376613b87fbc802106e7c159f21fd52688d43e8210972ede6906",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.redist.x86.spectre.base/Microsoft.VC.14.32.17.2.CRT.Redist.X86.spectre.base.vsix"
+      ],
+      "sha256": "340699747b969fe5b1a05a0b4adeb8b5030df952f3ff52731541ead72b8644ff",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/redist-spectre/x86",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

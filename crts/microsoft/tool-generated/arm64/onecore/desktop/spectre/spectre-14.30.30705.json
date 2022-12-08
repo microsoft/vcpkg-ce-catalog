@@ -1,0 +1,41 @@
+{
+  "id": "crt/arm64/onecore/desktop/spectre",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "lib/spectre/onecore/arm64"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_ARM64_OneCore_spectre": "{root};$(VC_LibraryPath_VC_ARM64_OneCore_spectre)"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64.onecore.desktop.spectre/Microsoft.VC.14.30.17.0.CRT.ARM64.OneCore.Desktop.spectre.vsix"
+      ],
+      "sha256": "5abda0454513cdb94ab8f61e53f352078bd60b1dea4c4ba563bec29e1437c69f",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.arm64.onecore.desktop.spectre.base/Microsoft.VC.14.30.17.0.CRT.ARM64.OneCore.Desktop.spectre.base.vsix"
+      ],
+      "sha256": "7d75e091ac8f17b3f86f2601d1b10a4289cafeecfbf6580a8699cdb454f54920",
+      "strip": 5
+    }
+  ]
+}

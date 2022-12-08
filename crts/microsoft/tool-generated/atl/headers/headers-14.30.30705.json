@@ -1,0 +1,50 @@
+{
+  "id": "atl/headers",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "INCLUDE": [
+        "atlmfc/include",
+        "atlmfc/include/l.chs",
+        "atlmfc/include/l.cht",
+        "atlmfc/include/l.deu",
+        "atlmfc/include/l.esn",
+        "atlmfc/include/l.fra",
+        "atlmfc/include/l.ita",
+        "atlmfc/include/l.jpn",
+        "atlmfc/include/l.kor",
+        "atlmfc/include/l.rus"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_ATL_IncludePath": "{root}\\atlmfc\\include",
+      "VC_ATLMFC_IncludePath": "{root}\\atlmfc\\include;$(VC_ATLMFC_IncludePath)"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.atl.headers/Microsoft.VC.14.30.17.0.ATL.Headers.vsix"
+      ],
+      "sha256": "37a4d24a250e7f61384fde7e6f289fe836e7640641aeac2c0e25a425a25498d0",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.atl.headers.base/Microsoft.VC.14.30.17.0.ATL.Headers.base.vsix"
+      ],
+      "sha256": "effbfdc8fc1857a83dca167c4ae6e0705c41bf76e1ab896b0229764156c990c5",
+      "strip": 5
+    }
+  ]
+}

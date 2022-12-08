@@ -1,0 +1,41 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "requires": {
+    "crts/microsoft/atl": "14.30.30705"
+  },
+  "demands": {
+    "target:arm": {
+      "requires": {
+        "mfc/arm": "14.30.30705"
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "mfc/arm64": "14.30.30705"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "mfc/x64": "14.30.30705"
+      }
+    },
+    "target:x86": {
+      "requires": {
+        "mfc/x86": "14.30.30705"
+      }
+    }
+  },
+  "id": "crts/microsoft/mfc",
+  "version": "14.30.30705",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

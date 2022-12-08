@@ -1,0 +1,44 @@
+{
+  "id": "mfc/headers",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "requires": {
+    "atl/headers": "14.30.30705"
+  },
+  "exports": {
+    "paths": {
+      "INCLUDE": [
+        "."
+      ]
+    },
+    "msbuild-properties": {
+      "VC_MFC_IncludePath": "{root}",
+      "VC_ATLMFC_IncludePath": "{root};$(VC_ATLMFC_IncludePath)"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.mfc.headers/Microsoft.VC.14.30.17.0.MFC.Headers.vsix"
+      ],
+      "sha256": "7fe58a505c9aeb2d29bee2c12c66a5676e8cfdda2b30bee264bb20f820f67a6b",
+      "strip": 7
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.mfc.headers.base/Microsoft.VC.14.30.17.0.MFC.Headers.base.vsix"
+      ],
+      "sha256": "749bd55bb5d804bfe1002e95f94a0d3bd6561c2b2f98e28e9b390510c6d18a34",
+      "strip": 7
+    }
+  ]
+}

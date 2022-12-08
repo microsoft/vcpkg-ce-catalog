@@ -1,0 +1,78 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "arm64 and target:arm": {
+      "requires": {
+        "tools/hostarm64/targetarm": "14.30.30705"
+      }
+    },
+    "x64 and target:arm": {
+      "requires": {
+        "tools/hostx64/targetarm": "14.30.30705"
+      }
+    },
+    "x86 and target:arm": {
+      "requires": {
+        "tools/hostx86/targetarm": "14.30.30705"
+      }
+    },
+    "arm64 and target:arm64": {
+      "requires": {
+        "tools/hostarm64/targetarm64": "14.30.30705"
+      }
+    },
+    "x64 and target:arm64": {
+      "requires": {
+        "tools/hostx64/targetarm64": "14.30.30705"
+      }
+    },
+    "x86 and target:arm64": {
+      "requires": {
+        "tools/hostx86/targetarm64": "14.30.30705"
+      }
+    },
+    "arm64 and target:x64": {
+      "requires": {
+        "tools/hostarm64/targetx64": "14.30.30705"
+      }
+    },
+    "x64 and target:x64": {
+      "requires": {
+        "tools/hostx64/targetx64": "14.30.30705"
+      }
+    },
+    "x86 and target:x64": {
+      "requires": {
+        "tools/hostx86/targetx64": "14.30.30705"
+      }
+    },
+    "arm64 and target:x86": {
+      "requires": {
+        "tools/hostarm64/targetx86": "14.30.30705"
+      }
+    },
+    "x64 and target:x86": {
+      "requires": {
+        "tools/hostx64/targetx86": "14.30.30705"
+      }
+    },
+    "x86 and target:x86": {
+      "requires": {
+        "tools/hostx86/targetx86": "14.30.30705"
+      }
+    }
+  },
+  "id": "microsoft/msvc",
+  "version": "14.30.30705",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

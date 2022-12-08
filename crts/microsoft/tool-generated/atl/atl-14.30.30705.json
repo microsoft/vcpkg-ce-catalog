@@ -1,0 +1,41 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "requires": {
+    "atl/headers": "14.30.30705"
+  },
+  "demands": {
+    "target:arm": {
+      "requires": {
+        "atl/arm": "14.30.30705"
+      }
+    },
+    "target:arm64": {
+      "requires": {
+        "atl/arm64": "14.30.30705"
+      }
+    },
+    "target:x64": {
+      "requires": {
+        "atl/x64": "14.30.30705"
+      }
+    },
+    "target:x86": {
+      "requires": {
+        "atl/x86": "14.30.30705"
+      }
+    }
+  },
+  "id": "crts/microsoft/atl",
+  "version": "14.30.30705",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

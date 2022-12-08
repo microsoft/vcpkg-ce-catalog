@@ -1,0 +1,26 @@
+{
+    "id": "microsoft.vs.msbuild",
+    "version": "17.4.0",
+    "summary": "MSBuild engine",
+    "options": [
+        "dependencyOnly"
+    ],
+    "contacts": {
+        "Vcpkg Team": {
+            "email": "vcpkg@microsoft.com",
+            "role": "publisher"
+        }
+    },
+    "demands": {
+        "x64": {
+            "requires": {
+                "microsoft.vs.msbuild.x64": "17.4.0"
+            }
+        },
+        "x86": {
+            "requires": {
+                "microsoft.vs.msbuild.x86": "17.4.0"
+            }
+        }
+    }
+}

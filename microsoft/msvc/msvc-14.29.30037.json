@@ -14,27 +14,47 @@
     "not windows": {
       "error": "The MSVC compiler must be run on Windows."
     },
-    "not x64": {
-      "error": "The MSVC compiler must be run on an x64 machine."
+    "not x64 and not x86": {
+      "error": "The MSVC compiler must be run on an x64 or x86 machine."
     },
-    "target:x86": {
+    "x64 and target:x86": {
       "requires": {
         "microsoft/msvc/x64_x86": "14.29.30037"
       }
     },
-    "target:x64": {
+    "x64 and target:x64": {
       "requires": {
         "microsoft/msvc/x64_x64": "14.29.30037"
       }
     },
-    "target:arm": {
+    "x64 and target:arm": {
       "requires": {
         "microsoft/msvc/x64_arm": "14.29.30037"
       }
     },
-    "target:arm64": {
+    "x64 and target:arm64": {
       "requires": {
         "microsoft/msvc/x64_arm64": "14.29.30037"
+      }
+    },
+    "x86 and target:x86": {
+      "requires": {
+        "microsoft/msvc/x86_x86": "14.29.30037"
+      }
+    },
+    "x86 and target:x64": {
+      "requires": {
+        "microsoft/msvc/x86_x64": "14.29.30037"
+      }
+    },
+    "x86 and target:arm": {
+      "requires": {
+        "microsoft/msvc/x86_arm": "14.29.30037"
+      }
+    },
+    "x86 and target:arm64": {
+      "requires": {
+        "microsoft/msvc/x86_arm64": "14.29.30037"
       }
     }
   },

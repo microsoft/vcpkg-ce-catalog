@@ -1,0 +1,48 @@
+{
+  "id": "crt/headers",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "INCLUDE": [
+        "include",
+        "include/cliext",
+        "include/CodeAnalysis",
+        "include/cvt",
+        "include/experimental",
+        "include/Manifest",
+        "include/msclr",
+        "include/msclr/com"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_VC_IncludePath": "{root}\\include;$(VC_VC_IncludePath)",
+      "VCManifestDir": "{root}\\include\\Manifest\\"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.headers/Microsoft.VC.14.30.17.0.CRT.Headers.vsix"
+      ],
+      "sha256": "2bdad11b4eaf20b47e49486fed809870fb0c3c428d25558ff353e3dbb294d2e5",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.headers.base/Microsoft.VC.14.30.17.0.CRT.Headers.base.vsix"
+      ],
+      "sha256": "71a17722408ba20bc01e61d073d8adb9e2cc9ec321e33d15bb6d71275e085ac5",
+      "strip": 5
+    }
+  ]
+}

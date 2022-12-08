@@ -1,0 +1,43 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "crt/src/arm64ec",
+        "lib/arm64ec",
+        "lib/arm64ec/store",
+        "lib/arm64ec/uwp"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64ec.store/Microsoft.VC.14.32.17.2.CRT.ARM64EC.Store.vsix"
+      ],
+      "sha256": "0cc1e237ce03187a0292ea9e0031305867ab9254ab860a3b827c0c69097310d6",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.arm64ec.store.base/Microsoft.VC.14.32.17.2.CRT.ARM64EC.Store.base.vsix"
+      ],
+      "sha256": "fe2988f043b64e8da437f5d84d6e7dc3dc2b7603ba5b07e2052d7008aa1244f7",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/store-crt",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

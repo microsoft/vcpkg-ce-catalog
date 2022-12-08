@@ -1,0 +1,43 @@
+{
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "Auxiliary",
+        "crt/src/i386",
+        "lib/x86",
+        "lib/x86/store",
+        "lib/x86/uwp"
+      ]
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.x86.store/Microsoft.VC.14.32.17.2.CRT.x86.Store.vsix"
+      ],
+      "sha256": "2de89769c244df1d60a7cd295942414db3e8e48194d5f32a46382b9a4f28c194",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.32.17.2/17.2/31328.00.DevDiv_MSVC-parallel-setup_17.2_20220416.1_SxS;microsoft.vc.14.32.17.2.crt.x86.store.base/Microsoft.VC.14.32.17.2.CRT.x86.Store.base.vsix"
+      ],
+      "sha256": "1a75b0c64322e24d74f3810a0d6e333f73b376751003d166761a4bbe0b05e968",
+      "strip": 5
+    }
+  ],
+  "id": "crts/microsoft/store/x86",
+  "version": "14.32.31328",
+  "summary": "MSVC standard library libraries (todo)",
+  "options": [
+    "dependencyOnly"
+  ]
+}

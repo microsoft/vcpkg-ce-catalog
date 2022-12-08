@@ -1,0 +1,42 @@
+{
+  "id": "asan/x86",
+  "version": "14.30.30705",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "bin/Hostx86/x86",
+        "bin/Hostx64/x86",
+        "lib/x86"
+      ]
+    },
+    "msbuild-properties": {
+      "VC_LibraryPath_VC_x86_Desktop": "{root};$(VC_LibraryPath_VC_x86_Desktop)"
+    }
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.asan.x86/Microsoft.VC.14.30.17.0.ASAN.X86.vsix"
+      ],
+      "sha256": "9cc86ee0e6a3b5a779dc8312f67d015bfa41b69183a63bb2ecd9e9d6e6bfa033",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.asan.x86.base/Microsoft.VC.14.30.17.0.ASAN.X86.base.vsix"
+      ],
+      "sha256": "6ad7c6a3f6612ce61420d12ae619a3ecd5488af5d2a352a8ddad018d97fe5b01",
+      "strip": 5
+    }
+  ]
+}

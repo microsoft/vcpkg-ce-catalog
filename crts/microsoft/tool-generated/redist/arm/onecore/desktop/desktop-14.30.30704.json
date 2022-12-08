@@ -1,0 +1,41 @@
+{
+  "id": "crt/redist/arm/onecore/desktop",
+  "version": "14.30.30704",
+  "summary": "(todo)",
+  "options": [
+    "dependencyOnly"
+  ],
+  "contacts": {
+    "Vcpkg Team": {
+      "email": "vcpkg@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "exports": {
+    "paths": {
+      "LIB": [
+        "onecore/arm/Microsoft.VC$(VCRedistRelVerShort).CRT",
+        "onecore/arm/Microsoft.VC$(VCRedistRelVerShort).OpenMP",
+        "onecore/debug",
+        "onecore/debug"
+      ]
+    },
+    "msbuild-properties": {}
+  },
+  "install": [
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.redist.arm.onecore.desktop/Microsoft.VC.14.30.17.0.CRT.Redist.arm.OneCore.Desktop.vsix"
+      ],
+      "sha256": "29b47a78f6208ff9005dd8feccd25c130f21ed42c8f5397871ffbf7899c1d601",
+      "strip": 5
+    },
+    {
+      "unzip": [
+        "https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VC.14.30.17.0/17.0/30705.00.DevDiv_MSVC-parallel-setup_17.0_20211021.1_SxS;microsoft.vc.14.30.17.0.crt.redist.arm.onecore.desktop.base/Microsoft.VC.14.30.17.0.CRT.Redist.arm.OneCore.Desktop.base.vsix"
+      ],
+      "sha256": "b345824bdd32a88031cab081c64bde18a1e75afeaa8313cd17e8e2c45d34f645",
+      "strip": 5
+    }
+  ]
+}

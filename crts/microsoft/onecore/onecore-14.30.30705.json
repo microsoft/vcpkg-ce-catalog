@@ -1,0 +1,20 @@
+{
+  "contacts": {
+    "Mark Levine": {
+      "email": "markle@microsoft.com",
+      "role": [
+        "publisher"
+      ]
+    }
+  },
+  "demands": {
+    "target:x86": {
+      "requires": {
+        "crt/x86/onecore/desktop": "14.30.30705"
+      }
+    }
+  },
+  "id": "crts/microsoft/onecore",
+  "version": "14.30.30705",
+  "summary": "MSVC standard library libraries (desktop / onecore)"
+}
