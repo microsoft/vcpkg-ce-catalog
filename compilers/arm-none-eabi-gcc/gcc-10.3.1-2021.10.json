@@ -1,0 +1,71 @@
+{
+  "id": "compilers/arm-none-eabi-gcc",
+  "version": "10.3.1-2021.10",
+  "description": "The GNU Arm Embedded Toolchain is a ready-to-use, open-source suite of tools for C, C++ and assembly programming.  The GNU Arm Embedded Toolchain targets the 32-bit Arm Cortex-A, Arm Cortex-M, and Arm Cortex-R processor families.  The GNU Arm Embedded Toolchain includes the GNU Compiler (GCC) and is available free of charge directly from Arm  for embedded software development on Windows, Linux, and Mac OS X operating systems.",
+  "summary": "GCC compiler for ARM CPUs.",
+  "contacts": {
+    "Garrett Serack": {
+      "email": "garretts@microsoft.com",
+      "role": "publisher"
+    }
+  },
+  "demands": {
+    "windows": {
+      "install": {
+        "unzip": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-win32.zip",
+        "sha256": "d287439b3090843f3f4e29c7c41f81d958a5323aecefcf705c203bfd8ae3f2e7",
+        "strip": 1
+      },
+      "exports": {
+        "paths": {
+          "PATH": [
+            "bin",
+            "arm-none-eabi/bin"
+          ]
+        },
+        "tools": {
+          "GCC_TOOLCHAIN_10_3_1__20210824": "./bin/",
+          "GCC_TOOLCHAIN_10_3_1": "./bin/"
+        }
+      }
+    },
+    "linux and x64": {
+      "install": {
+        "unzip": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2",
+        "sha256": "97dbb4f019ad1650b732faffcc881689cedc14e2b7ee863d390e0a41ef16c9a3",
+        "strip": 1
+      }
+    },
+    "linux and arm64": {
+      "install": {
+        "unzip": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-aarch64-linux.tar.bz2",
+        "sha256": "f605b5f23ca898e9b8b665be208510a54a6e9fdd0fa5bfc9592002f6e7431208",
+        "strip": 1
+      }
+    },
+    "osx": {
+      "install": {
+        "unzip": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-mac.tar.bz2",
+        "sha256": "fb613dacb25149f140f73fe9ff6c380bb43328e6bf813473986e9127e2bc283b",
+        "strip": 1
+      }
+    },
+    "linux": {
+      "warning": "Ensure libncurses5 is installed with your system package manager before running arm-none-eabi-gdb."
+    },
+    "not windows": {
+      "exports": {
+        "paths": {
+          "PATH": [
+            "bin",
+            "arm-none-eabi/bin"
+          ]
+        },
+        "tools": {
+          "GCC_TOOLCHAIN_10_3_1__20210621": "./bin/",
+          "GCC_TOOLCHAIN_10_3_1": "./bin/"
+        }
+      }
+    }
+  }
+}
