@@ -53,5 +53,8 @@
     "linux": {
       "warning": "Ensure libncurses5 is installed with your system package manager before running arm-none-eabi-gdb."
     }
-  }
+  },
+  "options": [
+    "dependencyOnly"
+  ]
 }
