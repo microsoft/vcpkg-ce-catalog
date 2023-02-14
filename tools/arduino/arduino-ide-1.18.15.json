@@ -59,5 +59,8 @@
         }
       }
     }
-  }
+  },
+  "options": [
+    "dependencyOnly"
+  ]
 }
