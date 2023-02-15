@@ -4,19 +4,19 @@ items:
     compilers/arm-none-eabi-gcc/gcc-10.2.1-2020q4.json,
     compilers/arm-none-eabi-gcc/gcc-10.3.1-2021.7.json,
     compilers/arm-none-eabi-gcc/gcc-10.3.1-2021.10.json,
-    tools/arduino/arduino-cli-0.18.3.json,
     tools/arduino/arduino-ide-1.18.15.json,
+    tools/arduino/arduino-cli-0.18.3.json,
     tools/kitware/cmake-3.20.1.json,
-    tools/kitware/cmake-3.23.4.json,
-    tools/kitware/cmake-3.20.3.json,
-    tools/kitware/cmake-3.24.3.json,
     tools/kitware/cmake-3.24.2.json,
+    tools/kitware/cmake-3.20.3.json,
+    tools/kitware/cmake-3.23.4.json,
+    tools/kitware/cmake-3.24.3.json,
     tools/kitware/cmake-3.25.2.json,
     tools/compuphase/termite-3.4.0.json,
-    tools/microsoft/openocd-0.11.0.json,
-    tools/microsoft/openocd-0.11.0-ms1.json,
-    tools/microsoft/openocd-0.12.0.json,
     tools/microsoft/openocd-0.11.0-ms2.json,
+    tools/microsoft/openocd-0.11.0-ms1.json,
+    tools/microsoft/openocd-0.11.0.json,
+    tools/microsoft/openocd-0.12.0.json,
     tools/ninja-build/ninja-1.10.2.json,
     tools/raspberrypi/pico-sdk-1.3.0.json,
     tools/raspberrypi/pico-sdk-1.3.1.json,
@@ -29,19 +29,19 @@ indexes:
       compilers/arm-none-eabi-gcc: [ 1, 2, 3 ]
       compilers/arm/gcc: [ 0 ]
       raspberrypi/pico-sdk: [ 18, 19, 20, 21 ]
-      tools/arduino/arduino-cli: [ 4 ]
-      tools/arduino/arduino-ide: [ 5 ]
+      tools/arduino/arduino-cli: [ 5 ]
+      tools/arduino/arduino-ide: [ 4 ]
       tools/compuphase/termite: [ 12 ]
       tools/kitware/cmake: [ 6, 7, 8, 9, 10, 11 ]
       tools/microsoft/openocd: [ 13, 14, 15, 16 ]
       tools/ninja-build/ninja: [ 17 ]
     words:
       arduino: [ 4, 5 ]
-      arduino-cli: [ 4 ]
-      arduino-ide: [ 5 ]
+      arduino-cli: [ 5 ]
+      arduino-ide: [ 4 ]
       arduino/arduino: [ 4, 5 ]
-      arduino/arduino-cli: [ 4 ]
-      arduino/arduino-ide: [ 5 ]
+      arduino/arduino-cli: [ 5 ]
+      arduino/arduino-ide: [ 4 ]
       arm: [ 0, 1, 2, 3 ]
       arm-none: [ 1, 2, 3 ]
       arm-none-eabi: [ 1, 2, 3 ]
@@ -49,7 +49,7 @@ indexes:
       arm/gcc: [ 0 ]
       build: [ 17 ]
       build/ninja: [ 17 ]
-      cli: [ 4 ]
+      cli: [ 5 ]
       cmake: [ 6, 7, 8, 9, 10, 11 ]
       compilers: [ 0, 1, 2, 3 ]
       compilers/arm: [ 0, 1, 2, 3 ]
@@ -62,7 +62,7 @@ indexes:
       eabi: [ 1, 2, 3 ]
       eabi-gcc: [ 1, 2, 3 ]
       gcc: [ 0, 1, 2, 3 ]
-      ide: [ 5 ]
+      ide: [ 4 ]
       kitware: [ 6, 7, 8, 9, 10, 11 ]
       kitware/cmake: [ 6, 7, 8, 9, 10, 11 ]
       microsoft: [ 13, 14, 15, 16 ]
@@ -100,8 +100,8 @@ indexes:
         ]
       tools/arduino: [ 4, 5 ]
       tools/arduino/arduino: [ 4, 5 ]
-      tools/arduino/arduino-cli: [ 4 ]
-      tools/arduino/arduino-ide: [ 5 ]
+      tools/arduino/arduino-cli: [ 5 ]
+      tools/arduino/arduino-ide: [ 4 ]
       tools/compuphase: [ 12 ]
       tools/compuphase/termite: [ 12 ]
       tools/kitware: [ 6, 7, 8, 9, 10, 11 ]
@@ -114,22 +114,22 @@ indexes:
   SemverKey/version:
     keys:
       0.11.0-ms1: [ 14 ]
-      0.11.0-ms2: [ 16 ]
-      0.11.0: [ 13 ]
-      0.12.0: [ 15 ]
-      0.18.3: [ 4 ]
+      0.11.0-ms2: [ 13 ]
+      0.11.0: [ 15 ]
+      0.12.0: [ 16 ]
+      0.18.3: [ 5 ]
       1.3.0: [ 18 ]
       1.3.1: [ 19 ]
       1.4.0: [ 20 ]
       1.5.0: [ 21 ]
       1.10.2: [ 17 ]
-      1.18.15: [ 5 ]
+      1.18.15: [ 4 ]
       3.4.0: [ 12 ]
       3.20.1: [ 6 ]
       3.20.3: [ 8 ]
-      3.23.4: [ 7 ]
-      3.24.2: [ 10 ]
-      3.24.3: [ 9 ]
+      3.23.4: [ 9 ]
+      3.24.2: [ 7 ]
+      3.24.3: [ 10 ]
       3.25.2: [ 11 ]
       10.2.1-2020q4: [ 1 ]
       10.3.1-2021.7: [ 2 ]
