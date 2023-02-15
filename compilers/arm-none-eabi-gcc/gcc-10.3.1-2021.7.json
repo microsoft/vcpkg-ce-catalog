@@ -31,21 +31,21 @@
     },
     "linux and x64": {
       "install": {
-        "unzip": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2",
+        "untar": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-x86_64-linux.tar.bz2",
         "sha256": "8c5b8de344e23cd035ca2b53bbf2075c58131ad61223cae48510641d3e556cea",
         "strip": 1
       }
     },
     "linux and arm64": {
       "install": {
-        "unzip": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-aarch64-linux.tar.bz2",
+        "untar": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-aarch64-linux.tar.bz2",
         "sha256": "3a75e66541d527f4497f9ea6180cd20b05faf003098a4fc80609afe25cf69678",
         "strip": 1
       }
     },
     "osx": {
       "install": {
-        "unzip": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-mac-10.14.6.tar.bz2",
+        "untar": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07-mac-10.14.6.tar.bz2",
         "sha256": "0a4554b248a1626496eeba56ad59d2bba4279cb485099f820bb887fe6a8b7ee4",
         "strip": 1
       }
